@@ -1,0 +1,66 @@
+
+
+.MobilityDashboard {
+    margin-top: 160px;
+    .dropdown button {
+        width: 99.3%;
+        background-color: white;
+        color: #000;	
+        margin: 7px 0px;	
+    }
+    
+    .city-name {
+        text-align: center;
+        margin: 60px;
+    }
+    
+    .city-facts {
+        margin: 10px 0px;
+    
+    }
+    .city-facts h2 {
+        margin: 50px 80px;
+    }
+    
+    .card {
+        width: 90%;
+        font-size: 50px;
+        padding: 16px;
+        margin: 20px 0px 40px 0px;
+        text-align: center;
+    }
+    
+    .nav-link {
+        font-size: 26px;
+        color: #000;
+    }
+    .nav-link:hover {
+        color: grey;
+    }
+    
+    .chart {
+        text-align: center;
+    }
+    
+    .chart h2 {
+        margin: 40px 0px;
+        text-align: center;
+    }
+    
+    .data {
+        text-align: center;
+        margin: 60px 0px;
+    }
+    .data span {
+        font-size: 40px;
+    }
+    
+    .footpath-percentage-header, .cycle-track-percentage-header {
+        margin-top: 60px;
+    }
+    .footpath-percentage, .cycle-track-percentage {
+        font-size: 40px;
+    }
+    
+}
+

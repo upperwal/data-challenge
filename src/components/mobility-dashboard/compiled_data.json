@@ -1,0 +1,4708 @@
+{
+    "static": {
+        "highlight": {
+            "largest_public_transport": "Congratulations! [0] has one of the largest public transport bus fleets in India",
+            "highest_qos_public_transport": "Great Work! [0] provides the highest quality of service in public transport with more than [1] seats per 1,00,000 population",
+            "avg_daily_ridership": "Woohoo! Citizens of  [0] love using public transport with average daily ridership of [1]",
+            "road_per_capita": "You\u2019ve got it right! Higher road length per capita results in lower levels of congestion. With [0] km per capita of roads, [1] ranks among the top 10 cities in India.",
+            "mobility_plan": "Good Job, [0] ! With your City Mobility Plan prepared, you are on the right track!",
+            "generic": "You\u2019re on the right track, [0]! Let's review your urban transport dashboard. "
+        },
+        "percent_covered_wrt_roads": [
+            "You\u2019re doing great, [0]! You\u2019ve achieved Level of Service 1 as per the national benchmarks for footpath infrastructure.",
+            "You\u2019re on the right track, [0]! You\u2019ve achieved Level of Service 2 as per the national benchmarks for footpath infrastructure.",
+            "There\u2019s quite a way to go, [0]! You\u2019re at Level of Service 3 as per the national benchmarks for footpath infrastructure.",
+            "There\u2019s quite a way to go, [0]! You\u2019re at Level of Service 4 as per the national benchmarks for footpath infrastructure."
+        ]
+    },
+    "overall": {
+        "norm_health_ex_vs_pcf": {
+            "x": [
+                null,
+                null,
+                1.4389984303614753,
+                null,
+                -0.8074847330648999,
+                null,
+                null,
+                null,
+                null,
+                null,
+                6.9432490478579,
+                6.945371734443894,
+                null,
+                1.1752169214670096,
+                -0.5894551556284496,
+                null,
+                null,
+                6.179368069620404,
+                2.9008175556948563,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                0.9906559752599429,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                -0.582992074991779,
+                null,
+                null,
+                null,
+                null,
+                6.410077449789804,
+                -1.2091275120554745,
+                -0.6043245007488692,
+                null,
+                null,
+                null,
+                null,
+                null,
+                -0.9995438988741011,
+                null,
+                null,
+                null,
+                -0.6629119325632056,
+                null,
+                null,
+                null,
+                null,
+                null,
+                4.394894439885927,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                0.2519085590931571,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                -0.33021112849218187,
+                null,
+                -0.56194622481941,
+                null,
+                0.650636741577944,
+                null,
+                0.33464564439586175,
+                -0.613489481260296,
+                null,
+                6.1251740331775,
+                null,
+                null,
+                -0.740092345966871,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                1.0309523907056017,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                -0.6225833205747806,
+                9.108864603764012,
+                null,
+                -0.749676269435031,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "y": [
+                -0.4086930881482312,
+                0.5593221642425239,
+                -0.08579918812529085,
+                -0.3200555469654633,
+                -0.3813687333475283,
+                -0.3727049135326713,
+                1.494015032729983,
+                0.016833754296861517,
+                0.1827792261352767,
+                0.189443702915936,
+                -0.437350338305066,
+                -0.014822510411269887,
+                -0.7345860027224682,
+                -0.9071959513415428,
+                -0.6122928537973711,
+                -1.065144051043167,
+                -0.437350338305066,
+                0.2347621450244188,
+                0.021498888043322992,
+                -0.4573437686470437,
+                -0.8402179596959173,
+                -0.25241110764177194,
+                1.0491612076209784,
+                -0.0464787751194013,
+                1.132133943540186,
+                -1.0581463504234745,
+                -0.4306858615244067,
+                -1.1487832346404403,
+                -0.025485673260324682,
+                -0.8108942618610167,
+                null,
+                -0.666608339559744,
+                -1.1977671389782858,
+                1.0428299546793522,
+                1.3290692324086668,
+                0.6429613478397975,
+                -0.2490788692514423,
+                0.15845388588587045,
+                0.603307710994875,
+                -0.6026293624654152,
+                -0.5529790104495038,
+                -0.26274104665179376,
+                0.4460260589713169,
+                -1.2000997058515164,
+                -0.2404150494365853,
+                -0.2510782122856401,
+                0.5379958385444145,
+                -0.11712222899438927,
+                0.7672538397990925,
+                0.1617861242762001,
+                -0.32405423303385883,
+                -0.0234863302261269,
+                null,
+                1.0008437509611992,
+                6.8945737919372005,
+                0.4313642100538665,
+                3.198454969383585,
+                -1.2250914937789887,
+                1.381718598975875,
+                -0.5793036937331079,
+                -0.03781495530454428,
+                0.020165992687191145,
+                -0.6836027553504251,
+                -0.1391150023705648,
+                1.0045092131905615,
+                0.9262016110178154,
+                -1.139452967147517,
+                -0.2394153779194864,
+                -1.132122042688792,
+                0.7295995459883677,
+                -0.0234863302261269,
+                null,
+                null,
+                0.5356632716711837,
+                -1.4100307244422827,
+                -0.8472156603156095,
+                0.6599557636304786,
+                1.7862523395618908,
+                -0.0288179116506543,
+                -0.21109135160168466,
+                0.6599557636304786,
+                -0.0234863302261269,
+                -0.7809041163480501,
+                -0.5952984380066899,
+                -0.4466806057979889,
+                -0.1054593946282356,
+                -0.3330512766877488,
+                0.044824556775630346,
+                1.2524277494310854,
+                0.9401970122571998,
+                -0.7009303949801391,
+                -0.5969645572018548,
+                -0.6636093250084473,
+                -0.6466149092177662,
+                -1.07114208014576,
+                -0.35471082622489136,
+                -0.8415508550520492,
+                -0.6582777435839199,
+                -0.0234863302261269,
+                -0.3117249509896392,
+                null,
+                -0.5753050076647124,
+                -0.7515804185131494,
+                -0.7295876451369738,
+                -0.5123257020874825,
+                0.6482929292643249,
+                -0.912860756605103,
+                -0.1761028485032236,
+                0.20977035709694666,
+                0.2824131540061324,
+                0.8305663692153552,
+                0.23342924966828696,
+                -0.0234863302261269,
+                0.471351070737822,
+                -0.34704667792713323,
+                0.20743779022371592,
+                1.4950147042470818
+            ]
+        }
+    },
+    "city_list": [
+        "Agartala",
+        "Agra",
+        "Ahmedabad",
+        "Aizawl",
+        "Ajmer",
+        "Aligarh",
+        "Amravati",
+        "Amritsar",
+        "Aurangabad",
+        "Barielly",
+        "Belgaum",
+        "Bengaluru",
+        "Bhagalpur",
+        "Bhopal",
+        "Bhubaneswar",
+        "Biharsharif",
+        "Bilaspur",
+        "Chandigarh",
+        "Chennai",
+        "Coimbatore",
+        "Dahod",
+        "Davangere",
+        "Dehradun",
+        "Delhi",
+        "Dhanbad",
+        "Dharamshala",
+        "Dindigul",
+        "Diu",
+        "Durgapur",
+        "Erode",
+        "Faridabad",
+        "Gandhinagar",
+        "Gangtok",
+        "Ghaziabad",
+        "Greater Mumbai",
+        "Gurugram",
+        "Guwahati",
+        "Gwalior",
+        "Howrah",
+        "Hubli Dharwad",
+        "Hyderabad",
+        "Imphal",
+        "Indore",
+        "Itanagar",
+        "Jabalpur",
+        "Jaipur",
+        "Jalandhar",
+        "Jammu",
+        "Jhansi",
+        "Jodhpur",
+        "Kakinada",
+        "Kalyan Dombivali",
+        "Kanpur",
+        "Karimnagar",
+        "Karnal",
+        "Kavaratti",
+        "Kochi",
+        "Kohima",
+        "Kolkata",
+        "Kota",
+        "Lucknow",
+        "Ludhiana",
+        "Madurai",
+        "Mangalore",
+        "Meerut",
+        "Moradabad",
+        "Muzaffarpur",
+        "Nagpur",
+        "Namchi",
+        "Nashik",
+        "Navi Mumbai",
+        "Naya Raipur",
+        "New Town Kolkata",
+        "Panaji",
+        "Pasighat",
+        "Patna",
+        "Pimpri Chinchwad",
+        "Portblair",
+        "Prayagraj",
+        "Puducherry",
+        "Pune",
+        "Rae Bareli",
+        "Raipur",
+        "Rajkot",
+        "Rampur",
+        "Ranchi",
+        "Rourkela",
+        "Sagar",
+        "Saharanpur",
+        "Salem",
+        "Satna",
+        "Shillong",
+        "Shimla",
+        "Shivamogga",
+        "Silvassa",
+        "Solapur",
+        "Srinagar",
+        "Surat",
+        "Thane",
+        "Thanjavur",
+        "Thoothukudi",
+        "Tiruchirappalli",
+        "Tirunelveli",
+        "Tirupati",
+        "Tiruppur",
+        "Tiruvanantapuram",
+        "Toothukudi",
+        "Tumakuru",
+        "Udaipur",
+        "Ujjain",
+        "Vadodara",
+        "Varanasi",
+        "Vasai Virar",
+        "Vellore",
+        "Vijayawada",
+        "Visakhapatnam",
+        "Warangal"
+    ],
+    "Agartala": {
+        "overall": {
+            "population": 637324.0,
+            "area": 76.5,
+            "road_length": 1130.71,
+            "bus_fleet": 173.0,
+            "seats_per_lakh": 1927.434083762733,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1130.71,
+                    23.12,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.0447329553997045,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1226.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 17.7,
+                "PM2.5": 42.1,
+                "PM10": 70.1,
+                "SO2": 11.9
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Agra": {
+        "overall": {
+            "population": 1800000.0,
+            "area": 141.0,
+            "road_length": 1248.58,
+            "bus_fleet": 170.0,
+            "seats_per_lakh": 377.77777777777777,
+            "avg_daily_ridership": 12630.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1248.58,
+                    11.4,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.9130372102708678,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1678.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 22.5,
+                "PM2.5": 100.5,
+                "PM10": 204.75,
+                "SO2": 5.0
+            },
+            "fossil_fuel": {
+                "per_capita": 1.2900927777777778,
+                "per_km": 1859.8463854939212
+            }
+        }
+    },
+    "Ahmedabad": {
+        "overall": {
+            "population": 6600540.0,
+            "area": 440.37,
+            "road_length": 2558.71,
+            "bus_fleet": 995.0,
+            "seats_per_lakh": 609.1016795595511,
+            "avg_daily_ridership": 725000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2558.71,
+                    842.07,
+                    71.0
+                ]
+            },
+            "percent_roads_are_footpath": 32.90994290091492,
+            "percent_roads_are_cyclepath": 2.7748357570807163,
+            "health_expense_relative": -257.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 29.05,
+                "PM2.5": 72.62,
+                "PM10": 234.12,
+                "SO2": 17.92
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Aizawl": {
+        "overall": {
+            "population": 312930.0,
+            "area": 457.0,
+            "road_length": 0.0,
+            "bus_fleet": 1108.0,
+            "seats_per_lakh": 1907.7749017352126,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    0.0,
+                    4.7,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -960.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 9.89,
+                "PM2.5": 0.0,
+                "PM10": 84.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": 22.321285910587033,
+                "per_km": null
+            }
+        }
+    },
+    "Ajmer": {
+        "overall": {
+            "population": 611278.0,
+            "area": 219.36,
+            "road_length": 593.86,
+            "bus_fleet": 203.0,
+            "seats_per_lakh": 1504.2255733070715,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    593.86,
+                    25.0,
+                    1.0
+                ]
+            },
+            "percent_roads_are_footpath": 4.2097464048765705,
+            "percent_roads_are_cyclepath": 0.1683898561950628,
+            "health_expense_relative": -1144.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 31.21,
+                "PM2.5": 49.94,
+                "PM10": 109.33,
+                "SO2": 7.82
+            },
+            "fossil_fuel": {
+                "per_capita": 124.31659572240454,
+                "per_km": 127962.81951975213
+            }
+        }
+    },
+    "Aligarh": {
+        "overall": {
+            "population": 1321579.0,
+            "area": 63.4,
+            "road_length": 1771.33,
+            "bus_fleet": null,
+            "seats_per_lakh": 114.55993171804333,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1771.33,
+                    1.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.08468213150570476,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1118.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": 219.48,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": 0.7003448148010827,
+                "per_km": 522.523188790344
+            }
+        }
+    },
+    "Amravati": {
+        "overall": {
+            "population": 695417.0,
+            "area": 121.65,
+            "road_length": 1322.2,
+            "bus_fleet": 73.0,
+            "seats_per_lakh": 150.98854356450877,
+            "avg_daily_ridership": 43235.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1322.2,
+                    21.11,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.5965814551505066,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 4483.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 15.97,
+                "PM2.5": 0.0,
+                "PM10": 95.58,
+                "SO2": 14.89
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Amritsar": {
+        "overall": {
+            "population": 1247643.0,
+            "area": 139.0,
+            "road_length": 1750.0,
+            "bus_fleet": 95.0,
+            "seats_per_lakh": 220.8163713498172,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1750.0,
+                    596.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 34.05714285714286,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 50.51785714285688,
+            "avg_annual_pollution": {
+                "NO2": 21.47,
+                "PM2.5": 49.08,
+                "PM10": 122.97,
+                "SO2": 5.07
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Aurangabad": {
+        "overall": {
+            "population": 1437058.0,
+            "area": 154.74,
+            "road_length": 1739.22,
+            "bus_fleet": 67.0,
+            "seats_per_lakh": 89.07086561572324,
+            "avg_daily_ridership": 13500.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1739.22,
+                    92.52,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 5.319626039258978,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 548.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 34.46,
+                "PM2.5": 70.88,
+                "PM10": 70.08,
+                "SO2": 12.75
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Barielly": {
+        "overall": {
+            "population": 1028000.0,
+            "area": 106.0,
+            "road_length": 944.0,
+            "bus_fleet": 385.0,
+            "seats_per_lakh": 1872.5680933852138,
+            "avg_daily_ridership": 45500.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    944.0,
+                    1.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.15889830508474578,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 568.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 21.14,
+                "PM2.5": 295.0,
+                "PM10": 295.0,
+                "SO2": 20.05
+            },
+            "fossil_fuel": {
+                "per_capita": 0.7670097276264591,
+                "per_km": 835.2605932203389
+            }
+        }
+    },
+    "Belgaum": {
+        "overall": {
+            "population": 527768.0,
+            "area": 94.08,
+            "road_length": 979.67,
+            "bus_fleet": 56.0,
+            "seats_per_lakh": 457.77690197207863,
+            "avg_daily_ridership": 0.97
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    979.67,
+                    13598.48,
+                    0.0
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": 0.0,
+            "health_expense_relative": -1312.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 16.0,
+                "PM2.5": 49.0,
+                "PM10": 95.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": 119.48052932349063,
+                "per_km": 64366.57241724255
+            }
+        }
+    },
+    "Bengaluru": {
+        "overall": {
+            "population": 13000000.0,
+            "area": 741.0,
+            "road_length": 2537.4,
+            "bus_fleet": 6504.0,
+            "seats_per_lakh": 3061.846153846154,
+            "avg_daily_ridership": 924179.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2537.4,
+                    3880.0,
+                    30.83
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": 1.2150232521478679,
+            "health_expense_relative": -44.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 31.0,
+                "PM2.5": 44.0,
+                "PM10": 66.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Bhagalpur": {
+        "overall": {
+            "population": null,
+            "area": 30.17,
+            "road_length": 112.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    112.0,
+                    112.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 100.0,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2204.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Bhopal": {
+        "overall": {
+            "population": 2936831.0,
+            "area": 285.88,
+            "road_length": 92.062,
+            "bus_fleet": 287.0,
+            "seats_per_lakh": 423.58583112204957,
+            "avg_daily_ridership": 150000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    92.062,
+                    698.0,
+                    32.0
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": 34.75918402815494,
+            "health_expense_relative": -2722.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 11.5,
+                "PM2.5": 51.8,
+                "PM10": 113.0,
+                "SO2": 5.5
+            },
+            "fossil_fuel": {
+                "per_capita": 16.17591546806745,
+                "per_km": 516021.05103082705
+            }
+        }
+    },
+    "Bhubaneswar": {
+        "overall": {
+            "population": 939818.2,
+            "area": 135.0,
+            "road_length": 1593.66,
+            "bus_fleet": 200.0,
+            "seats_per_lakh": 717.6919961754306,
+            "avg_daily_ridership": 60000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1593.66,
+                    165.81,
+                    40.0
+                ]
+            },
+            "percent_roads_are_footpath": 10.404352245773879,
+            "percent_roads_are_cyclepath": 2.5099456596764678,
+            "health_expense_relative": -1837.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 17.0,
+                "PM2.5": 31.0,
+                "PM10": 94.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.3924310042091119,
+                "per_km": 231.42564913469622
+            }
+        }
+    },
+    "Biharsharif": {
+        "overall": {
+            "population": 341304.0,
+            "area": 23.5,
+            "road_length": 171.0,
+            "bus_fleet": 23.0,
+            "seats_per_lakh": 1025.478752080257,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    171.0,
+                    30.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 17.543859649122805,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3196.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 19.1,
+                "PM2.5": 31.0,
+                "PM10": 73.0,
+                "SO2": 12.7
+            },
+            "fossil_fuel": {
+                "per_capita": 0.12891732883294657,
+                "per_km": 257.3099415204678
+            }
+        }
+    },
+    "Bilaspur": {
+        "overall": {
+            "population": 567493.0,
+            "area": 28.27,
+            "road_length": 330.04,
+            "bus_fleet": 50.0,
+            "seats_per_lakh": 8.8106813652327,
+            "avg_daily_ridership": 15000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    330.04,
+                    9.66,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.9269179493394737,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1312.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 12.27,
+                "PM2.5": 19.71,
+                "PM10": 41.82,
+                "SO2": 6.43
+            },
+            "fossil_fuel": {
+                "per_capita": 0.27313112232221365,
+                "per_km": 469.640043631075
+            }
+        }
+    },
+    "Chandigarh": {
+        "overall": {
+            "population": 1147000.0,
+            "area": 114.0,
+            "road_length": 2249.31,
+            "bus_fleet": 354.0,
+            "seats_per_lakh": 888.0557977332171,
+            "avg_daily_ridership": 108934.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2249.31,
+                    663.7,
+                    218.07
+                ]
+            },
+            "percent_roads_are_footpath": 29.506826537916076,
+            "percent_roads_are_cyclepath": 9.694973125091694,
+            "health_expense_relative": 704.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 18.0,
+                "PM2.5": 50.0,
+                "PM10": 106.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": 1.9495204882301655,
+                "per_km": 994.1270878625
+            }
+        }
+    },
+    "Chennai": {
+        "overall": {
+            "population": 7523337.0,
+            "area": 426.0,
+            "road_length": 6083.0,
+            "bus_fleet": 3557.0,
+            "seats_per_lakh": 58419.26262242406,
+            "avg_daily_ridership": 3200000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    6083.0,
+                    1035.89,
+                    17.0
+                ]
+            },
+            "percent_roads_are_footpath": 17.029261877363144,
+            "percent_roads_are_cyclepath": 0.279467368074963,
+            "health_expense_relative": 64.51785714285688,
+            "avg_annual_pollution": {
+                "NO2": 16.4,
+                "PM2.5": 34.0,
+                "PM10": 78.0,
+                "SO2": 9.09
+            },
+            "fossil_fuel": {
+                "per_capita": 0.9630035182526052,
+                "per_km": 1191.02416570771
+            }
+        }
+    },
+    "Coimbatore": {
+        "overall": {
+            "population": 1978000.0,
+            "area": 257.04,
+            "road_length": 3095.45,
+            "bus_fleet": 690.0,
+            "seats_per_lakh": 1239.8887765419615,
+            "avg_daily_ridership": 900000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3095.45,
+                    77.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.4875220081086757,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1372.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 22.4,
+                "PM2.5": 32.33,
+                "PM10": 54.0,
+                "SO2": 5.46
+            },
+            "fossil_fuel": {
+                "per_capita": 1.2018265925176947,
+                "per_km": 767.9700851249415
+            }
+        }
+    },
+    "Dahod": {
+        "overall": {
+            "population": 133145.0,
+            "area": 6.54,
+            "road_length": 112.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    112.0,
+                    6.8,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 6.071428571428571,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2521.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.4797626647639791,
+                "per_km": 570.3392857142857
+            }
+        }
+    },
+    "Davangere": {
+        "overall": {
+            "population": 583232.0,
+            "area": 68.63,
+            "road_length": 127.0,
+            "bus_fleet": 45.0,
+            "seats_per_lakh": 314.1117085482278,
+            "avg_daily_ridership": 36132.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    127.0,
+                    18.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 14.173228346456693,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -757.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 4.5,
+                "PM2.5": 18.0,
+                "PM10": 48.0,
+                "SO2": 4.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Dehradun": {
+        "overall": {
+            "population": 803983.0,
+            "area": 131.97,
+            "road_length": 2236.0,
+            "bus_fleet": 245.0,
+            "seats_per_lakh": 821.9079259138564,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2236.0,
+                    80.82,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.6144901610017883,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3148.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 30.0,
+                "PM2.5": 0.0,
+                "PM10": 60.0,
+                "SO2": 20.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Delhi": {
+        "overall": {
+            "population": null,
+            "area": 1113.65,
+            "road_length": 14898.54,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    14898.54,
+                    1426.02,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 9.571541909475693,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -139.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 50.0,
+                "PM2.5": 128.0,
+                "PM10": 277.0,
+                "SO2": 18.61
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Dhanbad": {
+        "overall": {
+            "population": null,
+            "area": 275.0,
+            "road_length": 651.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    651.0,
+                    225.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 34.56221198156682,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3397.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 7.74,
+                "PM2.5": 84.0,
+                "PM10": 209.8,
+                "SO2": 53.31
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Dharamshala": {
+        "overall": {
+            "population": 65082.0,
+            "area": 27.6,
+            "road_length": 177.25,
+            "bus_fleet": 645.0,
+            "seats_per_lakh": 185.9193018038782,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    177.25,
+                    35.61,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 20.090267983074753,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3175.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 6.4,
+                "PM2.5": 15.6,
+                "PM10": 36.25,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Dindigul": {
+        "overall": {
+            "population": null,
+            "area": 14.01,
+            "road_length": 181.73,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    181.73,
+                    7.49,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.121498926979585,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1292.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 80.0,
+                "PM2.5": 60.0,
+                "PM10": 100.0,
+                "SO2": 80.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Diu": {
+        "overall": {
+            "population": 57261.0,
+            "area": 11.66,
+            "road_length": 68.15,
+            "bus_fleet": 6.0,
+            "seats_per_lakh": 288.1542411065123,
+            "avg_daily_ridership": 1974.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    68.15,
+                    14.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 21.276595744680847,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3447.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Durgapur": {
+        "overall": {
+            "population": null,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -76.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Erode": {
+        "overall": {
+            "population": 546978.0,
+            "area": 109.52,
+            "road_length": 806.7,
+            "bus_fleet": 153.0,
+            "seats_per_lakh": 2691.1502839236678,
+            "avg_daily_ridership": 1640.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    806.7,
+                    3.94,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.4884095698524854,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2433.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 28.0,
+                "PM2.5": 38.0,
+                "PM10": 89.0,
+                "SO2": 21.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Faridabad": {
+        "overall": {
+            "population": 1599292.0,
+            "area": 207.0,
+            "road_length": 1884.26,
+            "bus_fleet": 115.0,
+            "seats_per_lakh": 283.75055962263303,
+            "avg_daily_ridership": 3549.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1884.26,
+                    51.42,
+                    51.42
+                ]
+            },
+            "percent_roads_are_footpath": 2.7289227601286448,
+            "percent_roads_are_cyclepath": 2.7289227601286448,
+            "health_expense_relative": null,
+            "avg_annual_pollution": {
+                "NO2": 64.0,
+                "PM2.5": 117.0,
+                "PM10": 0.0,
+                "SO2": 11.0
+            },
+            "fossil_fuel": {
+                "per_capita": 432.44573223651463,
+                "per_km": 367044.35693587933
+            }
+        }
+    },
+    "Gandhinagar": {
+        "overall": {
+            "population": 300000.0,
+            "area": 56.4,
+            "road_length": 609.481,
+            "bus_fleet": null,
+            "seats_per_lakh": 408.3333333333333,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    609.481,
+                    194.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 31.83036058548175,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2000.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 27.84,
+                "PM2.5": 47.13,
+                "PM10": 121.3,
+                "SO2": 8.5
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Gangtok": {
+        "overall": {
+            "population": 108985.0,
+            "area": 19.2,
+            "road_length": 48.92,
+            "bus_fleet": null,
+            "seats_per_lakh": 284.4428132311786,
+            "avg_daily_ridership": 25.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    48.92,
+                    12.66,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 25.8789860997547,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3594.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 4.02,
+                "PM2.5": 0.0,
+                "PM10": 47.07,
+                "SO2": 5.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.22571913566087076,
+                "per_km": 502.8618152085037
+            }
+        }
+    },
+    "Ghaziabad": {
+        "overall": {
+            "population": null,
+            "area": 133.3,
+            "road_length": 3286.65,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3286.65,
+                    6573.3,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3129.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 72.0,
+                "PM2.5": 135.0,
+                "PM10": 294.0,
+                "SO2": 28.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Greater Mumbai": {
+        "overall": {
+            "population": null,
+            "area": 483.14,
+            "road_length": 2055.6,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2055.6,
+                    1549.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 75.35512745670364,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3988.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 23.0,
+                "PM2.5": 58.0,
+                "PM10": 97.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Gurugram": {
+        "overall": {
+            "population": null,
+            "area": 0.0,
+            "road_length": 4480.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    4480.0,
+                    415.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 9.263392857142858,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1929.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 30.79,
+                "PM2.5": 114.39,
+                "PM10": 0.0,
+                "SO2": 9.48
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Guwahati": {
+        "overall": {
+            "population": 2192400.0,
+            "area": 328.0,
+            "road_length": 413.31,
+            "bus_fleet": 225.0,
+            "seats_per_lakh": 1669.4033935413247,
+            "avg_daily_ridership": 36600.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    413.31,
+                    409.9,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 99.1749534247901,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -747.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 17.83,
+                "PM2.5": 66.5,
+                "PM10": 111.83,
+                "SO2": 7.5
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Gwalior": {
+        "overall": {
+            "population": 1367474.0,
+            "area": 395.18,
+            "road_length": 2700.0,
+            "bus_fleet": 3.0,
+            "seats_per_lakh": 39.34261272974843,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2700.0,
+                    75.0,
+                    6.0
+                ]
+            },
+            "percent_roads_are_footpath": 2.7777777777777777,
+            "percent_roads_are_cyclepath": 0.2222222222222222,
+            "health_expense_relative": 475.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 25.66,
+                "PM2.5": 106.02,
+                "PM10": 124.23,
+                "SO2": 16.27
+            },
+            "fossil_fuel": {
+                "per_capita": 1.6131933769855953,
+                "per_km": 817.0370370370371
+            }
+        }
+    },
+    "Howrah": {
+        "overall": {
+            "population": null,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1810.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Hubli Dharwad": {
+        "overall": {
+            "population": 1016439.0,
+            "area": 202.3,
+            "road_length": 3773.1,
+            "bus_fleet": 3425.0,
+            "seats_per_lakh": 1178.8213557331035,
+            "avg_daily_ridership": 10000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3773.1,
+                    56.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.4841907185073282,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1808.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 22.5,
+                "PM2.5": 26.0,
+                "PM10": 75.0,
+                "SO2": 5.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Hyderabad": {
+        "overall": {
+            "population": null,
+            "area": 625.0,
+            "road_length": 9013.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    9013.0,
+                    458.21,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 5.083878841673139,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1659.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 38.1,
+                "PM2.5": 51.0,
+                "PM10": 112.0,
+                "SO2": 6.8
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Imphal": {
+        "overall": {
+            "population": 305772.0,
+            "area": 34.73,
+            "road_length": 232.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": 1750.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    232.0,
+                    57.38,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 24.73275862068966,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -788.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 13.94,
+                "PM2.5": 0.0,
+                "PM10": 68.07,
+                "SO2": 7.56
+            },
+            "fossil_fuel": {
+                "per_capita": 0.05768677315123688,
+                "per_km": 76.03017241379312
+            }
+        }
+    },
+    "Indore": {
+        "overall": {
+            "population": 2521938.0,
+            "area": 276.0,
+            "road_length": 3783.86,
+            "bus_fleet": 313.0,
+            "seats_per_lakh": 1218.507354264855,
+            "avg_daily_ridership": 275000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3783.86,
+                    1886.0,
+                    56.0
+                ]
+            },
+            "percent_roads_are_footpath": 49.84328172818233,
+            "percent_roads_are_cyclepath": 1.4799701891719037,
+            "health_expense_relative": 1338.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 19.0,
+                "PM2.5": 39.0,
+                "PM10": 84.0,
+                "SO2": 10.0
+            },
+            "fossil_fuel": {
+                "per_capita": 1.0781629048771222,
+                "per_km": 718.5942397445993
+            }
+        }
+    },
+    "Itanagar": {
+        "overall": {
+            "population": 166028.0,
+            "area": 51.0,
+            "road_length": 335.86,
+            "bus_fleet": 40.0,
+            "seats_per_lakh": 1055.8460018792011,
+            "avg_daily_ridership": 25.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    335.86,
+                    0.37,
+                    0.0
+                ]
+            },
+            "percent_roads_are_footpath": 0.11016494968141488,
+            "percent_roads_are_cyclepath": 0.0,
+            "health_expense_relative": -3601.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 7.3,
+                "PM2.5": 0.0,
+                "PM10": 106.54,
+                "SO2": 2.58
+            },
+            "fossil_fuel": {
+                "per_capita": 1.907895053846339,
+                "per_km": 943.1429762401
+            }
+        }
+    },
+    "Jabalpur": {
+        "overall": {
+            "population": 1440034.0,
+            "area": 264.0,
+            "road_length": 1050.0,
+            "bus_fleet": 118.0,
+            "seats_per_lakh": 169.7182149865906,
+            "avg_daily_ridership": 35000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1050.0,
+                    35.63,
+                    15.0
+                ]
+            },
+            "percent_roads_are_footpath": 3.3933333333333335,
+            "percent_roads_are_cyclepath": 1.4285714285714286,
+            "health_expense_relative": -721.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 13.8,
+                "PM2.5": 37.6,
+                "PM10": 105.0,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": 1.0271875525161211,
+                "per_km": 1408.747619047619
+            }
+        }
+    },
+    "Jaipur": {
+        "overall": {
+            "population": 3769785.0,
+            "area": 467.0,
+            "road_length": 3709.0,
+            "bus_fleet": 293.0,
+            "seats_per_lakh": 1714.156112351235,
+            "avg_daily_ridership": 167000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3709.0,
+                    2407.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 64.89619843623619,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -753.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 35.63,
+                "PM2.5": 40.0,
+                "PM10": 172.0,
+                "SO2": 7.81
+            },
+            "fossil_fuel": {
+                "per_capita": 28.8926291552436,
+                "per_km": 29366.136424912376
+            }
+        }
+    },
+    "Jalandhar": {
+        "overall": {
+            "population": 961097.0,
+            "area": 113.27,
+            "road_length": 2360.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 10.30072927082282,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2360.0,
+                    90.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.8135593220338984,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1614.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 22.8,
+                "PM2.5": 55.24,
+                "PM10": 144.1,
+                "SO2": 10.9
+            },
+            "fossil_fuel": {
+                "per_capita": 0.004317982472112596,
+                "per_km": 1.7584745762711864
+            }
+        }
+    },
+    "Jammu": {
+        "overall": {
+            "population": 607181.0,
+            "area": 189.43,
+            "road_length": 1647.2,
+            "bus_fleet": null,
+            "seats_per_lakh": 159.58997399457493,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1647.2,
+                    35.4,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.1491015055852354,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -351.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 17.1,
+                "PM2.5": 40.0,
+                "PM10": 153.0,
+                "SO2": 3.8
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Jhansi": {
+        "overall": {
+            "population": 601105.0,
+            "area": 152.0,
+            "road_length": 803.04,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    803.04,
+                    16.65,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.073371189479976,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 2302.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 18.06,
+                "PM2.5": 0.0,
+                "PM10": 96.0,
+                "SO2": 5.92
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Jodhpur": {
+        "overall": {
+            "population": null,
+            "area": 231.03,
+            "road_length": 1169.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1169.0,
+                    257.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 21.984602224123183,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 485.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 23.77,
+                "PM2.5": 105.54,
+                "PM10": 229.0,
+                "SO2": 6.51
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kakinada": {
+        "overall": {
+            "population": 399674.0,
+            "area": 31.69,
+            "road_length": 723.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": 33648.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    723.0,
+                    73.0,
+                    16.0
+                ]
+            },
+            "percent_roads_are_footpath": 10.096818810511756,
+            "percent_roads_are_cyclepath": 2.2130013831258646,
+            "health_expense_relative": -972.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 20.5,
+                "PM2.5": 66.0,
+                "PM10": 76.75,
+                "SO2": 9.5
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kalyan Dombivali": {
+        "overall": {
+            "population": 1518762.0,
+            "area": 116.08,
+            "road_length": 443.23,
+            "bus_fleet": 218.0,
+            "seats_per_lakh": 305.57783247144715,
+            "avg_daily_ridership": 42000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    443.23,
+                    211.55,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 47.72916995690725,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -70.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 50.2,
+                "PM2.5": 76.6,
+                "PM10": 169.3,
+                "SO2": 42.8
+            },
+            "fossil_fuel": {
+                "per_capita": 0.5140469672009175,
+                "per_km": 1761.4218351645868
+            }
+        }
+    },
+    "Kanpur": {
+        "overall": {
+            "population": 3250000.0,
+            "area": 260.0,
+            "road_length": 6225.8,
+            "bus_fleet": 1489.0,
+            "seats_per_lakh": 236.98461538461538,
+            "avg_daily_ridership": 37280.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    6225.8,
+                    414.68,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 6.6606701146840575,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": null,
+            "avg_annual_pollution": {
+                "NO2": 50.0,
+                "PM2.5": 213.5,
+                "PM10": 213.5,
+                "SO2": 7.6
+            },
+            "fossil_fuel": {
+                "per_capita": 11.384615384615385,
+                "per_km": 5943.011339908124
+            }
+        }
+    },
+    "Karimnagar": {
+        "overall": {
+            "population": 306020.0,
+            "area": 23.5,
+            "road_length": 579.0,
+            "bus_fleet": 24.0,
+            "seats_per_lakh": 330.69734004313443,
+            "avg_daily_ridership": 709.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    579.0,
+                    8.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.381692573402418,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3003.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 53.0,
+                "PM2.5": 0.0,
+                "PM10": 103.0,
+                "SO2": 9.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Karnal": {
+        "overall": {
+            "population": 410000.0,
+            "area": 29.46,
+            "road_length": 2484.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 30.731707317073173,
+            "avg_daily_ridership": 50000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2484.0,
+                    50.0,
+                    10.0
+                ]
+            },
+            "percent_roads_are_footpath": 2.0128824476650564,
+            "percent_roads_are_cyclepath": 0.40257648953301123,
+            "health_expense_relative": 20690.517857142855,
+            "avg_annual_pollution": {
+                "NO2": 40.0,
+                "PM2.5": 38.0,
+                "PM10": 58.0,
+                "SO2": 30.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kavaratti": {
+        "overall": {
+            "population": 12186.0,
+            "area": 4.22,
+            "road_length": 35.99,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    35.99,
+                    0.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.0,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1294.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 43.6,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kochi": {
+        "overall": {
+            "population": null,
+            "area": 732.0,
+            "road_length": 785.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    785.0,
+                    46.28,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 5.895541401273886,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 9598.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 9.2,
+                "PM2.5": 66.52,
+                "PM10": 35.99,
+                "SO2": 15.22
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kohima": {
+        "overall": {
+            "population": 107597.0,
+            "area": 13.0,
+            "road_length": 112.64,
+            "bus_fleet": null,
+            "seats_per_lakh": 1561.3818229132783,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    112.64,
+                    162.9,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3676.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 3.48,
+                "PM2.5": 0.0,
+                "PM10": 106.5,
+                "SO2": 0.62
+            },
+            "fossil_fuel": {
+                "per_capita": 0.6240880321942062,
+                "per_km": 596.1470170454545
+            }
+        }
+    },
+    "Kolkata": {
+        "overall": {
+            "population": null,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 4146.517857142857,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Kota": {
+        "overall": {
+            "population": 1375228.0,
+            "area": 527.03,
+            "road_length": 912.71,
+            "bus_fleet": null,
+            "seats_per_lakh": 355.0683959314383,
+            "avg_daily_ridership": 5750.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    912.71,
+                    32.05,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.511520636346703,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1738.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 27.53,
+                "PM2.5": 59.14,
+                "PM10": 152.6135,
+                "SO2": 7.1693
+            },
+            "fossil_fuel": {
+                "per_capita": 0.30475164845392905,
+                "per_km": 459.18528338683694
+            }
+        }
+    },
+    "Lucknow": {
+        "overall": {
+            "population": 3453902.0,
+            "area": 310.1,
+            "road_length": 3833.55,
+            "bus_fleet": 300.0,
+            "seats_per_lakh": 245.95370685097606,
+            "avg_daily_ridership": 26000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    3833.55,
+                    351.0,
+                    83.15
+                ]
+            },
+            "percent_roads_are_footpath": 9.156004225848104,
+            "percent_roads_are_cyclepath": 2.1690078386873783,
+            "health_expense_relative": -113.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 38.6,
+                "PM2.5": 125.2,
+                "PM10": 0.0,
+                "SO2": 10.15
+            },
+            "fossil_fuel": {
+                "per_capita": 1.2970837041699503,
+                "per_km": 1168.6295991965671
+            }
+        }
+    },
+    "Ludhiana": {
+        "overall": {
+            "population": 1731598.0,
+            "area": 141.98,
+            "road_length": 372.89,
+            "bus_fleet": null,
+            "seats_per_lakh": 254.10054758668008,
+            "avg_daily_ridership": 35000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    372.89,
+                    4348.75,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 60.51785714285688,
+            "avg_annual_pollution": {
+                "NO2": 32.5,
+                "PM2.5": 51.7,
+                "PM10": 160.5,
+                "SO2": 9.25
+            },
+            "fossil_fuel": {
+                "per_capita": 9669.244247221353,
+                "per_km": 44901295.288154684
+            }
+        }
+    },
+    "Madurai": {
+        "overall": {
+            "population": 1573616.0,
+            "area": 147.99,
+            "road_length": 1572.53,
+            "bus_fleet": 621.0,
+            "seats_per_lakh": 1733.5868471088245,
+            "avg_daily_ridership": 5.23
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1572.53,
+                    336.15,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 21.376380736774497,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2051.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 19.6,
+                "PM2.5": 33.9,
+                "PM10": 81.4,
+                "SO2": 12.23
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Mangalore": {
+        "overall": {
+            "population": 550089.0,
+            "area": 132.45,
+            "road_length": 1198.0,
+            "bus_fleet": 423.0,
+            "seats_per_lakh": 3070.0486648524147,
+            "avg_daily_ridership": 15913.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1198.0,
+                    50.33,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.201168614357262,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -417.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 22.16,
+                "PM2.5": 43.47,
+                "PM10": 57.0,
+                "SO2": 5.835
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Meerut": {
+        "overall": {
+            "population": null,
+            "area": 141.94,
+            "road_length": 1988.39,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1988.39,
+                    7.15,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.3595874048853595,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 3014.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 116.5,
+                "PM2.5": 0.0,
+                "PM10": 355.6,
+                "SO2": 14.58
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Moradabad": {
+        "overall": {
+            "population": 1055397.0,
+            "area": 75.0,
+            "road_length": 1227.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": 105000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1227.0,
+                    193.8,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 15.794621026894868,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 2779.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 34.33,
+                "PM2.5": 0.0,
+                "PM10": 227.42,
+                "SO2": 19.88
+            },
+            "fossil_fuel": {
+                "per_capita": 0.4945835548139705,
+                "per_km": 425.4132029339853
+            }
+        }
+    },
+    "Muzaffarpur": {
+        "overall": {
+            "population": 390227.0,
+            "area": 26.68,
+            "road_length": 551.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 50.73969766315504,
+            "avg_daily_ridership": 17312.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    551.0,
+                    427.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 77.49546279491834,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3419.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 26.33,
+                "PM2.5": 84.41,
+                "PM10": 138.08,
+                "SO2": 13.9
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Nagpur": {
+        "overall": {
+            "population": 2736827.0,
+            "area": 217.28,
+            "road_length": 2950.11,
+            "bus_fleet": 332.0,
+            "seats_per_lakh": 601.2437030181301,
+            "avg_daily_ridership": 148002.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2950.11,
+                    592.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 20.0839968679134,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -718.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 35.28,
+                "PM2.5": 39.6,
+                "PM10": 76.31292,
+                "SO2": 9.9325
+            },
+            "fossil_fuel": {
+                "per_capita": 0.2642165544259831,
+                "per_km": 245.11458894753076
+            }
+        }
+    },
+    "Namchi": {
+        "overall": {
+            "population": 13247.0,
+            "area": 7.15,
+            "road_length": 41.4,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    41.4,
+                    13.17,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 31.81159420289855,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3397.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Nashik": {
+        "overall": {
+            "population": 1772118.0,
+            "area": 259.48,
+            "road_length": 2008.0,
+            "bus_fleet": 200.0,
+            "seats_per_lakh": 6.771558101661403,
+            "avg_daily_ridership": 313260.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2008.0,
+                    65.602,
+                    0.75
+                ]
+            },
+            "percent_roads_are_footpath": 3.26703187250996,
+            "percent_roads_are_cyclepath": 0.037350597609561755,
+            "health_expense_relative": 2189.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 21.29,
+                "PM2.5": 87.0,
+                "PM10": 166.84,
+                "SO2": 11.48
+            },
+            "fossil_fuel": {
+                "per_capita": 0.17074540182990072,
+                "per_km": 150.68774900398407
+            }
+        }
+    },
+    "Navi Mumbai": {
+        "overall": {
+            "population": null,
+            "area": 109.59,
+            "road_length": 506.12,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    506.12,
+                    472.59,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 93.37508891172054,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -70.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 43.1,
+                "PM2.5": 128.65,
+                "PM10": 74.64,
+                "SO2": 22.37
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Naya Raipur": {
+        "overall": {
+            "population": 60692.0,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": 102.0,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": 8629.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    76.94
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": null,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "New Town Kolkata": {
+        "overall": {
+            "population": 80134.0,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": 410.0,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": 1215.57
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    5.9076
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": null,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Panaji": {
+        "overall": {
+            "population": 74932.0,
+            "area": 8.12,
+            "road_length": 77.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 3269.631132226552,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    77.0,
+                    83.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1607.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 17.0,
+                "PM2.5": 0.0,
+                "PM10": 92.0,
+                "SO2": 6.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Pasighat": {
+        "overall": {
+            "population": 35000.0,
+            "area": 14.7,
+            "road_length": 55.44,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    55.44,
+                    2.6,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.6897546897546905,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -4231.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Patna": {
+        "overall": {
+            "population": 2000000.0,
+            "area": 99.0,
+            "road_length": 236.0,
+            "bus_fleet": 4798.0,
+            "seats_per_lakh": 223.5,
+            "avg_daily_ridership": 1000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    236.0,
+                    500.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2542.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 24.39,
+                "PM2.5": 118.16,
+                "PM10": null,
+                "SO2": 14.51
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Pimpri Chinchwad": {
+        "overall": {
+            "population": 2542600.0,
+            "area": 176.89,
+            "road_length": 1228.25,
+            "bus_fleet": 789.0,
+            "seats_per_lakh": 2916.0308345787776,
+            "avg_daily_ridership": 413943.6
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1228.25,
+                    257.06,
+                    19.8
+                ]
+            },
+            "percent_roads_are_footpath": 20.928963973132504,
+            "percent_roads_are_cyclepath": 1.61204966415632,
+            "health_expense_relative": 1980.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 70.03,
+                "PM2.5": 22.67,
+                "PM10": 68.47,
+                "SO2": 39.86
+            },
+            "fossil_fuel": {
+                "per_capita": 0.3186344686541336,
+                "per_km": 659.6051292489315
+            }
+        }
+    },
+    "Portblair": {
+        "overall": {
+            "population": 140747.0,
+            "area": 41.22,
+            "road_length": 278.0,
+            "bus_fleet": 164.0,
+            "seats_per_lakh": 5045.93348348455,
+            "avg_daily_ridership": 11543.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    278.0,
+                    260.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 93.5251798561151,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 5360.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 13.48,
+                "PM2.5": 29.43,
+                "PM10": 61.1,
+                "SO2": 5.03
+            },
+            "fossil_fuel": {
+                "per_capita": 1176.3661037180188,
+                "per_km": 595575.5395683453
+            }
+        }
+    },
+    "Prayagraj": {
+        "overall": {
+            "population": 1696800.0,
+            "area": 70.0,
+            "road_length": 2357.0,
+            "bus_fleet": 119.0,
+            "seats_per_lakh": 224.77604903347478,
+            "avg_daily_ridership": 17000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2357.0,
+                    64.0,
+                    2.3
+                ]
+            },
+            "percent_roads_are_footpath": 2.7153160797624096,
+            "percent_roads_are_cyclepath": 0.0975816716164616,
+            "health_expense_relative": -86.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 43.9,
+                "PM2.5": 0.0,
+                "PM10": 225.69,
+                "SO2": 7.2
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Puducherry": {
+        "overall": {
+            "population": 1554000.0,
+            "area": 56.1,
+            "road_length": 241.62,
+            "bus_fleet": 226.0,
+            "seats_per_lakh": 283.14028314028315,
+            "avg_daily_ridership": 200312.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    241.62,
+                    30.62,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 12.672791987418261,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -633.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 11.7,
+                "PM2.5": 0.0,
+                "PM10": 42.0,
+                "SO2": 3.8
+            },
+            "fossil_fuel": {
+                "per_capita": 0.0008751608751608751,
+                "per_km": 5.628673123085838
+            }
+        }
+    },
+    "Pune": {
+        "overall": {
+            "population": 4296699.0,
+            "area": 331.0,
+            "road_length": 1398.0,
+            "bus_fleet": 1974.0,
+            "seats_per_lakh": 2020.7605885355247,
+            "avg_daily_ridership": 1006463.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1398.0,
+                    767.0,
+                    73.0
+                ]
+            },
+            "percent_roads_are_footpath": 54.86409155937053,
+            "percent_roads_are_cyclepath": 5.221745350500715,
+            "health_expense_relative": 1980.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 27.42,
+                "PM2.5": 51.04,
+                "PM10": 88.4,
+                "SO2": 39.89
+            },
+            "fossil_fuel": {
+                "per_capita": 0.4665372184553771,
+                "per_km": 1433.8841201716739
+            }
+        }
+    },
+    "Rae Bareli": {
+        "overall": {
+            "population": null,
+            "area": 50.12,
+            "road_length": 275.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    275.0,
+                    28.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 10.181818181818182,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -70.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 54.0,
+                "PM2.5": 0.0,
+                "PM10": 149.0,
+                "SO2": 34.1
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Raipur": {
+        "overall": {
+            "population": 1256583.0,
+            "area": 185.0,
+            "road_length": 2630.0,
+            "bus_fleet": 165.0,
+            "seats_per_lakh": 539.1605648015292,
+            "avg_daily_ridership": 30587.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2630.0,
+                    560.0,
+                    2.18
+                ]
+            },
+            "percent_roads_are_footpath": 21.292775665399237,
+            "percent_roads_are_cyclepath": 0.0828897338403042,
+            "health_expense_relative": -2343.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 16.46,
+                "PM2.5": 26.87,
+                "PM10": 58.48,
+                "SO2": 15.06
+            },
+            "fossil_fuel": {
+                "per_capita": 0.3469766820019052,
+                "per_km": 165.78136882129277
+            }
+        }
+    },
+    "Rajkot": {
+        "overall": {
+            "population": 1508933.0,
+            "area": 129.21,
+            "road_length": 2466.3,
+            "bus_fleet": 100.0,
+            "seats_per_lakh": 227.31294232414564,
+            "avg_daily_ridership": 46087.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2466.3,
+                    180.0,
+                    22.0
+                ]
+            },
+            "percent_roads_are_footpath": 7.298382191947452,
+            "percent_roads_are_cyclepath": 0.8920244901269107,
+            "health_expense_relative": -1786.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 21.6,
+                "PM2.5": 64.83,
+                "PM10": 189.0,
+                "SO2": 17.63
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Rampur": {
+        "overall": {
+            "population": null,
+            "area": 20.2,
+            "road_length": 328.35,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    328.35,
+                    28.3,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 8.618851834932236,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1340.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Ranchi": {
+        "overall": {
+            "population": 1225913.0,
+            "area": 175.12,
+            "road_length": 842.0,
+            "bus_fleet": 31.0,
+            "seats_per_lakh": 124.80494129681306,
+            "avg_daily_ridership": 3596.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    842.0,
+                    1684.0,
+                    1684.0
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -316.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 37.2,
+                "PM2.5": 106.0,
+                "PM10": 108.0,
+                "SO2": 18.1
+            },
+            "fossil_fuel": {
+                "per_capita": 95.7408886274964,
+                "per_km": 139394.29928741092
+            }
+        }
+    },
+    "Rourkela": {
+        "overall": {
+            "population": 361717.0,
+            "area": 53.3,
+            "road_length": 487.8,
+            "bus_fleet": 35.0,
+            "seats_per_lakh": 222.27321358962945,
+            "avg_daily_ridership": 10000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    487.8,
+                    23.82,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.883148831488315,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -999.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 13.03,
+                "PM2.5": 44.0,
+                "PM10": 92.83,
+                "SO2": 6.57
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Sagar": {
+        "overall": {
+            "population": 2378458.0,
+            "area": 27.34,
+            "road_length": 268.82,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    268.82,
+                    6.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 2.2319767874414107,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 134.51785714285688,
+            "avg_annual_pollution": {
+                "NO2": 13.6,
+                "PM2.5": 29.99,
+                "PM10": 75.59,
+                "SO2": 2.35
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Saharanpur": {
+        "overall": {
+            "population": 830000.0,
+            "area": 73.72,
+            "road_length": 1859.5,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1859.5,
+                    14.0,
+                    1.0
+                ]
+            },
+            "percent_roads_are_footpath": 0.7528905619790266,
+            "percent_roads_are_cyclepath": 0.05377789728421619,
+            "health_expense_relative": 3758.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 27.8,
+                "PM2.5": 0.0,
+                "PM10": 187.8,
+                "SO2": 17.8
+            },
+            "fossil_fuel": {
+                "per_capita": 0.06549638554216866,
+                "per_km": 29.234740521645598
+            }
+        }
+    },
+    "Salem": {
+        "overall": {
+            "population": 939690.0,
+            "area": 91.34,
+            "road_length": 848.63,
+            "bus_fleet": null,
+            "seats_per_lakh": 1484.3192967893667,
+            "avg_daily_ridership": 128743.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    848.63,
+                    5.65,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.6657789613848203,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 2821.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 26.0,
+                "PM2.5": 21.0,
+                "PM10": 57.0,
+                "SO2": 8.2
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Satna": {
+        "overall": {
+            "population": 314256.0,
+            "area": 71.67,
+            "road_length": 665.0,
+            "bus_fleet": null,
+            "seats_per_lakh": 0.0,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    665.0,
+                    32.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.8120300751879705,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2103.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 12.47,
+                "PM2.5": 0.0,
+                "PM10": 234.17,
+                "SO2": 7.21
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Shillong": {
+        "overall": {
+            "population": null,
+            "area": 10.36,
+            "road_length": 225.16,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    225.16,
+                    37.6,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 16.699236098774207,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1791.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 4.5,
+                "PM2.5": 0.0,
+                "PM10": 31.1,
+                "SO2": 2.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Shimla": {
+        "overall": {
+            "population": 235000.0,
+            "area": 35.41,
+            "road_length": 102.29,
+            "bus_fleet": 308.0,
+            "seats_per_lakh": 2156.170212765958,
+            "avg_daily_ridership": 90000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    102.29,
+                    79.55,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 77.76908788737902,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1991.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 26.7,
+                "PM2.5": 25.2,
+                "PM10": 71.1,
+                "SO2": 2.7
+            },
+            "fossil_fuel": {
+                "per_capita": 0.0,
+                "per_km": 0.0
+            }
+        }
+    },
+    "Shivamogga": {
+        "overall": {
+            "population": null,
+            "area": 70.01,
+            "road_length": 882.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    882.0,
+                    11.66,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.3219954648526078,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1940.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 10.6,
+                "PM2.5": 16.5,
+                "PM10": 31.6,
+                "SO2": 2.4
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Silvassa": {
+        "overall": {
+            "population": 168931.0,
+            "area": 17.22,
+            "road_length": 82.84,
+            "bus_fleet": 384.0,
+            "seats_per_lakh": 117.2076173112099,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    82.84,
+                    22.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 26.55721873491067,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -3214.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 21.6,
+                "PM2.5": 26.0,
+                "PM10": 64.3,
+                "SO2": 18.3
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Solapur": {
+        "overall": {
+            "population": 1024072.0,
+            "area": 178.6,
+            "road_length": 1903.0,
+            "bus_fleet": 200.0,
+            "seats_per_lakh": 257.5990750650345,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1903.0,
+                    60.71,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.1902259590120865,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1064.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 40.26,
+                "PM2.5": 37.48,
+                "PM10": 98.64,
+                "SO2": 13.2
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Srinagar": {
+        "overall": {
+            "population": 1300000.0,
+            "area": 246.0,
+            "road_length": 2843.0,
+            "bus_fleet": 3436.0,
+            "seats_per_lakh": 91.61538461538461,
+            "avg_daily_ridership": 944456.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2843.0,
+                    426.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 14.984171649665845,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2525.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 40.0,
+                "PM10": 60.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Surat": {
+        "overall": {
+            "population": 6637995.0,
+            "area": 326.52,
+            "road_length": 1332.43,
+            "bus_fleet": 741.0,
+            "seats_per_lakh": 284.25752053142554,
+            "avg_daily_ridership": 235660.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1332.43,
+                    1834.0,
+                    46.22
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": 3.468850145973897,
+            "health_expense_relative": -1975.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 32.53,
+                "PM2.5": 71.67,
+                "PM10": 223.96,
+                "SO2": 24.16
+            },
+            "fossil_fuel": {
+                "per_capita": 0.40123395694031105,
+                "per_km": 1998.8960020413829
+            }
+        }
+    },
+    "Thane": {
+        "overall": {
+            "population": 2364866.0,
+            "area": 128.23,
+            "road_length": 366.16,
+            "bus_fleet": 467.0,
+            "seats_per_lakh": 739.0270738384331,
+            "avg_daily_ridership": 1283504.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    366.16,
+                    1275.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -70.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 39.0,
+                "PM2.5": 0.0,
+                "PM10": 128.0,
+                "SO2": 27.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.07701049446353408,
+                "per_km": 497.3768298011798
+            }
+        }
+    },
+    "Thanjavur": {
+        "overall": {
+            "population": 229290.0,
+            "area": 31.36,
+            "road_length": 302.44,
+            "bus_fleet": 1067.0,
+            "seats_per_lakh": 3837.93449343626,
+            "avg_daily_ridership": 2131.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    302.44,
+                    4.25,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.405237402459992,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -935.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Thoothukudi": {
+        "overall": {
+            "population": 372408.0,
+            "area": null,
+            "road_length": null,
+            "bus_fleet": 320.0,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": 260026.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    null,
+                    null,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": null,
+            "avg_annual_pollution": {
+                "NO2": null,
+                "PM2.5": null,
+                "PM10": null,
+                "SO2": null
+            },
+            "fossil_fuel": {
+                "per_capita": 0.045973770703099825,
+                "per_km": null
+            }
+        }
+    },
+    "Tiruchirappalli": {
+        "overall": {
+            "population": 1059313.0,
+            "area": 167.23,
+            "road_length": 1411.97,
+            "bus_fleet": 91.0,
+            "seats_per_lakh": 3846.2664009598675,
+            "avg_daily_ridership": 4000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1411.97,
+                    56.31,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.988045071779146,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1726.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 22.5,
+                "PM2.5": 52.2,
+                "PM10": 108.1,
+                "SO2": 16.45
+            },
+            "fossil_fuel": {
+                "per_capita": 0.8605265865707301,
+                "per_km": 645.599410752353
+            }
+        }
+    },
+    "Tirunelveli": {
+        "overall": {
+            "population": 484321.0,
+            "area": 1057.13,
+            "road_length": 17511.0,
+            "bus_fleet": 455.0,
+            "seats_per_lakh": 2191.7282133130716,
+            "avg_daily_ridership": 25025.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    17511.0,
+                    2800.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 15.989949174804408,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2255.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.6586540744671406,
+                "per_km": 18.217120667009308
+            }
+        }
+    },
+    "Tirupati": {
+        "overall": {
+            "population": 411686.0,
+            "area": 27.44,
+            "road_length": 480.44,
+            "bus_fleet": 500.0,
+            "seats_per_lakh": 437.22642985187736,
+            "avg_daily_ridership": 190000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    480.44,
+                    57.1,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 11.884938806094414,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2189.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 15.87,
+                "PM2.5": 28.7,
+                "PM10": 56.8,
+                "SO2": 4.8
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Tiruppur": {
+        "overall": {
+            "population": 1020000.0,
+            "area": 159.35,
+            "road_length": 1332.84,
+            "bus_fleet": 624.0,
+            "seats_per_lakh": 2198.529411764706,
+            "avg_daily_ridership": 2456.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1332.84,
+                    4.734,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.35518141712433604,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1537.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.9559705882352941,
+                "per_km": 731.5881876294229
+            }
+        }
+    },
+    "Tiruvanantapuram": {
+        "overall": {
+            "population": 1012119.0,
+            "area": 214.0,
+            "road_length": 2883.34,
+            "bus_fleet": 359.0,
+            "seats_per_lakh": 1346.0867743812732,
+            "avg_daily_ridership": 28000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2883.34,
+                    2155.2,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 74.74664798462892,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1945.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 23.7,
+                "PM2.5": 0.0,
+                "PM10": 50.0,
+                "SO2": 9.1
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Toothukudi": {
+        "overall": {
+            "population": null,
+            "area": 89.25,
+            "road_length": 819.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    819.0,
+                    4.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.5494505494505495,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -2739.482142857143,
+            "avg_annual_pollution": {
+                "NO2": 10.63,
+                "PM2.5": 120.08,
+                "PM10": 99.67,
+                "SO2": 13.29
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Tumakuru": {
+        "overall": {
+            "population": 325402.0,
+            "area": 48.21,
+            "road_length": 591.92,
+            "bus_fleet": null,
+            "seats_per_lakh": 673.9356242432438,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    591.92,
+                    591.92,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 100.0,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -528.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 31.58,
+                "PM2.5": 0.0,
+                "PM10": 86.0,
+                "SO2": 4.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.07129642718852375,
+                "per_km": 39.194485741316406
+            }
+        }
+    },
+    "Udaipur": {
+        "overall": {
+            "population": 515177.0,
+            "area": 56.92,
+            "road_length": 860.0,
+            "bus_fleet": 8.0,
+            "seats_per_lakh": 37.2687445285795,
+            "avg_daily_ridership": 2000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    860.0,
+                    63.0,
+                    2.5
+                ]
+            },
+            "percent_roads_are_footpath": 7.325581395348838,
+            "percent_roads_are_cyclepath": 0.29069767441860467,
+            "health_expense_relative": 629.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 30.56,
+                "PM2.5": 57.95,
+                "PM10": 148.28,
+                "SO2": 9.14
+            },
+            "fossil_fuel": {
+                "per_capita": 16.111744119011526,
+                "per_km": 9651.627906976744
+            }
+        }
+    },
+    "Ujjain": {
+        "overall": {
+            "population": 597649.0,
+            "area": 92.68,
+            "road_length": 1036.85,
+            "bus_fleet": 589.0,
+            "seats_per_lakh": 169.1628363805511,
+            "avg_daily_ridership": 1264.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1036.85,
+                    14351.35,
+                    2.0
+                ]
+            },
+            "percent_roads_are_footpath": null,
+            "percent_roads_are_cyclepath": 0.1928919322949318,
+            "health_expense_relative": 847.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 14.9,
+                "PM2.5": 33.1,
+                "PM10": 82.7,
+                "SO2": 12.6
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Vadodara": {
+        "overall": {
+            "population": 2000000.0,
+            "area": 159.95,
+            "road_length": 1480.0,
+            "bus_fleet": 150.0,
+            "seats_per_lakh": 271.0,
+            "avg_daily_ridership": 145000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1480.0,
+                    700.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 47.2972972972973,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 2492.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 24.0,
+                "PM2.5": 63.0,
+                "PM10": 196.0,
+                "SO2": 20.0
+            },
+            "fossil_fuel": {
+                "per_capita": 0.00052,
+                "per_km": 0.7027027027027027
+            }
+        }
+    },
+    "Varanasi": {
+        "overall": {
+            "population": 1441251.0,
+            "area": 82.1,
+            "road_length": 598.51,
+            "bus_fleet": 130.0,
+            "seats_per_lakh": 2296.6159260253767,
+            "avg_daily_ridership": 12978.02
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    598.51,
+                    21.2,
+                    2.4
+                ]
+            },
+            "percent_roads_are_footpath": 3.5421296218943708,
+            "percent_roads_are_cyclepath": 0.40099580625219294,
+            "health_expense_relative": 700.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 45.2,
+                "PM2.5": 95.0,
+                "PM10": 204.0,
+                "SO2": 9.3
+            },
+            "fossil_fuel": {
+                "per_capita": 0.7390510049949662,
+                "per_km": 1779.682879149889
+            }
+        }
+    },
+    "Vasai Virar": {
+        "overall": {
+            "population": null,
+            "area": 311.0,
+            "road_length": 989.69,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    989.69,
+                    247.42,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 24.99974739564914,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -70.48214285714312,
+            "avg_annual_pollution": {
+                "NO2": 0.0,
+                "PM2.5": 0.0,
+                "PM10": 0.0,
+                "SO2": 0.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Vellore": {
+        "overall": {
+            "population": 569167.0,
+            "area": 87.18,
+            "road_length": 650.4,
+            "bus_fleet": 773.0,
+            "seats_per_lakh": 193.4405894930662,
+            "avg_daily_ridership": 8945.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    650.4,
+                    11.5,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 1.7681426814268142,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 1414.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 23.89,
+                "PM2.5": 27.96,
+                "PM10": 56.78,
+                "SO2": 13.41
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Vijayawada": {
+        "overall": {
+            "population": null,
+            "area": 61.88,
+            "road_length": 1250.0,
+            "bus_fleet": null,
+            "seats_per_lakh": null,
+            "avg_daily_ridership": null
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    1250.0,
+                    52.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 4.16,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": -1041.4821428571431,
+            "avg_annual_pollution": {
+                "NO2": 50.0,
+                "PM2.5": 40.0,
+                "PM10": 60.0,
+                "SO2": 40.0
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Visakhapatnam": {
+        "overall": {
+            "population": 1881952.0,
+            "area": 593.54,
+            "road_length": 2287.57,
+            "bus_fleet": 611.0,
+            "seats_per_lakh": 20343.664450527962,
+            "avg_daily_ridership": 569000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    2287.57,
+                    77.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 3.3660172147737555,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 622.5178571428569,
+            "avg_annual_pollution": {
+                "NO2": 20.3,
+                "PM2.5": 47.9,
+                "PM10": 76.3,
+                "SO2": 9.7
+            },
+            "fossil_fuel": {
+                "per_capita": null,
+                "per_km": null
+            }
+        }
+    },
+    "Warangal": {
+        "overall": {
+            "population": 941240.0,
+            "area": 407.77,
+            "road_length": 4940.22,
+            "bus_fleet": 145.0,
+            "seats_per_lakh": 308.7416599379542,
+            "avg_daily_ridership": 204000.0
+        },
+        "health": {
+            "active_mobility": {
+                "x": [
+                    "Roads",
+                    "Footpath",
+                    "Cycle"
+                ],
+                "y": [
+                    4940.22,
+                    33.0,
+                    null
+                ]
+            },
+            "percent_roads_are_footpath": 0.6679864459477514,
+            "percent_roads_are_cyclepath": null,
+            "health_expense_relative": 4486.517857142857,
+            "avg_annual_pollution": {
+                "NO2": 37.1,
+                "PM2.5": 39.0,
+                "PM10": 86.0,
+                "SO2": 9.9
+            },
+            "fossil_fuel": {
+                "per_capita": 0.5369406315073733,
+                "per_km": 102.30111209622243
+            }
+        }
+    }
+}
