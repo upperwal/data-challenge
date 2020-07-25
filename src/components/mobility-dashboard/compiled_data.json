@@ -8,11 +8,17 @@
             "mobility_plan": "Good Job, [0] ! With your City Mobility Plan prepared, you are on the right track!",
             "generic": "You\u2019re on the right track, [0]! Let's review your urban transport dashboard. "
         },
-        "percent_covered_wrt_roads": [
+        "percent_roads_are_footpath": [
             "You\u2019re doing great, [0]! You\u2019ve achieved Level of Service 1 as per the national benchmarks for footpath infrastructure.",
             "You\u2019re on the right track, [0]! You\u2019ve achieved Level of Service 2 as per the national benchmarks for footpath infrastructure.",
             "There\u2019s quite a way to go, [0]! You\u2019re at Level of Service 3 as per the national benchmarks for footpath infrastructure.",
             "There\u2019s quite a way to go, [0]! You\u2019re at Level of Service 4 as per the national benchmarks for footpath infrastructure."
+        ],
+        "percent_roads_are_cyclepath": [
+            "You\u2019re doing great, [0]! You\u2019ve achieved Level of Service 1 as per the national benchmarks for cycle track infrastructure.",
+            "You\u2019re on the right track, [0]! You\u2019ve achieved Level of Service 2 as per the national benchmarks for cycle track infrastructure.",
+            "There\u2019s quite a way to go, [0]! You\u2019ve achieved Level of Service 3 as per the national benchmarks for cycle track infrastructure.",
+            "There\u2019s quite a way to go, [0]! You\u2019ve achieved Level of Service 4 as per the national benchmarks for cycle track infrastructure."
         ]
     },
     "overall": {
@@ -255,7 +261,819 @@
                 0.20743779022371592,
                 1.4950147042470818
             ]
-        }
+        },
+        "spend_per_km_road": {
+            "y": [
+                0.002264064172068877,
+                0.015641769049640392,
+                0.10005041602995259,
+                0.03115212339608662,
+                0.0008355303641896202,
+                0.0008319467554076539,
+                0.0009714285714285714,
+                0.00012649348558549234,
+                0.04449152542372881,
+                0.010717894801310647,
+                0.1051785292031213,
+                0.04116071428571429,
+                0.2589559210097543,
+                0.0323343749607821,
+                0.49707602339181284,
+                0.006059871530723548,
+                0.010638818126447666,
+                0.0017474930133157983,
+                0.002245230903422766,
+                0.007874015748031496,
+                0.0032468694096601074,
+                0.003944681827883806,
+                0.04812411847672778,
+                0.0033016012766191602,
+                0.003961848862802641,
+                0.0021445394818395934,
+                0.0034177873541867895,
+                0.028827805952933726,
+                0.002248569092395748,
+                0.0038671595697746947,
+                0.011631696428571429,
+                0.019937037037037038,
+                0.0006572844610532453,
+                0.020444912903583714,
+                0.0009302669760509109,
+                0.0026666666666666666,
+                0.015376112159611755,
+                0.001974576271186441,
+                0.004923506556580864,
+                0.06418111177525404,
+                0.007271171941830625,
+                0.002240663900414938,
+                0.05617850777248832,
+                0.014865559446175592,
+                0.0008117443868739205,
+                0.0002616747181964573,
+                0.006946373992775771,
+                0.05729936305732484,
+                0.03789959697930117,
+                0.04242538013891496,
+                0.0010619829192447838,
+                0.05881469115191986,
+                0.01325192743878213,
+                0.025362673186634068,
+                0.0003401088929219601,
+                0.05095403222252729,
+                0.011548804780876495,
+                0.1032759029479175,
+                0.004545454545454545,
+                0.3389830508474576,
+                0.07528597598208833,
+                0.002661870503597122,
+                0.024959694526941027,
+                0.013906133598212068,
+                0.04094545454545454,
+                0.005946768060836502,
+                0.014823825163199935,
+                0.0007175071750717506,
+                0.004835949706123057,
+                0.09871204176142724,
+                0.001037593984962406,
+                0.13608368364454002,
+                0.0005668934240362812,
+                0.01859005311443747,
+                0.0013767735155018393,
+                0.0423286776791276,
+                0.025671837448110114,
+                0.05042322444121148,
+                0.012755228510520763,
+                0.0015338929815544515,
+                0.0020397968528848556,
+                0.0016055940698058283,
+                0.0029304029304029304,
+                0.03194688471415056,
+                0.017779069767441858,
+                0.0004243622510488499,
+                0.00554054054054054,
+                0.04507861188618403,
+                0.028443249906536388,
+                0.01027060270602706,
+                0.039495999999999996,
+                0.06430404315496356,
+                0.03550044330009595
+            ]
+        },
+        "public_transport_ridership": [
+            null,
+            12630.0,
+            725000.0,
+            null,
+            null,
+            null,
+            43235.0,
+            null,
+            13500.0,
+            45500.0,
+            0.97,
+            924179.0,
+            null,
+            150000.0,
+            60000.0,
+            null,
+            15000.0,
+            108934.0,
+            3200000.0,
+            900000.0,
+            null,
+            36132.0,
+            null,
+            null,
+            null,
+            null,
+            null,
+            1974.0,
+            null,
+            1640.0,
+            3549.0,
+            null,
+            25.0,
+            null,
+            null,
+            null,
+            36600.0,
+            null,
+            null,
+            10000.0,
+            null,
+            1750.0,
+            275000.0,
+            25.0,
+            35000.0,
+            167000.0,
+            null,
+            null,
+            null,
+            null,
+            33648.0,
+            42000.0,
+            37280.0,
+            709.0,
+            50000.0,
+            null,
+            null,
+            null,
+            null,
+            5750.0,
+            26000.0,
+            35000.0,
+            5.23,
+            15913.0,
+            null,
+            105000.0,
+            17312.0,
+            148002.0,
+            null,
+            313260.0,
+            null,
+            8629.0,
+            1215.57,
+            null,
+            null,
+            1000.0,
+            413943.6,
+            11543.0,
+            17000.0,
+            200312.0,
+            1006463.0,
+            null,
+            30587.0,
+            46087.0,
+            null,
+            3596.0,
+            10000.0,
+            null,
+            null,
+            128743.0,
+            null,
+            null,
+            90000.0,
+            null,
+            null,
+            null,
+            944456.0,
+            235660.0,
+            1283504.0,
+            2131.0,
+            260026.0,
+            4000.0,
+            25025.0,
+            190000.0,
+            2456.0,
+            28000.0,
+            null,
+            null,
+            2000.0,
+            1264.0,
+            145000.0,
+            12978.02,
+            null,
+            8945.0,
+            null,
+            569000.0,
+            204000.0
+        ],
+        "annual_hh_expenditure": [
+            3181.0,
+            6086.0,
+            4150.0,
+            3447.0,
+            3263.0,
+            3289.0,
+            8891.0,
+            4458.0,
+            4956.0,
+            4976.0,
+            3095.0,
+            4363.0,
+            2203.0,
+            1685.0,
+            2570.0,
+            1211.0,
+            3095.0,
+            5112.0,
+            4472.0,
+            3035.0,
+            1886.0,
+            3650.0,
+            7556.0,
+            4268.0,
+            7805.0,
+            1232.0,
+            3115.0,
+            960.0,
+            4331.0,
+            1974.0,
+            null,
+            2407.0,
+            813.0,
+            7537.0,
+            8396.0,
+            6337.0,
+            3660.0,
+            4883.0,
+            6218.0,
+            2599.0,
+            2748.0,
+            3619.0,
+            5746.0,
+            806.0,
+            3686.0,
+            3654.0,
+            6022.0,
+            4056.0,
+            6710.0,
+            4893.0,
+            3435.0,
+            4337.0,
+            null,
+            7411.0,
+            25098.0,
+            5702.0,
+            14006.0,
+            731.0,
+            8554.0,
+            2669.0,
+            4294.0,
+            4468.0,
+            2356.0,
+            3990.0,
+            7422.0,
+            7187.0,
+            988.0,
+            3689.0,
+            1010.0,
+            6597.0,
+            4337.0,
+            null,
+            null,
+            6015.0,
+            176.0,
+            1865.0,
+            6388.0,
+            9768.0,
+            4321.0,
+            3774.0,
+            6388.0,
+            4337.0,
+            2064.0,
+            2621.0,
+            3067.0,
+            4091.0,
+            3408.0,
+            4542.0,
+            8166.0,
+            7229.0,
+            2304.0,
+            2616.0,
+            2416.0,
+            2467.0,
+            1193.0,
+            3343.0,
+            1882.0,
+            2432.0,
+            4337.0,
+            3472.0,
+            null,
+            2681.0,
+            2152.0,
+            2218.0,
+            2870.0,
+            6353.0,
+            1668.0,
+            3879.0,
+            5037.0,
+            5255.0,
+            6900.0,
+            5108.0,
+            4337.0,
+            5822.0,
+            3366.0,
+            5030.0,
+            8894.0
+        ],
+        "seats_per_lakh": [
+            1927.434083762733,
+            377.77777777777777,
+            609.1016795595511,
+            1907.7749017352126,
+            1504.2255733070715,
+            114.55993171804333,
+            150.98854356450877,
+            220.8163713498172,
+            89.07086561572324,
+            1872.5680933852138,
+            457.77690197207863,
+            3061.846153846154,
+            null,
+            423.58583112204957,
+            717.6919961754306,
+            1025.478752080257,
+            8.8106813652327,
+            888.0557977332171,
+            58419.26262242406,
+            1239.8887765419615,
+            0.0,
+            314.1117085482278,
+            821.9079259138564,
+            null,
+            null,
+            185.9193018038782,
+            null,
+            288.1542411065123,
+            null,
+            2691.1502839236678,
+            283.75055962263303,
+            408.3333333333333,
+            284.4428132311786,
+            null,
+            null,
+            null,
+            1669.4033935413247,
+            39.34261272974843,
+            null,
+            1178.8213557331035,
+            null,
+            0.0,
+            1218.507354264855,
+            1055.8460018792011,
+            169.7182149865906,
+            1714.156112351235,
+            10.30072927082282,
+            159.58997399457493,
+            0.0,
+            null,
+            0.0,
+            305.57783247144715,
+            236.98461538461538,
+            330.69734004313443,
+            30.731707317073173,
+            0.0,
+            null,
+            1561.3818229132783,
+            null,
+            355.0683959314383,
+            245.95370685097606,
+            254.10054758668008,
+            1733.5868471088245,
+            3070.0486648524147,
+            null,
+            0.0,
+            50.73969766315504,
+            601.2437030181301,
+            0.0,
+            6.771558101661403,
+            null,
+            null,
+            null,
+            3269.631132226552,
+            0.0,
+            223.5,
+            2916.0308345787776,
+            5045.93348348455,
+            224.77604903347478,
+            283.14028314028315,
+            2020.7605885355247,
+            null,
+            539.1605648015292,
+            227.31294232414564,
+            null,
+            124.80494129681306,
+            222.27321358962945,
+            0.0,
+            0.0,
+            1484.3192967893667,
+            0.0,
+            null,
+            2156.170212765958,
+            null,
+            117.2076173112099,
+            257.5990750650345,
+            91.61538461538461,
+            284.25752053142554,
+            739.0270738384331,
+            3837.93449343626,
+            null,
+            3846.2664009598675,
+            2191.7282133130716,
+            437.22642985187736,
+            2198.529411764706,
+            1346.0867743812732,
+            null,
+            673.9356242432438,
+            37.2687445285795,
+            169.1628363805511,
+            271.0,
+            2296.6159260253767,
+            null,
+            193.4405894930662,
+            null,
+            20343.664450527962,
+            308.7416599379542
+        ],
+        "percent_roads_w_lights": [
+            100,
+            100,
+            100,
+            100,
+            100,
+            41.17640417087725,
+            65.48782332476176,
+            71.02857142857142,
+            61.46433458676878,
+            100,
+            99.99285473679913,
+            100,
+            100,
+            100,
+            84.7106660140808,
+            2.923976608187134,
+            100,
+            80.02454085919682,
+            100,
+            100.0,
+            100,
+            100,
+            82.73703041144901,
+            8.591445873219792,
+            55.76036866359447,
+            54.950634696756,
+            100,
+            72.36977256052825,
+            100,
+            97.47737696789387,
+            85.81512105548067,
+            84.49812217279948,
+            0.0,
+            63.894847336954044,
+            100.0,
+            100.0,
+            0.0,
+            100,
+            100,
+            100.0,
+            100,
+            0.0,
+            99.97727188638056,
+            3.045911987137498,
+            100.0,
+            100,
+            60.59322033898306,
+            71.0296260320544,
+            95.72624028690974,
+            100.0,
+            100.0,
+            93.52255036888296,
+            13.414661569597481,
+            93.95509499136442,
+            17.10950080515298,
+            83.35648791330925,
+            23.584713375796177,
+            0.0,
+            100,
+            100,
+            100,
+            100.0,
+            99.99809224625285,
+            100.0,
+            87.70311659181549,
+            84.14425427872861,
+            85.48094373865699,
+            100,
+            0.0,
+            94.6738047808765,
+            100.0,
+            100,
+            100,
+            100,
+            0.0,
+            100,
+            100.0,
+            100.0,
+            80.78065337293168,
+            99.74339872527108,
+            100.0,
+            100,
+            98.0,
+            50.80484936950087,
+            59.99695446931628,
+            97.38717339667458,
+            71.50061500615006,
+            97.4704263075664,
+            100.0,
+            100.0,
+            76.69172932330827,
+            99.99555871380352,
+            100.0,
+            82.5124716553288,
+            65.18590053114437,
+            81.34524435102469,
+            0.0,
+            100.0,
+            100,
+            100,
+            100,
+            83.04354908390404,
+            5.3299069156530186,
+            88.2045624843893,
+            100.0,
+            83.0633917609439,
+            74.21855921855922,
+            100.0,
+            100.0,
+            71.398948738969,
+            87.83783783783784,
+            93.34179880035421,
+            99.08860350210671,
+            84.94772447724478,
+            90.0,
+            100,
+            35.868847946042884
+        ],
+        "no_people_in_slums": [
+            43947.0,
+            831174.0,
+            642470.0,
+            0.0,
+            50600.0,
+            414878.0,
+            185879.0,
+            0.0,
+            221001.0,
+            214184.0,
+            28460.0,
+            309518.0,
+            103473.0,
+            388547.0,
+            304008.0,
+            21281.0,
+            17732.0,
+            49100.0,
+            345014.0,
+            132920.0,
+            20650.0,
+            8201.0,
+            181827.0,
+            1608130.0,
+            14275.0,
+            0.0,
+            87427.0,
+            0.0,
+            null,
+            88980.0,
+            212359.0,
+            11933.0,
+            0.0,
+            459721.0,
+            6106843.0,
+            2085.0,
+            25739.0,
+            64000.0,
+            null,
+            143779.0,
+            1805716.0,
+            0.0,
+            42986.0,
+            0.0,
+            268135.0,
+            110580.0,
+            177557.0,
+            6630.0,
+            190068.0,
+            45288.0,
+            109161.0,
+            120084.0,
+            704044.0,
+            82000.0,
+            0.0,
+            0.0,
+            72587.0,
+            23627.0,
+            null,
+            64526.0,
+            663952.0,
+            250000.0,
+            176391.0,
+            8826.0,
+            5875.0,
+            204985.0,
+            30865.0,
+            809327.0,
+            3011.0,
+            55520.0,
+            208625.0,
+            null,
+            null,
+            0.0,
+            0.0,
+            9912.0,
+            147979.0,
+            0.0,
+            91689.0,
+            54892.0,
+            626372.0,
+            37078.0,
+            64163.0,
+            298085.0,
+            37000.0,
+            232023.0,
+            170483.0,
+            7968.0,
+            272868.0,
+            38583.0,
+            63104.0,
+            0.0,
+            3008.0,
+            36473.0,
+            0.0,
+            39160.0,
+            0.0,
+            326038.0,
+            326798.0,
+            42680.0,
+            null,
+            44593.0,
+            74234.0,
+            120015.0,
+            221680.0,
+            95000.0,
+            76608.0,
+            44945.0,
+            18415.0,
+            167051.0,
+            103553.0,
+            4299.0,
+            34900.0,
+            41340.0,
+            281209.0,
+            852955.0,
+            321525.0
+        ],
+        "crimes_against_women": [
+            121.0,
+            1347.0,
+            1416.0,
+            52.0,
+            421.0,
+            758.0,
+            698.0,
+            248.0,
+            801.0,
+            490.0,
+            170.0,
+            2228.0,
+            54.0,
+            314.0,
+            926.0,
+            113.0,
+            1320.0,
+            440.0,
+            645.0,
+            107.0,
+            0.0,
+            124.0,
+            249.0,
+            13640.0,
+            273.0,
+            26.0,
+            16.0,
+            10.0,
+            null,
+            18.0,
+            996.0,
+            130.0,
+            22.0,
+            1061.0,
+            5978.0,
+            1130.0,
+            2106.0,
+            845.0,
+            null,
+            137.0,
+            5357.0,
+            180.0,
+            2362.0,
+            70.0,
+            820.0,
+            2363.0,
+            278.0,
+            29.0,
+            628.0,
+            882.0,
+            45.0,
+            420.0,
+            2287.0,
+            77.0,
+            766.0,
+            4.0,
+            1036.0,
+            12.0,
+            null,
+            817.0,
+            2736.0,
+            696.0,
+            139.0,
+            163.0,
+            936.0,
+            688.0,
+            652.0,
+            342.0,
+            20.0,
+            364.0,
+            276.0,
+            null,
+            null,
+            22.0,
+            50.0,
+            0.0,
+            884.0,
+            32.0,
+            1063.0,
+            19.0,
+            1483.0,
+            50.0,
+            1491.0,
+            201.0,
+            85.0,
+            184.0,
+            368.0,
+            405.0,
+            80.0,
+            85.0,
+            102.0,
+            1.0,
+            67.0,
+            71.0,
+            6.0,
+            317.0,
+            0.0,
+            588.0,
+            692.0,
+            25.0,
+            null,
+            191.0,
+            106.0,
+            142.0,
+            61.0,
+            518.0,
+            130.0,
+            55.0,
+            395.0,
+            209.0,
+            160.0,
+            487.0,
+            448.0,
+            8.0,
+            1001.0,
+            1142.0,
+            259.0
+        ],
+        "mean_spend_per_km_road": 0.03343036219223672
     },
     "city_list": [
         "Agartala",
@@ -411,6 +1229,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.002264064172068877
+        },
+        "safety": {
+            "street_light_roads_length": 1498.4,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 3.7778789258079195
         }
     },
     "Agra": {
@@ -448,6 +1274,14 @@
                 "per_capita": 1.2900927777777778,
                 "per_km": 1859.8463854939212
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.015641769049640392
+        },
+        "safety": {
+            "street_light_roads_length": 1482.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.8674227610481031
         }
     },
     "Ahmedabad": {
@@ -485,6 +1319,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.10005041602995259
+        },
+        "safety": {
+            "street_light_roads_length": 4200.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 0.7002590770848196
         }
     },
     "Aizawl": {
@@ -522,6 +1364,14 @@
                 "per_capita": 22.321285910587033,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 14.4,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 0.9569377990430622
         }
     },
     "Ajmer": {
@@ -559,6 +1409,14 @@
                 "per_capita": 124.31659572240454,
                 "per_km": 127962.81951975213
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.03115212339608662
+        },
+        "safety": {
+            "street_light_roads_length": 700.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 0.31213052731142116
         }
     },
     "Aligarh": {
@@ -596,6 +1454,14 @@
                 "per_capita": 0.7003448148010827,
                 "per_km": 522.523188790344
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0008355303641896202
+        },
+        "safety": {
+            "street_light_roads_length": 729.37,
+            "percent_light_road_length": 41.17640417087725,
+            "percent_road_acc_fatalities": 1.7710870046491034
         }
     },
     "Amravati": {
@@ -633,6 +1499,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0008319467554076539
+        },
+        "safety": {
+            "street_light_roads_length": 865.88,
+            "percent_light_road_length": 65.48782332476176,
+            "percent_road_acc_fatalities": 0.5055783768017307
         }
     },
     "Amritsar": {
@@ -670,6 +1544,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0009714285714285714
+        },
+        "safety": {
+            "street_light_roads_length": 1243.0,
+            "percent_light_road_length": 71.02857142857142,
+            "percent_road_acc_fatalities": 0.8033203909492569
         }
     },
     "Aurangabad": {
@@ -707,6 +1589,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.00012649348558549234
+        },
+        "safety": {
+            "street_light_roads_length": 1069.0,
+            "percent_light_road_length": 61.46433458676878,
+            "percent_road_acc_fatalities": 2.947638227755401
         }
     },
     "Barielly": {
@@ -744,6 +1634,14 @@
                 "per_capita": 0.7670097276264591,
                 "per_km": 835.2605932203389
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04449152542372881
+        },
+        "safety": {
+            "street_light_roads_length": 1047.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.3480662983425415
         }
     },
     "Belgaum": {
@@ -781,6 +1679,14 @@
                 "per_capita": 119.48052932349063,
                 "per_km": 64366.57241724255
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.010717894801310647
+        },
+        "safety": {
+            "street_light_roads_length": 979.6,
+            "percent_light_road_length": 99.99285473679913,
+            "percent_road_acc_fatalities": 0.11082379017362395
         }
     },
     "Bengaluru": {
@@ -818,6 +1724,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.1051785292031213
+        },
+        "safety": {
+            "street_light_roads_length": 13000.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.0587349638812809
         }
     },
     "Bhagalpur": {
@@ -855,6 +1769,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04116071428571429
+        },
+        "safety": {
+            "street_light_roads_length": 309.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 5.699810006333123
         }
     },
     "Bhopal": {
@@ -892,6 +1814,14 @@
                 "per_capita": 16.17591546806745,
                 "per_km": 516021.05103082705
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.2589559210097543
+        },
+        "safety": {
+            "street_light_roads_length": 2500.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.172993996787013
         }
     },
     "Bhubaneswar": {
@@ -929,6 +1859,14 @@
                 "per_capita": 0.3924310042091119,
                 "per_km": 231.42564913469622
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0323343749607821
+        },
+        "safety": {
+            "street_light_roads_length": 1350.0,
+            "percent_light_road_length": 84.7106660140808,
+            "percent_road_acc_fatalities": 2.5390405572407593
         }
     },
     "Biharsharif": {
@@ -966,6 +1904,14 @@
                 "per_capita": 0.12891732883294657,
                 "per_km": 257.3099415204678
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.49707602339181284
+        },
+        "safety": {
+            "street_light_roads_length": 5.0,
+            "percent_light_road_length": 2.923976608187134,
+            "percent_road_acc_fatalities": 1.1838989739542225
         }
     },
     "Bilaspur": {
@@ -1003,6 +1949,14 @@
                 "per_capita": 0.27313112232221365,
                 "per_km": 469.640043631075
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.006059871530723548
+        },
+        "safety": {
+            "street_light_roads_length": 330.3,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 13.536742587021916
         }
     },
     "Chandigarh": {
@@ -1040,6 +1994,14 @@
                 "per_capita": 1.9495204882301655,
                 "per_km": 994.1270878625
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.010638818126447666
+        },
+        "safety": {
+            "street_light_roads_length": 1800.0,
+            "percent_light_road_length": 80.02454085919682,
+            "percent_road_acc_fatalities": 0.4112808460634548
         }
     },
     "Chennai": {
@@ -1077,6 +2039,14 @@
                 "per_capita": 0.9630035182526052,
                 "per_km": 1191.02416570771
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0017474930133157983
+        },
+        "safety": {
+            "street_light_roads_length": 6656.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.0556168472970344
         }
     },
     "Coimbatore": {
@@ -1114,6 +2084,14 @@
                 "per_capita": 1.2018265925176947,
                 "per_km": 767.9700851249415
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.002245230903422766
+        },
+        "safety": {
+            "street_light_roads_length": 3095.45,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.754914418117946
         }
     },
     "Dahod": {
@@ -1151,6 +2129,14 @@
                 "per_capita": 0.4797626647639791,
                 "per_km": 570.3392857142857
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 112.14,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 0.0
         }
     },
     "Davangere": {
@@ -1188,6 +2174,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.007874015748031496
+        },
+        "safety": {
+            "street_light_roads_length": 520.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.1776753712237584
         }
     },
     "Dehradun": {
@@ -1225,6 +2219,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0032468694096601074
+        },
+        "safety": {
+            "street_light_roads_length": 1850.0,
+            "percent_light_road_length": 82.73703041144901,
+            "percent_road_acc_fatalities": 2.6504159411878505
         }
     },
     "Delhi": {
@@ -1262,6 +2264,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.003944681827883806
+        },
+        "safety": {
+            "street_light_roads_length": 1280.0,
+            "percent_light_road_length": 8.591445873219792,
+            "percent_road_acc_fatalities": 5.111988646880977
         }
     },
     "Dhanbad": {
@@ -1299,6 +2309,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 363.0,
+            "percent_light_road_length": 55.76036866359447,
+            "percent_road_acc_fatalities": 7.175398633257403
         }
     },
     "Dharamshala": {
@@ -1336,6 +2354,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04812411847672778
+        },
+        "safety": {
+            "street_light_roads_length": 97.4,
+            "percent_light_road_length": 54.950634696756,
+            "percent_road_acc_fatalities": 21.01694915254237
         }
     },
     "Dindigul": {
@@ -1373,6 +2399,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0033016012766191602
+        },
+        "safety": {
+            "street_light_roads_length": 208.73,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.1176157530601383
         }
     },
     "Diu": {
@@ -1410,6 +2444,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.003961848862802641
+        },
+        "safety": {
+            "street_light_roads_length": 49.32,
+            "percent_light_road_length": 72.36977256052825,
+            "percent_road_acc_fatalities": 6.369426751592357
         }
     },
     "Durgapur": {
@@ -1447,6 +2489,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Erode": {
@@ -1484,6 +2534,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0021445394818395934
+        },
+        "safety": {
+            "street_light_roads_length": 786.35,
+            "percent_light_road_length": 97.47737696789387,
+            "percent_road_acc_fatalities": 0.2112490097702667
         }
     },
     "Faridabad": {
@@ -1521,6 +2579,14 @@
                 "per_capita": 432.44573223651463,
                 "per_km": 367044.35693587933
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0034177873541867895
+        },
+        "safety": {
+            "street_light_roads_length": 1616.98,
+            "percent_light_road_length": 85.81512105548067,
+            "percent_road_acc_fatalities": 0.0
         }
     },
     "Gandhinagar": {
@@ -1558,6 +2624,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.028827805952933726
+        },
+        "safety": {
+            "street_light_roads_length": 515.0,
+            "percent_light_road_length": 84.49812217279948,
+            "percent_road_acc_fatalities": 2.2801302931596092
         }
     },
     "Gangtok": {
@@ -1595,6 +2669,14 @@
                 "per_capita": 0.22571913566087076,
                 "per_km": 502.8618152085037
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.002248569092395748
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": 0.76103500761035
         }
     },
     "Ghaziabad": {
@@ -1632,6 +2714,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0038671595697746947
+        },
+        "safety": {
+            "street_light_roads_length": 2100.0,
+            "percent_light_road_length": 63.894847336954044,
+            "percent_road_acc_fatalities": 2.4477543008890428
         }
     },
     "Greater Mumbai": {
@@ -1669,6 +2759,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 2055.6,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.5770655910973965
         }
     },
     "Gurugram": {
@@ -1706,6 +2804,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.011631696428571429
+        },
+        "safety": {
+            "street_light_roads_length": 4480.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 15.454545454545453
         }
     },
     "Guwahati": {
@@ -1743,6 +2849,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": 93.92185238784371
         }
     },
     "Gwalior": {
@@ -1780,6 +2894,14 @@
                 "per_capita": 1.6131933769855953,
                 "per_km": 817.0370370370371
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.019937037037037038
+        },
+        "safety": {
+            "street_light_roads_length": 4433.8,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.4736147757255935
         }
     },
     "Howrah": {
@@ -1817,6 +2939,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Hubli Dharwad": {
@@ -1854,6 +2984,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0006572844610532453
+        },
+        "safety": {
+            "street_light_roads_length": 3773.1,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": null
         }
     },
     "Hyderabad": {
@@ -1891,6 +3029,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.020444912903583714
+        },
+        "safety": {
+            "street_light_roads_length": 9103.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.405127900765624
         }
     },
     "Imphal": {
@@ -1928,6 +3074,14 @@
                 "per_capita": 0.05768677315123688,
                 "per_km": 76.03017241379312
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": null
         }
     },
     "Indore": {
@@ -1965,6 +3119,14 @@
                 "per_capita": 1.0781629048771222,
                 "per_km": 718.5942397445993
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0009302669760509109
+        },
+        "safety": {
+            "street_light_roads_length": 3783.0,
+            "percent_light_road_length": 99.97727188638056,
+            "percent_road_acc_fatalities": 1.7797758344623722
         }
     },
     "Itanagar": {
@@ -2002,6 +3164,14 @@
                 "per_capita": 1.907895053846339,
                 "per_km": 943.1429762401
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 10.23,
+            "percent_light_road_length": 3.045911987137498,
+            "percent_road_acc_fatalities": 7.457627118644068
         }
     },
     "Jabalpur": {
@@ -2039,6 +3209,14 @@
                 "per_capita": 1.0271875525161211,
                 "per_km": 1408.747619047619
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0026666666666666666
+        },
+        "safety": {
+            "street_light_roads_length": 1050.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.7399458220462596
         }
     },
     "Jaipur": {
@@ -2076,6 +3254,14 @@
                 "per_capita": 28.8926291552436,
                 "per_km": 29366.136424912376
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.015376112159611755
+        },
+        "safety": {
+            "street_light_roads_length": 5000.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.06799645660873
         }
     },
     "Jalandhar": {
@@ -2113,6 +3299,14 @@
                 "per_capita": 0.004317982472112596,
                 "per_km": 1.7584745762711864
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.001974576271186441
+        },
+        "safety": {
+            "street_light_roads_length": 1430.0,
+            "percent_light_road_length": 60.59322033898306,
+            "percent_road_acc_fatalities": 0.8576329331046313
         }
     },
     "Jammu": {
@@ -2150,6 +3344,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.004923506556580864
+        },
+        "safety": {
+            "street_light_roads_length": 1170.0,
+            "percent_light_road_length": 71.0296260320544,
+            "percent_road_acc_fatalities": 1.7658600392413342
         }
     },
     "Jhansi": {
@@ -2187,6 +3389,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.06418111177525404
+        },
+        "safety": {
+            "street_light_roads_length": 768.72,
+            "percent_light_road_length": 95.72624028690974,
+            "percent_road_acc_fatalities": 6.709021601016518
         }
     },
     "Jodhpur": {
@@ -2224,6 +3434,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.007271171941830625
+        },
+        "safety": {
+            "street_light_roads_length": 1169.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 4.405993578308955
         }
     },
     "Kakinada": {
@@ -2261,6 +3479,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.002240663900414938
+        },
+        "safety": {
+            "street_light_roads_length": 723.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.529051987767584
         }
     },
     "Kalyan Dombivali": {
@@ -2298,6 +3524,14 @@
                 "per_capita": 0.5140469672009175,
                 "per_km": 1761.4218351645868
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.05617850777248832
+        },
+        "safety": {
+            "street_light_roads_length": 414.52,
+            "percent_light_road_length": 93.52255036888296,
+            "percent_road_acc_fatalities": 0.8044030482641829
         }
     },
     "Kanpur": {
@@ -2335,6 +3569,14 @@
                 "per_capita": 11.384615384615385,
                 "per_km": 5943.011339908124
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.014865559446175592
+        },
+        "safety": {
+            "street_light_roads_length": 835.17,
+            "percent_light_road_length": 13.414661569597481,
+            "percent_road_acc_fatalities": 384.40860215053766
         }
     },
     "Karimnagar": {
@@ -2372,6 +3614,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0008117443868739205
+        },
+        "safety": {
+            "street_light_roads_length": 544.0,
+            "percent_light_road_length": 93.95509499136442,
+            "percent_road_acc_fatalities": 0.8534850640113799
         }
     },
     "Karnal": {
@@ -2409,6 +3659,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0002616747181964573
+        },
+        "safety": {
+            "street_light_roads_length": 425.0,
+            "percent_light_road_length": 17.10950080515298,
+            "percent_road_acc_fatalities": 26.847554444841126
         }
     },
     "Kavaratti": {
@@ -2446,6 +3704,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.006946373992775771
+        },
+        "safety": {
+            "street_light_roads_length": 30.0,
+            "percent_light_road_length": 83.35648791330925,
+            "percent_road_acc_fatalities": 0.0
         }
     },
     "Kochi": {
@@ -2483,6 +3749,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.05729936305732484
+        },
+        "safety": {
+            "street_light_roads_length": 185.14,
+            "percent_light_road_length": 23.584713375796177,
+            "percent_road_acc_fatalities": 2.1231766612641816
         }
     },
     "Kohima": {
@@ -2520,6 +3794,14 @@
                 "per_capita": 0.6240880321942062,
                 "per_km": 596.1470170454545
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": null
         }
     },
     "Kolkata": {
@@ -2557,6 +3839,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Kota": {
@@ -2594,6 +3884,14 @@
                 "per_capita": 0.30475164845392905,
                 "per_km": 459.18528338683694
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 1299.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Lucknow": {
@@ -2631,6 +3929,14 @@
                 "per_capita": 1.2970837041699503,
                 "per_km": 1168.6295991965671
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.03789959697930117
+        },
+        "safety": {
+            "street_light_roads_length": 4861.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 124.7044321174427
         }
     },
     "Ludhiana": {
@@ -2668,6 +3974,14 @@
                 "per_capita": 9669.244247221353,
                 "per_km": 44901295.288154684
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04242538013891496
+        },
+        "safety": {
+            "street_light_roads_length": 372.89,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.6365840517241377
         }
     },
     "Madurai": {
@@ -2705,6 +4019,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0010619829192447838
+        },
+        "safety": {
+            "street_light_roads_length": 1572.5,
+            "percent_light_road_length": 99.99809224625285,
+            "percent_road_acc_fatalities": 1.3774104683195594
         }
     },
     "Mangalore": {
@@ -2742,6 +4064,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.05881469115191986
+        },
+        "safety": {
+            "street_light_roads_length": 1198.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.8893539993211903
         }
     },
     "Meerut": {
@@ -2779,6 +4109,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.01325192743878213
+        },
+        "safety": {
+            "street_light_roads_length": 1743.88,
+            "percent_light_road_length": 87.70311659181549,
+            "percent_road_acc_fatalities": 3.123784834737524
         }
     },
     "Moradabad": {
@@ -2816,6 +4154,14 @@
                 "per_capita": 0.4945835548139705,
                 "per_km": 425.4132029339853
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.025362673186634068
+        },
+        "safety": {
+            "street_light_roads_length": 1032.45,
+            "percent_light_road_length": 84.14425427872861,
+            "percent_road_acc_fatalities": 6.473960821786909
         }
     },
     "Muzaffarpur": {
@@ -2853,6 +4199,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0003401088929219601
+        },
+        "safety": {
+            "street_light_roads_length": 471.0,
+            "percent_light_road_length": 85.48094373865699,
+            "percent_road_acc_fatalities": 27.346465816917732
         }
     },
     "Nagpur": {
@@ -2890,6 +4244,14 @@
                 "per_capita": 0.2642165544259831,
                 "per_km": 245.11458894753076
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.05095403222252729
+        },
+        "safety": {
+            "street_light_roads_length": 3500.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 0.9279182356105433
         }
     },
     "Namchi": {
@@ -2927,6 +4289,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": null
         }
     },
     "Nashik": {
@@ -2964,6 +4334,14 @@
                 "per_capita": 0.17074540182990072,
                 "per_km": 150.68774900398407
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.011548804780876495
+        },
+        "safety": {
+            "street_light_roads_length": 1901.05,
+            "percent_light_road_length": 94.6738047808765,
+            "percent_road_acc_fatalities": 575.0
         }
     },
     "Navi Mumbai": {
@@ -3001,6 +4379,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.1032759029479175
+        },
+        "safety": {
+            "street_light_roads_length": 506.12,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 4.3765903307888046
         }
     },
     "Naya Raipur": {
@@ -3038,6 +4424,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "New Town Kolkata": {
@@ -3075,6 +4469,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Panaji": {
@@ -3112,6 +4514,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.004545454545454545
+        },
+        "safety": {
+            "street_light_roads_length": 78.32,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.8442622950819672
         }
     },
     "Pasighat": {
@@ -3149,6 +4559,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": null
         }
     },
     "Patna": {
@@ -3186,6 +4604,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.3389830508474576
+        },
+        "safety": {
+            "street_light_roads_length": 900.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 138.88888888888889
         }
     },
     "Pimpri Chinchwad": {
@@ -3223,6 +4649,14 @@
                 "per_capita": 0.3186344686541336,
                 "per_km": 659.6051292489315
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.07528597598208833
+        },
+        "safety": {
+            "street_light_roads_length": 1228.25,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.2696709585121602
         }
     },
     "Portblair": {
@@ -3260,6 +4694,14 @@
                 "per_capita": 1176.3661037180188,
                 "per_km": 595575.5395683453
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.002661870503597122
+        },
+        "safety": {
+            "street_light_roads_length": 278.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.5091649694501018
         }
     },
     "Prayagraj": {
@@ -3297,6 +4739,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.024959694526941027
+        },
+        "safety": {
+            "street_light_roads_length": 1904.0,
+            "percent_light_road_length": 80.78065337293168,
+            "percent_road_acc_fatalities": 1.429270148361502
         }
     },
     "Puducherry": {
@@ -3334,6 +4784,14 @@
                 "per_capita": 0.0008751608751608751,
                 "per_km": 5.628673123085838
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.013906133598212068
+        },
+        "safety": {
+            "street_light_roads_length": 241.0,
+            "percent_light_road_length": 99.74339872527108,
+            "percent_road_acc_fatalities": null
         }
     },
     "Pune": {
@@ -3371,6 +4829,14 @@
                 "per_capita": 0.4665372184553771,
                 "per_km": 1433.8841201716739
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 1398.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.5703104493282745
         }
     },
     "Rae Bareli": {
@@ -3408,6 +4874,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04094545454545454
+        },
+        "safety": {
+            "street_light_roads_length": 350.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 4.36397400185701
         }
     },
     "Raipur": {
@@ -3445,6 +4919,14 @@
                 "per_capita": 0.3469766820019052,
                 "per_km": 165.78136882129277
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.005946768060836502
+        },
+        "safety": {
+            "street_light_roads_length": 2577.4,
+            "percent_light_road_length": 98.0,
+            "percent_road_acc_fatalities": 1.6294227188081938
         }
     },
     "Rajkot": {
@@ -3482,6 +4964,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.014823825163199935
+        },
+        "safety": {
+            "street_light_roads_length": 1253.0,
+            "percent_light_road_length": 50.80484936950087,
+            "percent_road_acc_fatalities": null
         }
     },
     "Rampur": {
@@ -3519,6 +5009,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 197.0,
+            "percent_light_road_length": 59.99695446931628,
+            "percent_road_acc_fatalities": 3.04077401520387
         }
     },
     "Ranchi": {
@@ -3556,6 +5054,14 @@
                 "per_capita": 95.7408886274964,
                 "per_km": 139394.29928741092
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 820.0,
+            "percent_light_road_length": 97.38717339667458,
+            "percent_road_acc_fatalities": 2.7431421446384037
         }
     },
     "Rourkela": {
@@ -3593,6 +5099,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0007175071750717506
+        },
+        "safety": {
+            "street_light_roads_length": 348.78,
+            "percent_light_road_length": 71.50061500615006,
+            "percent_road_acc_fatalities": 50.28386050283861
         }
     },
     "Sagar": {
@@ -3630,6 +5144,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.004835949706123057
+        },
+        "safety": {
+            "street_light_roads_length": 262.02,
+            "percent_light_road_length": 97.4704263075664,
+            "percent_road_acc_fatalities": 21.981566820276495
         }
     },
     "Saharanpur": {
@@ -3667,6 +5189,14 @@
                 "per_capita": 0.06549638554216866,
                 "per_km": 29.234740521645598
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 1859.5,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.5212858384013901
         }
     },
     "Salem": {
@@ -3704,6 +5234,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.09871204176142724
+        },
+        "safety": {
+            "street_light_roads_length": 848.63,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 2.1517553793884483
         }
     },
     "Satna": {
@@ -3741,6 +5279,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.001037593984962406
+        },
+        "safety": {
+            "street_light_roads_length": 510.0,
+            "percent_light_road_length": 76.69172932330827,
+            "percent_road_acc_fatalities": 24.130879345603272
         }
     },
     "Shillong": {
@@ -3778,6 +5324,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 225.15,
+            "percent_light_road_length": 99.99555871380352,
+            "percent_road_acc_fatalities": null
         }
     },
     "Shimla": {
@@ -3815,6 +5369,14 @@
                 "per_capita": 0.0,
                 "per_km": 0.0
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.13608368364454002
+        },
+        "safety": {
+            "street_light_roads_length": 102.29,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 0.0
         }
     },
     "Shivamogga": {
@@ -3852,6 +5414,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0005668934240362812
+        },
+        "safety": {
+            "street_light_roads_length": 727.76,
+            "percent_light_road_length": 82.5124716553288,
+            "percent_road_acc_fatalities": 3.004484304932735
         }
     },
     "Silvassa": {
@@ -3889,6 +5459,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.01859005311443747
+        },
+        "safety": {
+            "street_light_roads_length": 54.0,
+            "percent_light_road_length": 65.18590053114437,
+            "percent_road_acc_fatalities": null
         }
     },
     "Solapur": {
@@ -3926,6 +5504,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0013767735155018393
+        },
+        "safety": {
+            "street_light_roads_length": 1548.0,
+            "percent_light_road_length": 81.34524435102469,
+            "percent_road_acc_fatalities": null
         }
     },
     "Srinagar": {
@@ -3963,6 +5549,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0
+        },
+        "safety": {
+            "street_light_roads_length": 0.0,
+            "percent_light_road_length": 0.0,
+            "percent_road_acc_fatalities": 0.0
         }
     },
     "Surat": {
@@ -4000,6 +5594,14 @@
                 "per_capita": 0.40123395694031105,
                 "per_km": 1998.8960020413829
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0423286776791276
+        },
+        "safety": {
+            "street_light_roads_length": 1332.43,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.30136160983251
         }
     },
     "Thane": {
@@ -4037,6 +5639,14 @@
                 "per_capita": 0.07701049446353408,
                 "per_km": 497.3768298011798
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.025671837448110114
+        },
+        "safety": {
+            "street_light_roads_length": 550.0,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 1.3490725126475547
         }
     },
     "Thanjavur": {
@@ -4074,6 +5684,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.05042322444121148
+        },
+        "safety": {
+            "street_light_roads_length": 363.85,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 4.521230875021489
         }
     },
     "Thoothukudi": {
@@ -4111,6 +5729,14 @@
                 "per_capita": 0.045973770703099825,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": null,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": null
         }
     },
     "Tiruchirappalli": {
@@ -4148,6 +5774,14 @@
                 "per_capita": 0.8605265865707301,
                 "per_km": 645.599410752353
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.012755228510520763
+        },
+        "safety": {
+            "street_light_roads_length": 1172.55,
+            "percent_light_road_length": 83.04354908390404,
+            "percent_road_acc_fatalities": 1.097406130963178
         }
     },
     "Tirunelveli": {
@@ -4185,6 +5819,14 @@
                 "per_capita": 0.6586540744671406,
                 "per_km": 18.217120667009308
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0015338929815544515
+        },
+        "safety": {
+            "street_light_roads_length": 933.32,
+            "percent_light_road_length": 5.3299069156530186,
+            "percent_road_acc_fatalities": 0.5461827891734433
         }
     },
     "Tirupati": {
@@ -4222,6 +5864,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0020397968528848556
+        },
+        "safety": {
+            "street_light_roads_length": 423.77,
+            "percent_light_road_length": 88.2045624843893,
+            "percent_road_acc_fatalities": 0.6300114547537228
         }
     },
     "Tiruppur": {
@@ -4259,6 +5909,14 @@
                 "per_capita": 0.9559705882352941,
                 "per_km": 731.5881876294229
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0016055940698058283
+        },
+        "safety": {
+            "street_light_roads_length": 1332.84,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 2.525832376578645
         }
     },
     "Tiruvanantapuram": {
@@ -4296,6 +5954,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": null
+        },
+        "safety": {
+            "street_light_roads_length": 2395.0,
+            "percent_light_road_length": 83.0633917609439,
+            "percent_road_acc_fatalities": 23.473573186452594
         }
     },
     "Toothukudi": {
@@ -4333,6 +5999,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0029304029304029304
+        },
+        "safety": {
+            "street_light_roads_length": 607.85,
+            "percent_light_road_length": 74.21855921855922,
+            "percent_road_acc_fatalities": 0.21923814743765419
         }
     },
     "Tumakuru": {
@@ -4370,6 +6044,14 @@
                 "per_capita": 0.07129642718852375,
                 "per_km": 39.194485741316406
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.03194688471415056
+        },
+        "safety": {
+            "street_light_roads_length": 591.92,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.47977638934561
         }
     },
     "Udaipur": {
@@ -4407,6 +6089,14 @@
                 "per_capita": 16.111744119011526,
                 "per_km": 9651.627906976744
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.017779069767441858
+        },
+        "safety": {
+            "street_light_roads_length": 860.0,
+            "percent_light_road_length": 100.0,
+            "percent_road_acc_fatalities": 1.2330670371656824
         }
     },
     "Ujjain": {
@@ -4444,6 +6134,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.0004243622510488499
+        },
+        "safety": {
+            "street_light_roads_length": 740.3,
+            "percent_light_road_length": 71.398948738969,
+            "percent_road_acc_fatalities": 2.1160247265810743
         }
     },
     "Vadodara": {
@@ -4481,6 +6179,14 @@
                 "per_capita": 0.00052,
                 "per_km": 0.7027027027027027
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.00554054054054054
+        },
+        "safety": {
+            "street_light_roads_length": 1300.0,
+            "percent_light_road_length": 87.83783783783784,
+            "percent_road_acc_fatalities": 0.8879446532657842
         }
     },
     "Varanasi": {
@@ -4518,6 +6224,14 @@
                 "per_capita": 0.7390510049949662,
                 "per_km": 1779.682879149889
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.04507861188618403
+        },
+        "safety": {
+            "street_light_roads_length": 558.66,
+            "percent_light_road_length": 93.34179880035421,
+            "percent_road_acc_fatalities": 0.4291640837346812
         }
     },
     "Vasai Virar": {
@@ -4555,6 +6269,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.028443249906536388
+        },
+        "safety": {
+            "street_light_roads_length": 980.67,
+            "percent_light_road_length": 99.08860350210671,
+            "percent_road_acc_fatalities": 3.981710802057535
         }
     },
     "Vellore": {
@@ -4592,6 +6314,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.01027060270602706
+        },
+        "safety": {
+            "street_light_roads_length": 552.5,
+            "percent_light_road_length": 84.94772447724478,
+            "percent_road_acc_fatalities": 1.7244918907821802
         }
     },
     "Vijayawada": {
@@ -4629,6 +6359,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.039495999999999996
+        },
+        "safety": {
+            "street_light_roads_length": 1125.0,
+            "percent_light_road_length": 90.0,
+            "percent_road_acc_fatalities": 4.691618344754876
         }
     },
     "Visakhapatnam": {
@@ -4666,6 +6404,14 @@
                 "per_capita": null,
                 "per_km": null
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.06430404315496356
+        },
+        "safety": {
+            "street_light_roads_length": 4941.61,
+            "percent_light_road_length": 100,
+            "percent_road_acc_fatalities": 2.440039973351099
         }
     },
     "Warangal": {
@@ -4703,6 +6449,14 @@
                 "per_capita": 0.5369406315073733,
                 "per_km": 102.30111209622243
             }
+        },
+        "equality": {
+            "spend_per_km_road": 0.03550044330009595
+        },
+        "safety": {
+            "street_light_roads_length": 1772.0,
+            "percent_light_road_length": 35.868847946042884,
+            "percent_road_acc_fatalities": 1.5370391771639893
         }
     }
 }
