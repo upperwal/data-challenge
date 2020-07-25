@@ -28,7 +28,7 @@
                 null,
                 1.4389984303614753,
                 null,
-                -0.8074847330648999,
+                -0.523864611481839,
                 null,
                 null,
                 null,
@@ -38,7 +38,7 @@
                 6.945371734443894,
                 null,
                 1.1752169214670096,
-                -0.5894551556284496,
+                -0.4342491485053621,
                 null,
                 null,
                 6.179368069620404,
@@ -54,46 +54,46 @@
                 null,
                 null,
                 null,
-                0.9906559752599429,
+                1.2600644890457522,
                 null,
                 null,
                 null,
                 null,
                 null,
                 null,
-                -0.582992074991779,
+                -0.3453227451909493,
                 null,
                 null,
                 null,
                 null,
                 6.410077449789804,
-                -1.2091275120554745,
-                -0.6043245007488692,
+                -0.9231905438279315,
+                -0.3413178786165767,
                 null,
                 null,
                 null,
                 null,
                 null,
-                -0.9995438988741011,
+                -0.7426442822589766,
                 null,
                 null,
                 null,
-                -0.6629119325632056,
-                null,
-                null,
-                null,
-                null,
-                null,
-                4.394894439885927,
+                -0.3926803124760815,
                 null,
                 null,
                 null,
                 null,
                 null,
+                4.429765727017109,
                 null,
                 null,
                 null,
-                0.2519085590931571,
+                null,
+                null,
+                null,
+                null,
+                null,
+                0.49562743291013484,
                 null,
                 null,
                 null,
@@ -102,17 +102,17 @@
                 null,
                 -0.33021112849218187,
                 null,
-                -0.56194622481941,
+                -0.31719764138266254,
                 null,
                 0.650636741577944,
                 null,
                 0.33464564439586175,
-                -0.613489481260296,
+                -0.445149323300275,
                 null,
                 6.1251740331775,
                 null,
                 null,
-                -0.740092345966871,
+                -0.4631653369123144,
                 null,
                 null,
                 null,
@@ -132,10 +132,10 @@
                 null,
                 null,
                 null,
-                -0.6225833205747806,
+                -0.3598871807109606,
                 9.108864603764012,
                 null,
-                -0.749676269435031,
+                -0.47583838923978405,
                 null,
                 null,
                 null,
@@ -610,7 +610,7 @@
             1872.5680933852138,
             457.77690197207863,
             3061.846153846154,
-            null,
+            0.0,
             423.58583112204957,
             717.6919961754306,
             1025.478752080257,
@@ -621,24 +621,24 @@
             0.0,
             314.1117085482278,
             821.9079259138564,
-            null,
-            null,
+            1688.4984649979854,
+            29.27918311079121,
             185.9193018038782,
-            null,
+            2760.0988356856724,
             288.1542411065123,
             null,
             2691.1502839236678,
             283.75055962263303,
             408.3333333333333,
             284.4428132311786,
-            null,
-            null,
-            null,
+            253.34439167042953,
+            1097.4926109271153,
+            385.177738282598,
             1669.4033935413247,
             39.34261272974843,
             null,
             1178.8213557331035,
-            null,
+            2660.4630994282043,
             0.0,
             1218.507354264855,
             1055.8460018792011,
@@ -647,14 +647,14 @@
             10.30072927082282,
             159.58997399457493,
             0.0,
-            null,
+            1777.4223679701097,
             0.0,
             305.57783247144715,
             236.98461538461538,
             330.69734004313443,
             30.731707317073173,
             0.0,
-            null,
+            3023.625167754003,
             1561.3818229132783,
             null,
             355.0683959314383,
@@ -662,13 +662,13 @@
             254.10054758668008,
             1733.5868471088245,
             3070.0486648524147,
-            null,
+            317.3967706421012,
             0.0,
             50.73969766315504,
             601.2437030181301,
             0.0,
             6.771558101661403,
-            null,
+            2037.8110673778592,
             null,
             null,
             3269.631132226552,
@@ -679,19 +679,19 @@
             224.77604903347478,
             283.14028314028315,
             2020.7605885355247,
-            null,
+            3983.300061245576,
             539.1605648015292,
             227.31294232414564,
-            null,
+            0.0,
             124.80494129681306,
             222.27321358962945,
             0.0,
             0.0,
             1484.3192967893667,
             0.0,
-            null,
+            129.79085681241367,
             2156.170212765958,
-            null,
+            706.2134698564263,
             117.2076173112099,
             257.5990750650345,
             91.61538461538461,
@@ -704,15 +704,15 @@
             437.22642985187736,
             2198.529411764706,
             1346.0867743812732,
-            null,
+            5762.49293614273,
             673.9356242432438,
             37.2687445285795,
             169.1628363805511,
             271.0,
             2296.6159260253767,
-            null,
+            1005.0300654543695,
             193.4405894930662,
-            null,
+            1666.3344427090296,
             20343.664450527962,
             308.7416599379542
         ],
@@ -1736,11 +1736,11 @@
     },
     "Bhagalpur": {
         "overall": {
-            "population": null,
+            "population": 459422.0,
             "area": 30.17,
             "road_length": 112.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 0.0,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2231,11 +2231,11 @@
     },
     "Delhi": {
         "overall": {
-            "population": null,
+            "population": 13328647.0,
             "area": 1113.65,
             "road_length": 14898.54,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 1688.4984649979854,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2276,11 +2276,11 @@
     },
     "Dhanbad": {
         "overall": {
-            "population": null,
+            "population": 1311512.0,
             "area": 275.0,
             "road_length": 651.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 29.27918311079121,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2366,11 +2366,11 @@
     },
     "Dindigul": {
         "overall": {
-            "population": null,
+            "population": 213688.0,
             "area": 14.01,
             "road_length": 181.73,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 2760.0988356856724,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2456,9 +2456,9 @@
     },
     "Durgapur": {
         "overall": {
-            "population": null,
+            "population": 601460.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": null,
             "seats_per_lakh": null,
             "avg_daily_ridership": null
@@ -2471,8 +2471,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    0.0,
                     null
                 ]
             },
@@ -2681,11 +2681,11 @@
     },
     "Ghaziabad": {
         "overall": {
-            "population": null,
+            "population": 1831499.0,
             "area": 133.3,
             "road_length": 3286.65,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 253.34439167042953,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2726,11 +2726,11 @@
     },
     "Greater Mumbai": {
         "overall": {
-            "population": null,
+            "population": 13348427.0,
             "area": 483.14,
             "road_length": 2055.6,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 1097.4926109271153,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2771,11 +2771,11 @@
     },
     "Gurugram": {
         "overall": {
-            "population": null,
+            "population": 1002654.0,
             "area": 0.0,
             "road_length": 4480.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 385.177738282598,
             "avg_daily_ridership": null
         },
         "health": {
@@ -2906,9 +2906,9 @@
     },
     "Howrah": {
         "overall": {
-            "population": null,
+            "population": 1143510.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": null,
             "seats_per_lakh": null,
             "avg_daily_ridership": null
@@ -2921,8 +2921,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    0.0,
                     null
                 ]
             },
@@ -2996,11 +2996,11 @@
     },
     "Hyderabad": {
         "overall": {
-            "population": null,
+            "population": 7296662.0,
             "area": 625.0,
             "road_length": 9013.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 2660.4630994282043,
             "avg_daily_ridership": null
         },
         "health": {
@@ -3401,11 +3401,11 @@
     },
     "Jodhpur": {
         "overall": {
-            "population": null,
+            "population": 1190488.0,
             "area": 231.03,
             "road_length": 1169.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 1777.4223679701097,
             "avg_daily_ridership": null
         },
         "health": {
@@ -3716,11 +3716,11 @@
     },
     "Kochi": {
         "overall": {
-            "population": null,
+            "population": 666154.0,
             "area": 732.0,
             "road_length": 785.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 3023.625167754003,
             "avg_daily_ridership": null
         },
         "health": {
@@ -3806,9 +3806,9 @@
     },
     "Kolkata": {
         "overall": {
-            "population": null,
+            "population": 4774055.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": null,
             "seats_per_lakh": null,
             "avg_daily_ridership": null
@@ -3821,8 +3821,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    0.0,
                     null
                 ]
             },
@@ -4076,11 +4076,11 @@
     },
     "Meerut": {
         "overall": {
-            "population": null,
+            "population": 1458742.0,
             "area": 141.94,
             "road_length": 1988.39,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 317.3967706421012,
             "avg_daily_ridership": null
         },
         "health": {
@@ -4346,11 +4346,11 @@
     },
     "Navi Mumbai": {
         "overall": {
-            "population": null,
+            "population": 1206049.0,
             "area": 109.59,
             "road_length": 506.12,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 2037.8110673778592,
             "avg_daily_ridership": null
         },
         "health": {
@@ -4393,7 +4393,7 @@
         "overall": {
             "population": 60692.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": 102.0,
             "seats_per_lakh": null,
             "avg_daily_ridership": 8629.0
@@ -4406,8 +4406,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    91.42,
                     76.94
                 ]
             },
@@ -4438,7 +4438,7 @@
         "overall": {
             "population": 80134.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": 410.0,
             "seats_per_lakh": null,
             "avg_daily_ridership": 1215.57
@@ -4451,8 +4451,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    407.2,
                     5.9076
                 ]
             },
@@ -4841,11 +4841,11 @@
     },
     "Rae Bareli": {
         "overall": {
-            "population": null,
+            "population": 213893.0,
             "area": 50.12,
             "road_length": 275.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 3983.300061245576,
             "avg_daily_ridership": null
         },
         "health": {
@@ -4976,11 +4976,11 @@
     },
     "Rampur": {
         "overall": {
-            "population": null,
+            "population": 362437.0,
             "area": 20.2,
             "road_length": 328.35,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 0.0,
             "avg_daily_ridership": null
         },
         "health": {
@@ -5291,11 +5291,11 @@
     },
     "Shillong": {
         "overall": {
-            "population": null,
+            "population": 155635.0,
             "area": 10.36,
             "road_length": 225.16,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 129.79085681241367,
             "avg_daily_ridership": null
         },
         "health": {
@@ -5381,11 +5381,11 @@
     },
     "Shivamogga": {
         "overall": {
-            "population": null,
+            "population": 347487.0,
             "area": 70.01,
             "road_length": 882.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 706.2134698564263,
             "avg_daily_ridership": null
         },
         "health": {
@@ -5698,7 +5698,7 @@
         "overall": {
             "population": 372408.0,
             "area": null,
-            "road_length": null,
+            "road_length": 0.0,
             "bus_fleet": 320.0,
             "seats_per_lakh": null,
             "avg_daily_ridership": 260026.0
@@ -5711,8 +5711,8 @@
                     "Cycle"
                 ],
                 "y": [
-                    null,
-                    null,
+                    0.0,
+                    4.5,
                     null
                 ]
             },
@@ -5966,11 +5966,11 @@
     },
     "Toothukudi": {
         "overall": {
-            "population": null,
+            "population": 247740.0,
             "area": 89.25,
             "road_length": 819.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 5762.49293614273,
             "avg_daily_ridership": null
         },
         "health": {
@@ -6236,11 +6236,11 @@
     },
     "Vasai Virar": {
         "overall": {
-            "population": null,
+            "population": 1322448.0,
             "area": 311.0,
             "road_length": 989.69,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 1005.0300654543695,
             "avg_daily_ridership": null
         },
         "health": {
@@ -6326,11 +6326,11 @@
     },
     "Vijayawada": {
         "overall": {
-            "population": null,
+            "population": 1188957.0,
             "area": 61.88,
             "road_length": 1250.0,
             "bus_fleet": null,
-            "seats_per_lakh": null,
+            "seats_per_lakh": 1666.3344427090296,
             "avg_daily_ridership": null
         },
         "health": {
