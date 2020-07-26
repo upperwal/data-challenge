@@ -5,6 +5,7 @@ import Header from '../../views/header/Header'
 import Overview from '../../views/overview/Overview'
 import Health from '../../views/health/Health'
 import Inclusion from '../../views/inclusion/Inclusion'
+import Security from '../../views/security/Security'
 
 import './MobilityDashboard.scss';
 
@@ -104,8 +105,8 @@ function MobilityDashboard() {
                     <Inclusion data={data} cityNameState={cityNameState}/>
                 </div>
                 
-                <div role="tabpanel" className="tab-pane" id="security">security
-                
+                <div role="tabpanel" className="tab-pane" id="security">
+                    <Security data={data} cityNameState={cityNameState} cityState={cityState}/>
                 </div>
             </div>
         </section>
