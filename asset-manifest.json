@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/data-challenge/static/css/main.601c9a12.chunk.css",
+    "main.js": "/data-challenge/static/js/main.926818dd.chunk.js",
+    "main.js.map": "/data-challenge/static/js/main.926818dd.chunk.js.map",
+    "runtime-main.js": "/data-challenge/static/js/runtime-main.8717b22c.js",
+    "runtime-main.js.map": "/data-challenge/static/js/runtime-main.8717b22c.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/data-challenge/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.5d627a01.chunk.js": "/data-challenge/static/js/2.5d627a01.chunk.js",
+    "static/js/2.5d627a01.chunk.js.map": "/data-challenge/static/js/2.5d627a01.chunk.js.map",
+    "index.html": "/data-challenge/index.html",
+    "precache-manifest.557fffb19ad4af25cc9acfecc617bd56.js": "/data-challenge/precache-manifest.557fffb19ad4af25cc9acfecc617bd56.js",
+    "service-worker.js": "/data-challenge/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/data-challenge/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.601c9a12.chunk.css.map": "/data-challenge/static/css/main.601c9a12.chunk.css.map",
+    "static/js/2.5d627a01.chunk.js.LICENSE.txt": "/data-challenge/static/js/2.5d627a01.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/data-challenge/static/media/Consolas.53ce8c88.ttf",
+    "static/media/air-pollution.svg": "/data-challenge/static/media/air-pollution.a7d27908.svg",
+    "static/media/area.svg": "/data-challenge/static/media/area.6e53849c.svg",
+    "static/media/bus.svg": "/data-challenge/static/media/bus.0d5feb17.svg",
+    "static/media/distance.svg": "/data-challenge/static/media/distance.d57048d1.svg",
+    "static/media/dust.svg": "/data-challenge/static/media/dust.ef0b04ba.svg",
+    "static/media/pm10.svg": "/data-challenge/static/media/pm10.9ab2f467.svg",
+    "static/media/pollution.svg": "/data-challenge/static/media/pollution.af9101c8.svg",
+    "static/media/population.svg": "/data-challenge/static/media/population.9ae381ca.svg",
+    "static/media/ridership.svg": "/data-challenge/static/media/ridership.9c0f1fe2.svg",
+    "static/media/seats.svg": "/data-challenge/static/media/seats.a367c6c3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8717b22c.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.5d627a01.chunk.js",
+    "static/css/main.601c9a12.chunk.css",
+    "static/js/main.926818dd.chunk.js"
+  ]
+}
