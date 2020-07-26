@@ -1,0 +1,43 @@
+.Security{
+    .heading {
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    .street-light img {
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    .road-safety {
+        margin:30px 40px 30px 30px;
+        padding: 0px 190px;
+    }
+    .safety img{
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    .light-network {
+        margin-top: 40px;
+    }
+
+    .light-network-length-header, .road-accident-fatalities-header {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .light-network-length, .road-accident-fatalities {
+        font-size: 35px;
+    }
+
+    .scatter {
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+        border-bottom: 0.3px dotted #aaa;
+    }
+    .footer {
+        margin-bottom: 60px;
+        padding-bottom: 50px;
+        border-bottom: 0.3px dotted #aaa;
+    }
+}
