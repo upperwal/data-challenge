@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Mulish:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'BwNistaInt-xBd';
+    src: url("./fonts/BwNistaInt-xBd.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url("./fonts/Consolas.ttf") format("ttf");
+    font-style: normal;
+    font-display: swap;
+}
 
 html, body, .App, #root {
     margin: 0px;
@@ -9,6 +25,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    text-align: center;
+    font-family: "Playfair Display",serif!important;
 }
 
 .App {

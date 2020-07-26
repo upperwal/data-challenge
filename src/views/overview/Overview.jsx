@@ -1,72 +1,66 @@
 import React from 'react'
 
+import Pop from './img/population.svg'
+import Area from './img/area.svg'
+import Len from './img/distance.svg'
+import Seats from './img/seats.svg'
+import Ridership from './img/ridership.svg'
+import Bus from './img/bus.svg'
+
+import './Overview.scss'
+
 function Overview(props) {
     const cityState = props.cityState
-    //const cityNameState = props.cityNameState
-    return (
-        <div className="city-facts">
-            <h2>Do you know that Delhi has the largest road network with total road length {cityState.overall.road_length} kms?</h2><br/>
+    const cityNameState = props.cityNameState
 
-            <h2>but it also has the highest fatality rate of XX %</h2>
-            
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b> {cityState.overall.population}</b>
-                            <p> People</p> 
+    const label = {
+        area: ["City Area", "Sq Km Area", 0, Area],
+        avg_daily_ridership: ["Public Bus Ridership", "Nos", 0, Ridership],
+        bus_fleet: ["No of public buses", "Nos", 0, Bus],
+        population: ["Population", "Lakh People", 2, Pop],
+        road_length: ["Road Network Length", "Km", 2, Len],
+        seats_per_lakh: ["Seats in public transport", "Seats", 0, Seats]
+    }
 
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>{cityState.overall.area}</b>
-                            <p>Total Area</p> 
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>{cityState.overall.bus_fleet}</b>
-                            <p>Buses</p> 
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>{cityState.overall.road_length}</b>
-                            <p>Kms Road</p> 
-                        </div>
+    function overallStats(data) {
+        let res = []
+        Object.keys(data).forEach((o, idx) => {
+            if(data[o] == null) {
+                return
+            }
+            if(o === 'population') {
+                data[o] = data[o] / 1e5
+            }
+            res.push(
+                <div key={idx} className="col-md-3">
+                    <div className="card">
+                        <small>{label[o][0]}</small>
+                        <img src={label[o][3]}/>
+                        <h3 className="digits">{data[o].toFixed(label[o][2])}</h3>
+                        <p>{label[o][1]}</p> 
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>{cityState.overall.seats_per_lakh}</b>
-                            <p>Seat Per lakh population</p> 
-                        </div>
+            )
+        })
+        return res
+    }
+
+    return (
+        <section className="Overview">
+            <div className="city-facts">
+                {/* <h2>Do you know that Delhi has the largest road network with total road length {cityState.overall.road_length} kms?</h2><br/>
+
+                <h2>but it also has the highest fatality rate of XX %</h2> */}
+
+                <h2>Let's start by knowing {cityNameState}</h2>
+                
+                <div className="container">
+                    <div className="row">
+                        {overallStats(cityState.overall)}
                     </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>{cityState.overall.avg_daily_ridership}</b>
-                            <p>Ridership</p> 
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b>y/n</b>
-                            CMP
-                            <p>(click link)</p> 
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <div className="card">
-                            <b></b>
-                            <p></p> 
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

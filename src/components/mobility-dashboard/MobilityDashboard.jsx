@@ -3,6 +3,7 @@ import data from './compiled_data';
 
 import Overview from '../../views/overview/Overview'
 import Health from '../../views/health/Health'
+import Inclusion from '../../views/inclusion/Inclusion'
 
 import './MobilityDashboard.scss';
 
@@ -58,8 +59,7 @@ function MobilityDashboard() {
     
     return (
         <section className="MobilityDashboard container">
-            {cityState.overall.population}
-            <div className="dropdown">
+            {/* <div className="dropdown">
                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
                 </button>
@@ -68,8 +68,8 @@ function MobilityDashboard() {
                     <a className="dropdown-item" href="/#">Another action</a>
                     <a className="dropdown-item" href="/#">Something else here</a>
                 </div>
-            </div>
-            <h1 className="city-name">Delhi</h1>
+            </div> */}
+            {/* <h1 className="city-name">Delhi</h1> */}
             
 
             <Overview cityState={cityState} cityNameState={cityNameState}/>
@@ -77,13 +77,13 @@ function MobilityDashboard() {
 
             <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
                 <li className="nav-item " role="presentation">
-                    <a className="nav-link" data-toggle="tab" href="#health" role="tab" aria-controls="home" >Health</a>
+                    <a className="nav-link active" data-toggle="tab" href="#health" role="tab" aria-controls="home" >City On The Move</a>
                 </li>
                 <li className="nav-item " role="presentation">
-                    <a className="nav-link" data-toggle="tab" href="#inclusion" role="tab" aria-controls="profile" >Inclusion</a>
+                    <a className="nav-link" data-toggle="tab" href="#inclusion" role="tab" aria-controls="profile" >City For All</a>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <a className="nav-link" data-toggle="tab" href="#security" role="tab" aria-controls="contact" >Security</a>
+                    <a className="nav-link" data-toggle="tab" href="#security" role="tab" aria-controls="contact" >Watchful City</a>
                 </li>
             </ul>
 
@@ -91,8 +91,8 @@ function MobilityDashboard() {
                 <div role="tabpanel" className="tab-pane active" id="health">
                     <Health cityState={cityState} cityNameState={cityNameState}/>        
                 </div>
-                <div role="tabpanel" className="tab-pane" id="inclusion">inclusion
-                
+                <div role="tabpanel" className="tab-pane" id="inclusion">
+                    <Inclusion cityState={cityState} cityNameState={cityNameState}/>
                 </div>
                 
                 <div role="tabpanel" className="tab-pane" id="security">security
