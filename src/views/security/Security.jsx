@@ -3,6 +3,7 @@ import {Scatter, Doughnut} from 'react-chartjs-2';
 import streetLight from './images/street-light.svg';
 import safety from './images/safety.svg';
 import roadSafety from './images/road.svg';
+import car from './images/car.svg';
 
 import './Security.scss';
 
@@ -13,12 +14,12 @@ function Security(props) {
 
 
     var pieState = {
-        labels: ['January', 'February'],
+        labels: ['Road Accident', 'Others'],
         datasets: [{
             label: 'Rainfall',
             backgroundColor: [
-                '#B21F00',
-                '#C9DE00'
+                '#ff2b5b',
+                '#bbb'
             ],
             hoverBackgroundColor: [
             '#501800',
@@ -73,13 +74,13 @@ function Security(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <div className="light-network">
-                                <h4><span className="light-network-length ">{cityNameState}</span> has <span className="light-network-length">{lightNetwork}</span> km of roads with street lights, accounting for <span className="light-network-length">{cityState.overall.road_length}</span>% of the total road network length. </h4>  
+                            <div className="street-light">
+                                <img src={streetLight} alt="Street light" ></img>
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="safety">
-                                <img src={safety} alt="safety" ></img>
+                            <div className="light-network">
+                                <h4><span className="light-network-length">{cityNameState}</span> has <span className="light-network-length imp-unit">{cityState.overall.road_length} km</span> of roads with street lights, accounting for <span className="light-network-length imp-unit">{lightNetwork}%</span> of the total road network length. </h4>  
                             </div>
                             <h4>{result}</h4>
                         </div>
@@ -124,7 +125,9 @@ function Security(props) {
                         />
                         </div>
                         <div className="col-md-6 ">
-                            <h4>In <span className="road-accident-fatalities">{cityNameState}</span>, <span className="road-accident-fatalities">{roadAccident}</span>% of total deaths are due to road accident fatalities. </h4>
+                            <div className="vertical-middle">
+                            <h4>In <span className="road-accident-fatalities">{cityNameState}</span>, <span className="road-accident-fatalities imp-unit">{roadAccident}%</span> of total deaths are due to road accident fatalities. </h4>
+                        </div>
                         </div>
                     </div>
                     <div className="col-md-12 road-safety">
@@ -139,74 +142,83 @@ function Security(props) {
     }
 
     return (
-        <div className="Security"> 
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-4">
-                        <div className="street-light">
-                            <img src={streetLight} alt="Street light" ></img>
+        <section class="tab-content-box">
+            <div className="Security"> 
+                <div className="container">
+
+                    <section className="sub-section-container">
+                        <h1>How safe are your city streets?</h1>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="street-light">
+                                    <img src={car} alt="Street light" ></img>
+                                </div>
+                            </div>
+                            <div className="col-md-8">
+                                <h3 className="heading">There’s no doubt that optimum street lighting significantly improves safety for drivers, riders, and pedestrians.</h3>
+                            </div>
                         </div>
+                    </section>
+                </div>
+                <section className="sub-section-container">
+                    {lightNetworkLength()}
+                </section>
+                <section className="sub-section-container">
+                    <h1 >Moreover, several studies have shown that improved street lighting can promote safety and security in public spaces.</h1>
+                
+                    <div>
+                        <Scatter
+                            data={prepareScatterData()}
+                            options={{
+                                title:{
+                                    display:true,
+                                    text:'',
+                                    fontSize: 12
+                                },
+                                legend:{
+                                    display: false,
+                                    position:'top'
+                                },
+                                scales: {
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Crimes against women',
+                                        },
+                                        type: 'logarithmic'
+                                    }],
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: '% road km covered by street lights',
+                                        },
+                                        type: 'logarithmic'
+                                    }]
+                                },
+                                tooltips: {
+                                    callbacks: {
+                                        label: function(tooltipItem, data) {
+                                            var label = data.labels[tooltipItem.index];
+                                            return label + ': (Ridership: ' + tooltipItem.yLabel + ', HH Expense: ' + tooltipItem.xLabel + ')';
+                                        }
+                                    }
+                                }
+                            }}
+                        />
                     </div>
-                    <div className="col-md-8">
-                        <h3 className="heading">There’s no doubt that optimum street lighting significantly improves safety for drivers, riders, and pedestrians.</h3>
+                </section>
+                <section className="sub-section-container">
+                    <div className="heading">
+                        <h1>Did you know that road injuries are among the top 10 leading causes of premature death in India?</h1>
+                        source: <a href="http://www.healthdata.org/india">http://www.healthdata.org/india</a>
                     </div>
+                    {roadAccidentDeath()}
+                </section>
+                <div className="footer">
+                    <h5>A quick guide to building a safer city can be found here! <br></br><a href="https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb">https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb</a></h5> 
                 </div>
             </div>
-
-            {lightNetworkLength()}
-            
-            <div>
-                <h3 className="heading">Moreover, several studies have shown that improved street lighting can promote safety and security in public spaces.</h3>
-            </div>
-            <div className="scatter">
-                <Scatter
-                    data={prepareScatterData()}
-                    options={{
-                        title:{
-                            display:true,
-                            text:'',
-                            fontSize: 12
-                        },
-                        legend:{
-                            display: false,
-                            position:'top'
-                        },
-                        scales: {
-                            yAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Crimes against women',
-                                },
-                                type: 'logarithmic'
-                            }],
-                            xAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: '% road km covered by street lights',
-                                },
-                                type: 'logarithmic'
-                            }]
-                        },
-                        tooltips: {
-                            callbacks: {
-                                label: function(tooltipItem, data) {
-                                    var label = data.labels[tooltipItem.index];
-                                    return label + ': (Ridership: ' + tooltipItem.yLabel + ', HH Expense: ' + tooltipItem.xLabel + ')';
-                                }
-                            }
-                        }
-                    }}
-                />
-            </div>
-            <div className="heading">
-                <h2 >Did you know that road injuries are among the top 10 leading causes of premature death in India?</h2>
-                source: <a href="http://www.healthdata.org/india">http://www.healthdata.org/india</a>
-            </div>
-            {roadAccidentDeath()}
-            <div className="footer">
-                <h5>A quick guide to building a safer city can be found here! <br></br><a href="https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb">https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb</a></h5> 
-            </div>
-        </div>
+        </section>
     )
 }
 
