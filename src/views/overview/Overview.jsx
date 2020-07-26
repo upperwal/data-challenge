@@ -13,6 +13,8 @@ function Overview(props) {
     const cityState = props.cityState
     const cityNameState = props.cityNameState
 
+    console.log(cityState)
+
     const label = {
         area: ["City Area", "Sq Km Area", 0, Area],
         avg_daily_ridership: ["Public Bus Ridership", "Nos", 0, Ridership],
@@ -25,18 +27,21 @@ function Overview(props) {
     function overallStats(data) {
         let res = []
         Object.keys(data).forEach((o, idx) => {
-            if(data[o] == null) {
+            if(data[o] == null || data[o] == 0) {
                 return
             }
+            let norm_value = 0
             if(o === 'population') {
-                data[o] = data[o] / 1e5
+                norm_value = data[o] / 1e5
+            } else {
+                norm_value = data[o]
             }
             res.push(
                 <div key={idx} className="col-md-3">
                     <div className="card">
                         <small>{label[o][0]}</small>
                         <img src={label[o][3]}/>
-                        <h3 className="digits">{data[o].toFixed(label[o][2])}</h3>
+                        <h3 className="digits">{norm_value.toFixed(label[o][2])}</h3>
                         <p>{label[o][1]}</p> 
                     </div>
                 </div>

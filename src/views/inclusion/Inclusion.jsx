@@ -1,11 +1,13 @@
 import React from 'react'
 import {Bar, HorizontalBar, Scatter} from 'react-chartjs-2';
+import * as ChartAnnotation from 'chartjs-plugin-annotation'
 
 import './Inclusion.scss'
 
 function Inclusion(props) {
     const data = props.data;
     const cityNameState = props.cityNameState
+    let internalState = {}
 
     const state = {
         labels: data.overall.spend_per_km_road.x , //['Total', 'Cycle', 'foot','Road Length'],
@@ -23,17 +25,23 @@ function Inclusion(props) {
         }]
     }
 
+    const scatterSeatsSlumState = {
+        datasets: [{
+            backgroundColor: '#ff2b5b',
+        }]
+    }
+
     function prepareScatterData() {
         let res= []
         let cityList = []
 
         data.overall.public_transport_ridership.forEach((v, idx) => {
-            if(v === null || data.overall.annual_hh_expenditure[idx] == null) {
+            if(v === null || data.overall.annual_hh_expenditure[idx] == null || v < 24 || data.overall.annual_hh_expenditure[idx] < 100000) {
                 return
             }
             res.push({
-                'x': data.overall.annual_hh_expenditure[idx],
-                'y': v
+                'y': data.overall.annual_hh_expenditure[idx],
+                'x': v
             })
             cityList.push(data.city_list[idx])
         })
@@ -42,6 +50,38 @@ function Inclusion(props) {
         scatterState.datasets[0]['data'] = res
 
         return scatterState
+    }
+
+    function prepareScatterDataSeatsSlums() {
+        let res= []
+        let cityList = []
+        let mean_seats = 0
+        let mean_slum = 0
+        let cnt = 0
+        
+        data.overall.seats_per_lakh.forEach((v, idx) => {
+            if(v === null || data.overall.no_people_in_slums[idx] == null) {
+                return
+            }
+            mean_seats = mean_seats + v
+            mean_slum += data.overall.no_people_in_slums[idx]
+            cnt++
+            res.push({
+                'x': data.overall.no_people_in_slums[idx],
+                'y': v.toFixed(2)
+            })
+            cityList.push(data.city_list[idx])
+        })
+
+        internalState['scatterDataSeatsSlums'] = {
+            'mean_seats': mean_seats / cnt,
+            'mean_slum': mean_slum / cnt
+        }
+
+        scatterSeatsSlumState['labels'] = cityList
+        scatterSeatsSlumState.datasets[0]['data'] = res
+
+        return scatterSeatsSlumState
     }
 
     function spendingCredit() {
@@ -53,14 +93,57 @@ function Inclusion(props) {
         }
     }
 
-    console.log(prepareScatterData())
+    function ridershipExpenseCredit() {
+        let hh = data[cityNameState].health.annual_hh_expenditure
+        let hh_mean = data.overall.mean_annual_hh_expenditure
+        let rider = data[cityNameState].overall.avg_daily_ridership
+        let rider_mean = data.overall.mean_public_transport_ridership
+        
+        if(hh <= hh_mean) {
+            if(rider <= rider_mean) {
+                return <h3>There’s room for improvement! <b>{cityNameState}</b> needs to build an accessible and inclusive public transport system.</h3>
+            } else {
+                return <h3>Great Work! <b>{cityNameState}’s</b> public transport is accessible for all! Residents with a lower annual household expenditure make more trips on public transport.</h3>
+            }
+        } else {
+            if(rider <= rider_mean) {
+                return <h3>In <b>{cityNameState}</b>, a higher annual household expenditure results in lower preference for public transport.</h3>
+            } else {
+                return <h3>Great work! <b>{cityNameState}</b> has successfully cultivated a dedicated public transport ridership! Despite their higher annual household expenditure, city name’s residents prefer public transport </h3>
+            }
+        }
+    }
 
+    function seatsSlumCredit() {
+        let seats = data[cityNameState].overall.seats_per_lakh
+        let seats_mean = data.overall.mean_seats_per_lakh
+        let slum = data[cityNameState].health.no_people_in_slums
+        let slum_mean = data.overall.mean_no_people_in_slums
+        
+        if(seats <= seats_mean) {
+            if(slum <= slum_mean) {
+                return <h3>You’re on the right track, <b>{cityNameState}</b>! Increasing the availability of affordable public transport is an essential factor for transforming lives and livelihoods of slum dwellers.</h3>
+            } else {
+                return <h3>There’s room to improve, <b>{cityNameState}</b>! Increasing the availability of affordable public transport is an essential factor for transforming lives and livelihoods of slum dwellers.</h3>
+            }
+        } else {
+            if(slum <= slum_mean) {
+                return <h3>You’re on the right track, <b>{cityNameState}</b>! Increasing the availability of affordable public transport is an essential factor for transforming lives and livelihoods of slum dwellers.</h3>
+            } else {
+                return <h3>You’ve got it right, <b>{cityNameState}</b>! Increasing the availability of affordable public transport is an essential factor for transforming lives and livelihoods of slum dwellers.</h3>
+
+            }
+        }
+    }
+
+    let seatSlumData = prepareScatterDataSeatsSlums()
+    
     return(
         <section className="Inclusion tab-content-box">
             <section>
                 <h3>Good quality road infrastructure is essential for improved mobility in your city!</h3>
                 <div className="row">
-                    <div className="col-md-6 spending-bar">
+                    <div className="col-md-12 spending-bar">
                         <Bar
                             data = {state}
                             options={{
@@ -87,7 +170,7 @@ function Inclusion(props) {
                         {spendingCredit()}
                     </div>
                     <div className="col-md-6">
-                        <div className="main-content">
+                        <div className="vertical-middle">
                             <h1>In 2019, {cityNameState} spent <span className="imp-unit">{(data[cityNameState].equality.spend_per_km_road*100).toFixed(2)} lakh rupees per km</span> on road maintenance</h1>
                         </div>
                         
@@ -104,7 +187,9 @@ function Inclusion(props) {
 
                 <Scatter
                     data={prepareScatterData()}
+                    plugins={ChartAnnotation}
                     options={{
+                        responsive:true,
                         title:{
                             display:true,
                             text:'',
@@ -115,14 +200,14 @@ function Inclusion(props) {
                             position:'top'
                         },
                         scales: {
-                            yAxes: [{
+                            xAxes: [{
                                 scaleLabel: {
                                     display: true,
                                     labelString: 'Public Transport Ridership',
                                 },
                                 type: 'logarithmic'
                             }],
-                            xAxes: [{
+                            yAxes: [{
                                 scaleLabel: {
                                     display: true,
                                     labelString: 'Avg Annual Household Expenditure (Rs)',
@@ -134,12 +219,129 @@ function Inclusion(props) {
                             callbacks: {
                                 label: function(tooltipItem, data) {
                                     var label = data.labels[tooltipItem.index];
-                                    return label + ': (Ridership: ' + tooltipItem.yLabel + ', HH Expense: ' + tooltipItem.xLabel + ')';
+                                    return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
                                 }
                             }
+                        },
+                        annotation: {
+                            annotations: [
+                                {
+                                    // drawTime: "afterDatasetsDraw",
+                                    // id: "hline",
+                                    type: "line",
+                                    mode: "horizontal",
+                                    scaleID: "y-axis-1",
+                                    value: data.overall.mean_annual_hh_expenditure,
+                                    borderColor: "black",
+                                    borderWidth: 1,
+                                    label: {
+                                        backgroundColor: "red",
+                                        content: "Mean Expenditure",
+                                        enabled: true
+                                    }
+                                },
+                                {
+                                    // drawTime: "afterDatasetsDraw",
+                                    // id: "hline",
+                                    type: "line",
+                                    mode: "vertical",
+                                    scaleID: "x-axis-1",
+                                    value: data.overall.mean_public_transport_ridership,
+                                    borderColor: "black",
+                                    borderWidth: 1,
+                                    label: {
+                                        backgroundColor: "red",
+                                        content: "Mean Ridership",
+                                        enabled: true
+                                    }
+                                }
+                            ]
                         }
                     }}
                 />
+                {ridershipExpenseCredit()}
+            
+            </section>
+
+
+            <section>
+                {/* <h3>The first step to a more inclusive city is accessible public transport for all! Let’s review where {cityNameState} is placed compared to the rest of urban India.</h3>
+ */}
+                <Scatter
+                    data={seatSlumData}
+                    plugins={ChartAnnotation}
+                    options={{
+                        responsive:true,
+                        title:{
+                            display:true,
+                            text:'',
+                            fontSize: 12
+                        },
+                        legend:{
+                            display: false,
+                            position:'top'
+                        },
+                        scales: {
+                            xAxes: [{
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'People residing in slums',
+                                },
+                                type: 'logarithmic'
+                            }],
+                            yAxes: [{
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Seats per lakh population',
+                                },
+                                type: 'logarithmic'
+                            }]
+                        },
+                        tooltips: {
+                            callbacks: {
+                                label: function(tooltipItem, data) {
+                                    var label = data.labels[tooltipItem.index];
+                                    return label + ': (Seats: ' + tooltipItem.yLabel + ', People in Slum: ' + tooltipItem.xLabel + ')';
+                                }
+                            }
+                        },
+                        annotation: {
+                            annotations: [
+                                {
+                                    // drawTime: "afterDatasetsDraw",
+                                    // id: "hline",
+                                    type: "line",
+                                    mode: "horizontal",
+                                    scaleID: "y-axis-1",
+                                    value: internalState.scatterDataSeatsSlums.mean_seats,
+                                    borderColor: "black",
+                                    borderWidth: 1,
+                                    label: {
+                                        backgroundColor: "red",
+                                        content: "Mean no of seats",
+                                        enabled: true
+                                    }
+                                },
+                                {
+                                    // drawTime: "afterDatasetsDraw",
+                                    // id: "hline",
+                                    type: "line",
+                                    mode: "vertical",
+                                    scaleID: "x-axis-1",
+                                    value: internalState.scatterDataSeatsSlums.mean_slum,
+                                    borderColor: "black",
+                                    borderWidth: 1,
+                                    label: {
+                                        backgroundColor: "red",
+                                        content: "Mean no of people in slums",
+                                        enabled: true
+                                    }
+                                }
+                            ]
+                        }
+                    }}
+                />
+                {seatsSlumCredit()}
             
             </section>
         </section>

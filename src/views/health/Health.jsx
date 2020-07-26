@@ -3,7 +3,7 @@ import {HorizontalBar} from 'react-chartjs-2';
 import pm25 from './images/dust.svg';
 import so2 from './images/pollution.svg'
 import no2 from './images/air-pollution.svg'
-import pm10 from './images/donut-pm10.png'
+import pm10 from './images/pm10.svg'
 
 import './Health.scss';
 
@@ -39,88 +39,95 @@ function Health(props) {
         else if(cityState.health['percent_roads_are_footpath']<=10) {
             result = cityStatic.percent_roads_are_footpath[3].replace('[0]', cityNameState)
         }
-        return (
-            <div className="footpath-percentage-header">
-                <div className="container">
-                        <div className="row">
-                            <div className="col-md-6">
-                            <h4><span className="footpath-percentage">{cityNameState}</span> has <span className="footpath-percentage">{cityState.health['percent_roads_are_footpath'].toFixed(2)}</span>% of road network covered by footpaths.</h4>
-                            </div>
-                        <div className="col-md-6 ">
-                            <h4>{result}</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
+        return result
     }
 
     function cycleTrackBenchmark() {
-        if (cityState.health['percent_roads_are_cyclepath']===null) return;
-        var result=''
-        if(cityState.health['percent_roads_are_cyclepath']>100) {
-            result = cityStatic.percent_roads_are_cyclepath[0].replace('[0]', cityNameState)} 
-        else if(cityState.health['percent_roads_are_cyclepath']<=75 && cityState.health['percent_roads_are_cyclepath']>50) {
-            result = cityStatic.percent_roads_are_cyclepath[1].replace('[0]', cityNameState)}
-        else if(cityState.health['percent_roads_are_cyclepath']<=50 && cityState.health['percent_roads_are_cyclepath']>25) {
-            result = cityStatic.percent_roads_are_cyclepath[2].replace('[0]', cityNameState)}
-        else if(cityState.health['percent_roads_are_cyclepath']<=25) {
-            result = cityStatic.percent_roads_are_cyclepath[3].replace('[0]', cityNameState)}
+        let cyclePath = cityState.health['percent_roads_are_cyclepath']
+        if (cyclePath===null) {
+            return 'Zero!! That\'s strange. Hopefully we can obtain this data someday.'
+        } else if(cyclePath > 100) {
+            return cityStatic.percent_roads_are_cyclepath[0].replace('[0]', cityNameState)} 
+        else if(cyclePath <= 75 && cyclePath > 50) {
+            return cityStatic.percent_roads_are_cyclepath[1].replace('[0]', cityNameState)}
+        else if(cyclePath <= 50 && cyclePath > 25) {
+            return cityStatic.percent_roads_are_cyclepath[2].replace('[0]', cityNameState)}
+        else if(cyclePath <= 25) {
+            return cityStatic.percent_roads_are_cyclepath[3].replace('[0]', cityNameState)}
 
-        return (
-            <div>
-                <div className="cycle-track-percentage-header">
-                    <div className="container">
-                            <div className="row">
-                                <div className="col-md-6">
-                                <h4><span className="cycle-track-percentage">{cityNameState}</span> has <span className="cycle-track-percentage">{cityState.health['percent_roads_are_cyclepath'].toFixed(2)}</span>% of road network covered by cycle tracks.</h4>
-                                </div>
-                            <div className="col-md-6 ">
-                                <h4> {result}</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
     }
 
     return(
-        <section>
+        <section class="tab-content-box">
             <div className="chart">
-                <h2>How healthy / active is your city?</h2>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-6" id="bar-chart">
-                            <HorizontalBar
-                            data = {state}
-                            options={{
-                                title:{
-                                    display:true,
-                                    // text:'Average Rainfall per month',
-                                    fontSize:20
-                                },
-                                legend:{
-                                    display:true,
-                                    position:'top'
-                                },
-                                scales: {
-                                    xAxes: [{
-                                        type: 'logarithmic'
-                                    }]
-                                }
-                            }}
-                            />
+                    
+                    <section className="sub-section-container">
+                        <h1>How active is your city?</h1>
+                        <div className="row">
+                            <div className="col-md-6" id="bar-chart">
+                                <HorizontalBar
+                                data = {state}
+                                options={{
+                                    title:{
+                                        display:false,
+                                        fontSize:20
+                                    },
+                                    legend:{
+                                        display:false,
+                                        position:'top'
+                                    },
+                                    scales: {
+                                        xAxes: [{
+                                            type: 'logarithmic',
+                                            ticks: {
+                                                callback: function(tick, index, ticks) {
+                                                    return tick
+                                                }
+                                            }
+                                        }]
+                                    }
+                                }}
+                                />
+                            </div>
+                            <div className="col-md-6" id="bar-chart">
+                                <div className="vertical-middle">
+                                    <h4>{cityNameState} has {cityState.health.active_mobility.y[0]} kms of road network out of which <span className="imp-unit">{cityState.health.active_mobility.y[1]} kms is footpath</span> and {cityState.health.active_mobility.y[2] || '0 (strange)'} kms is cycletrack</h4>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-md-6">
-                            TEXT 
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="vertical-middle">
+                                    <h3><span className="cycle-track-percentage">{cityNameState}</span> has <span className="cycle-track-percentage imp-unit">{(cityState.health.percent_roads_are_cyclepath || 0).toFixed(2)}%</span> of road network covered by cycle tracks.</h3>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="vertical-middle">
+                                    <h3><span className="footpath-percentage">{cityNameState}</span> has <span className="imp-unit footpath-percentage">{(cityState.health.percent_roads_are_footpath || 0).toFixed(2)}%</span> of road network covered by footpaths.</h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="vertical-middle">
+                                    <h4>{cycleTrackBenchmark()}</h4>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="vertical-middle">
+                                    <h4>{footpathBenchmark()}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="sub-section-container">
+                        {footpathBenchmark()} 
+                    </section>
                 </div>
             </div>
-
-            
-            {footpathBenchmark()} 
+ 
             {cycleTrackBenchmark()}
             
             {/* <div id="chart">

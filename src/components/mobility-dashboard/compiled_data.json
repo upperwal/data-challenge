@@ -574,123 +574,123 @@
             204000.0
         ],
         "annual_hh_expenditure": [
-            3181.0,
-            6086.0,
-            4150.0,
-            3447.0,
-            3263.0,
-            3289.0,
-            8891.0,
-            4458.0,
-            4956.0,
-            4976.0,
-            3095.0,
-            4363.0,
-            2203.0,
-            1685.0,
-            2570.0,
-            1211.0,
-            3095.0,
-            5112.0,
-            4472.0,
-            3035.0,
-            1886.0,
-            3650.0,
-            7556.0,
-            4268.0,
-            7805.0,
-            1232.0,
-            3115.0,
-            960.0,
-            4331.0,
-            1974.0,
+            144009.0,
+            120188.0,
+            225495.0,
+            247548.0,
+            166205.0,
+            131891.0,
+            132872.0,
+            177506.0,
+            166173.0,
+            141644.0,
+            120347.0,
+            199123.0,
+            113769.0,
+            151565.0,
+            205171.0,
+            75244.0,
+            152114.0,
+            273476.0,
+            161363.0,
+            172222.0,
+            173273.0,
+            130563.0,
+            183332.0,
+            203372.0,
+            106315.0,
+            141830.0,
+            142470.0,
+            111659.0,
+            11644.0,
+            147899.0,
+            221118.0,
+            145274.0,
+            127699.0,
+            181556.0,
+            237846.0,
+            322546.0,
+            192920.0,
+            163541.0,
+            134952.0,
+            139855.0,
+            225419.0,
+            139004.0,
+            194964.0,
+            120813.0,
+            143033.0,
+            191184.0,
+            180775.0,
+            151478.0,
+            142100.0,
+            198623.0,
+            126111.0,
+            185512.0,
+            132610.0,
+            99473.0,
+            235409.0,
+            153664.0,
+            160479.0,
+            171372.0,
+            170867.0,
+            180886.0,
+            189192.0,
+            172338.0,
+            154711.0,
+            149589.0,
+            178921.0,
+            163988.0,
+            79895.0,
+            139174.0,
+            109554.0,
+            135178.0,
+            185512.0,
             null,
-            2407.0,
-            813.0,
-            7537.0,
-            8396.0,
-            6337.0,
-            3660.0,
-            4883.0,
-            6218.0,
-            2599.0,
-            2748.0,
-            3619.0,
-            5746.0,
-            806.0,
-            3686.0,
-            3654.0,
-            6022.0,
-            4056.0,
-            6710.0,
-            4893.0,
-            3435.0,
-            4337.0,
             null,
-            7411.0,
-            25098.0,
-            5702.0,
-            14006.0,
-            731.0,
-            8554.0,
-            2669.0,
-            4294.0,
-            4468.0,
-            2356.0,
-            3990.0,
-            7422.0,
-            7187.0,
-            988.0,
-            3689.0,
-            1010.0,
-            6597.0,
-            4337.0,
+            165420.0,
+            69263.0,
+            132182.0,
+            182062.0,
+            204604.0,
+            138272.0,
+            162136.0,
+            182062.0,
+            182866.0,
+            130866.0,
+            176229.0,
+            118294.0,
+            132511.0,
+            121653.0,
+            93644.0,
+            137856.0,
+            117294.0,
+            99458.0,
+            177365.0,
+            172860.0,
+            130816.0,
+            113334.0,
+            143656.0,
+            166623.0,
+            183759.0,
+            185512.0,
+            118412.0,
             null,
+            125723.0,
+            105992.0,
+            94353.0,
             null,
-            6015.0,
-            176.0,
-            1865.0,
-            6388.0,
-            9768.0,
-            4321.0,
-            3774.0,
-            6388.0,
-            4337.0,
-            2064.0,
-            2621.0,
-            3067.0,
-            4091.0,
-            3408.0,
-            4542.0,
-            8166.0,
-            7229.0,
-            2304.0,
-            2616.0,
-            2416.0,
-            2467.0,
-            1193.0,
-            3343.0,
-            1882.0,
-            2432.0,
-            4337.0,
-            3472.0,
-            null,
-            2681.0,
-            2152.0,
-            2218.0,
-            2870.0,
-            6353.0,
-            1668.0,
-            3879.0,
-            5037.0,
-            5255.0,
-            6900.0,
-            5108.0,
-            4337.0,
-            5822.0,
-            3366.0,
-            5030.0,
-            8894.0
+            171381.0,
+            111151.0,
+            131224.0,
+            216055.0,
+            116621.0,
+            205585.0,
+            124904.0,
+            185512.0,
+            124311.0,
+            132610.0,
+            140845.0,
+            135213.0
         ],
         "seats_per_lakh": [
             1927.434083762733,
@@ -931,7 +931,7 @@
             35.868847946042884
         ],
         "mean_public_transport_ridership": 192630.24842857142,
-        "mean_annual_hh_expenditure": 4407.482142857143,
+        "mean_annual_hh_expenditure": 155043.41592920353,
         "no_people_in_slums": [
             43947.0,
             831174.0,
@@ -1172,7 +1172,8 @@
             259.0
         ],
         "mean_crimes_against_women": 707.7297297297297,
-        "mean_spend_per_km_road": 3.343036219223672
+        "mean_spend_per_km_road": 3.343036219223672,
+        "mean_seats_per_lakh": 1877.1015407076823
     },
     "city_list": [
         "Agartala",
@@ -1305,9 +1306,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1130.71,
@@ -1327,7 +1328,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 144009.0,
+            "no_people_in_slums": 43947.0
         },
         "equality": {
             "spend_per_km_road": 0.002264064172068877
@@ -1350,9 +1353,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1248.58,
@@ -1372,7 +1375,9 @@
             "fossil_fuel": {
                 "per_capita": 1.2900927777777778,
                 "per_km": 1859.8463854939212
-            }
+            },
+            "annual_hh_expenditure": 120188.0,
+            "no_people_in_slums": 831174.0
         },
         "equality": {
             "spend_per_km_road": 0.015641769049640392
@@ -1395,9 +1400,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2558.71,
@@ -1417,7 +1422,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 225495.0,
+            "no_people_in_slums": 642470.0
         },
         "equality": {
             "spend_per_km_road": 0.10005041602995259
@@ -1440,9 +1447,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -1462,7 +1469,9 @@
             "fossil_fuel": {
                 "per_capita": 22.321285910587033,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 247548.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -1485,9 +1494,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     593.86,
@@ -1507,7 +1516,9 @@
             "fossil_fuel": {
                 "per_capita": 124.31659572240454,
                 "per_km": 127962.81951975213
-            }
+            },
+            "annual_hh_expenditure": 166205.0,
+            "no_people_in_slums": 50600.0
         },
         "equality": {
             "spend_per_km_road": 0.03115212339608662
@@ -1530,9 +1541,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1771.33,
@@ -1552,7 +1563,9 @@
             "fossil_fuel": {
                 "per_capita": 0.7003448148010827,
                 "per_km": 522.523188790344
-            }
+            },
+            "annual_hh_expenditure": 131891.0,
+            "no_people_in_slums": 414878.0
         },
         "equality": {
             "spend_per_km_road": 0.0008355303641896202
@@ -1575,9 +1588,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1322.2,
@@ -1597,7 +1610,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 132872.0,
+            "no_people_in_slums": 185879.0
         },
         "equality": {
             "spend_per_km_road": 0.0008319467554076539
@@ -1620,9 +1635,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1750.0,
@@ -1642,7 +1657,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 177506.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0009714285714285714
@@ -1665,9 +1682,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1739.22,
@@ -1687,7 +1704,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 166173.0,
+            "no_people_in_slums": 221001.0
         },
         "equality": {
             "spend_per_km_road": 0.00012649348558549234
@@ -1710,9 +1729,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     944.0,
@@ -1732,7 +1751,9 @@
             "fossil_fuel": {
                 "per_capita": 0.7670097276264591,
                 "per_km": 835.2605932203389
-            }
+            },
+            "annual_hh_expenditure": 141644.0,
+            "no_people_in_slums": 214184.0
         },
         "equality": {
             "spend_per_km_road": 0.04449152542372881
@@ -1755,9 +1776,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     979.67,
@@ -1777,7 +1798,9 @@
             "fossil_fuel": {
                 "per_capita": 119.48052932349063,
                 "per_km": 64366.57241724255
-            }
+            },
+            "annual_hh_expenditure": 120347.0,
+            "no_people_in_slums": 28460.0
         },
         "equality": {
             "spend_per_km_road": 0.010717894801310647
@@ -1800,9 +1823,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2537.4,
@@ -1822,7 +1845,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 199123.0,
+            "no_people_in_slums": 309518.0
         },
         "equality": {
             "spend_per_km_road": 0.1051785292031213
@@ -1845,9 +1870,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     112.0,
@@ -1867,7 +1892,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 113769.0,
+            "no_people_in_slums": 103473.0
         },
         "equality": {
             "spend_per_km_road": 0.04116071428571429
@@ -1890,9 +1917,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     92.062,
@@ -1912,7 +1939,9 @@
             "fossil_fuel": {
                 "per_capita": 16.17591546806745,
                 "per_km": 516021.05103082705
-            }
+            },
+            "annual_hh_expenditure": 151565.0,
+            "no_people_in_slums": 388547.0
         },
         "equality": {
             "spend_per_km_road": 0.2589559210097543
@@ -1935,9 +1964,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1593.66,
@@ -1957,7 +1986,9 @@
             "fossil_fuel": {
                 "per_capita": 0.3924310042091119,
                 "per_km": 231.42564913469622
-            }
+            },
+            "annual_hh_expenditure": 205171.0,
+            "no_people_in_slums": 304008.0
         },
         "equality": {
             "spend_per_km_road": 0.0323343749607821
@@ -1980,9 +2011,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     171.0,
@@ -2002,7 +2033,9 @@
             "fossil_fuel": {
                 "per_capita": 0.12891732883294657,
                 "per_km": 257.3099415204678
-            }
+            },
+            "annual_hh_expenditure": 75244.0,
+            "no_people_in_slums": 21281.0
         },
         "equality": {
             "spend_per_km_road": 0.49707602339181284
@@ -2025,9 +2058,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     330.04,
@@ -2047,7 +2080,9 @@
             "fossil_fuel": {
                 "per_capita": 0.27313112232221365,
                 "per_km": 469.640043631075
-            }
+            },
+            "annual_hh_expenditure": 152114.0,
+            "no_people_in_slums": 17732.0
         },
         "equality": {
             "spend_per_km_road": 0.006059871530723548
@@ -2070,9 +2105,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2249.31,
@@ -2092,7 +2127,9 @@
             "fossil_fuel": {
                 "per_capita": 1.9495204882301655,
                 "per_km": 994.1270878625
-            }
+            },
+            "annual_hh_expenditure": 273476.0,
+            "no_people_in_slums": 49100.0
         },
         "equality": {
             "spend_per_km_road": 0.010638818126447666
@@ -2115,9 +2152,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     6083.0,
@@ -2137,7 +2174,9 @@
             "fossil_fuel": {
                 "per_capita": 0.9630035182526052,
                 "per_km": 1191.02416570771
-            }
+            },
+            "annual_hh_expenditure": 161363.0,
+            "no_people_in_slums": 345014.0
         },
         "equality": {
             "spend_per_km_road": 0.0017474930133157983
@@ -2160,9 +2199,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3095.45,
@@ -2182,7 +2221,9 @@
             "fossil_fuel": {
                 "per_capita": 1.2018265925176947,
                 "per_km": 767.9700851249415
-            }
+            },
+            "annual_hh_expenditure": 172222.0,
+            "no_people_in_slums": 132920.0
         },
         "equality": {
             "spend_per_km_road": 0.002245230903422766
@@ -2205,9 +2246,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     112.0,
@@ -2227,7 +2268,9 @@
             "fossil_fuel": {
                 "per_capita": 0.4797626647639791,
                 "per_km": 570.3392857142857
-            }
+            },
+            "annual_hh_expenditure": 173273.0,
+            "no_people_in_slums": 20650.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -2250,9 +2293,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     127.0,
@@ -2272,7 +2315,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 130563.0,
+            "no_people_in_slums": 8201.0
         },
         "equality": {
             "spend_per_km_road": 0.007874015748031496
@@ -2295,9 +2340,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2236.0,
@@ -2317,7 +2362,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 183332.0,
+            "no_people_in_slums": 181827.0
         },
         "equality": {
             "spend_per_km_road": 0.0032468694096601074
@@ -2340,9 +2387,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     14898.54,
@@ -2362,7 +2409,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 203372.0,
+            "no_people_in_slums": 1608130.0
         },
         "equality": {
             "spend_per_km_road": 0.003944681827883806
@@ -2385,9 +2434,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     651.0,
@@ -2407,7 +2456,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 106315.0,
+            "no_people_in_slums": 14275.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -2430,9 +2481,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     177.25,
@@ -2452,7 +2503,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 141830.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.04812411847672778
@@ -2475,9 +2528,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     181.73,
@@ -2497,7 +2550,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 142470.0,
+            "no_people_in_slums": 87427.0
         },
         "equality": {
             "spend_per_km_road": 0.0033016012766191602
@@ -2520,9 +2575,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     68.15,
@@ -2542,7 +2597,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 111659.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.003961848862802641
@@ -2565,9 +2622,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -2587,7 +2644,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 11644.0,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -2610,9 +2669,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     806.7,
@@ -2632,7 +2691,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 147899.0,
+            "no_people_in_slums": 88980.0
         },
         "equality": {
             "spend_per_km_road": 0.0021445394818395934
@@ -2655,9 +2716,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1884.26,
@@ -2677,7 +2738,9 @@
             "fossil_fuel": {
                 "per_capita": 432.44573223651463,
                 "per_km": 367044.35693587933
-            }
+            },
+            "annual_hh_expenditure": 221118.0,
+            "no_people_in_slums": 212359.0
         },
         "equality": {
             "spend_per_km_road": 0.0034177873541867895
@@ -2700,9 +2763,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     609.481,
@@ -2722,7 +2785,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 145274.0,
+            "no_people_in_slums": 11933.0
         },
         "equality": {
             "spend_per_km_road": 0.028827805952933726
@@ -2745,9 +2810,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     48.92,
@@ -2767,7 +2832,9 @@
             "fossil_fuel": {
                 "per_capita": 0.22571913566087076,
                 "per_km": 502.8618152085037
-            }
+            },
+            "annual_hh_expenditure": 127699.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.002248569092395748
@@ -2790,9 +2857,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3286.65,
@@ -2812,7 +2879,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 181556.0,
+            "no_people_in_slums": 459721.0
         },
         "equality": {
             "spend_per_km_road": 0.0038671595697746947
@@ -2835,9 +2904,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2055.6,
@@ -2857,7 +2926,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 237846.0,
+            "no_people_in_slums": 6106843.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -2880,9 +2951,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     4480.0,
@@ -2902,7 +2973,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 322546.0,
+            "no_people_in_slums": 2085.0
         },
         "equality": {
             "spend_per_km_road": 0.011631696428571429
@@ -2925,9 +2998,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     413.31,
@@ -2947,7 +3020,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 192920.0,
+            "no_people_in_slums": 25739.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -2970,9 +3045,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2700.0,
@@ -2992,7 +3067,9 @@
             "fossil_fuel": {
                 "per_capita": 1.6131933769855953,
                 "per_km": 817.0370370370371
-            }
+            },
+            "annual_hh_expenditure": 163541.0,
+            "no_people_in_slums": 64000.0
         },
         "equality": {
             "spend_per_km_road": 0.019937037037037038
@@ -3015,9 +3092,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -3037,7 +3114,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 134952.0,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -3060,9 +3139,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3773.1,
@@ -3082,7 +3161,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 139855.0,
+            "no_people_in_slums": 143779.0
         },
         "equality": {
             "spend_per_km_road": 0.0006572844610532453
@@ -3105,9 +3186,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     9013.0,
@@ -3127,7 +3208,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 225419.0,
+            "no_people_in_slums": 1805716.0
         },
         "equality": {
             "spend_per_km_road": 0.020444912903583714
@@ -3150,9 +3233,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     232.0,
@@ -3172,7 +3255,9 @@
             "fossil_fuel": {
                 "per_capita": 0.05768677315123688,
                 "per_km": 76.03017241379312
-            }
+            },
+            "annual_hh_expenditure": 139004.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -3195,9 +3280,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3783.86,
@@ -3217,7 +3302,9 @@
             "fossil_fuel": {
                 "per_capita": 1.0781629048771222,
                 "per_km": 718.5942397445993
-            }
+            },
+            "annual_hh_expenditure": 194964.0,
+            "no_people_in_slums": 42986.0
         },
         "equality": {
             "spend_per_km_road": 0.0009302669760509109
@@ -3240,9 +3327,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     335.86,
@@ -3262,7 +3349,9 @@
             "fossil_fuel": {
                 "per_capita": 1.907895053846339,
                 "per_km": 943.1429762401
-            }
+            },
+            "annual_hh_expenditure": 120813.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -3285,9 +3374,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1050.0,
@@ -3307,7 +3396,9 @@
             "fossil_fuel": {
                 "per_capita": 1.0271875525161211,
                 "per_km": 1408.747619047619
-            }
+            },
+            "annual_hh_expenditure": 143033.0,
+            "no_people_in_slums": 268135.0
         },
         "equality": {
             "spend_per_km_road": 0.0026666666666666666
@@ -3330,9 +3421,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3709.0,
@@ -3352,7 +3443,9 @@
             "fossil_fuel": {
                 "per_capita": 28.8926291552436,
                 "per_km": 29366.136424912376
-            }
+            },
+            "annual_hh_expenditure": 191184.0,
+            "no_people_in_slums": 110580.0
         },
         "equality": {
             "spend_per_km_road": 0.015376112159611755
@@ -3375,9 +3468,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2360.0,
@@ -3397,7 +3490,9 @@
             "fossil_fuel": {
                 "per_capita": 0.004317982472112596,
                 "per_km": 1.7584745762711864
-            }
+            },
+            "annual_hh_expenditure": 180775.0,
+            "no_people_in_slums": 177557.0
         },
         "equality": {
             "spend_per_km_road": 0.001974576271186441
@@ -3420,9 +3515,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1647.2,
@@ -3442,7 +3537,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 151478.0,
+            "no_people_in_slums": 6630.0
         },
         "equality": {
             "spend_per_km_road": 0.004923506556580864
@@ -3465,9 +3562,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     803.04,
@@ -3487,7 +3584,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 142100.0,
+            "no_people_in_slums": 190068.0
         },
         "equality": {
             "spend_per_km_road": 0.06418111177525404
@@ -3510,9 +3609,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1169.0,
@@ -3532,7 +3631,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 198623.0,
+            "no_people_in_slums": 45288.0
         },
         "equality": {
             "spend_per_km_road": 0.007271171941830625
@@ -3555,9 +3656,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     723.0,
@@ -3577,7 +3678,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 126111.0,
+            "no_people_in_slums": 109161.0
         },
         "equality": {
             "spend_per_km_road": 0.002240663900414938
@@ -3600,9 +3703,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     443.23,
@@ -3622,7 +3725,9 @@
             "fossil_fuel": {
                 "per_capita": 0.5140469672009175,
                 "per_km": 1761.4218351645868
-            }
+            },
+            "annual_hh_expenditure": 185512.0,
+            "no_people_in_slums": 120084.0
         },
         "equality": {
             "spend_per_km_road": 0.05617850777248832
@@ -3645,9 +3750,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     6225.8,
@@ -3667,7 +3772,9 @@
             "fossil_fuel": {
                 "per_capita": 11.384615384615385,
                 "per_km": 5943.011339908124
-            }
+            },
+            "annual_hh_expenditure": 132610.0,
+            "no_people_in_slums": 704044.0
         },
         "equality": {
             "spend_per_km_road": 0.014865559446175592
@@ -3690,9 +3797,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     579.0,
@@ -3712,7 +3819,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 99473.0,
+            "no_people_in_slums": 82000.0
         },
         "equality": {
             "spend_per_km_road": 0.0008117443868739205
@@ -3735,9 +3844,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2484.0,
@@ -3757,7 +3866,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 235409.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0002616747181964573
@@ -3780,9 +3891,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     35.99,
@@ -3802,7 +3913,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 153664.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.006946373992775771
@@ -3825,9 +3938,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     785.0,
@@ -3847,7 +3960,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 160479.0,
+            "no_people_in_slums": 72587.0
         },
         "equality": {
             "spend_per_km_road": 0.05729936305732484
@@ -3870,9 +3985,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     112.64,
@@ -3892,7 +4007,9 @@
             "fossil_fuel": {
                 "per_capita": 0.6240880321942062,
                 "per_km": 596.1470170454545
-            }
+            },
+            "annual_hh_expenditure": 171372.0,
+            "no_people_in_slums": 23627.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -3915,9 +4032,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -3937,7 +4054,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 170867.0,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -3960,9 +4079,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     912.71,
@@ -3982,7 +4101,9 @@
             "fossil_fuel": {
                 "per_capita": 0.30475164845392905,
                 "per_km": 459.18528338683694
-            }
+            },
+            "annual_hh_expenditure": 180886.0,
+            "no_people_in_slums": 64526.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -4005,9 +4126,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     3833.55,
@@ -4027,7 +4148,9 @@
             "fossil_fuel": {
                 "per_capita": 1.2970837041699503,
                 "per_km": 1168.6295991965671
-            }
+            },
+            "annual_hh_expenditure": 189192.0,
+            "no_people_in_slums": 663952.0
         },
         "equality": {
             "spend_per_km_road": 0.03789959697930117
@@ -4050,9 +4173,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     372.89,
@@ -4072,7 +4195,9 @@
             "fossil_fuel": {
                 "per_capita": 9669.244247221353,
                 "per_km": 44901295.288154684
-            }
+            },
+            "annual_hh_expenditure": 172338.0,
+            "no_people_in_slums": 250000.0
         },
         "equality": {
             "spend_per_km_road": 0.04242538013891496
@@ -4095,9 +4220,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1572.53,
@@ -4117,7 +4242,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 154711.0,
+            "no_people_in_slums": 176391.0
         },
         "equality": {
             "spend_per_km_road": 0.0010619829192447838
@@ -4140,9 +4267,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1198.0,
@@ -4162,7 +4289,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 149589.0,
+            "no_people_in_slums": 8826.0
         },
         "equality": {
             "spend_per_km_road": 0.05881469115191986
@@ -4185,9 +4314,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1988.39,
@@ -4207,7 +4336,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 178921.0,
+            "no_people_in_slums": 5875.0
         },
         "equality": {
             "spend_per_km_road": 0.01325192743878213
@@ -4230,9 +4361,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1227.0,
@@ -4252,7 +4383,9 @@
             "fossil_fuel": {
                 "per_capita": 0.4945835548139705,
                 "per_km": 425.4132029339853
-            }
+            },
+            "annual_hh_expenditure": 163988.0,
+            "no_people_in_slums": 204985.0
         },
         "equality": {
             "spend_per_km_road": 0.025362673186634068
@@ -4275,9 +4408,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     551.0,
@@ -4297,7 +4430,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 79895.0,
+            "no_people_in_slums": 30865.0
         },
         "equality": {
             "spend_per_km_road": 0.0003401088929219601
@@ -4320,9 +4455,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2950.11,
@@ -4342,7 +4477,9 @@
             "fossil_fuel": {
                 "per_capita": 0.2642165544259831,
                 "per_km": 245.11458894753076
-            }
+            },
+            "annual_hh_expenditure": 139174.0,
+            "no_people_in_slums": 809327.0
         },
         "equality": {
             "spend_per_km_road": 0.05095403222252729
@@ -4365,9 +4502,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     41.4,
@@ -4387,7 +4524,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 109554.0,
+            "no_people_in_slums": 3011.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -4410,9 +4549,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2008.0,
@@ -4432,7 +4571,9 @@
             "fossil_fuel": {
                 "per_capita": 0.17074540182990072,
                 "per_km": 150.68774900398407
-            }
+            },
+            "annual_hh_expenditure": 135178.0,
+            "no_people_in_slums": 55520.0
         },
         "equality": {
             "spend_per_km_road": 0.011548804780876495
@@ -4455,9 +4596,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     506.12,
@@ -4477,7 +4618,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 185512.0,
+            "no_people_in_slums": 208625.0
         },
         "equality": {
             "spend_per_km_road": 0.1032759029479175
@@ -4500,9 +4643,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -4522,7 +4665,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": null,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -4545,9 +4690,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -4567,7 +4712,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": null,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -4590,9 +4737,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     77.0,
@@ -4612,7 +4759,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 165420.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.004545454545454545
@@ -4635,9 +4784,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     55.44,
@@ -4657,7 +4806,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 69263.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -4680,9 +4831,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     236.0,
@@ -4702,7 +4853,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 132182.0,
+            "no_people_in_slums": 9912.0
         },
         "equality": {
             "spend_per_km_road": 0.3389830508474576
@@ -4725,9 +4878,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1228.25,
@@ -4747,7 +4900,9 @@
             "fossil_fuel": {
                 "per_capita": 0.3186344686541336,
                 "per_km": 659.6051292489315
-            }
+            },
+            "annual_hh_expenditure": 182062.0,
+            "no_people_in_slums": 147979.0
         },
         "equality": {
             "spend_per_km_road": 0.07528597598208833
@@ -4770,9 +4925,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     278.0,
@@ -4792,7 +4947,9 @@
             "fossil_fuel": {
                 "per_capita": 1176.3661037180188,
                 "per_km": 595575.5395683453
-            }
+            },
+            "annual_hh_expenditure": 204604.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.002661870503597122
@@ -4815,9 +4972,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2357.0,
@@ -4837,7 +4994,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 138272.0,
+            "no_people_in_slums": 91689.0
         },
         "equality": {
             "spend_per_km_road": 0.024959694526941027
@@ -4860,9 +5019,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     241.62,
@@ -4882,7 +5041,9 @@
             "fossil_fuel": {
                 "per_capita": 0.0008751608751608751,
                 "per_km": 5.628673123085838
-            }
+            },
+            "annual_hh_expenditure": 162136.0,
+            "no_people_in_slums": 54892.0
         },
         "equality": {
             "spend_per_km_road": 0.013906133598212068
@@ -4905,9 +5066,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1398.0,
@@ -4927,7 +5088,9 @@
             "fossil_fuel": {
                 "per_capita": 0.4665372184553771,
                 "per_km": 1433.8841201716739
-            }
+            },
+            "annual_hh_expenditure": 182062.0,
+            "no_people_in_slums": 626372.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -4950,9 +5113,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     275.0,
@@ -4972,7 +5135,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 182866.0,
+            "no_people_in_slums": 37078.0
         },
         "equality": {
             "spend_per_km_road": 0.04094545454545454
@@ -4995,9 +5160,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2630.0,
@@ -5017,7 +5182,9 @@
             "fossil_fuel": {
                 "per_capita": 0.3469766820019052,
                 "per_km": 165.78136882129277
-            }
+            },
+            "annual_hh_expenditure": 130866.0,
+            "no_people_in_slums": 64163.0
         },
         "equality": {
             "spend_per_km_road": 0.005946768060836502
@@ -5040,9 +5207,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2466.3,
@@ -5062,7 +5229,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 176229.0,
+            "no_people_in_slums": 298085.0
         },
         "equality": {
             "spend_per_km_road": 0.014823825163199935
@@ -5085,9 +5254,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     328.35,
@@ -5107,7 +5276,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 118294.0,
+            "no_people_in_slums": 37000.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -5130,9 +5301,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     842.0,
@@ -5152,7 +5323,9 @@
             "fossil_fuel": {
                 "per_capita": 95.7408886274964,
                 "per_km": 139394.29928741092
-            }
+            },
+            "annual_hh_expenditure": 132511.0,
+            "no_people_in_slums": 232023.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -5175,9 +5348,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     487.8,
@@ -5197,7 +5370,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 121653.0,
+            "no_people_in_slums": 170483.0
         },
         "equality": {
             "spend_per_km_road": 0.0007175071750717506
@@ -5220,9 +5395,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     268.82,
@@ -5242,7 +5417,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 93644.0,
+            "no_people_in_slums": 7968.0
         },
         "equality": {
             "spend_per_km_road": 0.004835949706123057
@@ -5265,9 +5442,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1859.5,
@@ -5287,7 +5464,9 @@
             "fossil_fuel": {
                 "per_capita": 0.06549638554216866,
                 "per_km": 29.234740521645598
-            }
+            },
+            "annual_hh_expenditure": 137856.0,
+            "no_people_in_slums": 272868.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -5310,9 +5489,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     848.63,
@@ -5332,7 +5511,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 117294.0,
+            "no_people_in_slums": 38583.0
         },
         "equality": {
             "spend_per_km_road": 0.09871204176142724
@@ -5355,9 +5536,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     665.0,
@@ -5377,7 +5558,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 99458.0,
+            "no_people_in_slums": 63104.0
         },
         "equality": {
             "spend_per_km_road": 0.001037593984962406
@@ -5400,9 +5583,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     225.16,
@@ -5422,7 +5605,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 177365.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -5445,9 +5630,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     102.29,
@@ -5467,7 +5652,9 @@
             "fossil_fuel": {
                 "per_capita": 0.0,
                 "per_km": 0.0
-            }
+            },
+            "annual_hh_expenditure": 172860.0,
+            "no_people_in_slums": 3008.0
         },
         "equality": {
             "spend_per_km_road": 0.13608368364454002
@@ -5490,9 +5677,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     882.0,
@@ -5512,7 +5699,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 130816.0,
+            "no_people_in_slums": 36473.0
         },
         "equality": {
             "spend_per_km_road": 0.0005668934240362812
@@ -5535,9 +5724,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     82.84,
@@ -5557,7 +5746,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 113334.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.01859005311443747
@@ -5580,9 +5771,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1903.0,
@@ -5602,7 +5793,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 143656.0,
+            "no_people_in_slums": 39160.0
         },
         "equality": {
             "spend_per_km_road": 0.0013767735155018393
@@ -5625,9 +5818,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2843.0,
@@ -5647,7 +5840,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 166623.0,
+            "no_people_in_slums": 0.0
         },
         "equality": {
             "spend_per_km_road": 0.0
@@ -5670,9 +5865,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1332.43,
@@ -5692,7 +5887,9 @@
             "fossil_fuel": {
                 "per_capita": 0.40123395694031105,
                 "per_km": 1998.8960020413829
-            }
+            },
+            "annual_hh_expenditure": 183759.0,
+            "no_people_in_slums": 326038.0
         },
         "equality": {
             "spend_per_km_road": 0.0423286776791276
@@ -5715,9 +5912,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     366.16,
@@ -5737,7 +5934,9 @@
             "fossil_fuel": {
                 "per_capita": 0.07701049446353408,
                 "per_km": 497.3768298011798
-            }
+            },
+            "annual_hh_expenditure": 185512.0,
+            "no_people_in_slums": 326798.0
         },
         "equality": {
             "spend_per_km_road": 0.025671837448110114
@@ -5760,9 +5959,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     302.44,
@@ -5782,7 +5981,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 118412.0,
+            "no_people_in_slums": 42680.0
         },
         "equality": {
             "spend_per_km_road": 0.05042322444121148
@@ -5805,9 +6006,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     0.0,
@@ -5827,7 +6028,9 @@
             "fossil_fuel": {
                 "per_capita": 0.045973770703099825,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": null,
+            "no_people_in_slums": null
         },
         "equality": {
             "spend_per_km_road": null
@@ -5850,9 +6053,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1411.97,
@@ -5872,7 +6075,9 @@
             "fossil_fuel": {
                 "per_capita": 0.8605265865707301,
                 "per_km": 645.599410752353
-            }
+            },
+            "annual_hh_expenditure": 125723.0,
+            "no_people_in_slums": 44593.0
         },
         "equality": {
             "spend_per_km_road": 0.012755228510520763
@@ -5895,9 +6100,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     17511.0,
@@ -5917,7 +6122,9 @@
             "fossil_fuel": {
                 "per_capita": 0.6586540744671406,
                 "per_km": 18.217120667009308
-            }
+            },
+            "annual_hh_expenditure": 105992.0,
+            "no_people_in_slums": 74234.0
         },
         "equality": {
             "spend_per_km_road": 0.0015338929815544515
@@ -5940,9 +6147,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     480.44,
@@ -5962,7 +6169,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 94353.0,
+            "no_people_in_slums": 120015.0
         },
         "equality": {
             "spend_per_km_road": 0.0020397968528848556
@@ -5985,9 +6194,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1332.84,
@@ -6007,7 +6216,9 @@
             "fossil_fuel": {
                 "per_capita": 0.9559705882352941,
                 "per_km": 731.5881876294229
-            }
+            },
+            "annual_hh_expenditure": null,
+            "no_people_in_slums": 221680.0
         },
         "equality": {
             "spend_per_km_road": 0.0016055940698058283
@@ -6030,9 +6241,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2883.34,
@@ -6052,7 +6263,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 171381.0,
+            "no_people_in_slums": 95000.0
         },
         "equality": {
             "spend_per_km_road": null
@@ -6075,9 +6288,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     819.0,
@@ -6097,7 +6310,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 111151.0,
+            "no_people_in_slums": 76608.0
         },
         "equality": {
             "spend_per_km_road": 0.0029304029304029304
@@ -6120,9 +6335,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     591.92,
@@ -6142,7 +6357,9 @@
             "fossil_fuel": {
                 "per_capita": 0.07129642718852375,
                 "per_km": 39.194485741316406
-            }
+            },
+            "annual_hh_expenditure": 131224.0,
+            "no_people_in_slums": 44945.0
         },
         "equality": {
             "spend_per_km_road": 0.03194688471415056
@@ -6165,9 +6382,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     860.0,
@@ -6187,7 +6404,9 @@
             "fossil_fuel": {
                 "per_capita": 16.111744119011526,
                 "per_km": 9651.627906976744
-            }
+            },
+            "annual_hh_expenditure": 216055.0,
+            "no_people_in_slums": 18415.0
         },
         "equality": {
             "spend_per_km_road": 0.017779069767441858
@@ -6210,9 +6429,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1036.85,
@@ -6232,7 +6451,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 116621.0,
+            "no_people_in_slums": 167051.0
         },
         "equality": {
             "spend_per_km_road": 0.0004243622510488499
@@ -6255,9 +6476,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1480.0,
@@ -6277,7 +6498,9 @@
             "fossil_fuel": {
                 "per_capita": 0.00052,
                 "per_km": 0.7027027027027027
-            }
+            },
+            "annual_hh_expenditure": 205585.0,
+            "no_people_in_slums": 103553.0
         },
         "equality": {
             "spend_per_km_road": 0.00554054054054054
@@ -6300,9 +6523,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     598.51,
@@ -6322,7 +6545,9 @@
             "fossil_fuel": {
                 "per_capita": 0.7390510049949662,
                 "per_km": 1779.682879149889
-            }
+            },
+            "annual_hh_expenditure": 124904.0,
+            "no_people_in_slums": 4299.0
         },
         "equality": {
             "spend_per_km_road": 0.04507861188618403
@@ -6345,9 +6570,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     989.69,
@@ -6367,7 +6592,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 185512.0,
+            "no_people_in_slums": 34900.0
         },
         "equality": {
             "spend_per_km_road": 0.028443249906536388
@@ -6390,9 +6617,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     650.4,
@@ -6412,7 +6639,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 124311.0,
+            "no_people_in_slums": 41340.0
         },
         "equality": {
             "spend_per_km_road": 0.01027060270602706
@@ -6435,9 +6664,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     1250.0,
@@ -6457,7 +6686,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 132610.0,
+            "no_people_in_slums": 281209.0
         },
         "equality": {
             "spend_per_km_road": 0.039495999999999996
@@ -6480,9 +6711,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     2287.57,
@@ -6502,7 +6733,9 @@
             "fossil_fuel": {
                 "per_capita": null,
                 "per_km": null
-            }
+            },
+            "annual_hh_expenditure": 140845.0,
+            "no_people_in_slums": 852955.0
         },
         "equality": {
             "spend_per_km_road": 0.06430404315496356
@@ -6525,9 +6758,9 @@
         "health": {
             "active_mobility": {
                 "x": [
-                    "Roads",
-                    "Footpath",
-                    "Cycle"
+                    "Roads (Km)",
+                    "Footpath (Km)",
+                    "Cycle (Km)"
                 ],
                 "y": [
                     4940.22,
@@ -6547,7 +6780,9 @@
             "fossil_fuel": {
                 "per_capita": 0.5369406315073733,
                 "per_km": 102.30111209622243
-            }
+            },
+            "annual_hh_expenditure": 135213.0,
+            "no_people_in_slums": 321525.0
         },
         "equality": {
             "spend_per_km_road": 0.03550044330009595

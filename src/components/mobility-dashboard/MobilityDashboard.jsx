@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import data from './compiled_data';
 
+import Header from '../../views/header/Header'
 import Overview from '../../views/overview/Overview'
 import Health from '../../views/health/Health'
 import Inclusion from '../../views/inclusion/Inclusion'
@@ -52,13 +53,20 @@ import './MobilityDashboard.scss';
 function MobilityDashboard() {
 
     const [cityState, setCityState] = useState(data['Delhi']);
-    const [cityNameState, setCityNameState] = useState('Delhi');
+    const [cityNameState, setCityNameState] = useState(data.city_list[0]);
     const cityStatic = data.static;
     const staticOverallData = data['overall']
 
-    
+    console.log(data.city_list)
+
+    function cityChangeEvent(e) {
+        setCityNameState(e.target.value)
+        setCityState(data[e.target.value])
+    }
     
     return (
+        <>
+        <Header cityList={data.city_list} callback={cityChangeEvent}/>
         <section className="MobilityDashboard container">
             {/* <div className="dropdown">
                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -101,6 +109,7 @@ function MobilityDashboard() {
                 </div>
             </div>
         </section>
+        </>
     )
 
 }

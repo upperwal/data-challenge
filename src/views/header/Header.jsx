@@ -6,6 +6,15 @@ import FormControl from '@material-ui/core/FormControl';
 import './Header.scss'
 
 function Header(props) {
+    function populateCities() {
+        let res = []
+        props.cityList.forEach((v, idx) => {
+            res.push(
+                <option key={idx} value={v}>{v}</option>
+            )
+        })
+        return res
+    }
     return(
         <header className="container Header">
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -81,14 +90,14 @@ function Header(props) {
                             <InputLabel htmlFor="outlined-age-native-simple">City</InputLabel>
                             <Select
                                 native
-                                /* onChange={(e) => this.changeLanguage(e, this.props.i18n)} */
+                                onChange={(e) => props.callback(e)}
                                 label="City"
                                 inputProps={{
                                     name: 'city',
                                     id: 'outlined-age-native-simple',
                                 }}
                             >
-                            <option value="en">Delhi</option>
+                            {populateCities()}
                             </Select>
                         </FormControl>
 
