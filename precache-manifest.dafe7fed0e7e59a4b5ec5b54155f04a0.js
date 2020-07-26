@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff831fe41df7e64d21d853e2edde85cf",
+    "revision": "ed0e79f3eaa474e054252bd4f5436568",
     "url": "/data-challenge/index.html"
   },
   {
-    "revision": "37edf8f039884f39209f",
+    "revision": "24c017f4bafc592c026b",
     "url": "/data-challenge/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "85a4cae5def0d8d26cb5",
-    "url": "/data-challenge/static/css/main.edbf8fac.chunk.css"
+    "revision": "14b4204d411413feaf88",
+    "url": "/data-challenge/static/css/main.b5b6128d.chunk.css"
   },
   {
-    "revision": "37edf8f039884f39209f",
-    "url": "/data-challenge/static/js/2.49c4f257.chunk.js"
+    "revision": "24c017f4bafc592c026b",
+    "url": "/data-challenge/static/js/2.9a519265.chunk.js"
   },
   {
     "revision": "ffb699516f032882645f06689e38c1df",
-    "url": "/data-challenge/static/js/2.49c4f257.chunk.js.LICENSE.txt"
+    "url": "/data-challenge/static/js/2.9a519265.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85a4cae5def0d8d26cb5",
-    "url": "/data-challenge/static/js/main.b8023e2d.chunk.js"
+    "revision": "14b4204d411413feaf88",
+    "url": "/data-challenge/static/js/main.123bc9bd.chunk.js"
   },
   {
     "revision": "292702babd3b71a9f409",
@@ -44,12 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/data-challenge/static/media/area.6e53849c.svg"
   },
   {
+    "revision": "aa1d850604a158e642b2758d62dbd39a",
+    "url": "/data-challenge/static/media/bicycle.aa1d8506.svg"
+  },
+  {
     "revision": "0d5feb17ddf0bb8dadc6bc9fa6f2e173",
     "url": "/data-challenge/static/media/bus.0d5feb17.svg"
   },
   {
     "revision": "d57048d1c154303d17dc71df808c5546",
     "url": "/data-challenge/static/media/distance.d57048d1.svg"
+  },
+  {
+    "revision": "ef856ee7466da77d825eeb0cc9c7b4c8",
+    "url": "/data-challenge/static/media/dog.ef856ee7.svg"
   },
   {
     "revision": "ef0b04ba847ac26a86cb55ef90391b04",
@@ -72,7 +80,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/data-challenge/static/media/ridership.9c0f1fe2.svg"
   },
   {
+    "revision": "d325d2348e12c2f9a5b52073c89ea2fc",
+    "url": "/data-challenge/static/media/road.d325d234.svg"
+  },
+  {
+    "revision": "ae8ff4a8932f13b354c29a198c7a90ce",
+    "url": "/data-challenge/static/media/safety.ae8ff4a8.svg"
+  },
+  {
     "revision": "a367c6c382bc2f076df0c733daae07dc",
     "url": "/data-challenge/static/media/seats.a367c6c3.svg"
+  },
+  {
+    "revision": "058fa45a5945250b174dd32e353e5b87",
+    "url": "/data-challenge/static/media/street-light.058fa45a.svg"
   }
 ]);
