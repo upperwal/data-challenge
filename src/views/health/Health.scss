@@ -1,0 +1,34 @@
+
+.card {
+    width: 90%;
+    padding: 16px;
+    margin: 20px 0px 40px 0px;
+    text-align: center;
+}
+.card-image img{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.chart {
+    text-align: center;
+}
+
+.chart h2 {
+    margin: 40px 0px;
+    text-align: center;
+}
+.data {
+    text-align: center;
+    margin: 60px 0px;
+}
+.data span {
+    font-size: 40px;
+}
+
+.footpath-percentage-header, .cycle-track-percentage-header {
+    margin-top: 80px;
+}
+.footpath-percentage, .cycle-track-percentage {
+    font-size: 35px;
+}

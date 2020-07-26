@@ -1,20 +1,24 @@
 import React from 'react'
-import {Bar} from 'react-chartjs-2';
+import {HorizontalBar} from 'react-chartjs-2';
+import pm25 from './images/dust.svg';
+import so2 from './images/pollution.svg'
+import no2 from './images/air-pollution.svg'
+import pm10 from './images/donut-pm10.png'
+
+import './Health.scss';
 
 function Health(props) {
     const cityState = props.cityState
     const cityNameState = props.cityNameState
+    const cityStatic = props.cityStatic
 
-    console.log(cityState)
 
     const state = {
-        labels: cityState.health.active_mobility.x , //['Total', 'Cycle', 'foot','Road Length'],
+        labels: cityState.health.active_mobility.x , 
         datasets: [
           {
             label: cityNameState,
-            backgroundColor: 'rgba(75,192,192,1)',
-            borderColor: 'rgba(0,0,0,1)',
-            borderWidth: 2,
+            backgroundColor: '#f6264c',
             data: cityState.health.active_mobility.y
           }
         ]
@@ -24,23 +28,23 @@ function Health(props) {
         if (cityState.health['percent_roads_are_footpath']===null) return;
         var result=''
         if(cityState.health['percent_roads_are_footpath']>30) {
-            result='You’re doing great, ' +cityNameState + '! You’ve achieved Level of Service 1 as per the national benchmarks for footpath infrastructure'
+            result = cityStatic.percent_roads_are_footpath[0].replace('[0]', cityNameState)
         } 
         else if(cityState.health['percent_roads_are_footpath']<=30 && cityState.health['percent_roads_are_footpath']>20) {
-            result ="You’re on the right track, " + cityNameState +"! You’ve achieved Level of Service 2 as per the national benchmarks for footpath infrastructure"
+            result = cityStatic.percent_roads_are_footpath[1].replace('[0]', cityNameState)
         }
         else if(cityState.health['percent_roads_are_footpath']<=20 && cityState.health['percent_roads_are_footpath']>10) {
-            result ="There’s quite a way to go, " + cityNameState +"! You’re at Level of Service 3 as per the national benchmarks for footpath infrastructure."
+            result = cityStatic.percent_roads_are_footpath[2].replace('[0]', cityNameState)
         }
         else if(cityState.health['percent_roads_are_footpath']<=10) {
-            result ="There’s quite a way to go, " + cityNameState +"! You’re at Level of Service 4 as per the national benchmarks for footpath infrastructure."
+            result = cityStatic.percent_roads_are_footpath[3].replace('[0]', cityNameState)
         }
         return (
             <div className="footpath-percentage-header">
                 <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                            <h4><span className="footpath-percentage">{cityNameState}</span> has <span className="footpath-percentage">{cityState.health['percent_roads_are_footpath']}</span>% of road network covered by footpaths.</h4>
+                            <h4><span className="footpath-percentage">{cityNameState}</span> has <span className="footpath-percentage">{cityState.health['percent_roads_are_footpath'].toFixed(2)}</span>% of road network covered by footpaths.</h4>
                             </div>
                         <div className="col-md-6 ">
                             <h4>{result}</h4>
@@ -55,17 +59,13 @@ function Health(props) {
         if (cityState.health['percent_roads_are_cyclepath']===null) return;
         var result=''
         if(cityState.health['percent_roads_are_cyclepath']>100) {
-            result='You’re doing great, ' +cityNameState + '! You’ve achieved Level of Service 1 as per the national benchmarks for footpath infrastructure'
-        } 
+            result = cityStatic.percent_roads_are_cyclepath[0].replace('[0]', cityNameState)} 
         else if(cityState.health['percent_roads_are_cyclepath']<=75 && cityState.health['percent_roads_are_cyclepath']>50) {
-            result ="You’re on the right track, " + cityNameState +"! You’ve achieved Level of Service 2 as per the national benchmarks for footpath infrastructure"
-        }
+            result = cityStatic.percent_roads_are_cyclepath[1].replace('[0]', cityNameState)}
         else if(cityState.health['percent_roads_are_cyclepath']<=50 && cityState.health['percent_roads_are_cyclepath']>25) {
-            result ="There’s quite a way to go, " + cityNameState +"! You’re at Level of Service 3 as per the national benchmarks for footpath infrastructure."
-        }
+            result = cityStatic.percent_roads_are_cyclepath[2].replace('[0]', cityNameState)}
         else if(cityState.health['percent_roads_are_cyclepath']<=25) {
-            result ="There’s quite a way to go, " + cityNameState +"! You’re at Level of Service 4 as per the national benchmarks for footpath infrastructure."
-        }
+            result = cityStatic.percent_roads_are_cyclepath[3].replace('[0]', cityNameState)}
 
         return (
             <div>
@@ -73,7 +73,7 @@ function Health(props) {
                     <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
-                                <h4><span className="cycle-track-percentage">{cityNameState}</span> has <span className="cycle-track-percentage">{cityState.health['percent_roads_are_cyclepath']}</span>% of road network covered by cycle tracks.</h4>
+                                <h4><span className="cycle-track-percentage">{cityNameState}</span> has <span className="cycle-track-percentage">{cityState.health['percent_roads_are_cyclepath'].toFixed(2)}</span>% of road network covered by cycle tracks.</h4>
                                 </div>
                             <div className="col-md-6 ">
                                 <h4> {result}</h4>
@@ -92,17 +92,22 @@ function Health(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6" id="bar-chart">
-                            <Bar
+                            <HorizontalBar
                             data = {state}
                             options={{
                                 title:{
                                     display:true,
-                                    text:'Average Rainfall per month',
+                                    // text:'Average Rainfall per month',
                                     fontSize:20
                                 },
                                 legend:{
                                     display:true,
                                     position:'top'
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        type: 'logarithmic'
+                                    }]
                                 }
                             }}
                             />
@@ -148,24 +153,36 @@ function Health(props) {
                     <div className="row">
                         <div className="col-md-3">
                             <div className="card">
+                                <div className="card-image">
+                                    <img src={no2} ></img>
+                                </div>
                                 <b>{cityState.health.avg_annual_pollution.NO2}</b>
                                 <p>NO2</p> 
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div className="card">
+                                <div className="card-image">
+                                    <img src={pm25} ></img>
+                                </div>
                                 <b>{cityState.health.avg_annual_pollution['PM2.5']}</b>
                                 <p>PM2.5</p> 
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div className="card">
+                                <div className="card-image">
+                                    <img src={pm10} ></img>
+                                </div>
                                 <b>{cityState.health.avg_annual_pollution.PM10}</b>
                                 <p>PM10</p> 
                             </div>
                         </div>
                         <div className="col-md-3">
                             <div className="card">
+                                <div className="card-image">
+                                    <img src={so2} ></img>
+                                </div>
                                 <b>{cityState.health.avg_annual_pollution.SO2}</b>
                                 <p>SO2</p> 
                             </div>
@@ -212,10 +229,10 @@ function Health(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            675874 L / KM 
+                            <h2>675874 L / KM</h2> 
                         </div>
                         <div className="col-md-6">
-                            945663 L / KM 
+                            <h2>945663 L / KM</h2> 
                         </div>
                     </div>
                 </div>
