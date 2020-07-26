@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "587ab63fff51a23a4c6419f0398ec7e4",
+    "revision": "925bcde3693a769c6387a0eb411f8185",
     "url": "/data-challenge/index.html"
   },
   {
-    "revision": "f0415d098af5b12b8a09",
+    "revision": "9abd6364bfd52ff79149",
     "url": "/data-challenge/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "2f1b7b18bdb37561bb1e",
-    "url": "/data-challenge/static/css/main.7f6ab416.chunk.css"
+    "revision": "a04834aa2c1954358ab0",
+    "url": "/data-challenge/static/css/main.cec10ca8.chunk.css"
   },
   {
-    "revision": "f0415d098af5b12b8a09",
-    "url": "/data-challenge/static/js/2.0d4b765d.chunk.js"
+    "revision": "9abd6364bfd52ff79149",
+    "url": "/data-challenge/static/js/2.73f35af8.chunk.js"
   },
   {
     "revision": "ffb699516f032882645f06689e38c1df",
-    "url": "/data-challenge/static/js/2.0d4b765d.chunk.js.LICENSE.txt"
+    "url": "/data-challenge/static/js/2.73f35af8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2f1b7b18bdb37561bb1e",
-    "url": "/data-challenge/static/js/main.c55746c2.chunk.js"
+    "revision": "a04834aa2c1954358ab0",
+    "url": "/data-challenge/static/js/main.635e88d8.chunk.js"
   },
   {
     "revision": "292702babd3b71a9f409",
@@ -78,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "af9101c801a751cf3771195fe5b7794d",
     "url": "/data-challenge/static/media/pollution.af9101c8.svg"
+  },
+  {
+    "revision": "be815aef4a2f16c5a26ffebe3633ed4c",
+    "url": "/data-challenge/static/media/pollution_car.be815aef.svg"
   },
   {
     "revision": "9ae381caf0af633b3df054c7e2c7365a",
