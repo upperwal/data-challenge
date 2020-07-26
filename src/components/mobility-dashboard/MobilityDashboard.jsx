@@ -53,6 +53,7 @@ function MobilityDashboard() {
 
     const [cityState, setCityState] = useState(data['Delhi']);
     const [cityNameState, setCityNameState] = useState('Delhi');
+    const cityStatic = data.static;
     const staticOverallData = data['overall']
 
     
@@ -89,10 +90,10 @@ function MobilityDashboard() {
 
             <div className="tab-content">
                 <div role="tabpanel" className="tab-pane active" id="health">
-                    <Health cityState={cityState} cityNameState={cityNameState}/>        
+                    <Health cityState={cityState} cityNameState={cityNameState} cityStatic={cityStatic}/>        
                 </div>
                 <div role="tabpanel" className="tab-pane" id="inclusion">
-                    <Inclusion cityState={cityState} cityNameState={cityNameState}/>
+                    <Inclusion data={data} cityNameState={cityNameState}/>
                 </div>
                 
                 <div role="tabpanel" className="tab-pane" id="security">security

@@ -1,0 +1,24 @@
+.Inclusion {
+    h3 {
+        margin: 20px 0px;
+    }
+    .spending-bar {
+        canvas {
+            margin-top: 50px;
+        }
+    }
+    section {
+        margin-bottom: 100px;
+        padding-bottom: 50px;
+        border-bottom: 0.3px dotted #aaa;
+    }
+    .main-content {
+        display: table;
+        height: 100%;
+        h1 {
+            vertical-align: middle;
+            margin: 10px;
+            display:table-cell;
+        }
+    }
+}
