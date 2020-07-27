@@ -20,7 +20,7 @@ function Overview(props) {
         avg_daily_ridership: ["Public Bus Ridership", "Nos", 0, Ridership],
         bus_fleet: ["No of public buses", "Nos", 0, Bus],
         population: ["Population", "Lakh People", 2, Pop],
-        road_length: ["Road Network Length", "Km", 2, Len],
+        road_length: ["Road Network Length", "Km", 0, Len],
         seats_per_lakh: ["Seats in public transport", "Seats", 0, Seats]
     }
 
@@ -53,11 +53,12 @@ function Overview(props) {
     return (
         <section className="Overview">
             <div className="city-facts">
+                
                 {/* <h2>Do you know that Delhi has the largest road network with total road length {cityState.overall.road_length} kms?</h2><br/>
 
                 <h2>but it also has the highest fatality rate of XX %</h2> */}
 
-                <h2>Let's start by knowing {cityNameState}</h2>
+                <h2>Ready, set, go! Here’s the rundown on {cityNameState}</h2>
                 
                 <div className="container">
                     <div className="row">

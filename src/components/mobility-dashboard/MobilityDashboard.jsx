@@ -99,7 +99,7 @@ function MobilityDashboard() {
 
             <div className="tab-content">
                 <div role="tabpanel" className="tab-pane active" id="health">
-                    <Health cityState={cityState} cityNameState={cityNameState} cityStatic={cityStatic}/>        
+                    <Health data={data} cityState={cityState} cityNameState={cityNameState} cityStatic={cityStatic}/>        
                 </div>
                 <div role="tabpanel" className="tab-pane" id="inclusion">
                     <Inclusion data={data} cityNameState={cityNameState}/>

@@ -6,11 +6,6 @@
         font-size: 2.5em;
         margin-top: 5px;
     }
-    .digits {
-        font-family: 'Consolas', 'Anonymous Pro', monospace;
-        margin-bottom: 0px;
-        color: #f6264c;
-    }
     .city-facts {
         text-align: center;
     }
@@ -19,6 +14,9 @@
         img {
             height: 50px;
             margin: 10px auto 10px auto;
+        }
+        small {
+            font-size: 1em;
         }
         small, p {
             font-family: 'Mulish', sans-serif;

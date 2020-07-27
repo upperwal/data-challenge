@@ -113,8 +113,8 @@ function Security(props) {
                             data={pieState}
                             options={{
                                 title:{
-                                display:true,
-                                text:'Delhi Road Accidents',
+                                display:false,
+                                text:'',
                                 fontSize:20
                                 },
                                 legend:{

@@ -139,211 +139,213 @@ function Inclusion(props) {
     let seatSlumData = prepareScatterDataSeatsSlums()
     
     return(
-        <section className="Inclusion tab-content-box">
-            <section>
-                <h3>Good quality road infrastructure is essential for improved mobility in your city!</h3>
-                <div className="row">
-                    <div className="col-md-12 spending-bar">
-                        <Bar
-                            data = {state}
-                            options={{
-                                title:{
-                                    display:true,
-                                    text:'Expenditure on road maintenance per km in the city',
-                                    fontSize: 12
-                                },
-                                legend:{
-                                    display: false,
-                                    position:'top'
-                                },
-                                scales: {
-                                    yAxes: [{
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: 'Spendings per Km in Lakh',
-                                        },
-                                        type: 'logarithmic'
-                                    }]
-                                }  
-                            }}
-                        />
-                        {spendingCredit()}
-                    </div>
-                    <div className="col-md-6">
-                        <div className="vertical-middle">
-                            <h1>In 2019, {cityNameState} spent <span className="imp-unit">{(data[cityNameState].equality.spend_per_km_road*100).toFixed(2)} lakh rupees per km</span> on road maintenance</h1>
+        <section class="Inclusion tab-content-box">
+            <div className="container">
+                <section className="sub-section-container">
+                    <h1>Rally for Roads!</h1>
+                    <h3>Good quality road infrastructure is essential for improved mobility in your city!</h3>
+                    <div className="row">
+                        <div className="col-md-12 spending-bar">
+                            <Bar
+                                data = {state}
+                                options={{
+                                    title:{
+                                        display:true,
+                                        text:'Expenditure on road maintenance per km in the city',
+                                        fontSize: 12
+                                    },
+                                    legend:{
+                                        display: false,
+                                        position:'top'
+                                    },
+                                    scales: {
+                                        yAxes: [{
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: 'Spendings per Km in Lakh',
+                                            },
+                                            type: 'logarithmic'
+                                        }]
+                                    }  
+                                }}
+                            />
+                            
                         </div>
-                        
-
-                    
-                        
+                        <div className="col-md-6">
+                            <div className="vertical-middle">
+                                <h1>In 2019, {cityNameState} spent <span className="imp-unit">{(data[cityNameState].equality.spend_per_km_road*100).toFixed(2)} lakh rupees per km</span> on road maintenance</h1>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="vertical-middle">
+                                {spendingCredit()}
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
+                <section className="sub-section-container">
+                    <h1>Don’t miss the bus!</h1>
+                    <h3>The first step to a more inclusive city is accessible public transport for all! Let’s review where {cityNameState} is placed compared to the rest of urban India.</h3>
 
-            <section>
-                <h3>The first step to a more inclusive city is accessible public transport for all! Let’s review where {cityNameState} is placed compared to the rest of urban India.</h3>
-
-                <Scatter
-                    data={prepareScatterData()}
-                    plugins={ChartAnnotation}
-                    options={{
-                        responsive:true,
-                        title:{
-                            display:true,
-                            text:'',
-                            fontSize: 12
-                        },
-                        legend:{
-                            display: false,
-                            position:'top'
-                        },
-                        scales: {
-                            xAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Public Transport Ridership',
-                                },
-                                type: 'logarithmic'
-                            }],
-                            yAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Avg Annual Household Expenditure (Rs)',
-                                },
-                                type: 'logarithmic'
-                            }]
-                        },
-                        tooltips: {
-                            callbacks: {
-                                label: function(tooltipItem, data) {
-                                    var label = data.labels[tooltipItem.index];
-                                    return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                    <Scatter
+                        data={prepareScatterData()}
+                        plugins={ChartAnnotation}
+                        options={{
+                            responsive:true,
+                            title:{
+                                display:true,
+                                text:'',
+                                fontSize: 12
+                            },
+                            legend:{
+                                display: false,
+                                position:'top'
+                            },
+                            scales: {
+                                xAxes: [{
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Public Transport Ridership',
+                                    },
+                                    type: 'logarithmic'
+                                }],
+                                yAxes: [{
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Avg Annual Household Expenditure (Rs)',
+                                    },
+                                    type: 'logarithmic'
+                                }]
+                            },
+                            tooltips: {
+                                callbacks: {
+                                    label: function(tooltipItem, data) {
+                                        var label = data.labels[tooltipItem.index];
+                                        return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                                    }
                                 }
+                            },
+                            annotation: {
+                                annotations: [
+                                    {
+                                        // drawTime: "afterDatasetsDraw",
+                                        // id: "hline",
+                                        type: "line",
+                                        mode: "horizontal",
+                                        scaleID: "y-axis-1",
+                                        value: data.overall.mean_annual_hh_expenditure,
+                                        borderColor: "black",
+                                        borderWidth: 1,
+                                        label: {
+                                            backgroundColor: "red",
+                                            content: "Mean Expenditure",
+                                            enabled: true
+                                        }
+                                    },
+                                    {
+                                        // drawTime: "afterDatasetsDraw",
+                                        // id: "hline",
+                                        type: "line",
+                                        mode: "vertical",
+                                        scaleID: "x-axis-1",
+                                        value: data.overall.mean_public_transport_ridership,
+                                        borderColor: "black",
+                                        borderWidth: 1,
+                                        label: {
+                                            backgroundColor: "red",
+                                            content: "Mean Ridership",
+                                            enabled: true
+                                        }
+                                    }
+                                ]
                             }
-                        },
-                        annotation: {
-                            annotations: [
-                                {
-                                    // drawTime: "afterDatasetsDraw",
-                                    // id: "hline",
-                                    type: "line",
-                                    mode: "horizontal",
-                                    scaleID: "y-axis-1",
-                                    value: data.overall.mean_annual_hh_expenditure,
-                                    borderColor: "black",
-                                    borderWidth: 1,
-                                    label: {
-                                        backgroundColor: "red",
-                                        content: "Mean Expenditure",
-                                        enabled: true
-                                    }
-                                },
-                                {
-                                    // drawTime: "afterDatasetsDraw",
-                                    // id: "hline",
-                                    type: "line",
-                                    mode: "vertical",
-                                    scaleID: "x-axis-1",
-                                    value: data.overall.mean_public_transport_ridership,
-                                    borderColor: "black",
-                                    borderWidth: 1,
-                                    label: {
-                                        backgroundColor: "red",
-                                        content: "Mean Ridership",
-                                        enabled: true
+                        }}
+                    />
+                    {ridershipExpenseCredit()}
+                
+                </section>
+
+                <section className="sub-section-container">
+                    <Scatter
+                        data={seatSlumData}
+                        plugins={ChartAnnotation}
+                        options={{
+                            responsive:true,
+                            title:{
+                                display:true,
+                                text:'',
+                                fontSize: 12
+                            },
+                            legend:{
+                                display: false,
+                                position:'top'
+                            },
+                            scales: {
+                                xAxes: [{
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'People residing in slums',
+                                    },
+                                    type: 'logarithmic'
+                                }],
+                                yAxes: [{
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Seats per lakh population',
+                                    },
+                                    type: 'logarithmic'
+                                }]
+                            },
+                            tooltips: {
+                                callbacks: {
+                                    label: function(tooltipItem, data) {
+                                        var label = data.labels[tooltipItem.index];
+                                        return label + ': (Seats: ' + tooltipItem.yLabel + ', People in Slum: ' + tooltipItem.xLabel + ')';
                                     }
                                 }
-                            ]
-                        }
-                    }}
-                />
-                {ridershipExpenseCredit()}
-            
-            </section>
-
-
-            <section>
-                {/* <h3>The first step to a more inclusive city is accessible public transport for all! Let’s review where {cityNameState} is placed compared to the rest of urban India.</h3>
- */}
-                <Scatter
-                    data={seatSlumData}
-                    plugins={ChartAnnotation}
-                    options={{
-                        responsive:true,
-                        title:{
-                            display:true,
-                            text:'',
-                            fontSize: 12
-                        },
-                        legend:{
-                            display: false,
-                            position:'top'
-                        },
-                        scales: {
-                            xAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'People residing in slums',
-                                },
-                                type: 'logarithmic'
-                            }],
-                            yAxes: [{
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: 'Seats per lakh population',
-                                },
-                                type: 'logarithmic'
-                            }]
-                        },
-                        tooltips: {
-                            callbacks: {
-                                label: function(tooltipItem, data) {
-                                    var label = data.labels[tooltipItem.index];
-                                    return label + ': (Seats: ' + tooltipItem.yLabel + ', People in Slum: ' + tooltipItem.xLabel + ')';
-                                }
+                            },
+                            annotation: {
+                                annotations: [
+                                    {
+                                        // drawTime: "afterDatasetsDraw",
+                                        // id: "hline",
+                                        type: "line",
+                                        mode: "horizontal",
+                                        scaleID: "y-axis-1",
+                                        value: internalState.scatterDataSeatsSlums.mean_seats,
+                                        borderColor: "black",
+                                        borderWidth: 1,
+                                        label: {
+                                            backgroundColor: "red",
+                                            content: "Mean no of seats",
+                                            enabled: true
+                                        }
+                                    },
+                                    {
+                                        // drawTime: "afterDatasetsDraw",
+                                        // id: "hline",
+                                        type: "line",
+                                        mode: "vertical",
+                                        scaleID: "x-axis-1",
+                                        value: internalState.scatterDataSeatsSlums.mean_slum,
+                                        borderColor: "black",
+                                        borderWidth: 1,
+                                        label: {
+                                            backgroundColor: "red",
+                                            content: "Mean no of people in slums",
+                                            enabled: true
+                                        }
+                                    }
+                                ]
                             }
-                        },
-                        annotation: {
-                            annotations: [
-                                {
-                                    // drawTime: "afterDatasetsDraw",
-                                    // id: "hline",
-                                    type: "line",
-                                    mode: "horizontal",
-                                    scaleID: "y-axis-1",
-                                    value: internalState.scatterDataSeatsSlums.mean_seats,
-                                    borderColor: "black",
-                                    borderWidth: 1,
-                                    label: {
-                                        backgroundColor: "red",
-                                        content: "Mean no of seats",
-                                        enabled: true
-                                    }
-                                },
-                                {
-                                    // drawTime: "afterDatasetsDraw",
-                                    // id: "hline",
-                                    type: "line",
-                                    mode: "vertical",
-                                    scaleID: "x-axis-1",
-                                    value: internalState.scatterDataSeatsSlums.mean_slum,
-                                    borderColor: "black",
-                                    borderWidth: 1,
-                                    label: {
-                                        backgroundColor: "red",
-                                        content: "Mean no of people in slums",
-                                        enabled: true
-                                    }
-                                }
-                            ]
-                        }
-                    }}
-                />
-                {seatsSlumCredit()}
-            
-            </section>
+                        }}
+                    />
+                    {seatsSlumCredit()}
+                
+                </section>
+                
+            </div>
         </section>
     )
 }

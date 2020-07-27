@@ -38,7 +38,6 @@ body {
 .imp-unit {
     background-color: #ff2b5b;
     color: #fff;
-    font-family: 'BwNistaInt-xBd';
     padding: 0px 10px;
     border-radius: 3px;
 }
@@ -63,12 +62,47 @@ h1, h2, h3, h4, h5 {
     background-color: #f6f6f6;
     border: 1px solid #c3c3c3;
     border-radius: 5px;
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #ff2b5b
+    }
     h1 {
         border-bottom: 1px dotted #c3c3c3;
         padding-bottom: 15px;
     }
+    .icon-container {
+        img {
+            height: 160px;
+        }
+    }
 }
 
 .row {
+    margin: 50px 0px;
+}
+
+.digits {
+    font-family: 'Consolas', 'Anonymous Pro', monospace;
+    margin-bottom: 0px;
+    color: #f6264c;
+}
+
+.right-aligned {
+    text-align: right;
+}
+.left-aligned {
+    text-align: left;
+}
+
+.nav-link {
+    .active {
+        color: red;
+    }
+}
+
+hr {
     margin: 50px 0px;
 }
