@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25eb750ee9cd61ed9212646825fbfc5c",
+    "revision": "471af45bbec81bbe3cbb2626c1c22640",
     "url": "/data-challenge/index.html"
   },
   {
-    "revision": "70c0cb5cd3aeba02ec8a",
+    "revision": "f93d11f397299bddefae",
     "url": "/data-challenge/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "10ade82ae5437f889c3b",
-    "url": "/data-challenge/static/css/main.e3e4173e.chunk.css"
+    "revision": "733dd3d7cfde6c4704e3",
+    "url": "/data-challenge/static/css/main.74f99ba2.chunk.css"
   },
   {
-    "revision": "70c0cb5cd3aeba02ec8a",
-    "url": "/data-challenge/static/js/2.16d6f5ce.chunk.js"
+    "revision": "f93d11f397299bddefae",
+    "url": "/data-challenge/static/js/2.36a9ae34.chunk.js"
   },
   {
     "revision": "ffb699516f032882645f06689e38c1df",
-    "url": "/data-challenge/static/js/2.16d6f5ce.chunk.js.LICENSE.txt"
+    "url": "/data-challenge/static/js/2.36a9ae34.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "10ade82ae5437f889c3b",
-    "url": "/data-challenge/static/js/main.1a75bc67.chunk.js"
+    "revision": "733dd3d7cfde6c4704e3",
+    "url": "/data-challenge/static/js/main.ccd8b368.chunk.js"
   },
   {
     "revision": "292702babd3b71a9f409",
@@ -88,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/data-challenge/static/media/pollution.af9101c8.svg"
   },
   {
-    "revision": "be815aef4a2f16c5a26ffebe3633ed4c",
-    "url": "/data-challenge/static/media/pollution_car.be815aef.svg"
+    "revision": "a277c682785b105e1d1a61784c795503",
+    "url": "/data-challenge/static/media/pollution_car.a277c682.svg"
   },
   {
     "revision": "9ae381caf0af633b3df054c7e2c7365a",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/data-challenge/static/media/ridership.9c0f1fe2.svg"
   },
   {
-    "revision": "d325d2348e12c2f9a5b52073c89ea2fc",
-    "url": "/data-challenge/static/media/road.d325d234.svg"
+    "revision": "7a8d3d9bf5533ea5d33b99b5a7c3f083",
+    "url": "/data-challenge/static/media/road.7a8d3d9b.svg"
   },
   {
     "revision": "ae8ff4a8932f13b354c29a198c7a90ce",
