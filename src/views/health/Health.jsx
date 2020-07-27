@@ -191,78 +191,81 @@ function Health(props) {
                                 {getHealthExpenseReport()}
                             </div>
                         </div>
-                        <Scatter
-                            data={prepareScatterParkFootExpenditureData()}
-                            plugins={ChartAnnotation}
-                            options={{
-                                responsive:true,
-                                title:{
-                                    display:true,
-                                    text:'Active Spaces in a city Annual Household Expenditure vs (parks, cycle tracks, foot paths)',
-                                    fontSize: 12
-                                },
-                                legend:{
-                                    display: false,
-                                    position:'top'
-                                },
-                                scales: {
-                                    xAxes: [{
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: 'Normalised Score combining no. of parks, footpath and cycle track length',
+                        <div>
+                            <h5>Spaces for active mobility in the city include parks, cycle tracks and footpaths. Shown below is a comparison of normalised values for average annual household expenditure on health and the availability of spaces for active mobility in cities across India.</h5>
+                            <Scatter
+                                data={prepareScatterParkFootExpenditureData()}
+                                plugins={ChartAnnotation}
+                                options={{
+                                    responsive:true,
+                                    title:{
+                                        display:true,
+                                        text:'Active Spaces in a city Annual Household Expenditure vs (parks, cycle tracks, foot paths)',
+                                        fontSize: 12
+                                    },
+                                    legend:{
+                                        display: false,
+                                        position:'top'
+                                    },
+                                    scales: {
+                                        xAxes: [{
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: 'Normalised Score combining no. of parks, footpath and cycle track length',
+                                            }
+                                        }],
+                                        yAxes: [{
+                                            scaleLabel: {
+                                                display: true,
+                                                labelString: 'Normalised Annual Health Expenditure',
+                                            }
+                                        }]
+                                    },
+                                    tooltips: {
+                                        callbacks: {
+                                            label: function(tooltipItem, data) {
+                                                var label = data.labels[tooltipItem.index];
+                                                return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                                            }
                                         }
-                                    }],
-                                    yAxes: [{
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: 'Normalised Annual Health Expenditure',
-                                        }
-                                    }]
-                                },
-                                tooltips: {
-                                    callbacks: {
-                                        label: function(tooltipItem, data) {
-                                            var label = data.labels[tooltipItem.index];
-                                            return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
-                                        }
+                                    },
+                                    annotation: {
+                                        annotations: [
+                                            {
+                                                // drawTime: "afterDatasetsDraw",
+                                                // id: "hline",
+                                                type: "line",
+                                                mode: "horizontal",
+                                                scaleID: "y-axis-1",
+                                                value: 0,
+                                                borderColor: "black",
+                                                borderWidth: 1,
+                                                label: {
+                                                    backgroundColor: "red",
+                                                    content: "Mean Expenditure",
+                                                    enabled: false
+                                                }
+                                            },
+                                            {
+                                                // drawTime: "afterDatasetsDraw",
+                                                // id: "hline",
+                                                type: "line",
+                                                mode: "vertical",
+                                                scaleID: "x-axis-1",
+                                                value: 0,
+                                                borderColor: "black",
+                                                borderWidth: 1,
+                                                label: {
+                                                    backgroundColor: "red",
+                                                    content: "Mean Ridership",
+                                                    enabled: false
+                                                }
+                                            }
+                                        ]
                                     }
-                                },
-                                annotation: {
-                                    annotations: [
-                                        {
-                                            // drawTime: "afterDatasetsDraw",
-                                            // id: "hline",
-                                            type: "line",
-                                            mode: "horizontal",
-                                            scaleID: "y-axis-1",
-                                            value: 0,
-                                            borderColor: "black",
-                                            borderWidth: 1,
-                                            label: {
-                                                backgroundColor: "red",
-                                                content: "Mean Expenditure",
-                                                enabled: false
-                                            }
-                                        },
-                                        {
-                                            // drawTime: "afterDatasetsDraw",
-                                            // id: "hline",
-                                            type: "line",
-                                            mode: "vertical",
-                                            scaleID: "x-axis-1",
-                                            value: 0,
-                                            borderColor: "black",
-                                            borderWidth: 1,
-                                            label: {
-                                                backgroundColor: "red",
-                                                content: "Mean Ridership",
-                                                enabled: false
-                                            }
-                                        }
-                                    ]
-                                }
-                            }}
-                        />
+                                }}
+                            />
+                        </div>
                         <hr/>
                         <a href="http://mohua.gov.in/upload/uploadfiles/files/NMTGuidanceFINAL.pdf" target="_blank"><h3>Check out these guidelines to build a healthier city!</h3></a>
 
@@ -385,6 +388,7 @@ function Health(props) {
                                 </div>
                                 <div className="col-md-8">
                                     <p className="quote">“The “Shift” component seeks to encourage a modal shift from motorized travel to more environment-friendly and energy-efficient modes. This can be achieved by promoting non-motorized (walking and cycling) and public transport. Initiatives to increase seamless, frequent and affordable public transport systems will lower the associated emissions per passenger-kilometer traveled, as well as reduce congestion while improving access and travel time.”</p>
+                                    <p>Source: Global Green Growth Institute</p>
                                 </div>
                             </div>
                         </div>
