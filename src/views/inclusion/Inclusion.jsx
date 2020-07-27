@@ -93,6 +93,15 @@ function Inclusion(props) {
         }
     }
 
+    function relativeComputation( meanValue, actualValue, round) {
+        let diff = actualValue - meanValue
+        if(diff < 0) {
+            return Math.abs(diff).toFixed(round) + ' less';
+        } else {
+            return diff.toFixed(round) + ' more';
+        }
+    }
+
     function ridershipExpenseCredit() {
         let hh = data[cityNameState].health.annual_hh_expenditure
         let hh_mean = data.overall.mean_annual_hh_expenditure
@@ -187,161 +196,210 @@ function Inclusion(props) {
                 <section className="sub-section-container">
                     <h1>Don’t miss the bus!</h1>
                     <h3>The first step to a more inclusive city is accessible public transport for all! Let’s review where {cityNameState} is placed compared to the rest of urban India.</h3>
-
-                    <Scatter
-                        data={prepareScatterData()}
-                        plugins={ChartAnnotation}
-                        options={{
-                            responsive:true,
-                            title:{
-                                display:true,
-                                text:'',
-                                fontSize: 12
-                            },
-                            legend:{
-                                display: false,
-                                position:'top'
-                            },
-                            scales: {
-                                xAxes: [{
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'Public Transport Ridership',
-                                    },
-                                    type: 'logarithmic'
-                                }],
-                                yAxes: [{
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'Avg Annual Household Expenditure (Rs)',
-                                    },
-                                    type: 'logarithmic'
-                                }]
-                            },
-                            tooltips: {
-                                callbacks: {
-                                    label: function(tooltipItem, data) {
-                                        var label = data.labels[tooltipItem.index];
-                                        return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                    <div>
+                        <h5 className="description">Affordable public transport is the first step. Does {cityNameState} make the cut?</h5>
+                        <Scatter
+                            data={prepareScatterData()}
+                            plugins={ChartAnnotation}
+                            options={{
+                                responsive:true,
+                                title:{
+                                    display:true,
+                                    text:'',
+                                    fontSize: 12
+                                },
+                                legend:{
+                                    display: false,
+                                    position:'top'
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Public Transport Ridership',
+                                        },
+                                        type: 'logarithmic'
+                                    }],
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Avg Annual Household Expenditure (Rs)',
+                                        },
+                                        type: 'logarithmic'
+                                    }]
+                                },
+                                tooltips: {
+                                    callbacks: {
+                                        label: function(tooltipItem, data) {
+                                            var label = data.labels[tooltipItem.index];
+                                            return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                                        }
                                     }
+                                },
+                                annotation: {
+                                    annotations: [
+                                        {
+                                            // drawTime: "afterDatasetsDraw",
+                                            // id: "hline",
+                                            type: "line",
+                                            mode: "horizontal",
+                                            scaleID: "y-axis-1",
+                                            value: data.overall.mean_annual_hh_expenditure,
+                                            borderColor: "black",
+                                            borderWidth: 1,
+                                            label: {
+                                                backgroundColor: "red",
+                                                content: "Mean Expenditure",
+                                                enabled: true
+                                            }
+                                        },
+                                        {
+                                            // drawTime: "afterDatasetsDraw",
+                                            // id: "hline",
+                                            type: "line",
+                                            mode: "vertical",
+                                            scaleID: "x-axis-1",
+                                            value: data.overall.mean_public_transport_ridership,
+                                            borderColor: "black",
+                                            borderWidth: 1,
+                                            label: {
+                                                backgroundColor: "red",
+                                                content: "Mean Ridership",
+                                                enabled: true
+                                            }
+                                        }
+                                    ]
                                 }
-                            },
-                            annotation: {
-                                annotations: [
-                                    {
-                                        // drawTime: "afterDatasetsDraw",
-                                        // id: "hline",
-                                        type: "line",
-                                        mode: "horizontal",
-                                        scaleID: "y-axis-1",
-                                        value: data.overall.mean_annual_hh_expenditure,
-                                        borderColor: "black",
-                                        borderWidth: 1,
-                                        label: {
-                                            backgroundColor: "red",
-                                            content: "Mean Expenditure",
-                                            enabled: true
-                                        }
-                                    },
-                                    {
-                                        // drawTime: "afterDatasetsDraw",
-                                        // id: "hline",
-                                        type: "line",
-                                        mode: "vertical",
-                                        scaleID: "x-axis-1",
-                                        value: data.overall.mean_public_transport_ridership,
-                                        borderColor: "black",
-                                        borderWidth: 1,
-                                        label: {
-                                            backgroundColor: "red",
-                                            content: "Mean Ridership",
-                                            enabled: true
-                                        }
-                                    }
-                                ]
-                            }
-                        }}
-                    />
+                            }}
+                        />
+                        <div className="row ">
+                            <div className="col-md-6 right-aligned">
+                                <h4>The average daily ridership on public transport in an Indian Smart City is <span className="imp-unit">{(data.overall.mean_public_transport_ridership).toFixed(2)} people</span> </h4>
+                            </div>
+                                <div className="col-md-6 left-aligned">
+                                    <h4>{cityNameState} has <span className="imp-unit">{relativeComputation(data.overall.mean_public_transport_ridership, data[cityNameState].overall.avg_daily_ridership || 0, 0)}</span> public transport riders than average. </h4>
+                                </div>
+                            <div className="col-md-6 right-aligned">
+                                <h4>The average annual household expenditure in an Indian Smart City is <span className="imp-unit">Rs. {(data.overall.mean_annual_hh_expenditure).toFixed(2)}</span></h4>
+                            </div>
+                            <div className="col-md-6 left-aligned">
+                                <h4>{cityNameState}’s residents spend <span className="imp-unit">Rs {relativeComputation(data.overall.mean_annual_hh_expenditure, data[cityNameState].health.annual_hh_expenditure || 0, 2)}</span> than average. </h4>
+                            </div>
+                        </div>
+                        
+                    </div>
                     {ridershipExpenseCredit()}
                 
                 </section>
 
                 <section className="sub-section-container">
-                    <Scatter
-                        data={seatSlumData}
-                        plugins={ChartAnnotation}
-                        options={{
-                            responsive:true,
-                            title:{
-                                display:true,
-                                text:'',
-                                fontSize: 12
-                            },
-                            legend:{
-                                display: false,
-                                position:'top'
-                            },
-                            scales: {
-                                xAxes: [{
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'People residing in slums',
-                                    },
-                                    type: 'logarithmic'
-                                }],
-                                yAxes: [{
-                                    scaleLabel: {
-                                        display: true,
-                                        labelString: 'Seats per lakh population',
-                                    },
-                                    type: 'logarithmic'
-                                }]
-                            },
-                            tooltips: {
-                                callbacks: {
-                                    label: function(tooltipItem, data) {
-                                        var label = data.labels[tooltipItem.index];
-                                        return label + ': (Seats: ' + tooltipItem.yLabel + ', People in Slum: ' + tooltipItem.xLabel + ')';
+                    <div>
+                        <h5>Let’s take a second look. The public transport supply in {cityNameState} is compared to the population of low income residents in the city. Here, the number of slum dwellers is used as a suitable proxy for low income residents. </h5>
+                        <Scatter
+                            data={seatSlumData}
+                            plugins={ChartAnnotation}
+                            options={{
+                                responsive:true,
+                                title:{
+                                    display:true,
+                                    text:'',
+                                    fontSize: 12
+                                },
+                                legend:{
+                                    display: false,
+                                    position:'top'
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'People residing in slums',
+                                        },
+                                        type: 'logarithmic'
+                                    }],
+                                    yAxes: [{
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: 'Seats per lakh population',
+                                        },
+                                        type: 'logarithmic'
+                                    }]
+                                },
+                                tooltips: {
+                                    callbacks: {
+                                        label: function(tooltipItem, data) {
+                                            var label = data.labels[tooltipItem.index];
+                                            return label + ': (Seats: ' + tooltipItem.yLabel + ', People in Slum: ' + tooltipItem.xLabel + ')';
+                                        }
                                     }
+                                },
+                                annotation: {
+                                    annotations: [
+                                        {
+                                            // drawTime: "afterDatasetsDraw",
+                                            // id: "hline",
+                                            type: "line",
+                                            mode: "horizontal",
+                                            scaleID: "y-axis-1",
+                                            value: internalState.scatterDataSeatsSlums.mean_seats,
+                                            borderColor: "black",
+                                            borderWidth: 1,
+                                            label: {
+                                                backgroundColor: "red",
+                                                content: "Mean no of seats",
+                                                enabled: true
+                                            }
+                                        },
+                                        {
+                                            // drawTime: "afterDatasetsDraw",
+                                            // id: "hline",
+                                            type: "line",
+                                            mode: "vertical",
+                                            scaleID: "x-axis-1",
+                                            value: internalState.scatterDataSeatsSlums.mean_slum,
+                                            borderColor: "black",
+                                            borderWidth: 1,
+                                            label: {
+                                                backgroundColor: "red",
+                                                content: "Mean no of people in slums",
+                                                enabled: true
+                                            }
+                                        }
+                                    ]
                                 }
-                            },
-                            annotation: {
-                                annotations: [
-                                    {
-                                        // drawTime: "afterDatasetsDraw",
-                                        // id: "hline",
-                                        type: "line",
-                                        mode: "horizontal",
-                                        scaleID: "y-axis-1",
-                                        value: internalState.scatterDataSeatsSlums.mean_seats,
-                                        borderColor: "black",
-                                        borderWidth: 1,
-                                        label: {
-                                            backgroundColor: "red",
-                                            content: "Mean no of seats",
-                                            enabled: true
-                                        }
-                                    },
-                                    {
-                                        // drawTime: "afterDatasetsDraw",
-                                        // id: "hline",
-                                        type: "line",
-                                        mode: "vertical",
-                                        scaleID: "x-axis-1",
-                                        value: internalState.scatterDataSeatsSlums.mean_slum,
-                                        borderColor: "black",
-                                        borderWidth: 1,
-                                        label: {
-                                            backgroundColor: "red",
-                                            content: "Mean no of people in slums",
-                                            enabled: true
-                                        }
-                                    }
-                                ]
-                            }
-                        }}
-                    />
+                            }}
+                        />
+                        <div className="row ">
+                            <div className="col-md-6 right-aligned">
+                                <h4>The average number of seats available on public transport per lakh residents in an Indian Smart City is <span className="imp-unit">{(data[cityNameState].overall.seats_per_lakh || 0).toFixed(1)}</span> </h4>
+                            </div>
+                                <div className="col-md-6 left-aligned">
+                                    <h4>{cityNameState} has <span className="imp-unit">{relativeComputation(internalState.scatterDataSeatsSlums.mean_seats, data[cityNameState].overall.seats_per_lakh || 0, 0)}</span> available seats per lakh residents on public transport than average. </h4>
+                                </div>
+                            <div className="col-md-6 right-aligned">
+                                <h4>The average number of slum dwellers in an Indian Smart City is <span className="imp-unit">{data[cityNameState].health.no_people_in_slums || 0}</span></h4>
+                            </div>
+                            <div className="col-md-6 left-aligned">
+                                <h4>{cityNameState} has <span className="imp-unit">{relativeComputation(internalState.scatterDataSeatsSlums.mean_slum, data[cityNameState].health.no_people_in_slums || 0, 0)}</span> residents than average living in slums. </h4>
+                            </div>
+                        </div>
+                        
+                    </div>
                     {seatsSlumCredit()}
+                    <br/>
+                    <a href="https://smartnet.niua.org/content/dd309560-d242-401d-8162-e0e7fd502a9e" target="_blank"><h3>Here’s how {cityNameState} can move forward together! </h3></a>
+
+                    <div className="short-excerpt">
+                        <div className="row">
+                            
+                            <div className="col-md-6 right-aligned">
+                                <h3 className="no-margin-top">Here’s a short excerpt for you</h3>
+                            </div>
+                            <div className="col-md-6 left-aligned">
+                                <p className="quote">“Special attention should be given to improving access to efficient public transit in India to ensure that all citizens have reliable and affordable transportation. As public transit operates on fixed routes and schedules, improving first- and last-mile connectivity will be paramount in maintaining, or improving India’s existing mode share of public transit. Improving public transit efficiency and convenience with route rationalization and better vehicles will also support public transit."</p>
+                            </div>
+                        </div>
+                    </div>
                 
                 </section>
                 
