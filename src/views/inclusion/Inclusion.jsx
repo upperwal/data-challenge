@@ -293,6 +293,7 @@ function Inclusion(props) {
                 </section>
 
                 <section className="sub-section-container">
+                    <h1>Move Forward Together!!</h1>
                     <div>
                         <h5>Let’s take a second look. The public transport supply in {cityNameState} is compared to the population of low income residents in the city. Here, the number of slum dwellers is used as a suitable proxy for low income residents. </h5>
                         <Scatter
