@@ -392,10 +392,10 @@ function Inclusion(props) {
                     <div className="short-excerpt">
                         <div className="row">
                             
-                            <div className="col-md-6 right-aligned">
+                            <div className="col-md-5 right-aligned">
                                 <h3 className="no-margin-top">Here’s a short excerpt for you</h3>
                             </div>
-                            <div className="col-md-6 left-aligned">
+                            <div className="col-md-7 left-aligned">
                                 <p className="quote">“Special attention should be given to improving access to efficient public transit in India to ensure that all citizens have reliable and affordable transportation. As public transit operates on fixed routes and schedules, improving first- and last-mile connectivity will be paramount in maintaining, or improving India’s existing mode share of public transit. Improving public transit efficiency and convenience with route rationalization and better vehicles will also support public transit."</p>
                             </div>
                         </div>

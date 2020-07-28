@@ -44,16 +44,16 @@ function Health(props) {
     function footpathBenchmark() {
         if (cityState.health['percent_roads_are_footpath']===null) return;
         var result=''
-        if(cityState.health['percent_roads_are_footpath']>30) {
+        if(cityState.health['percent_roads_are_footpath']>75) {
             result = cityStatic.percent_roads_are_footpath[0].replace('[0]', cityNameState)
         } 
-        else if(cityState.health['percent_roads_are_footpath']<=30 && cityState.health['percent_roads_are_footpath']>20) {
+        else if(cityState.health['percent_roads_are_footpath']<=75 && cityState.health['percent_roads_are_footpath']>50) {
             result = cityStatic.percent_roads_are_footpath[1].replace('[0]', cityNameState)
         }
-        else if(cityState.health['percent_roads_are_footpath']<=20 && cityState.health['percent_roads_are_footpath']>10) {
+        else if(cityState.health['percent_roads_are_footpath']<=50 && cityState.health['percent_roads_are_footpath']>25) {
             result = cityStatic.percent_roads_are_footpath[2].replace('[0]', cityNameState)
         }
-        else if(cityState.health['percent_roads_are_footpath']<=10) {
+        else if(cityState.health['percent_roads_are_footpath']<=25) {
             result = cityStatic.percent_roads_are_footpath[3].replace('[0]', cityNameState)
         }
         return result
@@ -63,7 +63,7 @@ function Health(props) {
         let cyclePath = cityState.health['percent_roads_are_cyclepath']
         if (cyclePath===null) {
             return 'Zero!! That\'s strange. Hopefully we can obtain this data someday.'
-        } else if(cyclePath > 100) {
+        } else if(cyclePath > 75) {
             return cityStatic.percent_roads_are_cyclepath[0].replace('[0]', cityNameState)} 
         else if(cyclePath <= 75 && cyclePath > 50) {
             return cityStatic.percent_roads_are_cyclepath[1].replace('[0]', cityNameState)}
@@ -73,6 +73,7 @@ function Health(props) {
             return cityStatic.percent_roads_are_cyclepath[3].replace('[0]', cityNameState)}
 
     }
+
 
     function prepareScatterParkFootExpenditureData() {
         let res= []
@@ -225,7 +226,7 @@ function Health(props) {
                                         callbacks: {
                                             label: function(tooltipItem, data) {
                                                 var label = data.labels[tooltipItem.index];
-                                                return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                                                return label + ': (Activeness: ' + tooltipItem.xLabel.toFixed(2) + ', HH Expense: ' + tooltipItem.yLabel.toFixed(2) + ')';
                                             }
                                         }
                                     },

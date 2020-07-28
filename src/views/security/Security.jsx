@@ -147,22 +147,22 @@ function Security(props) {
                 <div className="container">
 
                     <section className="sub-section-container">
-                        <h1>How safe are your city streets?</h1>
+                        <h1>Light Up! </h1>
                         <div className="row">
-                            <div className="col-md-4">
-                                <div className="street-light">
+                            <div className="col-md-6">
+                                <h2> How safe are your city streets?</h2>
+                                <h3 className="heading">There’s no doubt that optimum street lighting significantly improves safety for drivers, riders, and pedestrians.</h3>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="car">
                                     <img src={car} alt="Street light" ></img>
                                 </div>
                             </div>
-                            <div className="col-md-8">
-                                <h3 className="heading">There’s no doubt that optimum street lighting significantly improves safety for drivers, riders, and pedestrians.</h3>
-                            </div>
                         </div>
+                        <hr></hr>
+                        {lightNetworkLength()}
                     </section>
                 </div>
-                <section className="sub-section-container">
-                    {lightNetworkLength()}
-                </section>
                 <section className="sub-section-container">
                     <h1 >Moreover, several studies have shown that improved street lighting can promote safety and security in public spaces.</h1>
                 
@@ -199,24 +199,37 @@ function Security(props) {
                                     callbacks: {
                                         label: function(tooltipItem, data) {
                                             var label = data.labels[tooltipItem.index];
-                                            return label + ': (Ridership: ' + tooltipItem.yLabel + ', HH Expense: ' + tooltipItem.xLabel + ')';
+                                            return label + ': (Crime against women: ' + tooltipItem.yLabel + ', % Street light: ' + tooltipItem.xLabel + ')';
                                         }
                                     }
                                 }
                             }}
                         />
                     </div>
-                </section>
-                <section className="sub-section-container">
+                </section> 
+                <section className="sub-section-container">   
                     <div className="heading">
-                        <h1>Did you know that road injuries are among the top 10 leading causes of premature death in India?</h1>
-                        source: <a href="http://www.healthdata.org/india">http://www.healthdata.org/india</a>
+                        <h1>The Value of a Life</h1>
+                        <h3>Did you know that road injuries are among the top 10 leading causes of premature death in India?</h3>
+                        <a href="http://www.healthdata.org/india">source: healthdata.org</a>
                     </div>
                     {roadAccidentDeath()}
+                    <hr></hr>
+                    <div className="footer">
+                        <a href="https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb"><h3>A quick guide to building a safer city can be found here! </h3></a> 
+                    </div>
+                    <div className="short-excerpt">
+                        <div className="row">
+                            <div className="col-md-5">
+                                <h3>Here’s a short excerpt for you</h3>
+                            </div>
+                            <div className="col-md-7">
+                                <p className="quote">“Clearly, the road injury problems that generate at urban level cannot be entirely solved without measurements specific for urban areas. Most of the urban injury accidents and fatalities involve vulnerable road users because of being unprotected from motorized traffic and existence of organized road spaces only for facilitating the movements of motorized vehicles and not vulnerable road users who are mostly pedestrians, cyclists and two wheelers.”</p>
+                                <p>Source: Ministry of Urban Development</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <div className="footer">
-                    <h5>A quick guide to building a safer city can be found here! <br></br><a href="https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb">https://smartnet.niua.org/content/57d27450-3f73-4cab-813e-2bbb2fb6eecb</a></h5> 
-                </div>
             </div>
         </section>
     )
