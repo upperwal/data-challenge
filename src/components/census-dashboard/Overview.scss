@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700');
+
+.Overview {
+    margin: 20px 0;
+    h3 {
+        font-size: 2.5em;
+        margin-top: 5px;
+    }
+    .city-facts {
+        text-align: center;
+    }
+    .card {
+        background-color: #f6f6f6;
+        margin-bottom: 30px;
+        img {
+            height: 50px;
+            margin: 10px auto 10px auto;
+        }
+        small {
+            font-size: 1em;
+        }
+        small, p {
+            font-family: 'Mulish', sans-serif;
+        }
+    }
+    .card-container {
+        .row {
+            margin: 0;
+        }
+    }
+    .card-container-description {
+        text-align: right;
+        h4 {
+            margin-bottom: 10px;
+        }
+        .overview-description {
+            font-size: 1.2em;
+            // text-align: justify;
+        }
+    }
+}

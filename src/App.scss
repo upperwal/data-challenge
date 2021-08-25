@@ -47,6 +47,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 40px;
 }
 
+p {
+    font-size: 1.3em;
+}
+
 .vertical-middle {
     display: table;
     height: 100%;
@@ -127,4 +131,13 @@ hr {
         font-style: italic;
     }
     
+}
+
+iframe {
+    .EmbedFrame {
+        background-color: transparent;
+    }
+    body {
+        background-color: transparent;
+    }
 }
