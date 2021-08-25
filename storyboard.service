@@ -1,0 +1,16 @@
+[Unit]
+Description=Storyboard service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+Environment="PORT=3002"
+WorkingDirectory=/home/ubuntu/data-challenge
+ExecStart=/home/ubuntu/.nvm/versions/node/v10.17.0/bin/npm start
+
+[Install]
+WantedBy=multi-user.target
