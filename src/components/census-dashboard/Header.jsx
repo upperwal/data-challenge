@@ -51,8 +51,8 @@ function Header(props) {
                         </FormControl> */}
                     </div>
                     <div className="col-md-8 left-aligned">
-                        <h4><span className="mark-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat blandit libero et pharetra. Maecenas justo nibh, eleifend vel feugiat at, pulvinar in orci. Maecenas consequat massa vitae enim fringilla, eget congue lorem aliquam.</span></h4>
-                        <h4><span className="mark-light">Maecenas pretium placerat efficitur. Curabitur imperdiet maximus felis, ut aliquam sapien placerat at. Maecenas sit amet vestibulum nibh.</span></h4>
+                        <h4><span className="mark-light">This storyboard focuses on the data collected during the 15th Indian Census conducted in 2011 across various key performance indicators such as demographics, housing, and economy and gives them a visual representation.</span></h4>
+                        <h4><span className="mark-light">It not only changes the perception of how we analyse trends and patterns for future development of our cities, it also enables us to translate this big data to our citizens in a more perceivable manner for better participatory decision making.</span></h4>
                     </div>
                 </div>
             </div>
