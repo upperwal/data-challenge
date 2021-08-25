@@ -288,7 +288,7 @@ function CensusDashboard() {
                         <p>Proin condimentum pharetra sem. Fusce bibendum diam id odio tristique, ac rutrum est tempor. Integer lorem sem, condimentum sed tincidunt id, facilisis ut arcu.</p>
                     </div>
                     <div className="col-md-8">
-                        <Kepler src="http://localhost:3001/census/towns?readOnly=true" width="100%" height="900px" />
+                        <Kepler src="http://13.235.244.95:3001/census/towns?readOnly=true" width="100%" height="900px" />
                     </div>
                 </div>
             </div>
@@ -341,7 +341,7 @@ function CensusDashboard() {
 
                         <div className="tab-content">
                             <div role="tabpanel" className="tab-pane active" id="health">
-                                <Kepler src="http://localhost:3001/census/population?readOnly=true" frameBorder="0" width="100%" height="900px" />
+                                <Kepler src="http://13.235.244.95:3001/census/population?readOnly=true" frameBorder="0" width="100%" height="900px" />
                             </div>
                             <div role="tabpanel" className="tab-pane" id="inclusion">
                                 <iframe
