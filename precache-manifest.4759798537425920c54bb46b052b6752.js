@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74cab8cd0f6da199f8eb013863c920a7",
+    "revision": "f753f9e08d2f0397bfe30951ece6af4b",
     "url": "/data-challenge/index.html"
   },
   {
-    "revision": "70c0cb5cd3aeba02ec8a",
+    "revision": "63926a05acf0d1ffaa91",
     "url": "/data-challenge/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "bf8959665ca551081998",
-    "url": "/data-challenge/static/css/main.66c32864.chunk.css"
+    "revision": "fbdc1691669bc7091f3c",
+    "url": "/data-challenge/static/css/main.724fcf8a.chunk.css"
   },
   {
-    "revision": "70c0cb5cd3aeba02ec8a",
-    "url": "/data-challenge/static/js/2.16d6f5ce.chunk.js"
+    "revision": "63926a05acf0d1ffaa91",
+    "url": "/data-challenge/static/js/2.67c6f701.chunk.js"
   },
   {
     "revision": "ffb699516f032882645f06689e38c1df",
-    "url": "/data-challenge/static/js/2.16d6f5ce.chunk.js.LICENSE.txt"
+    "url": "/data-challenge/static/js/2.67c6f701.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf8959665ca551081998",
-    "url": "/data-challenge/static/js/main.bbf8e2e3.chunk.js"
+    "revision": "fbdc1691669bc7091f3c",
+    "url": "/data-challenge/static/js/main.f7da6abf.chunk.js"
   },
   {
     "revision": "292702babd3b71a9f409",
@@ -74,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47ff16db47b3d9841aec176725782473",
     "url": "/data-challenge/static/media/health.47ff16db.svg"
+  },
+  {
+    "revision": "2b483fae89b52fe7131b43f0c77fe710",
+    "url": "/data-challenge/static/media/hero.2b483fae.png"
+  },
+  {
+    "revision": "352219e6a51f3d5d938755ebc57fb80d",
+    "url": "/data-challenge/static/media/mohua.352219e6.svg"
   },
   {
     "revision": "20e2475672b2ff74d9055c3c0da33afb",

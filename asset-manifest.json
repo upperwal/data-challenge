@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/data-challenge/static/css/main.66c32864.chunk.css",
-    "main.js": "/data-challenge/static/js/main.bbf8e2e3.chunk.js",
-    "main.js.map": "/data-challenge/static/js/main.bbf8e2e3.chunk.js.map",
+    "main.css": "/data-challenge/static/css/main.724fcf8a.chunk.css",
+    "main.js": "/data-challenge/static/js/main.f7da6abf.chunk.js",
+    "main.js.map": "/data-challenge/static/js/main.f7da6abf.chunk.js.map",
     "runtime-main.js": "/data-challenge/static/js/runtime-main.8717b22c.js",
     "runtime-main.js.map": "/data-challenge/static/js/runtime-main.8717b22c.js.map",
     "static/css/2.af3c1da9.chunk.css": "/data-challenge/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.16d6f5ce.chunk.js": "/data-challenge/static/js/2.16d6f5ce.chunk.js",
-    "static/js/2.16d6f5ce.chunk.js.map": "/data-challenge/static/js/2.16d6f5ce.chunk.js.map",
+    "static/js/2.67c6f701.chunk.js": "/data-challenge/static/js/2.67c6f701.chunk.js",
+    "static/js/2.67c6f701.chunk.js.map": "/data-challenge/static/js/2.67c6f701.chunk.js.map",
     "index.html": "/data-challenge/index.html",
-    "precache-manifest.2c5c56547c78277e07ada85f7e1a1dde.js": "/data-challenge/precache-manifest.2c5c56547c78277e07ada85f7e1a1dde.js",
+    "precache-manifest.4759798537425920c54bb46b052b6752.js": "/data-challenge/precache-manifest.4759798537425920c54bb46b052b6752.js",
     "service-worker.js": "/data-challenge/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/data-challenge/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.66c32864.chunk.css.map": "/data-challenge/static/css/main.66c32864.chunk.css.map",
-    "static/js/2.16d6f5ce.chunk.js.LICENSE.txt": "/data-challenge/static/js/2.16d6f5ce.chunk.js.LICENSE.txt",
+    "static/css/main.724fcf8a.chunk.css.map": "/data-challenge/static/css/main.724fcf8a.chunk.css.map",
+    "static/js/2.67c6f701.chunk.js.LICENSE.txt": "/data-challenge/static/js/2.67c6f701.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/data-challenge/static/media/Consolas.53ce8c88.ttf",
     "static/media/air-pollution.svg": "/data-challenge/static/media/air-pollution.a7d27908.svg",
     "static/media/area.svg": "/data-challenge/static/media/area.6e53849c.svg",
@@ -25,6 +25,8 @@
     "static/media/dust.svg": "/data-challenge/static/media/dust.ef0b04ba.svg",
     "static/media/gas.svg": "/data-challenge/static/media/gas.5259dbac.svg",
     "static/media/health.svg": "/data-challenge/static/media/health.47ff16db.svg",
+    "static/media/Header.scss": "/data-challenge/static/media/hero.2b483fae.png",
+    "static/media/mohua.svg": "/data-challenge/static/media/mohua.352219e6.svg",
     "static/media/petrol.svg": "/data-challenge/static/media/petrol.20e24756.svg",
     "static/media/pm10.svg": "/data-challenge/static/media/pm10.9ab2f467.svg",
     "static/media/pollution.svg": "/data-challenge/static/media/pollution.af9101c8.svg",
@@ -39,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.8717b22c.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.16d6f5ce.chunk.js",
-    "static/css/main.66c32864.chunk.css",
-    "static/js/main.bbf8e2e3.chunk.js"
+    "static/js/2.67c6f701.chunk.js",
+    "static/css/main.724fcf8a.chunk.css",
+    "static/js/main.f7da6abf.chunk.js"
   ]
 }
