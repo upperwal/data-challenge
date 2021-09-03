@@ -31,15 +31,18 @@
     }
     .card-container-description {
         text-align: right;
-        h4 {
+        padding: 0 40px;
+        padding-right: 13px;
+        h2 {
             margin-bottom: 10px;
+            text-align: left;
         }
         .overview-description {
-            font-size: 1.2em;
+            font-size: 1.3em;
             // text-align: justify;
         }
         p, h4 {
-            text-align: left;
+            text-align: justify;
         }
     }
 }

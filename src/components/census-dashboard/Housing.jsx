@@ -252,6 +252,37 @@ function Housing(props) {
 
         return res
     }
+
+    function renderStateAndSettlementControls(name) {
+        return (
+            <>
+                <FormControl className="full-width-select">
+                    <InputLabel id={"state-" + name + "-select-label"}>State</InputLabel>
+                    <Select
+                        labelId={"state-" + name + "-select-label"}
+                        id={"state-" + name + "-select"}
+                        name="state"
+                        value={state}
+                        onChange={onInputChange}
+                    >
+                        {renderStateMenu()}
+                    </Select>
+                </FormControl>
+                <FormControl className="full-width-select">
+                    <InputLabel id={"settlement-" + name + "-select-label"}>Settlement Type</InputLabel>
+                    <Select
+                        labelId={"settlement-" + name + "-select-label"}
+                        id={"settlement-" + name + "-select"}
+                        name="settlementType"
+                        value={settlementType}
+                        onChange={onInputChange}
+                    >
+                        {renderSettlementType()}
+                    </Select>
+                </FormControl>
+            </>
+        )
+    }
     
     return (
         <div className="census-item-section">
@@ -288,34 +319,11 @@ function Housing(props) {
                 <div className="col-md-4 insights-box">
                     <h4>Housing Quality</h4>
                     <p>Quality of housing in Census is reported as 'good', 'liveable' or 'dilapidated'. The chart shows the percentage of each category for a city.</p>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="state-literacy-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-literacy-select-label"
-                            id="state-literacy-select"
-                            name="state"
-                            value={state}
-                            onChange={onInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-literacy-select-label"
-                            id="settlement-literacy-select"
-                            name="settlementType"
-                            value={settlementType}
-                            onChange={onInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
                     <p>Overall in Urban India, 68.5 % of the total houses were classified as ‘good’ in the Census 2011, better than the 53.2% figure for India. Nearly 28.6% were reported to be in 'livable' condition and 2.9% as 'dilapidated'.</p>
                     <p>Among cities, Tirupati had the highest percentage of 'good' quality housing at 88.91%, whereas Raiganj had the highest percentage of 'dilapidated' quality housing at 18.95%.</p>
                 </div>
                 <div className="col-md-8">
+                    {renderStateAndSettlementControls("literacy")}
                     <Bar data={prepareBarQualityData()} options={{
                         scales: {
                             yAxes: [
@@ -339,34 +347,11 @@ function Housing(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Room Availability</h4>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="state-literacy-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-literacy-select-label"
-                            id="state-literacy-select"
-                            name="state"
-                            value={state}
-                            onChange={onInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-literacy-select-label"
-                            id="settlement-literacy-select"
-                            name="settlementType"
-                            value={settlementType}
-                            onChange={onInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
                     <p>When it comes to adequate housing, Greater Mumbai appears to be the most congested metropolitan city with 7.7% of the households having no exclusive room and a further 57.3% living in just one room.</p>
                     <p>In rest of the cities, Bhiwandi, had 11% households having no exclusive room and 59.3% with just one room. Srinagar  had the largest percentage of houses with six rooms or more (22.6%).</p>
                 </div>
                 <div className="col-md-8">
+                    {renderStateAndSettlementControls("availability")}
                     <Bar data={prepareBarRoomData()} options={{
                         scales: {
                             yAxes: [
@@ -390,34 +375,11 @@ function Housing(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Houses Occupied vs Vacant</h4>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="state-literacy-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-literacy-select-label"
-                            id="state-literacy-select"
-                            name="state"
-                            value={state}
-                            onChange={onInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-literacy-select-label"
-                            id="settlement-literacy-select"
-                            name="settlementType"
-                            value={settlementType}
-                            onChange={onInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
                     <p>At 52.04%, Greater Noida had the highest percentage of vacant houses in the country, followed by Bhiwadi at 33.32%.</p>
                     <p>On the other end of the spectrum were cities like Balurghat and Santipur having just 2.41% and 2.81% of vacant housing, respectively.</p>
                 </div>
                 <div className="col-md-8">
+                    {renderStateAndSettlementControls("occupied")}
                     <Bar data={prepareBarOccupiedVacantData()} options={{
                         scales: {
                             yAxes: [

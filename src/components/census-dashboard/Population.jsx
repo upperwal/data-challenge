@@ -122,7 +122,7 @@ function Population(props) {
     
     return (
         <div className="census-item-section">
-            <h2>Looking at urban population in detail</h2>
+            <h3>Looking at urban population in detail</h3>
             <Overview 
                 data={[
                     {
@@ -187,7 +187,10 @@ function Population(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Urban Population Growth</h4>
-                    <FormControl className="full-width-select">
+                    <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people</p>
+                </div>
+                <div className="col-md-8">
+                <FormControl className="full-width-select">
                         <InputLabel id="parameter-select-label">Parameters</InputLabel>
                         <Select
                             labelId="parameter-select-label"
@@ -223,9 +226,6 @@ function Population(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
-                    <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people</p>
-                </div>
-                <div className="col-md-8">
                     <Scatter
                         data={prepareScatterPopGrowthData()}
                         plugins={[ChartAnnotation]}

@@ -8,12 +8,14 @@
         color: grey;
     }
     .gis-container {
-        text-align: left;
+        text-align: justify;
         .col-md-8 {
             padding-right: 0;
+            padding-left: 28px;
         }
         .col-md-4 {
             padding: 0px 40px;
+            padding-right: 13px;
         }
     }
     .census-item-section {
@@ -25,17 +27,23 @@
             padding-left: 40px;
             text-align: left;
             p, h4 {
-                text-align: left;
                 margin-bottom: 5px;
+            }
+            h4 {
+                text-align: left;
             }
             p {
                 margin: 20px 0;
+                text-align: justify;
+            }
+            li {
+                font-size: 1.17em;
             }
         }
 
         .MuiFormControl-root {
-            margin: 20px 10px;
-            width: 45%;
+            margin: 20px 5px;
+            width: 47%;
         }
         .full-width-select {
             width: 95%;

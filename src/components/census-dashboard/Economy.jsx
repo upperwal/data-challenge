@@ -177,7 +177,11 @@ function Economy(props) {
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <FormControl className="full-width-select">
+                    <p>As per 2011 census in Metropolitan India, Pune had the largest number of households owning TV, computer, mobile and two/four-wheeler together (32.3 per cent), and Dhanbad the least (7.5 per cent). The largest concentration of four wheelers was found in Chandigarh, with 27.6 per cent of the households owning one. The concentration of four wheelers was the least in Vasai Virar city and Asansol (both 5.0 percent). The largest concentration of mobile phones was found in Patna, with 73.9 per cent owning mobile phones. The least concentration of mobile phones was found at Kannur, where 43.3 per cent own mobile phones.</p>
+                    <p>For non metropolitan India, largest concentration of four wheelers was found in Panchkula in Haryana, with 38.8 percent of the households owning at least one, four wheeler followed by Chandigarh with36.0 percent of the households owning at least one four wheeler. The concentration of four wheelers was the least in Murshidabad in West Bengal (1.8 percent) and YSR Kapada in Andhra Pradesh (1.9 percent). The largest concentration of mobile phones was found in South Andamans, with 81.5 percent owning mobile phones. The least concentration of mobile phones was found at Kottayam in Kerala, where 37.7 percent owned mobile phones.</p>
+                </div>
+                <div className="col-md-8">
+                <FormControl className="full-width-select">
                         <InputLabel id="parameter-select-label">Parameters</InputLabel>
                         <Select
                             labelId="parameter-select-label"
@@ -213,10 +217,6 @@ function Economy(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
-                    <p>As per 2011 census in Metropolitan India, Pune had the largest number of households owning TV, computer, mobile and two/four-wheeler together (32.3 per cent), and Dhanbad the least (7.5 per cent). The largest concentration of four wheelers was found in Chandigarh, with 27.6 per cent of the households owning one. The concentration of four wheelers was the least in Vasai Virar city and Asansol (both 5.0 percent). The largest concentration of mobile phones was found in Patna, with 73.9 per cent owning mobile phones. The least concentration of mobile phones was found at Kannur, where 43.3 per cent own mobile phones.</p>
-                    <p>For non metropolitan India, largest concentration of four wheelers was found in Panchkula in Haryana, with 38.8 percent of the households owning at least one, four wheeler followed by Chandigarh with36.0 percent of the households owning at least one four wheeler. The concentration of four wheelers was the least in Murshidabad in West Bengal (1.8 percent) and YSR Kapada in Andhra Pradesh (1.9 percent). The largest concentration of mobile phones was found in South Andamans, with 81.5 percent owning mobile phones. The least concentration of mobile phones was found at Kottayam in Kerala, where 37.7 percent owned mobile phones.</p>
-                </div>
-                <div className="col-md-8">
                     <Bar data={prepareBarData()} options={{
                         indexAxis: 'y',
                     }}/>

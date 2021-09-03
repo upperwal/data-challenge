@@ -64,19 +64,19 @@ function Overview(props) {
         <section className="Overview">
             <div className="city-facts">
 
-                <div className="container">
+                {/* <div className="container"> */}
                     <div className="row">
-                        <div className="col-md-3 card-container-description">
-                            <h4>{title}</h4>
+                        <div className="col-md-4 card-container-description">
+                            <h2>{title}</h2>
                             {renderDescription()}
                         </div>
-                        <div className="col-md-9 card-container">
+                        <div className="col-md-8 card-container">
                             <div className="row">
                                 {overallStats(data)}
                             </div>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
         </section>
     )

@@ -156,6 +156,8 @@ function Indices(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                </div>
+                <div className="col-md-8">
                     <FormControl>
                         <InputLabel id="xaxis-index-select-label">X Axis</InputLabel>
                         <Select
@@ -213,8 +215,6 @@ function Indices(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
-                </div>
-                <div className="col-md-8">
                     <Scatter
                         data={prepareScatterIndexData()}
                         plugins={[ChartAnnotation]}

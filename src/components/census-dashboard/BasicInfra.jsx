@@ -150,18 +150,6 @@ function BasicInfra(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Basic Infrastructure Parameters</h4>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                        <Select
-                            labelId="parameter-select-label"
-                            id="parameter-select"
-                            name="parameter"
-                            value={parameter}
-                            onChange={onInputChange}
-                        >
-                            {renderParamMenu()}
-                        </Select>
-                    </FormControl>
                     <p>The charts show the value as the percentage of households for various basic infrastructure parameters listed below:</p>
                     <ul>
                         <li>Tap Water From Treated Source Within Premise</li>
@@ -176,6 +164,18 @@ function BasicInfra(props) {
                     </ul>
                 </div>
                 <div className="col-md-8">
+                    <FormControl className="full-width-select">
+                        <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                        <Select
+                            labelId="parameter-select-label"
+                            id="parameter-select"
+                            name="parameter"
+                            value={parameter}
+                            onChange={onInputChange}
+                        >
+                            {renderParamMenu()}
+                        </Select>
+                    </FormControl>
                     <Bar data={prepareVariousParamBarData()} options={{}}/>
                 </div>
             </div>
