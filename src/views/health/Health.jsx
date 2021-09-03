@@ -37,6 +37,8 @@ function Health(props) {
 
     const scatterState = {
         datasets: [{
+            radius: 4,
+            pointHoverRadius: 8,
             backgroundColor: '#ff2b5b',
         }]
     }
@@ -74,6 +76,53 @@ function Health(props) {
 
     }
 
+    function healthActiveBenchmark() {
+        let norm_health_ex = cityState.health['norm_healnorm_health_ex']
+        let norm_active = cityState.health['norm_health_pcf']
+
+        let long_way_msg = 'You’ve got a long way to go, ' + cityNameState + '! Increasing opportunities for active mobility can help build a healthier city in the long run. '
+        let message, indicator;
+        if (norm_health_ex <= 0) {
+            if(norm_active <= 0) {
+                message = long_way_msg
+                indicator = <>{cityNameState} <span className="imp-unit">falls short</span> in both the categories of annual health expenditure as well as activeness score</>
+            } else {
+                message = 'You’re on the right track, ' + cityNameState + '! Active spaces in your city are helping reduce residents’ expenditure on health'
+                indicator = <>{cityNameState} <span className="imp-unit">falls short</span> on the annual health expenditure score but doing good for activeness score</>
+            }
+        } else {
+            if(norm_active <= 0) {
+                message = long_way_msg
+                indicator = <>{cityNameState} <span className="imp-unit">falls short</span> on the activeness score but is above average for annual health expenditure</>
+            } else {
+                message = <><span className="imp-unit">You’re a rockstar, {cityNameState}!</span> Active spaces in your city are helping reduce residents’ expenditure on health.</>
+                indicator = <>{cityNameState} <span className="imp-unit">you are doing amazing</span> on both the indicators; activeness as well as annual health expenditure</>
+            }
+        }
+
+        return (
+            <div className="row">
+                <div className="col-md-6">
+                    <h3>{indicator}</h3>
+                </div>
+                <div className="col-md-6">
+                    <h3>{message}</h3>
+                </div>
+            </div>
+        )
+    }
+
+    function headBangMessage() {
+        let message = 'more than the city road network 🤯'
+        if(cityState.health.active_mobility.y[0] < cityState.health.active_mobility.y[1]) {
+            return <h5 className="head-bang">Footpath length {message}</h5>
+        } else if(cityState.health.active_mobility.y[0] < cityState.health.active_mobility.y[2]) {
+            return <h5 className="head-bang">Cycle path length {message}</h5>
+        }
+    }
+
+
+
 
     function prepareScatterParkFootExpenditureData() {
         let res= []
@@ -108,8 +157,23 @@ function Health(props) {
         return <h3>{cityNameState}’s residents spend <span className="imp-unit">Rs {Math.abs(health_expense_relative).toFixed(2)} {relativeTerm}</span> than the average household in other smart cities on health annually.</h3>
     }
 
+    function pollutionMessage() {
+        let mean_per_km = cityState.overall.mean_fuel_consumption_per_km
+        let mean_per_capita = cityState.overall.mean_fuel_consumption_per_capita
+        let per_km = cityState.health.fossil_fuel.per_km || 0
+        let per_capita = cityState.health.fossil_fuel.per_capita || 0
+
+        let message;
+        if(per_km === 0 && per_capita === 0) {
+            message = '🤔 Maybe ' + cityNameState + ' has started using teleportation.'
+        } else {
+
+        }
+        return <h3>{message}</h3>
+    }
+
     return(
-        <section class="tab-content-box">
+        <section className="tab-content-box">
             <div className="chart">
                 <div className="container">
                     
@@ -143,7 +207,11 @@ function Health(props) {
                             </div>
                             <div className="col-md-6" id="bar-chart">
                                 <div className="vertical-middle">
-                                    <h4>{cityNameState} has {cityState.health.active_mobility.y[0]} kms of road network out of which <span className="imp-unit">{cityState.health.active_mobility.y[1]} kms is footpath</span> and {cityState.health.active_mobility.y[2] || '0'} kms is cycle track</h4>
+                                    <h4>
+                                        {cityNameState} has {cityState.health.active_mobility.y[0]} kms of road network out of which <span className="imp-unit">{cityState.health.active_mobility.y[1]} kms is footpath</span> and {cityState.health.active_mobility.y[2] || '0'} kms is cycle track
+                                        {headBangMessage()}
+                                    </h4>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -194,9 +262,16 @@ function Health(props) {
                         </div>
                         <div>
                             <h5>Spaces for active mobility in the city include parks, cycle tracks and footpaths. Shown below is a comparison of normalised values for average annual household expenditure on health and the availability of spaces for active mobility in cities across India.</h5>
+                            <iframe
+                                src="http://13.235.244.95:3000/public/question/f562f1c2-4bf8-494e-927c-d23e1f30d57a#bordered=false&titled=false&transparent=true"
+                                frameBorder="0"
+                                width="800"
+                                height="600"
+                                allowtransparency="true"
+                            ></iframe>
                             <Scatter
                                 data={prepareScatterParkFootExpenditureData()}
-                                plugins={ChartAnnotation}
+                                plugins={[ChartAnnotation]}
                                 options={{
                                     responsive:true,
                                     title:{
@@ -243,8 +318,8 @@ function Health(props) {
                                                 borderWidth: 1,
                                                 label: {
                                                     backgroundColor: "red",
-                                                    content: "Mean Expenditure",
-                                                    enabled: false
+                                                    content: "Mean Health Expenditure (Norm)",
+                                                    enabled: true
                                                 }
                                             },
                                             {
@@ -258,8 +333,8 @@ function Health(props) {
                                                 borderWidth: 1,
                                                 label: {
                                                     backgroundColor: "red",
-                                                    content: "Mean Ridership",
-                                                    enabled: false
+                                                    content: "Mean City Activeness (Norm)",
+                                                    enabled: true
                                                 }
                                             }
                                         ]
@@ -267,6 +342,7 @@ function Health(props) {
                                 }}
                             />
                         </div>
+                        {healthActiveBenchmark()}
                         <hr/>
                         <a href="http://mohua.gov.in/upload/uploadfiles/files/NMTGuidanceFINAL.pdf" target="_blank"><h3>Check out these guidelines to build a healthier city!</h3></a>
 
@@ -296,7 +372,7 @@ function Health(props) {
                     <section className="sub-section-container">
                         <h1>Breath Easy with Green Mobility</h1>
                         <h3>Investment in greener transport systems can improve the quality of air we breathe and help us live longer, healthier lives!</h3>
-
+                        <h4>Here are a few average annual pollutant for {cityNameState}.</h4>
                         <div className="chart">
 
                             <div className="container">
@@ -374,11 +450,14 @@ function Health(props) {
                                             <p>Per Km</p> 
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
+                            
                         </div>
+                        {pollutionMessage()}
 
-                        <a class="large-padding" href="https://smartnet.niua.org/content/db8f78b4-5e68-4ffb-a603-4d7e7f4ab3c3" target="_blank"><h3>Join the fight and shift to non-fossil fuel based urban transport! Learn more about how to green your transport system</h3></a>
+                        <a className="large-padding" href="https://smartnet.niua.org/content/db8f78b4-5e68-4ffb-a603-4d7e7f4ab3c3" target="_blank"><h3>Join the fight and shift to non-fossil fuel based urban transport! Learn more about how to green your transport system</h3></a>
 
                         <div className="short-excerpt">
                             <h3>Here’s a short excerpt for you</h3>

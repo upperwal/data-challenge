@@ -10,9 +10,11 @@ function Inclusion(props) {
     let internalState = {}
 
     const state = {
-        labels: data.overall.spend_per_km_road.x , //['Total', 'Cycle', 'foot','Road Length'],
+        labels: data.overall.spend_per_km_road.x ,
         datasets: [
           {
+            radius: 4,
+            pointHoverRadius: 8,
             backgroundColor: '#ff2b5b',
             data: data.overall.spend_per_km_road.y
           }
@@ -21,15 +23,45 @@ function Inclusion(props) {
 
     const scatterState = {
         datasets: [{
+            radius: 4,
+            pointHoverRadius: 8,
             backgroundColor: '#ff2b5b',
         }]
     }
 
     const scatterSeatsSlumState = {
         datasets: [{
+            radius: 4,
+            pointHoverRadius: 8,
             backgroundColor: '#ff2b5b',
         }]
     }
+
+    function prepareRoadSpendData() {
+        let data = []
+        state.datasets[0].data.forEach((v, idx) => {
+            data.push({
+                x: state.labels[idx],
+                y: v
+            })
+        })
+        data.sort((l, r) => {
+            return l.y < r.y ? 1 : -1;
+        })
+
+        let x = [], y = []
+        data.forEach(v => {
+            x.push(v.x)
+            y.push(v.y.toFixed(2))
+        })
+
+        state.labels = x
+        state.datasets[0].data = y
+
+        return state
+    }
+
+    
 
     function prepareScatterData() {
         let res= []
@@ -60,7 +92,7 @@ function Inclusion(props) {
         let cnt = 0
         
         data.overall.seats_per_lakh.forEach((v, idx) => {
-            if(v === null || data.overall.no_people_in_slums[idx] == null) {
+            if(v === null || data.overall.no_people_in_slums[idx] == null || v == 0 || data.overall.no_people_in_slums[idx] == 0) {
                 return
             }
             mean_seats = mean_seats + v
@@ -87,9 +119,9 @@ function Inclusion(props) {
     function spendingCredit() {
         let spend = data[cityNameState].equality.spend_per_km_road * 100 - data.overall.mean_spend_per_km_road
         if(spend < 0) {
-            return <h3>It’s time to catch up! <b>{cityNameState}</b> spends <b>Rs {Math.abs(spend.toFixed(1))} lakh</b> less than the average Smart City in India.</h3>
+            return <h3>It’s time to catch up! <b>{cityNameState}</b> spends <b className="imp-unit">Rs {Math.abs(spend.toFixed(1))} lakh less</b> than the average Smart City in India.</h3>
         } else {
-            return <h3>Way to go! <b>{cityNameState}</b> spends <b>Rs {spend.toFixed(1)} lakh</b> more than the average Smart City in India.</h3>
+            return <h3>Way to go! <b>{cityNameState}</b> spends <b className="imp-unit">Rs {spend.toFixed(1)} lakh more</b>  than the average Smart City in India.</h3>
         }
     }
 
@@ -148,7 +180,7 @@ function Inclusion(props) {
     let seatSlumData = prepareScatterDataSeatsSlums()
     
     return(
-        <section class="Inclusion tab-content-box">
+        <section className="Inclusion tab-content-box">
             <div className="container">
                 <section className="sub-section-container">
                     <h1>Rally for Roads!</h1>
@@ -156,7 +188,7 @@ function Inclusion(props) {
                     <div className="row">
                         <div className="col-md-12 spending-bar">
                             <Bar
-                                data = {state}
+                                data = {prepareRoadSpendData()}
                                 options={{
                                     title:{
                                         display:true,
@@ -200,7 +232,7 @@ function Inclusion(props) {
                         <h5 className="description">Affordable public transport is the first step. Does {cityNameState} make the cut?</h5>
                         <Scatter
                             data={prepareScatterData()}
-                            plugins={ChartAnnotation}
+                            plugins={[ChartAnnotation]}
                             options={{
                                 responsive:true,
                                 title:{
@@ -232,7 +264,7 @@ function Inclusion(props) {
                                     callbacks: {
                                         label: function(tooltipItem, data) {
                                             var label = data.labels[tooltipItem.index];
-                                            return label + ': (Ridership: ' + tooltipItem.xLabel + ', HH Expense: ' + tooltipItem.yLabel + ')';
+                                            return label + ': (HH Expense: ' + tooltipItem.yLabel + ', Ridership: ' + tooltipItem.xLabel + ')';
                                         }
                                     }
                                 },
@@ -298,7 +330,7 @@ function Inclusion(props) {
                         <h5>Let’s take a second look. The public transport supply in {cityNameState} is compared to the population of low income residents in the city. Here, the number of slum dwellers is used as a suitable proxy for low income residents. </h5>
                         <Scatter
                             data={seatSlumData}
-                            plugins={ChartAnnotation}
+                            plugins={[ChartAnnotation]}
                             options={{
                                 responsive:true,
                                 title:{

@@ -1,8 +1,8 @@
 
 .card {
-    width: 90%;
+    // width: 90%;
     padding: 30px;
-    margin: 20px 0px 40px 0px;
+    // margin: 20px 0px 40px 0px;
     text-align: center;
 }
 .card-image img{
@@ -64,4 +64,9 @@ a.large-padding {
         font-family: 'Consolas';
         font-size: 1em;
     }
+}
+
+.head-bang {
+    margin-top: 20px;
+    padding: 0px 15px;
 }

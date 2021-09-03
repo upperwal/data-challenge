@@ -18,29 +18,41 @@ function Economy(props) {
 
     const [state, setState] = useState("All")
     const [settlementType, setSettlementType] = useState("All")
-    const barData = {
-        datasets: [{
-            label: 'Households having computer with internet',
-            backgroundColor: '#f6264c'
-        }]
-    };
-
+    const paramMap = {
+        'Percent households having car': 'asset_car_jeep_van_per',
+        'Percent households having mobile only': 'asset_mobileOnly_per',
+        'Percent households having landline only': 'asset_landlineOnly_per',
+        'Percent households having scooter': 'asset_scooter_motorcycle_moped_per',
+        'Percent households having bicycle': 'asset_bicycle_per',
+        'Percent households having computer with internet': 'asset_computerWithInternet_per'
+    }
+    const [parameter, setParameter] = useState("Percent households having car")
 
     function onInputChange(e) {
         console.log(e.target)
-        if(e.target.name == 'state') {
+        if(e.target.name === 'state') {
             setState(e.target.value)
-        } else if(e.target.name == 'settlementType') {
+        } else if(e.target.name === 'settlementType') {
             setSettlementType(e.target.value)
+        } else if(e.target.name === 'parameter') {
+            setParameter(e.target.value)
         }
     }
 
     function prepareBarData() {
         let res= []
         let cityList = []
+        let barData = {
+            datasets: [
+                {
+                    label: parameter,
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        };
 
         WithInternetData.forEach((item) => {
-            if(item.asset_computerWithInternet_per === null) {
+            if(item[paramMap[parameter]] === null) {
                 return
             }
             if(item.state !== state && state !== 'All') {
@@ -49,7 +61,7 @@ function Economy(props) {
             if(item.settlementType !== settlementType && settlementType !== 'All') {
                 return
             }
-            res.push(item.asset_computerWithInternet_per)
+            res.push(item[paramMap[parameter]])
             cityList.push(item.UA_city)
         })
 
@@ -57,6 +69,18 @@ function Economy(props) {
         barData.datasets[0]['data'] = res
 
         return barData
+    }
+
+    function renderParamMenu() {
+        let res = []
+
+        Object.keys(paramMap).forEach((s, idx) => {
+            res.push(
+                <MenuItem key={idx} value={s}>{s}</MenuItem>
+            )
+        })
+
+        return res
     }
 
     function renderStateMenu() {
@@ -90,25 +114,60 @@ function Economy(props) {
             <Overview 
                 data={[
                     {
-                        label: 'Population',
-                        value: 1210.6,
+                        label: 'Households owning a TV set (Metros)',
+                        value: 83.6,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Rural Population',
-                        value: 833.5,
+                        label: 'Households owning a transistors (Metros)',
+                        value: 32.6,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Urban Population',
-                        value: 377.1,
+                        label: 'Households owning a computer (Metros)',
+                        value: 24.1,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'Households owning a mobile phone (Metros)',
+                        value: 64.3,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'Households owning a landline phone (Metros)',
+                        value: 7.0,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'Households owning a bicycle (Metros)',
+                        value: 43.2,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'Households owning a two-wheelers (Metros)',
+                        value: 44.0,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'Households owning a four-wheelers (Metros)',
+                        value: 14.0,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
                     }
                 ]}
                 title="Economy"
@@ -118,7 +177,18 @@ function Economy(props) {
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                    <FormControl className="full-width-select">
+                        <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                        <Select
+                            labelId="parameter-select-label"
+                            id="parameter-select"
+                            name="parameter"
+                            value={parameter}
+                            onChange={onInputChange}
+                        >
+                            {renderParamMenu()}
+                        </Select>
+                    </FormControl>
                     <FormControl className="full-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
@@ -143,18 +213,12 @@ function Economy(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
+                    <p>As per 2011 census in Metropolitan India, Pune had the largest number of households owning TV, computer, mobile and two/four-wheeler together (32.3 per cent), and Dhanbad the least (7.5 per cent). The largest concentration of four wheelers was found in Chandigarh, with 27.6 per cent of the households owning one. The concentration of four wheelers was the least in Vasai Virar city and Asansol (both 5.0 percent). The largest concentration of mobile phones was found in Patna, with 73.9 per cent owning mobile phones. The least concentration of mobile phones was found at Kannur, where 43.3 per cent own mobile phones.</p>
+                    <p>For non metropolitan India, largest concentration of four wheelers was found in Panchkula in Haryana, with 38.8 percent of the households owning at least one, four wheeler followed by Chandigarh with36.0 percent of the households owning at least one four wheeler. The concentration of four wheelers was the least in Murshidabad in West Bengal (1.8 percent) and YSR Kapada in Andhra Pradesh (1.9 percent). The largest concentration of mobile phones was found in South Andamans, with 81.5 percent owning mobile phones. The least concentration of mobile phones was found at Kottayam in Kerala, where 37.7 percent owned mobile phones.</p>
                 </div>
                 <div className="col-md-8">
                     <Bar data={prepareBarData()} options={{
-                        scales: {
-                            yAxes: [
-                              {
-                                ticks: {
-                                  beginAtZero: true,
-                                },
-                              },
-                            ],
-                          },
+                        indexAxis: 'y',
                     }}/>
                 </div>
             </div>

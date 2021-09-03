@@ -17,11 +17,11 @@ function Overview(props) {
 
     const label = {
         area: ["City Area", "Sq Km Area", 0, Area],
-        avg_daily_ridership: ["Public Bus Ridership", "Nos", 0, Ridership],
+        avg_daily_ridership: ["Avg Daily Bus Ridership", "Nos", 0, Ridership],
         bus_fleet: ["No of public buses", "Nos", 0, Bus],
         population: ["Population", "Lakh People", 2, Pop],
         road_length: ["Road Network Length", "Km", 0, Len],
-        seats_per_lakh: ["Seats in public transport", "Seats", 0, Seats]
+        seats_per_lakh: ["Seats in public transport", "Seats per lakh", 0, Seats]
     }
 
     function overallStats(data) {

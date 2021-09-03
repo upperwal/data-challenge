@@ -1173,7 +1173,9 @@
         ],
         "mean_crimes_against_women": 707.7297297297297,
         "mean_spend_per_km_road": 3.343036219223672,
-        "mean_seats_per_lakh": 1877.1015407076823
+        "mean_seats_per_lakh": 1877.1015407076823,
+        "mean_fuel_consumption_per_km": 954728.6251711131,
+        "mean_fuel_consumption_per_capita": 230.11285692194767
     },
     "city_list": [
         "Agartala",
@@ -1318,6 +1320,8 @@
             },
             "percent_roads_are_footpath": 2.0447329553997045,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.4086930881482312,
             "health_expense_relative": -1226.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 17.7,
@@ -1365,6 +1369,8 @@
             },
             "percent_roads_are_footpath": 0.9130372102708678,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.5593221642425239,
             "health_expense_relative": 1678.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 22.5,
@@ -1412,6 +1418,8 @@
             },
             "percent_roads_are_footpath": 32.90994290091492,
             "percent_roads_are_cyclepath": 2.7748357570807163,
+            "norm_health_pcf": 1.4389984303614753,
+            "norm_healnorm_health_ex": -0.08579918812529085,
             "health_expense_relative": -257.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 29.05,
@@ -1459,6 +1467,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.3200555469654633,
             "health_expense_relative": -960.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 9.89,
@@ -1506,6 +1516,8 @@
             },
             "percent_roads_are_footpath": 4.2097464048765705,
             "percent_roads_are_cyclepath": 0.1683898561950628,
+            "norm_health_pcf": -0.523864611481839,
+            "norm_healnorm_health_ex": -0.3813687333475283,
             "health_expense_relative": -1144.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 31.21,
@@ -1553,6 +1565,8 @@
             },
             "percent_roads_are_footpath": 0.08468213150570476,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.3727049135326713,
             "health_expense_relative": -1118.4821428571431,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -1600,6 +1614,8 @@
             },
             "percent_roads_are_footpath": 1.5965814551505066,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.494015032729983,
             "health_expense_relative": 4483.517857142857,
             "avg_annual_pollution": {
                 "NO2": 15.97,
@@ -1647,6 +1663,8 @@
             },
             "percent_roads_are_footpath": 34.05714285714286,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.016833754296861517,
             "health_expense_relative": 50.51785714285688,
             "avg_annual_pollution": {
                 "NO2": 21.47,
@@ -1694,6 +1712,8 @@
             },
             "percent_roads_are_footpath": 5.319626039258978,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.1827792261352767,
             "health_expense_relative": 548.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 34.46,
@@ -1741,6 +1761,8 @@
             },
             "percent_roads_are_footpath": 0.15889830508474578,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.189443702915936,
             "health_expense_relative": 568.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 21.14,
@@ -1788,6 +1810,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": 0.0,
+            "norm_health_pcf": 6.9432490478579,
+            "norm_healnorm_health_ex": -0.437350338305066,
             "health_expense_relative": -1312.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 16.0,
@@ -1835,6 +1859,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": 1.2150232521478679,
+            "norm_health_pcf": 6.945371734443894,
+            "norm_healnorm_health_ex": -0.014822510411269887,
             "health_expense_relative": -44.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 31.0,
@@ -1882,6 +1908,8 @@
             },
             "percent_roads_are_footpath": 100.0,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.7345860027224682,
             "health_expense_relative": -2204.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -1929,6 +1957,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": 34.75918402815494,
+            "norm_health_pcf": 1.1752169214670096,
+            "norm_healnorm_health_ex": -0.9071959513415428,
             "health_expense_relative": -2722.482142857143,
             "avg_annual_pollution": {
                 "NO2": 11.5,
@@ -1976,6 +2006,8 @@
             },
             "percent_roads_are_footpath": 10.404352245773879,
             "percent_roads_are_cyclepath": 2.5099456596764678,
+            "norm_health_pcf": -0.4342491485053621,
+            "norm_healnorm_health_ex": -0.6122928537973711,
             "health_expense_relative": -1837.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 17.0,
@@ -2023,6 +2055,8 @@
             },
             "percent_roads_are_footpath": 17.543859649122805,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.065144051043167,
             "health_expense_relative": -3196.482142857143,
             "avg_annual_pollution": {
                 "NO2": 19.1,
@@ -2070,6 +2104,8 @@
             },
             "percent_roads_are_footpath": 2.9269179493394737,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.437350338305066,
             "health_expense_relative": -1312.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 12.27,
@@ -2117,6 +2153,8 @@
             },
             "percent_roads_are_footpath": 29.506826537916076,
             "percent_roads_are_cyclepath": 9.694973125091694,
+            "norm_health_pcf": 6.179368069620404,
+            "norm_healnorm_health_ex": 0.2347621450244188,
             "health_expense_relative": 704.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 18.0,
@@ -2164,6 +2202,8 @@
             },
             "percent_roads_are_footpath": 17.029261877363144,
             "percent_roads_are_cyclepath": 0.279467368074963,
+            "norm_health_pcf": 2.9008175556948563,
+            "norm_healnorm_health_ex": 0.021498888043322992,
             "health_expense_relative": 64.51785714285688,
             "avg_annual_pollution": {
                 "NO2": 16.4,
@@ -2211,6 +2251,8 @@
             },
             "percent_roads_are_footpath": 2.4875220081086757,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.4573437686470437,
             "health_expense_relative": -1372.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 22.4,
@@ -2258,6 +2300,8 @@
             },
             "percent_roads_are_footpath": 6.071428571428571,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.8402179596959173,
             "health_expense_relative": -2521.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -2305,6 +2349,8 @@
             },
             "percent_roads_are_footpath": 14.173228346456693,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.25241110764177194,
             "health_expense_relative": -757.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 4.5,
@@ -2352,6 +2398,8 @@
             },
             "percent_roads_are_footpath": 3.6144901610017883,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.0491612076209784,
             "health_expense_relative": 3148.517857142857,
             "avg_annual_pollution": {
                 "NO2": 30.0,
@@ -2399,6 +2447,8 @@
             },
             "percent_roads_are_footpath": 9.571541909475693,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0464787751194013,
             "health_expense_relative": -139.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 50.0,
@@ -2446,6 +2496,8 @@
             },
             "percent_roads_are_footpath": 34.56221198156682,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.132133943540186,
             "health_expense_relative": 3397.517857142857,
             "avg_annual_pollution": {
                 "NO2": 7.74,
@@ -2493,6 +2545,8 @@
             },
             "percent_roads_are_footpath": 20.090267983074753,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.0581463504234745,
             "health_expense_relative": -3175.482142857143,
             "avg_annual_pollution": {
                 "NO2": 6.4,
@@ -2540,6 +2594,8 @@
             },
             "percent_roads_are_footpath": 4.121498926979585,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.4306858615244067,
             "health_expense_relative": -1292.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 80.0,
@@ -2587,6 +2643,8 @@
             },
             "percent_roads_are_footpath": 21.276595744680847,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.1487832346404403,
             "health_expense_relative": -3447.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -2634,6 +2692,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.025485673260324682,
             "health_expense_relative": -76.48214285714312,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -2681,6 +2741,8 @@
             },
             "percent_roads_are_footpath": 0.4884095698524854,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.8108942618610167,
             "health_expense_relative": -2433.482142857143,
             "avg_annual_pollution": {
                 "NO2": 28.0,
@@ -2728,6 +2790,8 @@
             },
             "percent_roads_are_footpath": 2.7289227601286448,
             "percent_roads_are_cyclepath": 2.7289227601286448,
+            "norm_health_pcf": 1.2600644890457522,
+            "norm_healnorm_health_ex": null,
             "health_expense_relative": null,
             "avg_annual_pollution": {
                 "NO2": 64.0,
@@ -2775,6 +2839,8 @@
             },
             "percent_roads_are_footpath": 31.83036058548175,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.666608339559744,
             "health_expense_relative": -2000.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 27.84,
@@ -2822,6 +2888,8 @@
             },
             "percent_roads_are_footpath": 25.8789860997547,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.1977671389782858,
             "health_expense_relative": -3594.482142857143,
             "avg_annual_pollution": {
                 "NO2": 4.02,
@@ -2869,6 +2937,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.0428299546793522,
             "health_expense_relative": 3129.517857142857,
             "avg_annual_pollution": {
                 "NO2": 72.0,
@@ -2916,6 +2986,8 @@
             },
             "percent_roads_are_footpath": 75.35512745670364,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.3290692324086668,
             "health_expense_relative": 3988.517857142857,
             "avg_annual_pollution": {
                 "NO2": 23.0,
@@ -2963,6 +3035,8 @@
             },
             "percent_roads_are_footpath": 9.263392857142858,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.6429613478397975,
             "health_expense_relative": 1929.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 30.79,
@@ -3010,6 +3084,8 @@
             },
             "percent_roads_are_footpath": 99.1749534247901,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.2490788692514423,
             "health_expense_relative": -747.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 17.83,
@@ -3057,6 +3133,8 @@
             },
             "percent_roads_are_footpath": 2.7777777777777777,
             "percent_roads_are_cyclepath": 0.2222222222222222,
+            "norm_health_pcf": -0.3453227451909493,
+            "norm_healnorm_health_ex": 0.15845388588587045,
             "health_expense_relative": 475.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 25.66,
@@ -3104,6 +3182,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.603307710994875,
             "health_expense_relative": 1810.5178571428569,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -3151,6 +3231,8 @@
             },
             "percent_roads_are_footpath": 1.4841907185073282,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.6026293624654152,
             "health_expense_relative": -1808.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 22.5,
@@ -3198,6 +3280,8 @@
             },
             "percent_roads_are_footpath": 5.083878841673139,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.5529790104495038,
             "health_expense_relative": -1659.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 38.1,
@@ -3245,6 +3329,8 @@
             },
             "percent_roads_are_footpath": 24.73275862068966,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.26274104665179376,
             "health_expense_relative": -788.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 13.94,
@@ -3292,6 +3378,8 @@
             },
             "percent_roads_are_footpath": 49.84328172818233,
             "percent_roads_are_cyclepath": 1.4799701891719037,
+            "norm_health_pcf": 6.410077449789804,
+            "norm_healnorm_health_ex": 0.4460260589713169,
             "health_expense_relative": 1338.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 19.0,
@@ -3339,6 +3427,8 @@
             },
             "percent_roads_are_footpath": 0.11016494968141488,
             "percent_roads_are_cyclepath": 0.0,
+            "norm_health_pcf": -0.9231905438279315,
+            "norm_healnorm_health_ex": -1.2000997058515164,
             "health_expense_relative": -3601.482142857143,
             "avg_annual_pollution": {
                 "NO2": 7.3,
@@ -3386,6 +3476,8 @@
             },
             "percent_roads_are_footpath": 3.3933333333333335,
             "percent_roads_are_cyclepath": 1.4285714285714286,
+            "norm_health_pcf": -0.3413178786165767,
+            "norm_healnorm_health_ex": -0.2404150494365853,
             "health_expense_relative": -721.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 13.8,
@@ -3433,6 +3525,8 @@
             },
             "percent_roads_are_footpath": 64.89619843623619,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.2510782122856401,
             "health_expense_relative": -753.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 35.63,
@@ -3480,6 +3574,8 @@
             },
             "percent_roads_are_footpath": 3.8135593220338984,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.5379958385444145,
             "health_expense_relative": 1614.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 22.8,
@@ -3527,6 +3623,8 @@
             },
             "percent_roads_are_footpath": 2.1491015055852354,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.11712222899438927,
             "health_expense_relative": -351.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 17.1,
@@ -3574,6 +3672,8 @@
             },
             "percent_roads_are_footpath": 2.073371189479976,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.7672538397990925,
             "health_expense_relative": 2302.517857142857,
             "avg_annual_pollution": {
                 "NO2": 18.06,
@@ -3621,6 +3721,8 @@
             },
             "percent_roads_are_footpath": 21.984602224123183,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.1617861242762001,
             "health_expense_relative": 485.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 23.77,
@@ -3668,6 +3770,8 @@
             },
             "percent_roads_are_footpath": 10.096818810511756,
             "percent_roads_are_cyclepath": 2.2130013831258646,
+            "norm_health_pcf": -0.7426442822589766,
+            "norm_healnorm_health_ex": -0.32405423303385883,
             "health_expense_relative": -972.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 20.5,
@@ -3715,6 +3819,8 @@
             },
             "percent_roads_are_footpath": 47.72916995690725,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0234863302261269,
             "health_expense_relative": -70.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 50.2,
@@ -3762,6 +3868,8 @@
             },
             "percent_roads_are_footpath": 6.6606701146840575,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": null,
             "health_expense_relative": null,
             "avg_annual_pollution": {
                 "NO2": 50.0,
@@ -3809,6 +3917,8 @@
             },
             "percent_roads_are_footpath": 1.381692573402418,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.0008437509611992,
             "health_expense_relative": 3003.517857142857,
             "avg_annual_pollution": {
                 "NO2": 53.0,
@@ -3856,6 +3966,8 @@
             },
             "percent_roads_are_footpath": 2.0128824476650564,
             "percent_roads_are_cyclepath": 0.40257648953301123,
+            "norm_health_pcf": -0.3926803124760815,
+            "norm_healnorm_health_ex": 6.8945737919372005,
             "health_expense_relative": 20690.517857142855,
             "avg_annual_pollution": {
                 "NO2": 40.0,
@@ -3903,6 +4015,8 @@
             },
             "percent_roads_are_footpath": 0.0,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.4313642100538665,
             "health_expense_relative": 1294.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -3950,6 +4064,8 @@
             },
             "percent_roads_are_footpath": 5.895541401273886,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 3.198454969383585,
             "health_expense_relative": 9598.517857142857,
             "avg_annual_pollution": {
                 "NO2": 9.2,
@@ -3997,6 +4113,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.2250914937789887,
             "health_expense_relative": -3676.482142857143,
             "avg_annual_pollution": {
                 "NO2": 3.48,
@@ -4044,6 +4162,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.381718598975875,
             "health_expense_relative": 4146.517857142857,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -4091,6 +4211,8 @@
             },
             "percent_roads_are_footpath": 3.511520636346703,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.5793036937331079,
             "health_expense_relative": -1738.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 27.53,
@@ -4138,6 +4260,8 @@
             },
             "percent_roads_are_footpath": 9.156004225848104,
             "percent_roads_are_cyclepath": 2.1690078386873783,
+            "norm_health_pcf": 4.429765727017109,
+            "norm_healnorm_health_ex": -0.03781495530454428,
             "health_expense_relative": -113.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 38.6,
@@ -4185,6 +4309,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.020165992687191145,
             "health_expense_relative": 60.51785714285688,
             "avg_annual_pollution": {
                 "NO2": 32.5,
@@ -4232,6 +4358,8 @@
             },
             "percent_roads_are_footpath": 21.376380736774497,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.6836027553504251,
             "health_expense_relative": -2051.482142857143,
             "avg_annual_pollution": {
                 "NO2": 19.6,
@@ -4279,6 +4407,8 @@
             },
             "percent_roads_are_footpath": 4.201168614357262,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.1391150023705648,
             "health_expense_relative": -417.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 22.16,
@@ -4326,6 +4456,8 @@
             },
             "percent_roads_are_footpath": 0.3595874048853595,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.0045092131905615,
             "health_expense_relative": 3014.517857142857,
             "avg_annual_pollution": {
                 "NO2": 116.5,
@@ -4373,6 +4505,8 @@
             },
             "percent_roads_are_footpath": 15.794621026894868,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.9262016110178154,
             "health_expense_relative": 2779.517857142857,
             "avg_annual_pollution": {
                 "NO2": 34.33,
@@ -4420,6 +4554,8 @@
             },
             "percent_roads_are_footpath": 77.49546279491834,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.139452967147517,
             "health_expense_relative": -3419.482142857143,
             "avg_annual_pollution": {
                 "NO2": 26.33,
@@ -4467,6 +4603,8 @@
             },
             "percent_roads_are_footpath": 20.0839968679134,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.2394153779194864,
             "health_expense_relative": -718.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 35.28,
@@ -4514,6 +4652,8 @@
             },
             "percent_roads_are_footpath": 31.81159420289855,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.132122042688792,
             "health_expense_relative": -3397.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -4561,6 +4701,8 @@
             },
             "percent_roads_are_footpath": 3.26703187250996,
             "percent_roads_are_cyclepath": 0.037350597609561755,
+            "norm_health_pcf": 0.49562743291013484,
+            "norm_healnorm_health_ex": 0.7295995459883677,
             "health_expense_relative": 2189.517857142857,
             "avg_annual_pollution": {
                 "NO2": 21.29,
@@ -4608,6 +4750,8 @@
             },
             "percent_roads_are_footpath": 93.37508891172054,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0234863302261269,
             "health_expense_relative": -70.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 43.1,
@@ -4655,6 +4799,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": null,
             "health_expense_relative": null,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -4702,6 +4848,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": null,
             "health_expense_relative": null,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -4749,6 +4897,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.5356632716711837,
             "health_expense_relative": 1607.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 17.0,
@@ -4796,6 +4946,8 @@
             },
             "percent_roads_are_footpath": 4.6897546897546905,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.4100307244422827,
             "health_expense_relative": -4231.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -4843,6 +4995,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.8472156603156095,
             "health_expense_relative": -2542.482142857143,
             "avg_annual_pollution": {
                 "NO2": 24.39,
@@ -4890,6 +5044,8 @@
             },
             "percent_roads_are_footpath": 20.928963973132504,
             "percent_roads_are_cyclepath": 1.61204966415632,
+            "norm_health_pcf": -0.33021112849218187,
+            "norm_healnorm_health_ex": 0.6599557636304786,
             "health_expense_relative": 1980.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 70.03,
@@ -4937,6 +5093,8 @@
             },
             "percent_roads_are_footpath": 93.5251798561151,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.7862523395618908,
             "health_expense_relative": 5360.517857142857,
             "avg_annual_pollution": {
                 "NO2": 13.48,
@@ -4984,6 +5142,8 @@
             },
             "percent_roads_are_footpath": 2.7153160797624096,
             "percent_roads_are_cyclepath": 0.0975816716164616,
+            "norm_health_pcf": -0.31719764138266254,
+            "norm_healnorm_health_ex": -0.0288179116506543,
             "health_expense_relative": -86.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 43.9,
@@ -5031,6 +5191,8 @@
             },
             "percent_roads_are_footpath": 12.672791987418261,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.21109135160168466,
             "health_expense_relative": -633.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 11.7,
@@ -5078,6 +5240,8 @@
             },
             "percent_roads_are_footpath": 54.86409155937053,
             "percent_roads_are_cyclepath": 5.221745350500715,
+            "norm_health_pcf": 0.650636741577944,
+            "norm_healnorm_health_ex": 0.6599557636304786,
             "health_expense_relative": 1980.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 27.42,
@@ -5125,6 +5289,8 @@
             },
             "percent_roads_are_footpath": 10.181818181818182,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0234863302261269,
             "health_expense_relative": -70.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 54.0,
@@ -5172,6 +5338,8 @@
             },
             "percent_roads_are_footpath": 21.292775665399237,
             "percent_roads_are_cyclepath": 0.0828897338403042,
+            "norm_health_pcf": 0.33464564439586175,
+            "norm_healnorm_health_ex": -0.7809041163480501,
             "health_expense_relative": -2343.482142857143,
             "avg_annual_pollution": {
                 "NO2": 16.46,
@@ -5219,6 +5387,8 @@
             },
             "percent_roads_are_footpath": 7.298382191947452,
             "percent_roads_are_cyclepath": 0.8920244901269107,
+            "norm_health_pcf": -0.445149323300275,
+            "norm_healnorm_health_ex": -0.5952984380066899,
             "health_expense_relative": -1786.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 21.6,
@@ -5266,6 +5436,8 @@
             },
             "percent_roads_are_footpath": 8.618851834932236,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.4466806057979889,
             "health_expense_relative": -1340.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -5313,6 +5485,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": 6.1251740331775,
+            "norm_healnorm_health_ex": -0.1054593946282356,
             "health_expense_relative": -316.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 37.2,
@@ -5360,6 +5534,8 @@
             },
             "percent_roads_are_footpath": 4.883148831488315,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.3330512766877488,
             "health_expense_relative": -999.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 13.03,
@@ -5407,6 +5583,8 @@
             },
             "percent_roads_are_footpath": 2.2319767874414107,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.044824556775630346,
             "health_expense_relative": 134.51785714285688,
             "avg_annual_pollution": {
                 "NO2": 13.6,
@@ -5454,6 +5632,8 @@
             },
             "percent_roads_are_footpath": 0.7528905619790266,
             "percent_roads_are_cyclepath": 0.05377789728421619,
+            "norm_health_pcf": -0.4631653369123144,
+            "norm_healnorm_health_ex": 1.2524277494310854,
             "health_expense_relative": 3758.517857142857,
             "avg_annual_pollution": {
                 "NO2": 27.8,
@@ -5501,6 +5681,8 @@
             },
             "percent_roads_are_footpath": 0.6657789613848203,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.9401970122571998,
             "health_expense_relative": 2821.517857142857,
             "avg_annual_pollution": {
                 "NO2": 26.0,
@@ -5548,6 +5730,8 @@
             },
             "percent_roads_are_footpath": 4.8120300751879705,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.7009303949801391,
             "health_expense_relative": -2103.482142857143,
             "avg_annual_pollution": {
                 "NO2": 12.47,
@@ -5595,6 +5779,8 @@
             },
             "percent_roads_are_footpath": 16.699236098774207,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.5969645572018548,
             "health_expense_relative": -1791.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 4.5,
@@ -5642,6 +5828,8 @@
             },
             "percent_roads_are_footpath": 77.76908788737902,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.6636093250084473,
             "health_expense_relative": -1991.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 26.7,
@@ -5689,6 +5877,8 @@
             },
             "percent_roads_are_footpath": 1.3219954648526078,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.6466149092177662,
             "health_expense_relative": -1940.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 10.6,
@@ -5736,6 +5926,8 @@
             },
             "percent_roads_are_footpath": 26.55721873491067,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -1.07114208014576,
             "health_expense_relative": -3214.482142857143,
             "avg_annual_pollution": {
                 "NO2": 21.6,
@@ -5783,6 +5975,8 @@
             },
             "percent_roads_are_footpath": 3.1902259590120865,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.35471082622489136,
             "health_expense_relative": -1064.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 40.26,
@@ -5830,6 +6024,8 @@
             },
             "percent_roads_are_footpath": 14.984171649665845,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.8415508550520492,
             "health_expense_relative": -2525.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -5877,6 +6073,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": 3.468850145973897,
+            "norm_health_pcf": 1.0309523907056017,
+            "norm_healnorm_health_ex": -0.6582777435839199,
             "health_expense_relative": -1975.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 32.53,
@@ -5924,6 +6122,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0234863302261269,
             "health_expense_relative": -70.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 39.0,
@@ -5971,6 +6171,8 @@
             },
             "percent_roads_are_footpath": 1.405237402459992,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.3117249509896392,
             "health_expense_relative": -935.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -6018,6 +6220,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": null,
             "health_expense_relative": null,
             "avg_annual_pollution": {
                 "NO2": null,
@@ -6065,6 +6269,8 @@
             },
             "percent_roads_are_footpath": 3.988045071779146,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.5753050076647124,
             "health_expense_relative": -1726.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 22.5,
@@ -6112,6 +6318,8 @@
             },
             "percent_roads_are_footpath": 15.989949174804408,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.7515804185131494,
             "health_expense_relative": -2255.482142857143,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -6159,6 +6367,8 @@
             },
             "percent_roads_are_footpath": 11.884938806094414,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.7295876451369738,
             "health_expense_relative": -2189.482142857143,
             "avg_annual_pollution": {
                 "NO2": 15.87,
@@ -6206,6 +6416,8 @@
             },
             "percent_roads_are_footpath": 0.35518141712433604,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.5123257020874825,
             "health_expense_relative": -1537.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -6253,6 +6465,8 @@
             },
             "percent_roads_are_footpath": 74.74664798462892,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.6482929292643249,
             "health_expense_relative": 1945.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 23.7,
@@ -6300,6 +6514,8 @@
             },
             "percent_roads_are_footpath": 0.5494505494505495,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.912860756605103,
             "health_expense_relative": -2739.482142857143,
             "avg_annual_pollution": {
                 "NO2": 10.63,
@@ -6347,6 +6563,8 @@
             },
             "percent_roads_are_footpath": 100.0,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.1761028485032236,
             "health_expense_relative": -528.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 31.58,
@@ -6394,6 +6612,8 @@
             },
             "percent_roads_are_footpath": 7.325581395348838,
             "percent_roads_are_cyclepath": 0.29069767441860467,
+            "norm_health_pcf": -0.3598871807109606,
+            "norm_healnorm_health_ex": 0.20977035709694666,
             "health_expense_relative": 629.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 30.56,
@@ -6441,6 +6661,8 @@
             },
             "percent_roads_are_footpath": null,
             "percent_roads_are_cyclepath": 0.1928919322949318,
+            "norm_health_pcf": 9.108864603764012,
+            "norm_healnorm_health_ex": 0.2824131540061324,
             "health_expense_relative": 847.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 14.9,
@@ -6488,6 +6710,8 @@
             },
             "percent_roads_are_footpath": 47.2972972972973,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.8305663692153552,
             "health_expense_relative": 2492.517857142857,
             "avg_annual_pollution": {
                 "NO2": 24.0,
@@ -6535,6 +6759,8 @@
             },
             "percent_roads_are_footpath": 3.5421296218943708,
             "percent_roads_are_cyclepath": 0.40099580625219294,
+            "norm_health_pcf": -0.47583838923978405,
+            "norm_healnorm_health_ex": 0.23342924966828696,
             "health_expense_relative": 700.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 45.2,
@@ -6582,6 +6808,8 @@
             },
             "percent_roads_are_footpath": 24.99974739564914,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.0234863302261269,
             "health_expense_relative": -70.48214285714312,
             "avg_annual_pollution": {
                 "NO2": 0.0,
@@ -6629,6 +6857,8 @@
             },
             "percent_roads_are_footpath": 1.7681426814268142,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.471351070737822,
             "health_expense_relative": 1414.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 23.89,
@@ -6676,6 +6906,8 @@
             },
             "percent_roads_are_footpath": 4.16,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": -0.34704667792713323,
             "health_expense_relative": -1041.4821428571431,
             "avg_annual_pollution": {
                 "NO2": 50.0,
@@ -6723,6 +6955,8 @@
             },
             "percent_roads_are_footpath": 3.3660172147737555,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 0.20743779022371592,
             "health_expense_relative": 622.5178571428569,
             "avg_annual_pollution": {
                 "NO2": 20.3,
@@ -6770,6 +7004,8 @@
             },
             "percent_roads_are_footpath": 0.6679864459477514,
             "percent_roads_are_cyclepath": null,
+            "norm_health_pcf": null,
+            "norm_healnorm_health_ex": 1.4950147042470818,
             "health_expense_relative": 4486.517857142857,
             "avg_annual_pollution": {
                 "NO2": 37.1,

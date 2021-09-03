@@ -33,7 +33,7 @@ function Header(props) {
                 </ul> */}
                 <div className="row">
                     <div className="col-md-4 right-aligned">
-                        <h1><span className="mark">SENSING THE CENSUS</span></h1>
+                        <h1><span className="mark">SENSING THE PULSE OF URBAN INDIA</span></h1>
                         {/* <p className="learn-more">To learn more, select your city from the dropdown</p>
                         <FormControl variant="outlined" className="header-box" margin='dense'>
                             <InputLabel htmlFor="outlined-age-native-simple">City</InputLabel>
@@ -51,8 +51,8 @@ function Header(props) {
                         </FormControl> */}
                     </div>
                     <div className="col-md-8 left-aligned">
-                        <h4><span className="mark-light">This storyboard focuses on the data collected during the 15th Indian Census conducted in 2011 across various key performance indicators such as demographics, housing, and economy and gives them a visual representation.</span></h4>
-                        <h4><span className="mark-light">It not only changes the perception of how we analyse trends and patterns for future development of our cities, it also enables us to translate this big data to our citizens in a more perceivable manner for better participatory decision making.</span></h4>
+                        <h4><span className="mark-light">This storyboard focuses on the data collected during the 15th Indian Census conducted in 2011 across various key performance indicators such as demographics, housing, and economy and gives them a visual representation across geospatial and non-geospatial dimensions.</span></h4>
+                        <h4><span className="mark-light">This story not only changes the perception of how we analyse trends and patterns for future development of our cities, it also enables us to translate this data to the citizens in a more perceivable manner for better participatory decision making.</span></h4>
                     </div>
                 </div>
             </div>

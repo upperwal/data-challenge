@@ -142,7 +142,7 @@ function Security(props) {
     }
 
     return (
-        <section class="tab-content-box">
+        <section className="tab-content-box">
             <div className="Security"> 
                 <div className="container">
 

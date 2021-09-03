@@ -11,6 +11,7 @@ import Overview from './Overview';
 import HousingData from './housing_data.json';
 import HousingRoomData from './housing_room_data.json';
 import HousingOccupiedVacantData from './housing_occupied_vacant_data.json';
+import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
 import AreaImage from './img/area.svg'
@@ -188,6 +189,44 @@ function Housing(props) {
         return barData
     }
 
+    function prepareBarIndexData() {
+        let data = []
+        let cityList = []
+        const barData = {
+            datasets: [
+                {
+                    label: 'Housing Quality Index',
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        };
+
+        IndexData.sort(function(a, b) {
+            return a.housigQualityIndex - b.housigQualityIndex;
+        })
+
+        IndexData.forEach((item) => {
+            if(item.housigQualityIndex === null ) {
+                return
+            }
+            if(item.state !== state && state !== 'All') {
+                return
+            }
+            if(item.settlementType !== settlementType && settlementType !== 'All') {
+                return
+            }
+            data.push(item.housigQualityIndex)
+            cityList.push(item.UA_city)
+        })
+
+        barData['labels'] = cityList
+        barData.datasets[0]['data'] = data
+
+        return barData
+    }
+
+
+
     function renderStateMenu() {
         let stateList = props.stateList
         let res = []
@@ -247,8 +286,8 @@ function Housing(props) {
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <h5>Housing Quality</h5>
-                    <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                    <h4>Housing Quality</h4>
+                    <p>Quality of housing in Census is reported as 'good', 'liveable' or 'dilapidated'. The chart shows the percentage of each category for a city.</p>
                     <FormControl className="full-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
@@ -273,6 +312,8 @@ function Housing(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
+                    <p>Overall in Urban India, 68.5 % of the total houses were classified as ‘good’ in the Census 2011, better than the 53.2% figure for India. Nearly 28.6% were reported to be in 'livable' condition and 2.9% as 'dilapidated'.</p>
+                    <p>Among cities, Tirupati had the highest percentage of 'good' quality housing at 88.91%, whereas Raiganj had the highest percentage of 'dilapidated' quality housing at 18.95%.</p>
                 </div>
                 <div className="col-md-8">
                     <Bar data={prepareBarQualityData()} options={{
@@ -297,8 +338,7 @@ function Housing(props) {
 
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <h5>Room Availability</h5>
-                    <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                    <h4>Room Availability</h4>
                     <FormControl className="full-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
@@ -323,6 +363,8 @@ function Housing(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
+                    <p>When it comes to adequate housing, Greater Mumbai appears to be the most congested metropolitan city with 7.7% of the households having no exclusive room and a further 57.3% living in just one room.</p>
+                    <p>In rest of the cities, Bhiwandi, had 11% households having no exclusive room and 59.3% with just one room. Srinagar  had the largest percentage of houses with six rooms or more (22.6%).</p>
                 </div>
                 <div className="col-md-8">
                     <Bar data={prepareBarRoomData()} options={{
@@ -347,8 +389,7 @@ function Housing(props) {
 
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <h5>Houses Occupied vs Vacant</h5>
-                    <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                    <h4>Houses Occupied vs Vacant</h4>
                     <FormControl className="full-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
@@ -373,9 +414,47 @@ function Housing(props) {
                             {renderSettlementType()}
                         </Select>
                     </FormControl>
+                    <p>At 52.04%, Greater Noida had the highest percentage of vacant houses in the country, followed by Bhiwadi at 33.32%.</p>
+                    <p>On the other end of the spectrum were cities like Balurghat and Santipur having just 2.41% and 2.81% of vacant housing, respectively.</p>
                 </div>
                 <div className="col-md-8">
                     <Bar data={prepareBarOccupiedVacantData()} options={{
+                        scales: {
+                            yAxes: [
+                                {
+                                    stacked: true,
+                                    ticks: {
+                                        beginAtZero: true,
+                                    }
+                                }
+                            ],
+                            xAxes: [
+                                {
+                                    stacked: true
+                                }
+                            ]
+                        }
+                    }}/>
+                </div>
+            </div>
+
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Housing Quality Index</h4>
+                    <p>The chart shows value of housing quality index for each city. The parameters considered for the calculation of this index were:</p>
+                    <ul>
+                        <li>Condition of houses as ‘good’</li>
+                        <li>Houses using permanent material for roofs</li>
+                        <li>Houses using permanent material for walls </li>
+                        <li>Houses using permanent material for floors</li>
+                        <li>Houses having more than one room</li>
+                    </ul>
+                    <p>Among metropolitan cities, Surat (1.730) had the highest value of the index while Dhanbad (-2.596) had the lowest value.</p>
+                    <p>In case of class-I non-metropolitan cities, Tiruppur (1.597) had the highest index value whereas Bagaha (-4.866) had the lowest index value.</p>
+                </div>
+                <div className="col-md-8">
+                    <Bar data={prepareBarIndexData()} options={{
                         scales: {
                             yAxes: [
                                 {
