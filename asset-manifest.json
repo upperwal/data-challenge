@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/data-challenge/static/css/main.724fcf8a.chunk.css",
-    "main.js": "/data-challenge/static/js/main.15d87577.chunk.js",
-    "main.js.map": "/data-challenge/static/js/main.15d87577.chunk.js.map",
+    "main.css": "/data-challenge/static/css/main.f957816e.chunk.css",
+    "main.js": "/data-challenge/static/js/main.7c3aa2f7.chunk.js",
+    "main.js.map": "/data-challenge/static/js/main.7c3aa2f7.chunk.js.map",
     "runtime-main.js": "/data-challenge/static/js/runtime-main.8717b22c.js",
     "runtime-main.js.map": "/data-challenge/static/js/runtime-main.8717b22c.js.map",
     "static/css/2.af3c1da9.chunk.css": "/data-challenge/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.67c6f701.chunk.js": "/data-challenge/static/js/2.67c6f701.chunk.js",
-    "static/js/2.67c6f701.chunk.js.map": "/data-challenge/static/js/2.67c6f701.chunk.js.map",
+    "static/js/2.b1b6162e.chunk.js": "/data-challenge/static/js/2.b1b6162e.chunk.js",
+    "static/js/2.b1b6162e.chunk.js.map": "/data-challenge/static/js/2.b1b6162e.chunk.js.map",
     "index.html": "/data-challenge/index.html",
-    "precache-manifest.b2aeca7f6bb0bdb5932c296cdf753c54.js": "/data-challenge/precache-manifest.b2aeca7f6bb0bdb5932c296cdf753c54.js",
+    "precache-manifest.c95aaeee85c6dd6a7cbe1d182e2f3f42.js": "/data-challenge/precache-manifest.c95aaeee85c6dd6a7cbe1d182e2f3f42.js",
     "service-worker.js": "/data-challenge/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/data-challenge/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.724fcf8a.chunk.css.map": "/data-challenge/static/css/main.724fcf8a.chunk.css.map",
-    "static/js/2.67c6f701.chunk.js.LICENSE.txt": "/data-challenge/static/js/2.67c6f701.chunk.js.LICENSE.txt",
+    "static/css/main.f957816e.chunk.css.map": "/data-challenge/static/css/main.f957816e.chunk.css.map",
+    "static/js/2.b1b6162e.chunk.js.LICENSE.txt": "/data-challenge/static/js/2.b1b6162e.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/data-challenge/static/media/Consolas.53ce8c88.ttf",
     "static/media/air-pollution.svg": "/data-challenge/static/media/air-pollution.a7d27908.svg",
     "static/media/area.svg": "/data-challenge/static/media/area.6e53849c.svg",
@@ -41,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.8717b22c.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.67c6f701.chunk.js",
-    "static/css/main.724fcf8a.chunk.css",
-    "static/js/main.15d87577.chunk.js"
+    "static/js/2.b1b6162e.chunk.js",
+    "static/css/main.f957816e.chunk.css",
+    "static/js/main.7c3aa2f7.chunk.js"
   ]
 }

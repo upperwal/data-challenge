@@ -42,7 +42,19 @@ object-assign
  * Date: 2020-05-04T22:49Z
  */
 
+/*! API */
+
+/*! BEGIN ApiShared */
+
+/*! BEGIN CoreSlim */
+
+/*! BEGIN MscorlibSlim */
+
 /*! jQuery v3.5.1 | (c) JS Foundation and other contributors | jquery.org/license */
+
+/*! tableau-2.1.2 */
+
+/*! tableau-2.2.1 */
 
 /**
  * A better abstraction over CSS.
