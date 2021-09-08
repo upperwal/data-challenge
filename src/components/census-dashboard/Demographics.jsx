@@ -9,6 +9,7 @@ import Select from '@material-ui/core/Select';
 import Overview from './Overview';
 
 import SexRatioLiteracyPerData from './sex_ratio_literacy_percentage.json';
+import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
 import DemographicsIntroImage from './img/demographics_intro.svg';
@@ -17,8 +18,8 @@ function Demographics(props) {
 
     // const [state, setState] = useState("All")
     // const [settlementType, setSettlementType] = useState("All")
-    const [stateIndexLiteracy, setStateIndexLiteracy] = useState("All")
-    const [settlementTypeIndexLiteracy, setSettlementTypeIndexLiteracy] = useState("All")
+    const [state, setState] = useState("All")
+    const [settlementType, setSettlementType] = useState("All")
     let literacyAndSexRatioStats = {
         sexRatioMean: 0,
         literacyRateMean: 0
@@ -27,9 +28,9 @@ function Demographics(props) {
     function onScatterInputChange(e) {
         console.log(e.target)
         if(e.target.name == 'state-literacy') {
-            setStateIndexLiteracy(e.target.value)
+            setState(e.target.value)
         } else if(e.target.name == 'settlementType-literacy') {
-            setSettlementTypeIndexLiteracy(e.target.value)
+            setSettlementType(e.target.value)
         }
     }
 
@@ -55,10 +56,10 @@ function Demographics(props) {
             if(item.literacyRate_persons_per === null || item.sexRatio_num === null || item.literacyRate_persons_per > 100) {
                 return
             }
-            if(item.state !== stateIndexLiteracy && stateIndexLiteracy !== 'All') {
+            if(item.state !== state && state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementTypeIndexLiteracy && settlementTypeIndexLiteracy !== 'All') {
+            if(item.settlementType !== settlementType && settlementType !== 'All') {
                 return
             }
             res.push({
@@ -80,6 +81,42 @@ function Demographics(props) {
         }
 
         return scatterStateLocal
+    }
+
+    function prepareBarIndexData() {
+        let data = []
+        let cityList = []
+        const barData = {
+            datasets: [
+                {
+                    label: 'Social Index',
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        };
+
+        IndexData.sort(function(a, b) {
+            return a.socialIndex - b.socialIndex;
+        })
+
+        IndexData.forEach((item) => {
+            if(item.socialIndex === null ) {
+                return
+            }
+            if(item.state !== state && state !== 'All') {
+                return
+            }
+            if(item.settlementType !== settlementType && settlementType !== 'All') {
+                return
+            }
+            data.push(item.socialIndex)
+            cityList.push(item.UA_city)
+        })
+
+        barData['labels'] = cityList
+        barData.datasets[0]['data'] = data
+
+        return barData
     }
 
 
@@ -152,34 +189,41 @@ function Demographics(props) {
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Sex Ratio vs Literacy Rate Percentage</h4>
-                    <p>The overall literacy rate was highest in metropolitan cities (87.1%) followed by non-metropolitan Class I cities (83.7%) and all towns (80.9%) as compared to 84.1 per cent in urban India in 2011. The same pattern holds true for gender as well. In towns, the male literacy rate was 86.9 per cent and female literacy rate was 74.6 per cent.</p>
+                    <p>The overall literacy rate was highest in metropolitan cities (87.1%) followed by non-metropolitan Class I cities (83.7%) and all towns (80.9%) as compared to 84.1% in urban India in 2011. The same pattern holds true for sex ratio as well.</p>
                     <p>The gender gap in towns of India was quite high at 12.3 per cent in 2011; much larger than the gender gap of urban India. The gender gap in non-metropolitan Class I cities of India was almost the same as in urban India (9.7%), while it was lowest in metropolitan India (7.6%).</p>
                 </div>
                 <div className="col-md-8">
-                <FormControl className="half-width-select">
-                        <InputLabel id="state-literacy-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-literacy-select-label"
-                            id="state-literacy-select"
-                            name="state-literacy"
-                            value={stateIndexLiteracy}
-                            onChange={onScatterInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="half-width-select">
-                        <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-literacy-select-label"
-                            id="settlement-literacy-select"
-                            name="settlementType-literacy"
-                            value={settlementTypeIndexLiteracy}
-                            onChange={onScatterInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
+                    <div className="row input-control-row">
+                        <div className="col-md-6">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="state-literacy-select-label">State</InputLabel>
+                                <Select
+                                    labelId="state-literacy-select-label"
+                                    id="state-literacy-select"
+                                    name="state-literacy"
+                                    value={state}
+                                    onChange={onScatterInputChange}
+                                >
+                                    {renderStateMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                        <div className="col-md-6">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
+                                <Select
+                                    labelId="settlement-literacy-select-label"
+                                    id="settlement-literacy-select"
+                                    name="settlementType-literacy"
+                                    value={settlementType}
+                                    onChange={onScatterInputChange}
+                                >
+                                    {renderSettlementType()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div>
+                    
                     <Scatter
                         data={prepareScatterSexRatioLiteracyData()}
                         plugins={[ChartAnnotation]}
@@ -252,6 +296,41 @@ function Demographics(props) {
                             }
                         }}
                     />
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Social Index</h4>
+                    <p>To arrive at social index values, the parameters used are:</p>
+                    <ul>
+                        <li>Sex ratio</li>
+                        <li>Child (0-6 years) sex ratio</li>
+                        <li>Effective male literacy rate</li>
+                        <li>Effective female literacy rate</li>
+                        <li>Effective overall literacy rate</li>
+                    </ul>
+                    <p>Kannur was found to be the best 
+metro and Agra the worst. All metros in Kerala are ranked right at the top and there is a clear north-south division in the social index values.</p>
+                </div>
+                <div className="col-md-8">
+                    <Bar data={prepareBarIndexData()} options={{
+                        scales: {
+                            yAxes: [
+                                {
+                                    stacked: true,
+                                    ticks: {
+                                        beginAtZero: true,
+                                    }
+                                }
+                            ],
+                            xAxes: [
+                                {
+                                    stacked: true
+                                }
+                            ]
+                        }
+                    }}/>
                 </div>
             </div>
             
