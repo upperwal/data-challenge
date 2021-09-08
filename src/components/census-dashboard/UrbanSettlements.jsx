@@ -10,14 +10,78 @@ import Kepler from './Kepler';
 
 import Overview from './Overview';
 
-import WithInternetData from './with_internet.json';
-import SexRatioLiteracyPerData from './sex_ratio_literacy_percentage.json';
+import SettlementPopData from './settlement_pop_params.json';
 
 import AreaImage from './img/area.svg'
 import UrbanSettlementIntroImage from './img/housing_intro.svg';
 
-
 function UrbanSettlements(props) {
+
+    const [barData, setBarData] = useState([{}, {}, {}, {}])
+    const barLabels = [
+        "Distribution of Population Sum",
+        "Distribution of Households Sum",
+        "Distribution of Avg Basic Infra Index",
+        "Distribution of Avg Social Index"
+    ]
+    let barDataTemplate = [
+        {
+            datasets: [
+                {
+                    label: barLabels[0],
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        },
+        {
+            datasets: [
+                {
+                    label: barLabels[1],
+                    backgroundColor: '#592F93'
+                }
+            ]
+        },
+        {
+            datasets: [
+                {
+                    label: barLabels[2],
+                    backgroundColor: '#592F93'
+                }
+            ]
+        },
+        {
+            datasets: [
+                {
+                    label: barLabels[3],
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        }
+    ]
+
+    useEffect(() => {
+        prepareBarData()
+    }, [])
+
+    function prepareBarData() {
+        let res= [[],[],[],[]]
+        let xList = []
+
+        SettlementPopData.forEach((item) => {
+            res[0].push(item["Sum of totalPop_2011_num"])
+            res[1].push(item["Sum of HH_num"])
+            res[2].push(item["Average of basicInfrastructureIndex"])
+            res[3].push(item["Average of socialIndex"])
+            xList.push(item.settlementSizeClass)
+        })
+
+        res.forEach((r, idx) => {
+            barDataTemplate[idx]['labels'] = xList
+            barDataTemplate[idx].datasets[0]['data'] = r
+        })
+
+        setBarData(barDataTemplate)
+    }
     
     return (
         <div className="census-item-section">
@@ -74,6 +138,82 @@ function UrbanSettlements(props) {
                 </div>
                 <div className="col-md-8 gis-container">
                     <Kepler src="http://iuo.dataspace.mobi:3001/census/towns?readOnly=true" width="100%" height="900px" />
+                </div>
+            </div>
+            <div className="row">
+            <div className="col-md-4 insights-box">
+                    <h4>Comparing settlement size with population, household, avg social and basic infra index</h4>
+                    <p>The charts here show the distribution of population, household size, basic infrastructure, and social conditions among different settlement size classes.</p>
+                    <p>Clearly, the 52 Metropolitan cities held the highest share of urban population.</p>
+                    <p>In case of household size, class-III towns had the highest figure of 5.05.</p>
+                    <p>The average value of Basic Infrastructure Index was found to be the highest in class II towns (0.869).</p>
+                    <p>The average value of Social Index was found to be the highest in class VI towns (0.264).</p>
+                </div>
+                <div className="col-md-8">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <Bar data={barData[0]} options={{
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                        beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: barLabels[0],
+                                        }
+                                    }],
+                                },
+                            }}/>
+                        </div>
+                        <div className="col-md-6">
+                            <Bar data={barData[1]} options={{
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                        beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: barLabels[1],
+                                        }
+                                    }],
+                                },
+                            }}/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <Bar data={barData[2]} options={{
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                        beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: barLabels[2],
+                                        }
+                                    }],
+                                },
+                            }}/>
+                        </div>
+                        <div className="col-md-6">
+                            <Bar data={barData[3]} options={{
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                        beginAtZero: true,
+                                        },
+                                        scaleLabel: {
+                                            display: true,
+                                            labelString: barLabels[3],
+                                        }
+                                    }],
+                                },
+                            }}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
