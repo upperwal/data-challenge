@@ -158,7 +158,7 @@ function Indices(props) {
                     <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
                 </div>
                 <div className="col-md-8">
-                    <FormControl>
+                    <FormControl className="full-width-select">
                         <InputLabel id="xaxis-index-select-label">X Axis</InputLabel>
                         <Select
                             labelId="xaxis-index-select-label"
@@ -175,7 +175,7 @@ function Indices(props) {
                             <MenuItem value={"Social Index"}>Social Index</MenuItem>
                         </Select>
                     </FormControl>
-                    <FormControl>
+                    <FormControl className="full-width-select">
                         <InputLabel id="yaxis-index-select-label">Y Axis</InputLabel>
                         <Select
                             labelId="yaxis-index-select-label"
@@ -191,7 +191,7 @@ function Indices(props) {
                             <MenuItem value={"Social Index"}>Social Index</MenuItem>
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="state-index-select-label">State</InputLabel>
                         <Select
                             labelId="state-index-select-label"
@@ -203,7 +203,7 @@ function Indices(props) {
                             {renderStateMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="settlement-index-select-label">Settlement Type</InputLabel>
                         <Select
                             labelId="settlement-index-select-label"

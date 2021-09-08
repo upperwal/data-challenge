@@ -65,9 +65,19 @@ function Overview(props) {
             <div className="city-facts">
 
                 {/* <div className="container"> */}
+                
                     <div className="row">
                         <div className="col-md-4 card-container-description">
-                            <h2>{title}</h2>
+                            <div className="title-container">
+                                <h1>{title}</h1>
+                            </div>
+                        </div>
+                        <div className="col-md-8 card-container">
+                            <img src={props.introImg} alt="" width="100%"/>
+                        </div>
+                        <div className="col-md-4 card-container-description">
+                            
+                            
                             {renderDescription()}
                         </div>
                         <div className="col-md-8 card-container">

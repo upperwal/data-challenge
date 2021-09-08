@@ -11,8 +11,7 @@ import Overview from './Overview';
 import WithInternetData from './with_internet.json';
 
 import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
+import EconomyIntroImage from './img/economy_intro.svg';
 
 function Economy(props) {
 
@@ -112,6 +111,7 @@ function Economy(props) {
     return (
         <div className="census-item-section">
             <Overview 
+                introImg={EconomyIntroImage}
                 data={[
                     {
                         label: 'Households owning a TV set (Metros)',
@@ -193,7 +193,7 @@ function Economy(props) {
                             {renderParamMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
                             labelId="state-literacy-select-label"
@@ -205,7 +205,7 @@ function Economy(props) {
                             {renderStateMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
                         <Select
                             labelId="settlement-literacy-select-label"

@@ -13,8 +13,7 @@ import SlumPopData from './slum_pop.json';
 import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
+import BasicInfraIntroImage from './img/basic_infrastructure_intro.svg';
 
 function BasicInfra(props) {
 
@@ -118,6 +117,7 @@ function BasicInfra(props) {
     return (
         <div className="census-item-section">
             <Overview 
+                introImg={BasicInfraIntroImage}
                 data={[
                     {
                         label: 'Population',

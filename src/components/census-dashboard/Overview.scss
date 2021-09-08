@@ -33,9 +33,21 @@
         text-align: right;
         padding: 0 40px;
         padding-right: 13px;
+        h1 {
+            font-size: 4rem;
+            height: max-content;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+        }
         h2 {
             margin-bottom: 10px;
             text-align: left;
+        }
+        .title-container {
+            height: 100%;
+            width: 100%;
+            display: table;
         }
         .overview-description {
             font-size: 1.3em;

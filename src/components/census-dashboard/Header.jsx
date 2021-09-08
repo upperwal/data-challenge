@@ -51,8 +51,10 @@ function Header(props) {
                         </FormControl> */}
                     </div>
                     <div className="col-md-8 left-aligned">
-                        <h4><span className="mark-light">This storyboard focuses on the data collected during the 15th Indian Census conducted in 2011 across various key performance indicators such as demographics, housing, and economy and gives them a visual representation across geospatial and non-geospatial dimensions.</span></h4>
-                        <h4><span className="mark-light">This story not only changes the perception of how we analyse trends and patterns for future development of our cities, it also enables us to translate this data to the citizens in a more perceivable manner for better participatory decision making.</span></h4>
+                        <h4><span className="mark-light">Sensing the Pulse of Urban India is a story of opportunities.</span></h4>
+                        <h4><span className="mark-light">First, the opportunities of inclusive and sustainable growth that lie within Indian cities &amp; towns. Second, the new opportunities of understanding &amp; visualising these cities &amp; towns that get unlocked once the census data get geospatial dimension.</span></h4>
+                        <h4><span className="mark-light">The storyboard utilises data from the 15th Indian Census conducted in 2011 to highlight the differences and similarities in demographics, economy, housing, and basic infrastructure existing among urban settlements.</span></h4>
+                        <h4><span className="mark-light">Let's begin by looking at what is 'urban' in India</span></h4>
                     </div>
                 </div>
             </div>

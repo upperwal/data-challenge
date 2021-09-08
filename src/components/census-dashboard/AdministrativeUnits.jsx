@@ -21,7 +21,7 @@ function Population(props) {
     
     return (
         <div className="census-item-section">
-            <h3>Let's begin by looking at the governance structure of India</h3>
+            {/* <h3>Let's begin by looking at the governance structure of India</h3> */}
             <Overview 
                 data={[
                     {

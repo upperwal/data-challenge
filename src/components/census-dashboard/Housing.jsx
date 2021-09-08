@@ -14,8 +14,7 @@ import HousingOccupiedVacantData from './housing_occupied_vacant_data.json';
 import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
+import HousingIntroImage from './img/housing_intro.svg';
 
 function Housing(props) {
 
@@ -256,7 +255,7 @@ function Housing(props) {
     function renderStateAndSettlementControls(name) {
         return (
             <>
-                <FormControl className="full-width-select">
+                <FormControl className="half-width-select">
                     <InputLabel id={"state-" + name + "-select-label"}>State</InputLabel>
                     <Select
                         labelId={"state-" + name + "-select-label"}
@@ -268,7 +267,7 @@ function Housing(props) {
                         {renderStateMenu()}
                     </Select>
                 </FormControl>
-                <FormControl className="full-width-select">
+                <FormControl className="half-width-select">
                     <InputLabel id={"settlement-" + name + "-select-label"}>Settlement Type</InputLabel>
                     <Select
                         labelId={"settlement-" + name + "-select-label"}
@@ -287,6 +286,7 @@ function Housing(props) {
     return (
         <div className="census-item-section">
             <Overview 
+                introImg={HousingIntroImage}
                 data={[
                     {
                         label: 'Population',

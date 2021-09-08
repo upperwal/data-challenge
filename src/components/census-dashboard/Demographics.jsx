@@ -13,8 +13,7 @@ import SexRatioLiteracyPerData from './sex_ratio_literacy_percentage.json';
 import AegrCorePeri from './aegr_core_peri.json';
 
 import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
+import DemographicsIntroImage from './img/demographics_intro.svg';
 
 function Demographics(props) {
 
@@ -165,6 +164,7 @@ function Demographics(props) {
         <div className="census-item-section">
             <h3>Now we will explore Urban India on various themes</h3>
             <Overview 
+                introImg={DemographicsIntroImage}
                 data={[
                     {
                         label: 'Effective Literacy Rate',
@@ -198,7 +198,7 @@ function Demographics(props) {
                     <p>The gender gap in towns of India was quite high at 12.3 per cent in 2011; much larger than the gender gap of urban India. The gender gap in non-metropolitan Class I cities of India was almost the same as in urban India (9.7%), while it was lowest in metropolitan India (7.6%).</p>
                 </div>
                 <div className="col-md-8">
-                <FormControl className="full-width-select">
+                <FormControl className="half-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
                             labelId="state-literacy-select-label"
@@ -210,7 +210,7 @@ function Demographics(props) {
                             {renderStateMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
                         <Select
                             labelId="settlement-literacy-select-label"

@@ -154,9 +154,8 @@ function Population(props) {
             />
             <div className="row gis-container">
                 <div className="col-md-4">
-                    <p>The city population cluster map displays the clusters of urban population. The state-wise urban population map depicts the share and size of urban population in each state and union territory</p>
-                    <p>When looked in terms of state, Goa is the most urbanised state with 62.17% of population classified as urban and Delhi is the most urbanised UT with 97.6% of population classified as urban</p>
-                    <p>whereas Himachal Pradesh is the least urbanised state with 11.51% of population classified  as urban and Lakshadweep is the least urbanised UT with 76.5% of population classified as urban</p>
+                    <p>The city population cluster map displays the clusters of urban population. The state-wise urban population map depicts the share and size of urban population in each state and union territory.</p>
+                    <p>When looked in terms of state, Goa is the most urbanised state with 62.17% of population classified as urban and Delhi is the most urbanised UT with 97.6% of population classified as urban whereas Himachal Pradesh is the least urbanised state with 11.51% of population classified  as urban and Lakshadweep is the least urbanised UT with 76.5% of population classified as urban.</p>
                 </div>
                 <div className="col-md-8">
                     <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
@@ -186,11 +185,11 @@ function Population(props) {
             </div>
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <h4>Urban Population Growth</h4>
+                    <h4>The 2 paradigms of urban population growth</h4>
                     <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people</p>
                 </div>
                 <div className="col-md-8">
-                <FormControl className="full-width-select">
+                    <FormControl className="full-width-select">
                         <InputLabel id="parameter-select-label">Parameters</InputLabel>
                         <Select
                             labelId="parameter-select-label"
