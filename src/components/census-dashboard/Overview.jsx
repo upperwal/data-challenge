@@ -53,7 +53,7 @@ function Overview(props) {
         let res = []
         description.forEach((d, idx) => {
             res.push(
-                <p className="overview-description">{d}</p>
+                <p>{d}</p>
             )
         })
 
@@ -75,9 +75,7 @@ function Overview(props) {
                         <div className="col-md-8 card-container">
                             <img src={props.introImg} alt="" width="100%"/>
                         </div>
-                        <div className="col-md-4 card-container-description">
-                            
-                            
+                        <div className="col-md-4 insights-box">
                             {renderDescription()}
                         </div>
                         <div className="col-md-8 card-container">

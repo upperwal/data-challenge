@@ -61,8 +61,8 @@ function UrbanSettlements(props) {
                     "Urban settlements in India consist of Statutory towns, Census towns, Cities, Metropolitan cities, Urban agglomerations and Outgrowth.",
                 ]}
             />
-            <div className="row gis-container">
-                <div className="col-md-4">
+            <div className="row">
+                <div className="col-md-4 insights-box">
                     <h4>Types of urban settlements in India</h4>
                     <p>The maps here represent the distribution of different types of urban settlements across states and union territories (UT), on the basis of</p>
                     <ul>
@@ -72,7 +72,7 @@ function UrbanSettlements(props) {
                     <p>Distribution of urban settlement sizes in states is not uniform across the country. For example the share of class I settlements was largest in Kerala (28%) whereas in West Bengal 52% of the settlements were class V towns.</p>
                     <p>In case of urban governance structure, 88% of the settlements in West Bengal were governed as Census Towns. On the other hand, Sikkim had the highest number of settlements governed as Municipal Corporations.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 gis-container">
                     <Kepler src="http://iuo.dataspace.mobi:3001/census/towns?readOnly=true" width="100%" height="900px" />
                 </div>
             </div>

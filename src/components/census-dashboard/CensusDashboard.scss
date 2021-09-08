@@ -9,47 +9,45 @@
     }
     .gis-container {
         text-align: justify;
-        .col-md-8 {
-            padding-right: 0;
-            padding-left: 28px;
+        padding-right: 0;
+        padding-left: 28px;
+        /* .col-md-8 {
+            
         }
         .col-md-4 {
             padding: 0px 40px;
             padding-right: 13px;
+        } */
+    }
+
+    .insights-box {
+        padding-left: 40px;
+        text-align: left;
+        p, h4 {
+            margin-bottom: 5px;
+        }
+        h4 {
+            text-align: left;
+        }
+        p {
+        font-size: 1.3em;
+            margin: 20px 0;
+            text-align: justify;
+        }
+        li {
+            font-size: 1.17em;
         }
     }
+    .full-width-select {
+        width: 99%;
+    }
+    .half-width-select {
+        width: 49.2%;
+        margin: 10px 2px;
+    }
     .census-item-section {
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding: 30px 0;
-
-        .insights-box {
-            padding-left: 40px;
-            text-align: left;
-            p, h4 {
-                margin-bottom: 5px;
-            }
-            h4 {
-                text-align: left;
-            }
-            p {
-                margin: 20px 0;
-                text-align: justify;
-            }
-            li {
-                font-size: 1.17em;
-            }
-        }
-
-        .MuiFormControl-root {
-            margin: 20px 5px;
-            width: 47%;
-        }
-        .full-width-select {
-            width: 99%;
-        }
-        .half-width-select {
-            width: 48.7%;
-        }
+        /* margin-top: 20px;
+        margin-bottom: 30px; */
+        // padding: 0 20px;
     }
 }
