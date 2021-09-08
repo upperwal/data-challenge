@@ -8,6 +8,7 @@ import Select from '@material-ui/core/Select';
 
 import Overview from './Overview';
 
+import UrbanSettlementIntroImage from './img/housing_intro.svg';
 import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
@@ -111,6 +112,7 @@ function Indices(props) {
     return (
         <div className="census-item-section">
             <Overview 
+                introImg={UrbanSettlementIntroImage}
                 data={[
                     {
                         label: 'Best city in Asset Holding',
