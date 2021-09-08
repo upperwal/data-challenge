@@ -285,7 +285,7 @@ function Population(props) {
                     <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people.</p>
                 </div>
                 <div className="col-md-8">
-                    <div className="row">
+                    <div className="row input-control-row">
                         <div className="col-md-6">
                             <FormControl className="full-width-select">
                                 <InputLabel id="state-literacy-select-label">State</InputLabel>
