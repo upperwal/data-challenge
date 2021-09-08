@@ -13,8 +13,8 @@ import Overview from './Overview';
 import PopulationGrowthData from './pop_growth.json';
 
 import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
+import PopulationIntroImage from './img/housing_intro.svg';
+
 
 function Population(props) {
 
@@ -122,8 +122,8 @@ function Population(props) {
     
     return (
         <div className="census-item-section">
-            <h3>Looking at urban population in detail</h3>
             <Overview 
+                introImg={PopulationIntroImage}
                 data={[
                     {
                         label: 'Population',
@@ -152,12 +152,12 @@ function Population(props) {
                     "In absolute numbers, out of the total increase of 182 million added since 2001, the contribution of rural and urban are equal i.e. 91 million each."
                 ]}
             />
-            <div className="row gis-container">
-                <div className="col-md-4">
+            <div className="row">
+                <div className="col-md-4 insights-box">
                     <p>The city population cluster map displays the clusters of urban population. The state-wise urban population map depicts the share and size of urban population in each state and union territory.</p>
                     <p>When looked in terms of state, Goa is the most urbanised state with 62.17% of population classified as urban and Delhi is the most urbanised UT with 97.6% of population classified as urban whereas Himachal Pradesh is the least urbanised state with 11.51% of population classified  as urban and Lakshadweep is the least urbanised UT with 76.5% of population classified as urban.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 gis-container">
                     <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
                         <li className="nav-item " role="presentation">
                             <a className="nav-link active" data-toggle="tab" href="#health" role="tab" aria-controls="home">City Population Cluster</a>
@@ -201,7 +201,7 @@ function Population(props) {
                             {renderParamMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="state-literacy-select-label">State</InputLabel>
                         <Select
                             labelId="state-literacy-select-label"
@@ -213,7 +213,7 @@ function Population(props) {
                             {renderStateMenu()}
                         </Select>
                     </FormControl>
-                    <FormControl className="full-width-select">
+                    <FormControl className="half-width-select">
                         <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
                         <Select
                             labelId="settlement-literacy-select-label"
