@@ -34,11 +34,15 @@
         padding: 0 40px;
         padding-right: 13px;
         h1 {
-            font-size: 4rem;
+            font-size: 3.6rem;
+            margin: 0;
+            // width: 100%;
+            padding-right: 15px;
             height: max-content;
             display: table-cell;
             vertical-align: middle;
             text-align: right;
+            border-right: 8px solid #f6264c;
         }
         h2 {
             margin-bottom: 10px;
@@ -47,7 +51,9 @@
         .title-container {
             height: 100%;
             width: 100%;
-            display: table;
+            display: flex;
+            align-items: center;
+            justify-content: right;
         }
         .overview-description {
             font-size: 1.3em;
