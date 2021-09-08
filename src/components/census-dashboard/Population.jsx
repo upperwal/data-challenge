@@ -47,7 +47,7 @@ function Population(props) {
             datasets: [{
                 radius: 3,
                 pointHoverRadius: 8,
-                backgroundColor: '#FD981E',
+                backgroundColor: '#f6264c',
             }]
         }
 
