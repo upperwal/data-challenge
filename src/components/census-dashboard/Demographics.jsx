@@ -8,9 +8,7 @@ import Select from '@material-ui/core/Select';
 
 import Overview from './Overview';
 
-import WithInternetData from './with_internet.json';
 import SexRatioLiteracyPerData from './sex_ratio_literacy_percentage.json';
-import AegrCorePeri from './aegr_core_peri.json';
 
 import PopImage from './img/population.svg'
 import DemographicsIntroImage from './img/demographics_intro.svg';
@@ -94,46 +92,6 @@ function Demographics(props) {
     //     }
     // }
 
-    function prepareBarData() {
-        let barData = {
-            datasets: [
-                {
-                    label: 'Core Growth from 2001 to 2011',
-                    backgroundColor: '#f6264c'
-                },
-                {
-                    label: 'Periphery Growth from 2001 to 2011',
-                    backgroundColor: '#592F93'
-                }
-            ]
-        };
-        let res= [[], []]
-        let cityList = []
-
-        AegrCorePeri.forEach((item) => {
-            if(item.aegr2001_11_core_per === null || item.aegr2001_11_periphery_per === null) {
-                return
-            }
-            if(item.state !== stateIndexLiteracy && stateIndexLiteracy !== 'All') {
-                return
-            }
-            // if(item.settlementType !== settlementType && settlementType !== 'All') {
-            //     return
-            // }
-            res[0].push(item.aegr2001_11_core_per)
-            res[1].push(item.aegr2001_11_periphery_per)
-            cityList.push(item.UA_city)
-        })
-
-        barData['labels'] = cityList
-        barData.datasets[0]['data'] = res[0]
-        barData.datasets[1]['data'] = res[1]
-
-        console.log(barData)
-
-        return barData
-    }
-
     function renderStateMenu() {
         let stateList = props.stateList
         let res = []
@@ -162,7 +120,7 @@ function Demographics(props) {
     
     return (
         <div className="census-item-section">
-            <h3>Now we will explore Urban India on various themes</h3>
+            {/* <h3>Now we will explore Urban India on various themes</h3> */}
             <Overview 
                 introImg={DemographicsIntroImage}
                 data={[
@@ -294,20 +252,6 @@ function Demographics(props) {
                             }
                         }}
                     />
-
-                    <div className="gap"></div>
-
-                    <Bar data={prepareBarData()} options={{
-                        scales: {
-                            yAxes: [
-                            {
-                                ticks: {
-                                beginAtZero: true,
-                                },
-                            },
-                            ],
-                        },
-                    }}/>
                 </div>
             </div>
             
