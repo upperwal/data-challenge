@@ -9,7 +9,7 @@ import './CensusDashboard.scss';
 import Demographics from './Demographics';
 import Indices from './Indices';
 import Population from './Population';
-import AdministrativeUnits from './AdministrativeUnits';
+import UrbanSettlements from './UrbanSettlements';
 import BasicInfra from './BasicInfra';
 
 function CensusDashboard() {
@@ -80,7 +80,7 @@ function CensusDashboard() {
             <Header cityList={["Gurgaon", "Delhi"]} callback={cityChangeEvent}/>
             <section className="CensusDashboard">
 
-                <AdministrativeUnits stateList={stateList} settlementTypeList={settlementTypeList}/>
+                <UrbanSettlements stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Population stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Demographics stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Economy stateList={stateList} settlementTypeList={settlementTypeList}/>
