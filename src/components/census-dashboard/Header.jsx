@@ -34,6 +34,8 @@ function Header(props) {
                 <div className="row">
                     <div className="col-md-4 right-aligned">
                         <h1><span className="mark">SENSING THE PULSE OF URBAN INDIA</span></h1>
+                        <h4><span className="mark">is a story of</span></h4>
+                        <h2><span className="mark">opportunities</span></h2>
                         {/* <p className="learn-more">To learn more, select your city from the dropdown</p>
                         <FormControl variant="outlined" className="header-box" margin='dense'>
                             <InputLabel htmlFor="outlined-age-native-simple">City</InputLabel>
@@ -51,10 +53,8 @@ function Header(props) {
                         </FormControl> */}
                     </div>
                     <div className="col-md-8 left-aligned">
-                        <h4><span className="mark-light">Sensing the Pulse of Urban India is a story of opportunities.</span></h4>
                         <h4><span className="mark-light">First, the opportunities of inclusive and sustainable growth that lie within Indian cities &amp; towns. Second, the new opportunities of understanding &amp; visualising these cities &amp; towns that get unlocked once the census data get geospatial dimension.</span></h4>
                         <h4><span className="mark-light">The storyboard utilises data from the 15th Indian Census conducted in 2011 to highlight the differences and similarities in demographics, economy, housing, and basic infrastructure existing among urban settlements.</span></h4>
-                        <h4><span className="mark-light">Let's begin by looking at what is 'urban' in India</span></h4>
                     </div>
                 </div>
             </div>

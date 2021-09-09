@@ -3,7 +3,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding: 130px 0;
+    padding: 70px 0;
     .header-box {
         width: 200px;
     }
@@ -12,14 +12,18 @@
         margin-bottom: 30px;
         padding-left: 70px;
     }
-    h1 {
+    h1, h2 {
         color: #ffffff;
         line-height: 1.9em;
+    }
+    h2 {
+        margin: 0;
     }
     h4 {
         color: #fff;
         line-height: 1.6em;
     }
+
     .mark {
         background-color: #f6264c;
     }
