@@ -17,8 +17,6 @@ import BasicInfraIntroImage from './img/basic_infrastructure_intro.svg';
 
 function BasicInfra(props) {
 
-    // const [state, setState] = useState("All")
-    // const [settlementType, setSettlementType] = useState("All")
     const paramMap = {
         'Percent households with bathroom within premises': 'bathroom_withinPremises_HH_per',
         'Percent households with source of fuel as gas': 'sourceOfFuel_gas_HH_per',
@@ -30,17 +28,6 @@ function BasicInfra(props) {
         'Percent households with watewater outlet connected with closed drainage': 'wasteWater_outletConnectedToClosedDrainage_HH_per'
     }
     const [parameter, setParameter] = useState("Percent households with bathroom within premises")
-
-    /* function onInputChange(e) {
-        console.log(e.target)
-        if(e.target.name == 'state') {
-            setState(e.target.value)
-        } else if(e.target.name == 'settlementType') {
-            setSettlementType(e.target.value)
-        } else if(e.target.name === 'parameter') {
-            setParameter(e.target.value)
-        }
-    } */
 
     function prepareBarData(dataset, datasetOptions, sort = false) {
         let yList= []
@@ -79,46 +66,6 @@ function BasicInfra(props) {
 
         return barData
     }
-
-
-
-    /* function renderStateMenu() {
-        let stateList = props.stateList
-        let res = []
-
-        stateList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderSettlementType() {
-        let typeList = props.settlementTypeList
-        let res = []
-
-        typeList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderParamMenu() {
-        let res = []
-
-        Object.keys(paramMap).forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    } */
     
     return (
         <div className="census-item-section">
@@ -170,22 +117,6 @@ function BasicInfra(props) {
                     </ul>
                 </div>
                 <div className="col-md-8">
-                    {/* <div className="row">
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                                <Select
-                                    labelId="parameter-select-label"
-                                    id="parameter-select"
-                                    name="parameter"
-                                    value={parameter}
-                                    onChange={onInputChange}
-                                >
-                                    {renderParamMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div> */}
                     {props.renderer.controls({
                         paramMap: paramMap,
                         paramState: parameter,
@@ -218,22 +149,6 @@ function BasicInfra(props) {
                     <p>With 44.14% of its population living in slums, Greater Visakhapatnam tops the chart of cities with slum population. On the other hand, with lowest percentage of the measure, Thiruvananthapuram had just a minute fraction (0.71%) of its population living in slums.</p>
                 </div>
                 <div className="col-md-8">
-                    {/* <div className="row">
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                                <Select
-                                    labelId="parameter-select-label"
-                                    id="parameter-select"
-                                    name="parameter"
-                                    value={parameter}
-                                    onChange={onInputChange}
-                                >
-                                    {renderParamMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div> */}
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         prepareBarData(
@@ -263,22 +178,6 @@ function BasicInfra(props) {
                     <p>On the other hand, cities like Ambala, Baharampur, and Barabanki had the lowest value of the index as -2.801.</p>
                 </div>
                 <div className="col-md-8">
-                    {/* <div className="row">
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                                <Select
-                                    labelId="parameter-select-label"
-                                    id="parameter-select"
-                                    name="parameter"
-                                    value={parameter}
-                                    onChange={onInputChange}
-                                >
-                                    {renderParamMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div> */}
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         prepareBarData(
