@@ -123,37 +123,43 @@ function CensusDashboard() {
         }
     }
 
-    /* function prepareBarData(dataset) {
-        let res= []
-        let cityList = []
+    function prepareBarData(dataset, datasetOptions, sort = false) {
+        let yList= []
+        let xList = []
         let barData = {
             datasets: [
                 {
-                    label: parameter,
+                    label: datasetOptions.label,
                     backgroundColor: '#f6264c'
                 }
             ]
         };
 
+        if(sort) {
+            dataset.sort(function(x, y) {
+                return x[datasetOptions.y.fieldName] - y[datasetOptions.y.fieldName]
+            })
+        }
+
         dataset.forEach((item) => {
-            if(item[paramMap[parameter]] === null) {
+            if(item[datasetOptions.y.fieldName] === null) {
                 return
             }
-            if(item.state !== props.state.state && props.state.state !== 'All') {
+            if(item.state !== state && state !== 'All') {
                 return
             }
-            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
+            if(item.settlementType !== settlementType && settlementType !== 'All') {
                 return
             }
-            res.push(item[paramMap[parameter]])
-            cityList.push(item.UA_city)
+            yList.push(item[datasetOptions.y.fieldName])
+            xList.push(item[datasetOptions.x.fieldName])
         })
 
-        barData['labels'] = cityList
-        barData.datasets[0]['data'] = res
+        barData['labels'] = xList
+        barData.datasets[0]['data'] = yList
 
         return barData
-    } */
+    }
 
     function renderControls(paramObject, col = 6) {
         let paramSelect = ''
@@ -265,6 +271,10 @@ function CensusDashboard() {
         bar: renderBarChart,
         controls: renderControls
     }
+
+    const utils = {
+        prepareBarData: prepareBarData
+    }
     
     return (
         <>
@@ -279,10 +289,10 @@ function CensusDashboard() {
                 <UrbanSettlements stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Population stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Demographics stateList={stateList} settlementTypeList={settlementTypeList}/>
-                <Economy stateList={stateList} settlementTypeList={settlementTypeList}/>
-                <Housing state={{state: state, settlementType: settlementType}} renderer={renderer}/>
-                <BasicInfra state={{state: state, settlementType: settlementType}} renderer={renderer}/>
-                <Indices state={{state: state, settlementType: settlementType}} renderer={renderer}/>
+                <Economy state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
+                <Housing state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
+                <BasicInfra state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
+                <Indices state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
 
                 {/* <Tableau/> */}
 
