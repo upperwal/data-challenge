@@ -57,4 +57,24 @@
     .input-control-row {
         margin-top: 0px;
     }
+    .us-def-container {
+        margin-top: 0;
+        .row {
+            margin-top: 0;
+        }
+        .img-container {
+            padding: 0;
+        }
+        .text-container {
+            text-align: left;
+            h5 {
+                margin: 0;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1rem;
+                text-align: justify;
+            }
+        }
+    }
 }

@@ -15,6 +15,12 @@ import SettlementPopData from './settlement_pop_params.json';
 import AreaImage from './img/area.svg'
 import UrbanSettlementIntroImage from './img/housing_intro.svg';
 
+import StatutaryTownIcon from './img/statutary_town_icon.svg';
+import CensusTownIcon from './img/census_town_icon.svg';
+import CitiesIcon from './img/cities_icon.svg';
+import MetropolitanCitiesIcon from './img/metropolitan_cities_icon.svg';
+import UrbanAgglomerationIcon from './img/urban_agglomerations_icon.svg';
+
 function UrbanSettlements(props) {
 
     const [barData, setBarData] = useState([{}, {}, {}, {}])
@@ -23,6 +29,33 @@ function UrbanSettlements(props) {
         "Distribution of Households Sum",
         "Distribution of Avg Basic Infra Index",
         "Distribution of Avg Social Index"
+    ]
+    const defContent = [
+        {
+            img: MetropolitanCitiesIcon,
+            title: "Metropolitan Cities",
+            description: "Cities with a population of at least 10 lakh (1 million)."
+        },
+        {
+            img: CitiesIcon,
+            title: "Cities",
+            description: "‘Urban areas’ with a population of atleast one lakh (0.1 million). Others are termed as Towns."
+        },
+        {
+            img: CensusTownIcon,
+            title: "Census Town",
+            description: "Places with a minimum population of 5,000 with atleast 75% of male working population engaged in non-agricultural pursuits and a population density of atleast 400 people per sq km."
+        },
+        {
+            img: StatutaryTownIcon,
+            title: "Statutary Towns",
+            description: "All places with a municipality, corporation, cantonment board or notified town area committee as declared by the state law."
+        },
+        {
+            img: UrbanAgglomerationIcon,
+            title: "Urban Agglomeration",
+            description: "Continous urban spreads constituting one or more towns and its adjoining urban outgrowths. A UA must consists of at least one statutory town, and its total population of all constituents put together should not be less than 20,000 as enumerated in the Census of 2001."
+        }
     ]
     let barDataTemplate = [
         {
@@ -82,49 +115,47 @@ function UrbanSettlements(props) {
 
         setBarData(barDataTemplate)
     }
+
+    function renderUSDef() {
+        let res = []
+        defContent.forEach((c, idx) => {
+            res.push(
+                <div className="col-md-6">
+                    <div className="row">
+                        <div className="col-md-3 img-container">
+                            <img src={c.img} alt="" />
+                        </div>
+                        <div className="col-md-9 text-container">
+                            <h5>{c.title}</h5>
+                            <p>{c.description}</p>
+                        </div>
+                    </div>
+                </div>
+            )
+        })
+
+        return res
+    }
     
     return (
         <div className="census-item-section">
             {/* <h3>Let's begin by looking at the governance structure of India</h3> */}
             <Overview 
                 introImg={UrbanSettlementIntroImage}
-                data={[
-                    {
-                        label: 'States/UT',
-                        value: 35,
-                        imgSrc: AreaImage,
-                        unitLabel: 'Nos'
-                    },
-                    {
-                        label: 'Districts',
-                        value: 640,
-                        imgSrc: AreaImage,
-                        unitLabel: 'Nos'
-                    },
-                    {
-                        label: 'Sub-Districts',
-                        value: 5924,
-                        imgSrc: AreaImage,
-                        unitLabel: 'Nos'
-                    },
-                    {
-                        label: 'Towns',
-                        value: 7933,
-                        imgSrc: AreaImage,
-                        unitLabel: 'Nos'
-                    },
-                    {
-                        label: 'Villages',
-                        value: 640930,
-                        imgSrc: AreaImage,
-                        unitLabel: 'Nos'
-                    }
-                ]}
+                hideStats={true}
                 title="Urban Settlements"
-                description={[
-                    "Urban settlements in India consist of Statutory towns, Census towns, Cities, Metropolitan cities, Urban agglomerations and Outgrowth.",
-                ]}
             />
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Defining Urban Settlements</h4>
+                    <p>Urban settlements in India consist of Statutory towns, Census towns, Cities, Metropolitan cities, Urban agglomerations and Outgrowth.</p>
+                </div>
+                <div className="col-md-8">
+                    <div className="row us-def-container">
+                        {renderUSDef()}
+                    </div>
+                </div>
+            </div>
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <h4>Types of urban settlements in India</h4>
