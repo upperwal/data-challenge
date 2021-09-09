@@ -1,10 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {Scatter, Bar} from 'react-chartjs-2';
+import React from 'react';
+import {Scatter} from 'react-chartjs-2';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 import Overview from './Overview';
 
@@ -16,31 +12,14 @@ import DemographicsIntroImage from './img/demographics_intro.svg';
 
 function Demographics(props) {
 
-    // const [state, setState] = useState("All")
-    // const [settlementType, setSettlementType] = useState("All")
-    const [state, setState] = useState("All")
-    const [settlementType, setSettlementType] = useState("All")
     let literacyAndSexRatioStats = {
         sexRatioMean: 0,
         literacyRateMean: 0
     }
 
-    function onScatterInputChange(e) {
-        console.log(e.target)
-        if(e.target.name == 'state-literacy') {
-            setState(e.target.value)
-        } else if(e.target.name == 'settlementType-literacy') {
-            setSettlementType(e.target.value)
-        }
-    }
-
     function prepareScatterSexRatioLiteracyData() {
         let res= []
         let cityList = []
-        /* let indexMap = {
-            "Sex Ratio": "sexRatio_num",
-            "Literacy Rate Percentage": "literacyRate_persons_per"
-        } */
         let xSum = 0
         let ySum = 0
         let count = 0
@@ -56,10 +35,10 @@ function Demographics(props) {
             if(item.literacyRate_persons_per === null || item.sexRatio_num === null || item.literacyRate_persons_per > 100) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             res.push({
@@ -81,78 +60,6 @@ function Demographics(props) {
         }
 
         return scatterStateLocal
-    }
-
-    function prepareBarIndexData() {
-        let data = []
-        let cityList = []
-        const barData = {
-            datasets: [
-                {
-                    label: 'Social Index',
-                    backgroundColor: '#f6264c'
-                }
-            ]
-        };
-
-        IndexData.sort(function(a, b) {
-            return a.socialIndex - b.socialIndex;
-        })
-
-        IndexData.forEach((item) => {
-            if(item.socialIndex === null ) {
-                return
-            }
-            if(item.state !== state && state !== 'All') {
-                return
-            }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
-                return
-            }
-            data.push(item.socialIndex)
-            cityList.push(item.UA_city)
-        })
-
-        barData['labels'] = cityList
-        barData.datasets[0]['data'] = data
-
-        return barData
-    }
-
-
-    // function onInputChange(e) {
-    //     console.log(e.target)
-    //     if(e.target.name == 'state') {
-    //         setState(e.target.value)
-    //     } else if(e.target.name == 'settlementType') {
-    //         setSettlementType(e.target.value)
-    //     }
-    // }
-
-    function renderStateMenu() {
-        let stateList = props.stateList
-        let res = []
-
-        stateList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderSettlementType() {
-        let typeList = props.settlementTypeList
-        let res = []
-
-        typeList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
     }
     
     return (
@@ -193,37 +100,7 @@ function Demographics(props) {
                     <p>The gender gap in towns of India was quite high at 12.3 per cent in 2011; much larger than the gender gap of urban India. The gender gap in non-metropolitan Class I cities of India was almost the same as in urban India (9.7%), while it was lowest in metropolitan India (7.6%).</p>
                 </div>
                 <div className="col-md-8">
-                    <div className="row input-control-row">
-                        <div className="col-md-6">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="state-literacy-select-label">State</InputLabel>
-                                <Select
-                                    labelId="state-literacy-select-label"
-                                    id="state-literacy-select"
-                                    name="state-literacy"
-                                    value={state}
-                                    onChange={onScatterInputChange}
-                                >
-                                    {renderStateMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                        <div className="col-md-6">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                                <Select
-                                    labelId="settlement-literacy-select-label"
-                                    id="settlement-literacy-select"
-                                    name="settlementType-literacy"
-                                    value={settlementType}
-                                    onChange={onScatterInputChange}
-                                >
-                                    {renderSettlementType()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div>
-                    
+                    {props.renderer.controls()} 
                     <Scatter
                         data={prepareScatterSexRatioLiteracyData()}
                         plugins={[ChartAnnotation]}
@@ -315,23 +192,24 @@ function Demographics(props) {
                     <p>Among the towns, GSFC (Motikhavdi Sikka) (INA), Gujarat came out as the best town and Kumarpur (CT), Jharkhand was the worst.</p>
                 </div>
                 <div className="col-md-8">
-                    <Bar data={prepareBarIndexData()} options={{
-                        scales: {
-                            yAxes: [
-                                {
-                                    stacked: true,
-                                    ticks: {
-                                        beginAtZero: true,
-                                    }
+                    {props.renderer.controls()} 
+                    {props.renderer.bar(
+                        props.utils.prepareBarData(
+                            IndexData,
+                            {
+                                x: {
+                                    fieldName: 'UA_city'
+                                },
+                                y: {
+                                    fieldName: 'socialIndex'
                                 }
-                            ],
-                            xAxes: [
-                                {
-                                    stacked: true
-                                }
-                            ]
-                        }
-                    }}/>
+                            },
+                            true
+                        ),
+                        '',
+                        'Social Index',
+                        false
+                    )}
                 </div>
             </div>
             

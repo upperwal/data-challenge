@@ -288,7 +288,7 @@ function CensusDashboard() {
 
                 <UrbanSettlements stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Population stateList={stateList} settlementTypeList={settlementTypeList}/>
-                <Demographics stateList={stateList} settlementTypeList={settlementTypeList}/>
+                <Demographics state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <Economy state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <Housing state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <BasicInfra state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
