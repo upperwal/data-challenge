@@ -219,21 +219,21 @@ function Population(props) {
                 introImg={PopulationIntroImage}
                 data={[
                     {
-                        label: 'Population',
+                        label: 'Population 2011',
                         value: 1210.6,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Million'
                     },
                     {
-                        label: 'Rural Population',
+                        label: 'Rural Population 2011',
                         value: 833.5,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Million'
                     },
                     {
-                        label: 'Urban Population',
+                        label: 'Urban Population 2011',
                         value: 377.1,
                         imgSrc: PopImage,
                         fixTo: 1,
