@@ -113,51 +113,12 @@ function Indices(props) {
         <div className="census-item-section">
             <Overview 
                 introImg={UrbanSettlementIntroImage}
-                data={[
-                    {
-                        label: 'Best city in Asset Holding',
-                        value: 1.97,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Thrissur'
-                    },
-                    {
-                        label: 'Best city in economic performance',
-                        value: 3.57,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Gurgaon'
-                    },
-                    {
-                        label: 'Best city in housing quality',
-                        value: 1.73,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Surat'
-                    },
-                    {
-                        label: 'Best City for Basic Infrastructure',
-                        value: 2.85,
-                        imgSrc: PopImage,
-                        fixTo: 2,
-                        unitLabel: 'Mysore'
-                    },
-                    {
-                        label: 'Best City in Social Index',
-                        value: 2.05,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Aizawl'
-                    }
-                ]}
+                hideStats={true}
                 title="Indices"
-                description={[
-                    "In absolute numbers, out of the total increase of 182 million added since 2001, the contribution of rural and urban are equal i.e. 91 million each."
-                ]}
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <p>Phasellus dictum arcu sit amet leo tempor bibendum. Aliquam eu imperdiet nulla, sed consectetur dui. Mauris velit libero, venenatis a congue vel, luctus id nunc. Suspendisse a laoreet metus.</p>
+                    <p>This sections allows users to compare the urban settlements across the various indices discussed above in the story.</p>
                 </div>
                 <div className="col-md-8">
                     <FormControl className="full-width-select">
