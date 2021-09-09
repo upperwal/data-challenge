@@ -1,7 +1,7 @@
 .CensusDashboard {
     margin: 70px 0;
     .nav-link {
-        font-size: 20px;
+        font-size: 0.9rem;
         color: #000;
     }
     .nav-link:hover {
@@ -53,6 +53,13 @@
         /* margin-top: 20px;
         margin-bottom: 30px; */
         // padding: 0 20px;
+    }
+    .intro-box {
+        padding: 0 80px;
+        line-height: 2.8rem;
+        p {
+            font-size: 1.5rem;
+        }
     }
     .input-control-row {
         margin-top: 0px;
