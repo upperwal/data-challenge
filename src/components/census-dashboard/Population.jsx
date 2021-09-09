@@ -19,8 +19,6 @@ import PopulationIntroImage from './img/housing_intro.svg';
 
 function Population(props) {
 
-    const [state, setState] = useState("All")
-    const [settlementType, setSettlementType] = useState("All")
     // const [parameter, setParameter] = useState("AEGR 2001-2011 Percentage")
     const chartLegend = [
         'AEGR 2001-2011 Percentage',
@@ -30,16 +28,7 @@ function Population(props) {
 
     useEffect(() => {
         prepareScatterPopGrowthData()
-    }, [state])
-
-    function onInputChange(e) {
-        console.log(e.target)
-        if(e.target.name === 'state') {
-            setState(e.target.value)
-        } else if(e.target.name === 'settlementType') {
-            setSettlementType(e.target.value)
-        }
-    }
+    }, [props.state.state, props.state.settlementType])
 
     function prepareScatterPopGrowthData() {
         let res= [[],[]]
@@ -62,10 +51,10 @@ function Population(props) {
         ]
 
         PopulationGrowthData.forEach((item, idx) => {
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             if(item.aegr2001_2011_per !== null) {
@@ -103,32 +92,6 @@ function Population(props) {
 
         return res
     } */
-
-    function renderStateMenu() {
-        let stateList = props.stateList
-        let res = []
-
-        stateList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderSettlementType() {
-        let typeList = props.settlementTypeList
-        let res = []
-
-        typeList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
 
     function renderScatterPlot(data, xAxesLabel) {
         return (
@@ -193,10 +156,10 @@ function Population(props) {
             if(item.aegr2001_11_core_per === null || item.aegr2001_11_periphery_per === null) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             res[0].push(item.aegr2001_11_core_per)
@@ -285,37 +248,7 @@ function Population(props) {
                     <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people.</p>
                 </div>
                 <div className="col-md-8">
-                    <div className="row input-control-row">
-                        <div className="col-md-6">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="state-literacy-select-label">State</InputLabel>
-                                <Select
-                                    labelId="state-literacy-select-label"
-                                    id="state-literacy-select"
-                                    name="state"
-                                    value={state}
-                                    onChange={onInputChange}
-                                >
-                                    {renderStateMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                        <div className="col-md-6">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                                <Select
-                                    labelId="settlement-literacy-select-label"
-                                    id="settlement-literacy-select"
-                                    name="settlementType"
-                                    value={settlementType}
-                                    onChange={onInputChange}
-                                >
-                                    {renderSettlementType()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div>
-                    
+                    {props.renderer.controls()}
                     <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
                         <li className="nav-item " role="presentation">
                             <a className="nav-link active" data-toggle="tab" href="#aegr" role="tab" aria-controls="home">AEGR 2001-2011 Percentage</a>
@@ -344,7 +277,14 @@ function Population(props) {
                     <p>In case of settlement core, Vasai Virar City had the fastest expansion, while Kollam had the fastest shrinkage.</p>
                 </div>
                 <div className="col-md-8">
-                    <Bar data={prepareBarData()} options={{
+                    {props.renderer.controls()}
+                    {props.renderer.bar(
+                        prepareBarData(),
+                        '',
+                        'Percent Growth',
+                        false
+                    )}
+                    {/* <Bar data={prepareBarData()} options={{
                         scales: {
                             yAxes: [
                             {
@@ -354,7 +294,7 @@ function Population(props) {
                             },
                             ],
                         },
-                    }}/>
+                    }}/> */}
                 </div>
             </div>
         </div>

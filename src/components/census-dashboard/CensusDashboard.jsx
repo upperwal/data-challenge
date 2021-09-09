@@ -82,13 +82,13 @@ function CensusDashboard() {
         // setCityState({})
     }
 
-    function renderBarChart(data, xLabel, yLabel, legendDisplay = true) {
+    function renderBarChart(data, xLabel, yLabel, legendDisplay = true, stacked = {x: false, y: false}) {
         return (
             <Bar data={data} options={{
                 scales: {
                     yAxes: [
                         {
-                            stacked: true,
+                            stacked: stacked.y,
                             scaleLabel: {
                                 display: true,
                                 labelString: yLabel,
@@ -97,7 +97,7 @@ function CensusDashboard() {
                     ],
                     xAxes: [
                         {
-                            stacked: true,
+                            stacked: stacked.x,
                             scaleLabel: {
                                 display: true,
                                 labelString: xLabel
@@ -287,7 +287,7 @@ function CensusDashboard() {
                 </div>
 
                 <UrbanSettlements stateList={stateList} settlementTypeList={settlementTypeList}/>
-                <Population stateList={stateList} settlementTypeList={settlementTypeList}/>
+                <Population state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <Demographics state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <Economy state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
                 <Housing state={{state: state, settlementType: settlementType}} renderer={renderer} utils={utils}/>
