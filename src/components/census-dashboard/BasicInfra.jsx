@@ -9,7 +9,7 @@ import Select from '@material-ui/core/Select';
 import Overview from './Overview';
 
 import BasicInfraData from './basic_infra.json';
-import SlumPopData from './slum_pop.json';
+import SlumPopData from './slum_population.json';
 import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
@@ -42,20 +42,26 @@ function BasicInfra(props) {
         }
     } */
 
-    function prepareVariousParamBarData() {
-        let res= []
-        let cityList = []
+    function prepareBarData(dataset, datasetOptions, sort = false) {
+        let yList= []
+        let xList = []
         let barData = {
             datasets: [
                 {
-                    label: parameter,
+                    label: datasetOptions.label,
                     backgroundColor: '#f6264c'
                 }
             ]
         };
 
-        BasicInfraData.forEach((item) => {
-            if(item[paramMap[parameter]] === null) {
+        if(sort) {
+            dataset.sort(function(x, y) {
+                return x[datasetOptions.y.fieldName] - y[datasetOptions.y.fieldName]
+            })
+        }
+
+        dataset.forEach((item) => {
+            if(item[datasetOptions.y.fieldName] === null) {
                 return
             }
             if(item.state !== props.state.state && props.state.state !== 'All') {
@@ -64,12 +70,12 @@ function BasicInfra(props) {
             if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
-            res.push(item[paramMap[parameter]])
-            cityList.push(item.UA_city)
+            yList.push(item[datasetOptions.y.fieldName])
+            xList.push(item[datasetOptions.x.fieldName])
         })
 
-        barData['labels'] = cityList
-        barData.datasets[0]['data'] = res
+        barData['labels'] = xList
+        barData.datasets[0]['data'] = yList
 
         return barData
     }
@@ -185,7 +191,113 @@ function BasicInfra(props) {
                         paramState: parameter,
                         onParamChange: setParameter
                     })}
-                    {props.renderer.bar(prepareVariousParamBarData(), 'Cities', parameter, false)}
+                    {props.renderer.bar(
+                        prepareBarData(
+                            BasicInfraData, 
+                            {
+                                label: parameter,
+                                x: {
+                                    fieldName: 'UA_city'
+                                },
+                                y: {
+                                    fieldName: paramMap[parameter]
+                                }
+                            },
+                            true
+                        ), 
+                        '', 
+                        parameter, 
+                        false
+                    )}
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Slum Population</h4>
+                    <p>With 44.14% of its population living in slums, Greater Visakhapatnam tops the chart of cities with slum population. On the other hand, with lowest percentage of the measure, Thiruvananthapuram had just a minute fraction (0.71%) of its population living in slums.</p>
+                </div>
+                <div className="col-md-8">
+                    {/* <div className="row">
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                                <Select
+                                    labelId="parameter-select-label"
+                                    id="parameter-select"
+                                    name="parameter"
+                                    value={parameter}
+                                    onChange={onInputChange}
+                                >
+                                    {renderParamMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div> */}
+                    {props.renderer.controls()}
+                    {props.renderer.bar(
+                        prepareBarData(
+                            SlumPopData,
+                            {
+                                label: 'Percentage of Slum Population',
+                                x: {
+                                    fieldName: 'UA_city'
+                                },
+                                y: {
+                                    fieldName: 'slumPopulation_per'
+                                }
+                            },
+                            true
+                        ), 
+                        '', 
+                        'Percentage of Slum Population', 
+                        false
+                    )}
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Basic Infrastructure Index</h4>
+                    <p>Among the cities having highest values of Basic Infrastructure Index are class IV, V, and V towns like the Industrial Notified Area of Reliance Complex, and Census Towns Behlana and Ordnance Factory Itarsi.</p>
+                    <p>On the other hand, cities like Ambala, Baharampur, and Barabanki had the lowest value of the index as -2.801.</p>
+                </div>
+                <div className="col-md-8">
+                    {/* <div className="row">
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                                <Select
+                                    labelId="parameter-select-label"
+                                    id="parameter-select"
+                                    name="parameter"
+                                    value={parameter}
+                                    onChange={onInputChange}
+                                >
+                                    {renderParamMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div> */}
+                    {props.renderer.controls()}
+                    {props.renderer.bar(
+                        prepareBarData(
+                            IndexData,
+                            {
+                                label: 'Basic Infrastructure Index',
+                                x: {
+                                    fieldName: 'UA_city'
+                                },
+                                y: {
+                                    fieldName: 'basicInfrastructureIndex'
+                                }
+                            },
+                            true
+                        ), 
+                        '', 
+                        'Basic Infrastructure Index', 
+                        false
+                    )}
                 </div>
             </div>
 
