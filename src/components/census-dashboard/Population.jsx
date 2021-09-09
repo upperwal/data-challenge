@@ -338,7 +338,7 @@ function Population(props) {
 
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <h4>Core and Periphery Expansion</h4>
+                    <h4>Core and Periphery in cities</h4>
                     <p>This chart depicts the growth of population in core and periphery of the urban settlement from 2001 to 2011.</p>
                     <p>The fastest expansion of periphery happened in Thrissur, whereas the fastest shrinkage of periphery occurred in Dhanbad.</p>
                     <p>In case of settlement core, Vasai Virar City had the fastest expansion, while Kollam had the fastest shrinkage.</p>
