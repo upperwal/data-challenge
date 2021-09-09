@@ -60,6 +60,23 @@ function Overview(props) {
         return res
     }
 
+    function renderStats() {
+        if(props.hideStats === undefined || props.hideStats === false) {
+            return (
+                <>
+                    <div className="col-md-4 insights-box">
+                        {renderDescription()}
+                    </div>
+                    <div className="col-md-8 card-container">
+                        <div className="row">
+                            {overallStats(data)}
+                        </div>
+                    </div>
+                </>
+            )
+        }
+    }
+
     return (
         <section className="Overview">
             <div className="city-facts">
@@ -75,14 +92,7 @@ function Overview(props) {
                         <div className="col-md-8 card-container">
                             <img src={props.introImg} alt="" width="100%"/>
                         </div>
-                        <div className="col-md-4 insights-box">
-                            {renderDescription()}
-                        </div>
-                        <div className="col-md-8 card-container">
-                            <div className="row">
-                                {overallStats(data)}
-                            </div>
-                        </div>
+                        {renderStats()}
                     </div>
                 {/* </div> */}
             </div>
