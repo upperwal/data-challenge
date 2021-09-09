@@ -63,7 +63,7 @@ function Overview(props) {
     function renderStats() {
         if(props.hideStats === undefined || props.hideStats === false) {
             return (
-                <>
+                <div className="row">
                     <div className="col-md-4 insights-box">
                         {renderDescription()}
                     </div>
@@ -72,7 +72,7 @@ function Overview(props) {
                             {overallStats(data)}
                         </div>
                     </div>
-                </>
+                </div>
             )
         }
     }
@@ -93,9 +93,7 @@ function Overview(props) {
                             <img src={props.introImg} alt="" width="100%"/>
                         </div>
                     </div>
-                    <div className="row">
-                        {renderStats()}
-                    </div>
+                    {renderStats()}
                 {/* </div> */}
             </div>
         </section>
