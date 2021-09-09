@@ -1,10 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Scatter, Bar} from 'react-chartjs-2';
-import * as ChartAnnotation from 'chartjs-plugin-annotation';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+import {Bar} from 'react-chartjs-2';
 
 import Kepler from './Kepler';
 
@@ -12,7 +7,6 @@ import Overview from './Overview';
 
 import SettlementPopData from './settlement_pop_params.json';
 
-import AreaImage from './img/area.svg'
 import UrbanSettlementIntroImage from './img/housing_intro.svg';
 
 import StatutaryTownIcon from './img/statutary_town_icon.svg';
@@ -169,18 +163,18 @@ function UrbanSettlements(props) {
                 hideStats={true}
                 title="Urban Settlements"
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Defining Urban Settlements</h4>
                     <p>Urban settlements in India consist of Statutory towns, Census towns, Cities, Metropolitan cities, Urban agglomerations and Outgrowth.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     <div className="row us-def-container">
                         {renderUSDef()}
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Types of urban settlements in India</h4>
                     <p>The maps here represent the distribution of different types of urban settlements across states and union territories (UT), on the basis of</p>
@@ -195,7 +189,7 @@ function UrbanSettlements(props) {
                     <Kepler src="http://iuo.dataspace.mobi:3001/census/towns?readOnly=true" width="100%" height="900px" />
                 </div>
             </div>
-            <div className="row">
+            <div className="row item-sub-section">
             <div className="col-md-4 insights-box">
                     <h4>Comparing settlement size with population, household, avg social and basic infra index</h4>
                     <p>The charts here show the distribution of population, household size, basic infrastructure, and social conditions among different settlement size classes.</p>
@@ -204,7 +198,7 @@ function UrbanSettlements(props) {
                     <p>The average value of Basic Infrastructure Index was found to be the highest in class II towns (0.869).</p>
                     <p>The average value of Social Index was found to be the highest in class VI towns (0.264).</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     <div className="row">
                         <div className="col-md-6">
                             {renderSettlementBatChart(barData[0], barLabels[0])}

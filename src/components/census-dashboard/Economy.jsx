@@ -87,7 +87,7 @@ function Economy(props) {
                     "This economic data refers to socioeconomic information for all the urban settlements in India expressed statistically including asset holding, poverty and unemployment change, asset holding index (AHI) and economic permanence index (EPI)."
                 ]}
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Asset Holdings</h4>
                     <p>The charts show the value as the percentage of households for various asset holdings parameters listed below</p>
@@ -104,7 +104,7 @@ function Economy(props) {
                         <li>Car/Jeep</li>
                     </ul>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls({
                         paramMap: paramMap,
                         paramState: parameter,
@@ -130,7 +130,7 @@ function Economy(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Economic Performance Index (EPI)</h4>
                     <p>To arrive at EPI, principal component analysis (PCA) was constructed with the following parameters:</p>
@@ -141,7 +141,7 @@ function Economy(props) {
                     </ul>
                     <p>An analysis of economic indicators reveals that among the metropolitan cities, Faridabad tops the list, while Allahabad ranks the lowest. The corresponding cities in non-metropolitan India were Udhagamandalam and Barabanki respectively.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         props.utils.prepareBarData(
@@ -163,7 +163,7 @@ function Economy(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Asset Holding Index (AHI)</h4>
                     <p>To arrive at the asset holdings index, the parameters used were: percentage of households with</p>
@@ -178,7 +178,7 @@ function Economy(props) {
                     </ul>
                     <p>In case of metropolitan cities, Thrissur comes out as the best metro, and Dhanbad as the worst.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()} 
                     {props.renderer.bar(
                         props.utils.prepareBarData(

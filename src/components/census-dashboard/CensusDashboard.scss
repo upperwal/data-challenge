@@ -10,7 +10,7 @@
     .gis-container {
         text-align: justify;
         padding-right: 0;
-        padding-left: 28px;
+        padding-left: 30px;
         /* .col-md-8 {
             
         }
@@ -21,7 +21,7 @@
     }
 
     .insights-box {
-        padding-left: 40px;
+        padding-left: 90px;
         text-align: left;
         p, h4 {
             margin-bottom: 5px;
@@ -33,12 +33,13 @@
             font-weight: 900;
         }
         p {
-            font-size: 1.3em;
+            font-size: 1.2em;
+            line-height: 2.2rem;
             margin-bottom: 20px;
             text-align: justify;
         }
         li {
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin: 7px 0;
         }
     }
@@ -50,9 +51,16 @@
         margin: 10px 2px;
     }
     .census-item-section {
+        margin: 170px 0;
         /* margin-top: 20px;
         margin-bottom: 30px; */
         // padding: 0 20px;
+        .item-sub-section {
+            margin: 150px 0;
+            .viz-box {
+                padding-right: 90px;
+            }
+        }
     }
     .intro-box {
         padding: 0 80px;
@@ -80,6 +88,7 @@
             }
             p {
                 font-size: 1rem;
+                line-height: 1.8rem;
                 text-align: justify;
             }
         }

@@ -1,10 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Scatter, Bar} from 'react-chartjs-2';
+import {Scatter} from 'react-chartjs-2';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 import Kepler from './Kepler';
 
@@ -80,18 +76,6 @@ function Population(props) {
 
         setScatterData(scatterDataTemplate)
     }
-
-    /* function renderParamMenu() {
-        let res = []
-
-        Object.keys(paramMap).forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    } */
 
     function renderScatterPlot(data, xAxesLabel) {
         return (
@@ -208,7 +192,7 @@ function Population(props) {
                     "In absolute numbers, out of the total increase of 182 million added since 2001, the contribution of rural and urban are equal i.e. 91 million each."
                 ]}
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Population Clusters</h4>
                     <p>The city population cluster map displays the clusters of urban population. The state-wise urban population map depicts the share and size of urban population in each state and union territory.</p>
@@ -240,14 +224,14 @@ function Population(props) {
                     </div>
                 </div>
             </div>
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>The 2 paradigms of urban population growth</h4>
                     <p>The first chart shows the growth of settlements in terms of AEGR from 2001 to 2011.</p>
                     <p>The second chart shows growth of settlements in terms of absolute number of people added from 2001 to 2011.</p>
                     <p>Cities like Ghaziabad Kanoor, Trissur, Mallapuram are smaller in size but have high growth rate, implying the possibilities of becoming major urban agglomeration in near future. At the same time the Largest Metropolitan Cities continue to add the most number of people.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
                         <li className="nav-item " role="presentation">
@@ -269,14 +253,14 @@ function Population(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Core and Periphery in cities</h4>
                     <p>This chart depicts the growth of population in core and periphery of the urban settlement from 2001 to 2011.</p>
                     <p>The fastest expansion of periphery happened in Thrissur, whereas the fastest shrinkage of periphery occurred in Dhanbad.</p>
                     <p>In case of settlement core, Vasai Virar City had the fastest expansion, while Kollam had the fastest shrinkage.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         prepareBarData(),

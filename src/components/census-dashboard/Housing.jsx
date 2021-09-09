@@ -1,10 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Scatter, Bar} from 'react-chartjs-2';
-import * as ChartAnnotation from 'chartjs-plugin-annotation';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+import React from 'react';
+import {Bar} from 'react-chartjs-2';
 
 import Overview from './Overview';
 
@@ -208,65 +203,6 @@ function Housing(props) {
 
         return barData
     }
-
-
-
-    /* function renderStateMenu() {
-        let stateList = props.stateList
-        let res = []
-
-        stateList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderSettlementType() {
-        let typeList = props.settlementTypeList
-        let res = []
-
-        typeList.forEach((s, idx) => {
-            res.push(
-                <MenuItem key={idx} value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderStateAndSettlementControls(name) {
-        return (
-            <>
-                <FormControl className="half-width-select">
-                    <InputLabel id={"state-" + name + "-select-label"}>State</InputLabel>
-                    <Select
-                        labelId={"state-" + name + "-select-label"}
-                        id={"state-" + name + "-select"}
-                        name="state"
-                        value={state}
-                        onChange={onInputChange}
-                    >
-                        {renderStateMenu()}
-                    </Select>
-                </FormControl>
-                <FormControl className="half-width-select">
-                    <InputLabel id={"settlement-" + name + "-select-label"}>Settlement Type</InputLabel>
-                    <Select
-                        labelId={"settlement-" + name + "-select-label"}
-                        id={"settlement-" + name + "-select"}
-                        name="settlementType"
-                        value={settlementType}
-                        onChange={onInputChange}
-                    >
-                        {renderSettlementType()}
-                    </Select>
-                </FormControl>
-            </>
-        )
-    } */
     
     return (
         <div className="census-item-section">
@@ -300,14 +236,14 @@ function Housing(props) {
                     "This housing data refers to the information for all the urban settlements in India expressed statistically including housing quality, occupancy, room availability, share of housing stock and housing index."
                 ]}
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Housing Quality</h4>
                     <p>Quality of housing in Census is reported as 'good', 'liveable' or 'dilapidated'. The chart shows the percentage of each category for a city.</p>
                     <p>Overall in Urban India, 68.5 % of the total houses were classified as ‘good’ in the Census 2011, better than the 53.2% figure for India. Nearly 28.6% were reported to be in 'livable' condition and 2.9% as 'dilapidated'.</p>
                     <p>Among cities, Tirupati had the highest percentage of 'good' quality housing at 88.91%, whereas Raiganj had the highest percentage of 'dilapidated' quality housing at 18.95%.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     <Bar data={prepareBarQualityData()} options={{
                         scales: {
@@ -329,13 +265,13 @@ function Housing(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Room Availability</h4>
                     <p>When it comes to adequate housing, Greater Mumbai appears to be the most congested metropolitan city with 7.7% of the households having no exclusive room and a further 57.3% living in just one room.</p>
                     <p>In rest of the cities, Bhiwandi, had 11% households having no exclusive room and 59.3% with just one room. Srinagar  had the largest percentage of houses with six rooms or more (22.6%).</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     <Bar data={prepareBarRoomData()} options={{
                         scales: {
@@ -357,13 +293,13 @@ function Housing(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Houses Occupied vs Vacant</h4>
                     <p>At 52.04%, Greater Noida had the highest percentage of vacant houses in the country, followed by Bhiwadi at 33.32%.</p>
                     <p>On the other end of the spectrum were cities like Balurghat and Santipur having just 2.41% and 2.81% of vacant housing, respectively.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     <Bar data={prepareBarOccupiedVacantData()} options={{
                         scales: {
@@ -386,7 +322,7 @@ function Housing(props) {
             </div>
 
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Housing Quality Index</h4>
                     <p>The chart shows value of housing quality index for each city. The parameters considered for the calculation of this index were:</p>
@@ -400,7 +336,7 @@ function Housing(props) {
                     <p>Among metropolitan cities, Surat (1.730) had the highest value of the index while Dhanbad (-2.596) had the lowest value.</p>
                     <p>In case of class-I non-metropolitan cities, Tiruppur (1.597) had the highest index value whereas Bagaha (-4.866) had the lowest index value.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     <Bar data={prepareBarIndexData()} options={{
                         scales: {

@@ -93,13 +93,13 @@ function Demographics(props) {
                     "Demographic analysis is the study of a population based on factors such as age, race, and sex. This Demographic data refers to people related  information for all the cities in India expressed statistically including population growth, literacy rates, sex ratio and other social indices."
                 ]}
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Sex Ratio vs Literacy Rate Percentage</h4>
                     <p>The overall literacy rate was highest in metropolitan cities (87.1%) followed by non-metropolitan Class I cities (83.7%) and all towns (80.9%) as compared to 84.1% in urban India in 2011. The same pattern holds true for sex ratio as well.</p>
                     <p>The gender gap in towns of India was quite high at 12.3 per cent in 2011; much larger than the gender gap of urban India. The gender gap in non-metropolitan Class I cities of India was almost the same as in urban India (9.7%), while it was lowest in metropolitan India (7.6%).</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()} 
                     <Scatter
                         data={prepareScatterSexRatioLiteracyData()}
@@ -176,7 +176,7 @@ function Demographics(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Social Index</h4>
                     <p>To arrive at social index values, the parameters used are:</p>
@@ -191,7 +191,7 @@ function Demographics(props) {
                     <p>For the non-metropolitan class I cities Aizawl was the best and Sambhal was the worst city.</p>
                     <p>Among the towns, GSFC (Motikhavdi Sikka) (INA), Gujarat came out as the best town and Kumarpur (CT), Jharkhand was the worst.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()} 
                     {props.renderer.bar(
                         props.utils.prepareBarData(

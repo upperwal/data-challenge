@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Scatter, Bar} from 'react-chartjs-2';
+import {Scatter} from 'react-chartjs-2';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -10,10 +10,6 @@ import Overview from './Overview';
 
 import UrbanSettlementIntroImage from './img/housing_intro.svg';
 import IndexData from './index.json';
-
-import PopImage from './img/population.svg'
-import AreaImage from './img/area.svg'
-import DistanceImage from './img/distance.svg'
 
 function Indices(props) {
 
@@ -72,30 +68,6 @@ function Indices(props) {
 
         return scatterStateLocal
     }
-
-    function renderStateMenu() {
-        let res = []
-
-        props.stateList.forEach((s, idx) => {
-            res.push(
-                <MenuItem value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
-
-    function renderSettlementType() {
-        let res = []
-
-        props.settlementTypeList.forEach((s, idx) => {
-            res.push(
-                <MenuItem value={s}>{s}</MenuItem>
-            )
-        })
-
-        return res
-    }
     
     return (
         <div className="census-item-section">
@@ -104,11 +76,11 @@ function Indices(props) {
                 hideStats={true}
                 title="Comparison of Indices"
             />
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <p>This sections allows users to compare the urban settlements across the various indices discussed above in the story.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     <div className="row input-control-row">
                         <div className="col-md-6">
                             <FormControl className="full-width-select">

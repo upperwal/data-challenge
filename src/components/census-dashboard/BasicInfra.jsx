@@ -100,7 +100,7 @@ function BasicInfra(props) {
                 ]}
             />
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Basic Infrastructure Parameters</h4>
                     <p>The charts show the value as the percentage of households for various basic infrastructure parameters listed below:</p>
@@ -116,7 +116,7 @@ function BasicInfra(props) {
                         <li>Availing banking services</li>
                     </ul>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls({
                         paramMap: paramMap,
                         paramState: parameter,
@@ -143,12 +143,12 @@ function BasicInfra(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Slum Population</h4>
                     <p>With 44.14% of its population living in slums, Greater Visakhapatnam tops the chart of cities with slum population. On the other hand, with lowest percentage of the measure, Thiruvananthapuram had just a minute fraction (0.71%) of its population living in slums.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         prepareBarData(
@@ -171,13 +171,13 @@ function BasicInfra(props) {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Basic Infrastructure Index</h4>
                     <p>Among the cities having highest values of Basic Infrastructure Index are class IV, V, and V towns like the Industrial Notified Area of Reliance Complex, and Census Towns Behlana and Ordnance Factory Itarsi.</p>
                     <p>On the other hand, cities like Ambala, Baharampur, and Barabanki had the lowest value of the index as -2.801.</p>
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8 viz-box">
                     {props.renderer.controls()}
                     {props.renderer.bar(
                         prepareBarData(
