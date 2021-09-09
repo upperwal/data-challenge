@@ -114,7 +114,7 @@ function Economy(props) {
                 introImg={EconomyIntroImage}
                 data={[
                     {
-                        label: 'Households owning a TV set (Metros)',
+                        label: 'Households owning a TV (Metros)',
                         value: 83.6,
                         imgSrc: PopImage,
                         fixTo: 1,
@@ -172,51 +172,71 @@ function Economy(props) {
                 ]}
                 title="Economy"
                 description={[
-                    "The Houselisting and Housing Census was conducted in 2011 to generate information on a large number of social and economic indicators relating to households across the country. This Economic data refers to socioeconomic information for all the cities in India expressed statistically including asset holding, poverty and unemployment change, asset holding index (AHI) and economic permanence index.(EPI)"
+                    "This economic data refers to socioeconomic information for all the urban settlements in India expressed statistically including asset holding, poverty and unemployment change, asset holding index (AHI) and economic permanence index (EPI)."
                 ]}
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
-                    <p>As per 2011 census in Metropolitan India, Pune had the largest number of households owning TV, computer, mobile and two/four-wheeler together (32.3 per cent), and Dhanbad the least (7.5 per cent). The largest concentration of four wheelers was found in Chandigarh, with 27.6 per cent of the households owning one. The concentration of four wheelers was the least in Vasai Virar city and Asansol (both 5.0 percent). The largest concentration of mobile phones was found in Patna, with 73.9 per cent owning mobile phones. The least concentration of mobile phones was found at Kannur, where 43.3 per cent own mobile phones.</p>
-                    <p>For non metropolitan India, largest concentration of four wheelers was found in Panchkula in Haryana, with 38.8 percent of the households owning at least one, four wheeler followed by Chandigarh with36.0 percent of the households owning at least one four wheeler. The concentration of four wheelers was the least in Murshidabad in West Bengal (1.8 percent) and YSR Kapada in Andhra Pradesh (1.9 percent). The largest concentration of mobile phones was found in South Andamans, with 81.5 percent owning mobile phones. The least concentration of mobile phones was found at Kottayam in Kerala, where 37.7 percent owned mobile phones.</p>
+                    <h4>Asset Holdings</h4>
+                    <p>The charts show the value as the percentage of households for various asset holdings parameters listed below</p>
+                    <ul>
+                        <li>Radio/transistor</li>
+                        <li>Television</li>
+                        <li>Computer without internet</li>
+                        <li>Computer with internet</li>
+                        <li>Landline</li>
+                        <li>Mobile</li>
+                        <li>Mobile and Landline</li>
+                        <li>Bicycle</li>
+                        <li>Motorcycle/Scooter/Moped</li>
+                        <li>Car/Jeep</li>
+                    </ul>
                 </div>
                 <div className="col-md-8">
-                <FormControl className="full-width-select">
-                        <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                        <Select
-                            labelId="parameter-select-label"
-                            id="parameter-select"
-                            name="parameter"
-                            value={parameter}
-                            onChange={onInputChange}
-                        >
-                            {renderParamMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="half-width-select">
-                        <InputLabel id="state-literacy-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-literacy-select-label"
-                            id="state-literacy-select"
-                            name="state"
-                            value={state}
-                            onChange={onInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="half-width-select">
-                        <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-literacy-select-label"
-                            id="settlement-literacy-select"
-                            name="settlementType"
-                            value={settlementType}
-                            onChange={onInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
+                    <div className="row input-control-row">
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                                <Select
+                                    labelId="parameter-select-label"
+                                    id="parameter-select"
+                                    name="parameter"
+                                    value={parameter}
+                                    onChange={onInputChange}
+                                >
+                                    {renderParamMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="state-literacy-select-label">State</InputLabel>
+                                <Select
+                                    labelId="state-literacy-select-label"
+                                    id="state-literacy-select"
+                                    name="state"
+                                    value={state}
+                                    onChange={onInputChange}
+                                >
+                                    {renderStateMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
+                                <Select
+                                    labelId="settlement-literacy-select-label"
+                                    id="settlement-literacy-select"
+                                    name="settlementType"
+                                    value={settlementType}
+                                    onChange={onInputChange}
+                                >
+                                    {renderSettlementType()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div>
                     <Bar data={prepareBarData()} options={{
                         indexAxis: 'y',
                     }}/>
