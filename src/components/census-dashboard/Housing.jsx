@@ -289,30 +289,30 @@ function Housing(props) {
                 introImg={HousingIntroImage}
                 data={[
                     {
-                        label: 'Population',
-                        value: 1210.6,
+                        label: 'City with Highest Good Housing Quality',
+                        value: 88.9,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Tirupati'
                     },
                     {
-                        label: 'Rural Population',
-                        value: 833.5,
+                        label: 'City with Highest Livable Housing Quality',
+                        value: 61.5,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Bagaha'
                     },
                     {
-                        label: 'Urban Population',
-                        value: 377.1,
+                        label: 'City with Highest Dilapidated Housing Quality',
+                        value: 18.9,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Raiganj'
                     }
                 ]}
                 title="Housing"
                 description={[
-                    "Along with socioeconomic data, the Houselisting and Housing Census was also conducted to identify each building/census house and also to ascertain the quality of the census house, amenities accessible to it and assets available to the households living in those census houses. This Housing data refers to socioeconomic information for all the cities in India expressed statistically including housing quality, occupancy, housing amenities, share of  housing stock and housing index."
+                    "This housing data refers to the information for all the urban settlements in India expressed statistically including housing quality, occupancy, room availability, share of housing stock and housing index."
                 ]}
             />
             <div className="row">
