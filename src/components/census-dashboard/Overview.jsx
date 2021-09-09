@@ -92,6 +92,8 @@ function Overview(props) {
                         <div className="col-md-8 card-container">
                             <img src={props.introImg} alt="" width="100%"/>
                         </div>
+                    </div>
+                    <div className="row">
                         {renderStats()}
                     </div>
                 {/* </div> */}
