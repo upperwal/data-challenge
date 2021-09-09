@@ -25,10 +25,10 @@ function UrbanSettlements(props) {
 
     const [barData, setBarData] = useState([{}, {}, {}, {}])
     const barLabels = [
-        "Distribution of Population Sum",
-        "Distribution of Households Sum",
-        "Distribution of Avg Basic Infra Index",
-        "Distribution of Avg Social Index"
+        "Sum of Population",
+        "Avg of Households Size",
+        "Avg Basic Infra Index",
+        "Avg Social Index"
     ]
     const defContent = [
         {
@@ -101,10 +101,10 @@ function UrbanSettlements(props) {
         let xList = []
 
         SettlementPopData.forEach((item) => {
-            res[0].push(item["Sum of totalPop_2011_num"])
-            res[1].push(item["Sum of HH_num"])
-            res[2].push(item["Average of basicInfrastructureIndex"])
-            res[3].push(item["Average of socialIndex"])
+            res[0].push(item["Sum of totalPop_2011_num"].toFixed(2))
+            res[1].push(item["Average of hh_size"].toFixed(2))
+            res[2].push(item["Average of basicInfrastructureIndex"].toFixed(2))
+            res[3].push(item["Average of socialIndex"].toFixed(2))
             xList.push(item.settlementSizeClass)
         })
 
@@ -135,6 +135,30 @@ function UrbanSettlements(props) {
         })
 
         return res
+    }
+
+    function renderSettlementBatChart(data, yAxisLabel) {
+        return (
+            <Bar data={data} options={{
+                scales: {
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Settlement Size Classes',
+                        }
+                    }],
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: yAxisLabel,
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                }
+            }}/>
+        )
     }
     
     return (
@@ -183,66 +207,18 @@ function UrbanSettlements(props) {
                 <div className="col-md-8">
                     <div className="row">
                         <div className="col-md-6">
-                            <Bar data={barData[0]} options={{
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                        beginAtZero: true,
-                                        },
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: barLabels[0],
-                                        }
-                                    }],
-                                },
-                            }}/>
+                            {renderSettlementBatChart(barData[0], barLabels[0])}
                         </div>
                         <div className="col-md-6">
-                            <Bar data={barData[1]} options={{
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                        beginAtZero: true,
-                                        },
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: barLabels[1],
-                                        }
-                                    }],
-                                },
-                            }}/>
+                            {renderSettlementBatChart(barData[1], barLabels[1])}
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-6">
-                            <Bar data={barData[2]} options={{
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                        beginAtZero: true,
-                                        },
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: barLabels[2],
-                                        }
-                                    }],
-                                },
-                            }}/>
+                            {renderSettlementBatChart(barData[2], barLabels[2])}
                         </div>
                         <div className="col-md-6">
-                            <Bar data={barData[3]} options={{
-                                scales: {
-                                    yAxes: [{
-                                        ticks: {
-                                        beginAtZero: true,
-                                        },
-                                        scaleLabel: {
-                                            display: true,
-                                            labelString: barLabels[3],
-                                        }
-                                    }],
-                                },
-                            }}/>
+                            {renderSettlementBatChart(barData[3], barLabels[3])}
                         </div>
                     </div>
                 </div>

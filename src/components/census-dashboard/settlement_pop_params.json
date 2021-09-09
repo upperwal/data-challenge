@@ -1,9 +1,9 @@
 [
-{"settlementSizeClass":"II","Sum of totalPop_2011_num":5002201,"Sum of HH_num":1097759,"Average of basicInfrastructureIndex":0.869310810810811,"Average of socialIndex":0.18363513513513516},
-{"settlementSizeClass":"III","Sum of totalPop_2011_num":41858195,"Sum of HH_num":8509569,"Average of basicInfrastructureIndex":0.2333988355167394,"Average of socialIndex":-0.055100436681222616},
-{"settlementSizeClass":"IV","Sum of totalPop_2011_num":24037644,"Sum of HH_num":5105384,"Average of basicInfrastructureIndex":-0.0093566765578635,"Average of socialIndex":-0.03748486646884291},
-{"settlementSizeClass":"M","Sum of totalPop_2011_num":159573844,"Sum of HH_num":35166441,"Average of basicInfrastructureIndex":-0.025711538461538473,"Average of socialIndex":0.009942307692307695},
-{"settlementSizeClass":"NM","Sum of totalPop_2011_num":105130126,"Sum of HH_num":22253476,"Average of basicInfrastructureIndex":1.2019230769180073E-5,"Average of socialIndex":7.2115384615435385E-6},
-{"settlementSizeClass":"V","Sum of totalPop_2011_num":12650231,"Sum of HH_num":2747151,"Average of basicInfrastructureIndex":-0.2574559496567505,"Average of socialIndex":-0.019417620137299776},
-{"settlementSizeClass":"VI","Sum of totalPop_2011_num":1679153,"Sum of HH_num":370294,"Average of basicInfrastructureIndex":-0.010119047619047625,"Average of socialIndex":0.26414047619047615}
+{"settlementSizeClass":"M","Sum of totalPop_2011_num":159573844,"Average of basicInfrastructureIndex":-0.025711538461538473,"Average of socialIndex":0.009942307692307695,"Average of hh_size":4.7471887069107215},
+{"settlementSizeClass":"NM","Sum of totalPop_2011_num":105130126,"Average of basicInfrastructureIndex":1.2019230769180073E-5,"Average of socialIndex":7.2115384615435385E-6,"Average of hh_size":4.886450995227695},
+{"settlementSizeClass":"II","Sum of totalPop_2011_num":5002201,"Average of basicInfrastructureIndex":0.869310810810811,"Average of socialIndex":0.18363513513513516,"Average of hh_size":4.659292643210301},
+{"settlementSizeClass":"III","Sum of totalPop_2011_num":41858195,"Average of basicInfrastructureIndex":0.2333988355167394,"Average of socialIndex":-0.055100436681222616,"Average of hh_size":5.051842985038788},
+{"settlementSizeClass":"IV","Sum of totalPop_2011_num":24037644,"Average of basicInfrastructureIndex":-0.0093566765578635,"Average of socialIndex":-0.03748486646884291,"Average of hh_size":4.8640931041843904},
+{"settlementSizeClass":"V","Sum of totalPop_2011_num":12650231,"Average of basicInfrastructureIndex":-0.2574559496567505,"Average of socialIndex":-0.019417620137299776,"Average of hh_size":4.748098358927683},
+{"settlementSizeClass":"VI","Sum of totalPop_2011_num":1679153,"Average of basicInfrastructureIndex":-0.010119047619047625,"Average of socialIndex":0.26414047619047615,"Average of hh_size":4.660883190021812}
 ]
