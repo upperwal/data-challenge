@@ -1,0 +1,16 @@
+[Unit]
+Description=Kepler service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+Environment="PATH=$PATH:/home/ubuntu/.nvm/versions/node/v14.17.5/bin"
+WorkingDirectory=/home/ubuntu/gis-kepler
+ExecStart=/home/ubuntu/.nvm/versions/node/v14.17.5/bin/yarn dev
+
+[Install]
+WantedBy=multi-user.target
