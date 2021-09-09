@@ -19,10 +19,6 @@ function Indices(props) {
 
     const [xAxisIndex, setXAxisIndex] = useState("Basic Infrastructure Index")
     const [yAxisIndex, setYAxisIndex] = useState("Housing Quality Index")
-    const [stateIndex, setStateIndex] = useState("All")
-    const [settlementTypeIndex, setSettlementTypeIndex] = useState("All")
-    const [stateIndexLiteracy, setStateIndexLiteracy] = useState("All")
-    const [settlementTypeIndexLiteracy, setSettlementTypeIndexLiteracy] = useState("All")
 
     function onScatterInputChange(e) {
         console.log(e.target)
@@ -30,14 +26,6 @@ function Indices(props) {
             setXAxisIndex(e.target.value)
         } else if(e.target.name == 'yaxis') {
             setYAxisIndex(e.target.value)
-        } else if(e.target.name == 'state') {
-            setStateIndex(e.target.value)
-        } else if(e.target.name == 'settlementType') {
-            setSettlementTypeIndex(e.target.value)
-        } else if(e.target.name == 'state-literacy') {
-            setStateIndexLiteracy(e.target.value)
-        } else if(e.target.name == 'settlementType-literacy') {
-            setSettlementTypeIndexLiteracy(e.target.value)
         }
     }
 
@@ -63,10 +51,10 @@ function Indices(props) {
             if(item[indexMap[xAxisIndex]] === null || item[indexMap[yAxisIndex]] === null) {
                 return
             }
-            if(item.state !== stateIndex && stateIndex !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementTypeIndex && settlementTypeIndex !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             res.push({
@@ -114,70 +102,53 @@ function Indices(props) {
             <Overview 
                 introImg={UrbanSettlementIntroImage}
                 hideStats={true}
-                title="Indices"
+                title="Comparison of Indices"
             />
             <div className="row">
                 <div className="col-md-4 insights-box">
                     <p>This sections allows users to compare the urban settlements across the various indices discussed above in the story.</p>
                 </div>
                 <div className="col-md-8">
-                    <FormControl className="full-width-select">
-                        <InputLabel id="xaxis-index-select-label">X Axis</InputLabel>
-                        <Select
-                            labelId="xaxis-index-select-label"
-                            id="xaxis-index-select"
-                            name="xaxis"
-                            value={xAxisIndex}
-                            onChange={onScatterInputChange}
-                            className="index-select"
-                        >
-                            <MenuItem value={"Asset Holding Index"}>Asset Holding Index</MenuItem>
-                            <MenuItem value={"Economic Performance Index"}>Economic Performance Index</MenuItem>
-                            <MenuItem value={"Housing Quality Index"}>Housing Quality Index</MenuItem>
-                            <MenuItem value={"Basic Infrastructure Index"}>Basic Infrastructure Index</MenuItem>
-                            <MenuItem value={"Social Index"}>Social Index</MenuItem>
-                        </Select>
-                    </FormControl>
-                    <FormControl className="full-width-select">
-                        <InputLabel id="yaxis-index-select-label">Y Axis</InputLabel>
-                        <Select
-                            labelId="yaxis-index-select-label"
-                            id="yaxis-index-select"
-                            name="yaxis"
-                            value={yAxisIndex}
-                            onChange={onScatterInputChange}
-                        >
-                            <MenuItem value={"Asset Holding Index"}>Asset Holding Index</MenuItem>
-                            <MenuItem value={"Economic Performance Index"}>Economic Performance Index</MenuItem>
-                            <MenuItem value={"Housing Quality Index"}>Housing Quality Index</MenuItem>
-                            <MenuItem value={"Basic Infrastructure Index"}>Basic Infrastructure Index</MenuItem>
-                            <MenuItem value={"Social Index"}>Social Index</MenuItem>
-                        </Select>
-                    </FormControl>
-                    <FormControl className="half-width-select">
-                        <InputLabel id="state-index-select-label">State</InputLabel>
-                        <Select
-                            labelId="state-index-select-label"
-                            id="state-index-select"
-                            name="state"
-                            value={stateIndex}
-                            onChange={onScatterInputChange}
-                        >
-                            {renderStateMenu()}
-                        </Select>
-                    </FormControl>
-                    <FormControl className="half-width-select">
-                        <InputLabel id="settlement-index-select-label">Settlement Type</InputLabel>
-                        <Select
-                            labelId="settlement-index-select-label"
-                            id="settlement-index-select"
-                            name="settlementType"
-                            value={settlementTypeIndex}
-                            onChange={onScatterInputChange}
-                        >
-                            {renderSettlementType()}
-                        </Select>
-                    </FormControl>
+                    <div className="row input-control-row">
+                        <div className="col-md-6">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="xaxis-index-select-label">X Axis</InputLabel>
+                                <Select
+                                    labelId="xaxis-index-select-label"
+                                    id="xaxis-index-select"
+                                    name="xaxis"
+                                    value={xAxisIndex}
+                                    onChange={onScatterInputChange}
+                                    className="index-select"
+                                >
+                                    <MenuItem value={"Asset Holding Index"}>Asset Holding Index</MenuItem>
+                                    <MenuItem value={"Economic Performance Index"}>Economic Performance Index</MenuItem>
+                                    <MenuItem value={"Housing Quality Index"}>Housing Quality Index</MenuItem>
+                                    <MenuItem value={"Basic Infrastructure Index"}>Basic Infrastructure Index</MenuItem>
+                                    <MenuItem value={"Social Index"}>Social Index</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
+                        <div className="col-md-6">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="yaxis-index-select-label">Y Axis</InputLabel>
+                                <Select
+                                    labelId="yaxis-index-select-label"
+                                    id="yaxis-index-select"
+                                    name="yaxis"
+                                    value={yAxisIndex}
+                                    onChange={onScatterInputChange}
+                                >
+                                    <MenuItem value={"Asset Holding Index"}>Asset Holding Index</MenuItem>
+                                    <MenuItem value={"Economic Performance Index"}>Economic Performance Index</MenuItem>
+                                    <MenuItem value={"Housing Quality Index"}>Housing Quality Index</MenuItem>
+                                    <MenuItem value={"Basic Infrastructure Index"}>Basic Infrastructure Index</MenuItem>
+                                    <MenuItem value={"Social Index"}>Social Index</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div>
+                    {props.renderer.controls()}
                     <Scatter
                         data={prepareScatterIndexData()}
                         plugins={[ChartAnnotation]}

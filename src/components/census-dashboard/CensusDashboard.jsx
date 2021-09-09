@@ -123,6 +123,38 @@ function CensusDashboard() {
         }
     }
 
+    /* function prepareBarData(dataset) {
+        let res= []
+        let cityList = []
+        let barData = {
+            datasets: [
+                {
+                    label: parameter,
+                    backgroundColor: '#f6264c'
+                }
+            ]
+        };
+
+        dataset.forEach((item) => {
+            if(item[paramMap[parameter]] === null) {
+                return
+            }
+            if(item.state !== props.state.state && props.state.state !== 'All') {
+                return
+            }
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
+                return
+            }
+            res.push(item[paramMap[parameter]])
+            cityList.push(item.UA_city)
+        })
+
+        barData['labels'] = cityList
+        barData.datasets[0]['data'] = res
+
+        return barData
+    } */
+
     function renderControls(paramObject, col = 6) {
         let paramSelect = ''
         if(paramObject !== undefined && 
@@ -250,7 +282,7 @@ function CensusDashboard() {
                 <Economy stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <Housing stateList={stateList} settlementTypeList={settlementTypeList}/>
                 <BasicInfra state={{state: state, settlementType: settlementType}} renderer={renderer}/>
-                <Indices stateList={stateList} settlementTypeList={settlementTypeList}/>
+                <Indices state={{state: state, settlementType: settlementType}} renderer={renderer}/>
 
                 {/* <Tableau/> */}
 
