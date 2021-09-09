@@ -9,6 +9,7 @@ import Select from '@material-ui/core/Select';
 import Overview from './Overview';
 
 import WithInternetData from './with_internet.json';
+import IndexData from './index.json';
 
 import PopImage from './img/population.svg'
 import EconomyIntroImage from './img/economy_intro.svg';
@@ -26,6 +27,11 @@ function Economy(props) {
         'Percent households having computer with internet': 'asset_computerWithInternet_per'
     }
     const [parameter, setParameter] = useState("Percent households having car")
+    const [barIndexData, setBarIndexData] = useState([{}, {}]);
+
+    useEffect(() => {
+        prepareBarIndexData()
+    }, [state, settlementType])
 
     function onInputChange(e) {
         console.log(e.target)
@@ -70,6 +76,58 @@ function Economy(props) {
         return barData
     }
 
+    function prepareBarIndexData() {
+        let data = [[],[]]
+        let cityList = [[],[]]
+        let barDataTemplate = [
+            {
+                datasets: [
+                    {
+                        label: 'Economic Performance Index',
+                        backgroundColor: '#f6264c'
+                    }
+                ]
+            },
+            {
+                datasets: [
+                    {
+                        label: 'Asset Holding Index',
+                        backgroundColor: '#f6264c'
+                    }
+                ]
+            }
+        ]
+
+        IndexData.sort(function(a, b) {
+            return a.ecomonicPerformanceIndex - b.ecomonicPerformanceIndex;
+        })
+
+        IndexData.forEach((item) => {
+            if(item.state !== state && state !== 'All') {
+                return
+            }
+            if(item.settlementType !== settlementType && settlementType !== 'All') {
+                return
+            }
+            if(item.ecomonicPerformanceIndex !== null ) {
+                data[0].push(item.ecomonicPerformanceIndex)
+                cityList[0].push(item.UA_city)
+            }
+            if(item.assetHoldingsIndex !== null ) {
+                data[1].push(item.assetHoldingsIndex)
+                cityList[1].push(item.UA_city)
+            }
+            
+        })
+
+        barDataTemplate[0]['labels'] = cityList[0]
+        barDataTemplate[0].datasets[0]['data'] = data[0]
+        barDataTemplate[1]['labels'] = cityList[1]
+        barDataTemplate[1].datasets[0]['data'] = data[1]
+
+        setBarIndexData(barDataTemplate)
+    }
+
     function renderParamMenu() {
         let res = []
 
@@ -106,6 +164,94 @@ function Economy(props) {
         })
 
         return res
+    }
+
+    function renderBarChart(data, xLabel, yLabel) {
+        return (
+            <Bar data={data} options={{
+                scales: {
+                    yAxes: [
+                        {
+                            stacked: true,
+                            ticks: {
+                                beginAtZero: true,
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: yLabel,
+                            }
+                        }
+                    ],
+                    xAxes: [
+                        {
+                            stacked: true,
+                            scaleLabel: {
+                                display: true,
+                                labelString: xLabel
+                            }
+                        }
+                    ]
+                },
+                legend: {
+                    display: false
+                }
+            }}/>
+        )
+    }
+
+    function renderControls(col, isParam) {
+        let paramSelect = ''
+        if(isParam) {
+            paramSelect =   <div className={"col-md-" + col}>
+                                <FormControl className="full-width-select">
+                                    <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                                    <Select
+                                        labelId="parameter-select-label"
+                                        id="parameter-select"
+                                        name="parameter"
+                                        value={parameter}
+                                        onChange={onInputChange}
+                                    >
+                                        {renderParamMenu()}
+                                    </Select>
+                                </FormControl>
+                            </div>
+        }
+        return (
+            <>
+                <div className="row input-control-row">
+                    {paramSelect}
+                    <div className={"col-md-" + col}>
+                        <FormControl className="full-width-select">
+                            <InputLabel id="state-literacy-select-label">State</InputLabel>
+                            <Select
+                                labelId="state-literacy-select-label"
+                                id="state-literacy-select"
+                                name="state"
+                                value={state}
+                                onChange={onInputChange}
+                            >
+                                {renderStateMenu()}
+                            </Select>
+                        </FormControl>
+                    </div>
+                    <div className={"col-md-" + col}>
+                        <FormControl className="full-width-select">
+                            <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
+                            <Select
+                                labelId="settlement-literacy-select-label"
+                                id="settlement-literacy-select"
+                                name="settlementType"
+                                value={settlementType}
+                                onChange={onInputChange}
+                            >
+                                {renderSettlementType()}
+                            </Select>
+                        </FormControl>
+                    </div>
+                </div>
+            </>
+        )
     }
     
     return (
@@ -193,53 +339,46 @@ function Economy(props) {
                     </ul>
                 </div>
                 <div className="col-md-8">
-                    <div className="row input-control-row">
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                                <Select
-                                    labelId="parameter-select-label"
-                                    id="parameter-select"
-                                    name="parameter"
-                                    value={parameter}
-                                    onChange={onInputChange}
-                                >
-                                    {renderParamMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="state-literacy-select-label">State</InputLabel>
-                                <Select
-                                    labelId="state-literacy-select-label"
-                                    id="state-literacy-select"
-                                    name="state"
-                                    value={state}
-                                    onChange={onInputChange}
-                                >
-                                    {renderStateMenu()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                        <div className="col-md-4">
-                            <FormControl className="full-width-select">
-                                <InputLabel id="settlement-literacy-select-label">Settlement Type</InputLabel>
-                                <Select
-                                    labelId="settlement-literacy-select-label"
-                                    id="settlement-literacy-select"
-                                    name="settlementType"
-                                    value={settlementType}
-                                    onChange={onInputChange}
-                                >
-                                    {renderSettlementType()}
-                                </Select>
-                            </FormControl>
-                        </div>
-                    </div>
-                    <Bar data={prepareBarData()} options={{
-                        indexAxis: 'y',
-                    }}/>
+                    {renderControls(4, true)}
+                    {renderBarChart(prepareBarData(), 'Cities', parameter)}
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Economic Performance Index (EPI)</h4>
+                    <p>To arrive at EPI, principal component analysis (PCA) was constructed with the following parameters:</p>
+                    <ul>
+                        <li>per-capita gross domestic product of metropolitan and non-metropolitan Class I districts</li>
+                        <li>percentage of usually employed persons engaged in quality, i.e. regular salaried jobs</li>
+                        <li>percentage of people above poverty line</li>
+                    </ul>
+                    <p>An analysis of economic indicators reveals that among the metropolitan cities, Faridabad tops the list, while Allahabad ranks the lowest. The corresponding cities in non-metropolitan India were Udhagamandalam and Barabanki respectively.</p>
+                </div>
+                <div className="col-md-8">
+                    {renderControls(6)}
+                    {renderBarChart(barIndexData[0], 'Cities', 'Economic Performance Index')}
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-4 insights-box">
+                    <h4>Asset Holding Index (AHI)</h4>
+                    <p>To arrive at the asset holdings index, the parameters used were: percentage of households with</p>
+                    <ul>
+                        <li>radio</li>
+                        <li>television</li>
+                        <li>computer/laptop</li>
+                        <li>mobile phones</li>
+                        <li>bicycles</li>
+                        <li>two-wheelers</li>
+                        <li>four-wheelers</li>
+                    </ul>
+                    <p>In case of metropolitan cities, Thrissur comes out as the best metro, and Dhanbad as the worst.</p>
+                </div>
+                <div className="col-md-8">
+                    {renderControls(6)}
+                    {renderBarChart(barIndexData[1], 'Cities', 'Asset Holding Index')}
                 </div>
             </div>
             
