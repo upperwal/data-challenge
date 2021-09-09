@@ -17,8 +17,8 @@ import BasicInfraIntroImage from './img/basic_infrastructure_intro.svg';
 
 function BasicInfra(props) {
 
-    const [state, setState] = useState("All")
-    const [settlementType, setSettlementType] = useState("All")
+    // const [state, setState] = useState("All")
+    // const [settlementType, setSettlementType] = useState("All")
     const paramMap = {
         'Percent households with bathroom within premises': 'bathroom_withinPremises_HH_per',
         'Percent households with source of fuel as gas': 'sourceOfFuel_gas_HH_per',
@@ -31,7 +31,7 @@ function BasicInfra(props) {
     }
     const [parameter, setParameter] = useState("Percent households with bathroom within premises")
 
-    function onInputChange(e) {
+    /* function onInputChange(e) {
         console.log(e.target)
         if(e.target.name == 'state') {
             setState(e.target.value)
@@ -40,7 +40,7 @@ function BasicInfra(props) {
         } else if(e.target.name === 'parameter') {
             setParameter(e.target.value)
         }
-    }
+    } */
 
     function prepareVariousParamBarData() {
         let res= []
@@ -58,10 +58,10 @@ function BasicInfra(props) {
             if(item[paramMap[parameter]] === null) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             res.push(item[paramMap[parameter]])
@@ -76,7 +76,7 @@ function BasicInfra(props) {
 
 
 
-    function renderStateMenu() {
+    /* function renderStateMenu() {
         let stateList = props.stateList
         let res = []
 
@@ -112,7 +112,7 @@ function BasicInfra(props) {
         })
 
         return res
-    }
+    } */
     
     return (
         <div className="census-item-section">
@@ -120,30 +120,30 @@ function BasicInfra(props) {
                 introImg={BasicInfraIntroImage}
                 data={[
                     {
-                        label: 'Population',
-                        value: 1210.6,
+                        label: 'Avg HHs w/ Drinking Water within Primises',
+                        value: 78.66,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Rural Population',
-                        value: 833.5,
+                        label: 'Avg HHs w/ Latrine Facility within Primises',
+                        value: 84.3,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Urban Population',
-                        value: 377.1,
+                        label: 'Avg HHs w/ Electricity as Main Source of Lighting',
+                        value: 92.6,
                         imgSrc: PopImage,
                         fixTo: 1,
-                        unitLabel: 'Million'
+                        unitLabel: 'Percentage'
                     }
                 ]}
                 title="Basic Infrastructure"
                 description={[
-                    "Along with socioeconomic data, the Houselisting and Housing Census was also conducted to identify each building/census house and also to ascertain the quality of the census house, amenities accessible to it and assets available to the households living in those census houses. This Housing data refers to socioeconomic information for all the cities in India expressed statistically including housing quality, occupancy, housing amenities, share of  housing stock and housing index."
+                    "This basic infrastructure data refers to the information for all the urban settlements in India expressed statistically including household infrastructure amenities, extent of slums, and basic infrastructure index."
                 ]}
             />
 
@@ -164,19 +164,28 @@ function BasicInfra(props) {
                     </ul>
                 </div>
                 <div className="col-md-8">
-                    <FormControl className="full-width-select">
-                        <InputLabel id="parameter-select-label">Parameters</InputLabel>
-                        <Select
-                            labelId="parameter-select-label"
-                            id="parameter-select"
-                            name="parameter"
-                            value={parameter}
-                            onChange={onInputChange}
-                        >
-                            {renderParamMenu()}
-                        </Select>
-                    </FormControl>
-                    <Bar data={prepareVariousParamBarData()} options={{}}/>
+                    {/* <div className="row">
+                        <div className="col-md-4">
+                            <FormControl className="full-width-select">
+                                <InputLabel id="parameter-select-label">Parameters</InputLabel>
+                                <Select
+                                    labelId="parameter-select-label"
+                                    id="parameter-select"
+                                    name="parameter"
+                                    value={parameter}
+                                    onChange={onInputChange}
+                                >
+                                    {renderParamMenu()}
+                                </Select>
+                            </FormControl>
+                        </div>
+                    </div> */}
+                    {props.renderer.controls({
+                        paramMap: paramMap,
+                        paramState: parameter,
+                        onParamChange: setParameter
+                    })}
+                    {props.renderer.bar(prepareVariousParamBarData(), 'Cities', parameter, false)}
                 </div>
             </div>
 
