@@ -310,8 +310,9 @@ function Demographics(props) {
                         <li>Effective female literacy rate</li>
                         <li>Effective overall literacy rate</li>
                     </ul>
-                    <p>Kannur was found to be the best 
-metro and Agra the worst. All metros in Kerala are ranked right at the top and there is a clear north-south division in the social index values.</p>
+                    <p>In case of metropolitan cities Kannur was the best and Agra the worst city.</p>
+                    <p>For the non-metropolitan class I cities Aizawl was the best and Sambhal was the worst city.</p>
+                    <p>Among the towns, GSFC (Motikhavdi Sikka) (INA), Gujarat came out as the best town and Kumarpur (CT), Jharkhand was the worst.</p>
                 </div>
                 <div className="col-md-8">
                     <Bar data={prepareBarIndexData()} options={{
