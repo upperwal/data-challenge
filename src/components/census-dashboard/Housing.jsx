@@ -18,21 +18,6 @@ import HousingIntroImage from './img/housing_intro.svg';
 
 function Housing(props) {
 
-    const [state, setState] = useState("All")
-    const [settlementType, setSettlementType] = useState("All")
-    
-    
-
-
-    function onInputChange(e) {
-        console.log(e.target)
-        if(e.target.name == 'state') {
-            setState(e.target.value)
-        } else if(e.target.name == 'settlementType') {
-            setSettlementType(e.target.value)
-        }
-    }
-
     function prepareBarQualityData() {
         let d1 = [], d2 = [], d3 = []
         let cityList = []
@@ -57,10 +42,10 @@ function Housing(props) {
             if(item.housing_quality_good_per === null || item.housing_quality_livable_per === null || item.housing_quality_dilapidated_per === null) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             d1.push(item.housing_quality_good_per)
@@ -125,10 +110,10 @@ function Housing(props) {
             ) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             data[0].push(item.housing_noExclusiveRoom_per)
@@ -169,10 +154,10 @@ function Housing(props) {
             if(item.occupiedHouses_per === null || item.vacantHouses_per === null) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             data[0].push(item.occupiedHouses_per)
@@ -208,10 +193,10 @@ function Housing(props) {
             if(item.housigQualityIndex === null ) {
                 return
             }
-            if(item.state !== state && state !== 'All') {
+            if(item.state !== props.state.state && props.state.state !== 'All') {
                 return
             }
-            if(item.settlementType !== settlementType && settlementType !== 'All') {
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
                 return
             }
             data.push(item.housigQualityIndex)
@@ -226,7 +211,7 @@ function Housing(props) {
 
 
 
-    function renderStateMenu() {
+    /* function renderStateMenu() {
         let stateList = props.stateList
         let res = []
 
@@ -281,7 +266,7 @@ function Housing(props) {
                 </FormControl>
             </>
         )
-    }
+    } */
     
     return (
         <div className="census-item-section">
@@ -323,7 +308,7 @@ function Housing(props) {
                     <p>Among cities, Tirupati had the highest percentage of 'good' quality housing at 88.91%, whereas Raiganj had the highest percentage of 'dilapidated' quality housing at 18.95%.</p>
                 </div>
                 <div className="col-md-8">
-                    {renderStateAndSettlementControls("literacy")}
+                    {props.renderer.controls()}
                     <Bar data={prepareBarQualityData()} options={{
                         scales: {
                             yAxes: [
@@ -351,7 +336,7 @@ function Housing(props) {
                     <p>In rest of the cities, Bhiwandi, had 11% households having no exclusive room and 59.3% with just one room. Srinagar  had the largest percentage of houses with six rooms or more (22.6%).</p>
                 </div>
                 <div className="col-md-8">
-                    {renderStateAndSettlementControls("availability")}
+                    {props.renderer.controls()}
                     <Bar data={prepareBarRoomData()} options={{
                         scales: {
                             yAxes: [
@@ -379,7 +364,7 @@ function Housing(props) {
                     <p>On the other end of the spectrum were cities like Balurghat and Santipur having just 2.41% and 2.81% of vacant housing, respectively.</p>
                 </div>
                 <div className="col-md-8">
-                    {renderStateAndSettlementControls("occupied")}
+                    {props.renderer.controls()}
                     <Bar data={prepareBarOccupiedVacantData()} options={{
                         scales: {
                             yAxes: [
@@ -416,6 +401,7 @@ function Housing(props) {
                     <p>In case of class-I non-metropolitan cities, Tiruppur (1.597) had the highest index value whereas Bagaha (-4.866) had the lowest index value.</p>
                 </div>
                 <div className="col-md-8">
+                    {props.renderer.controls()}
                     <Bar data={prepareBarIndexData()} options={{
                         scales: {
                             yAxes: [
