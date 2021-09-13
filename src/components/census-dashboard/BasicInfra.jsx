@@ -12,7 +12,9 @@ import BasicInfraData from './basic_infra.json';
 import SlumPopData from './slum_population.json';
 import IndexData from './index.json';
 
-import PopImage from './img/population.svg'
+import ElectricityIcon from './img/icons/bi_electricity.svg';
+import LatrineIcon from './img/icons/bi_latrine.svg';
+import TapwaterIcon from './img/icons/bi_tapwater.svg';
 import BasicInfraIntroImage from './img/basic_infrastructure_intro.svg';
 
 function BasicInfra(props) {
@@ -75,21 +77,21 @@ function BasicInfra(props) {
                     {
                         label: 'Avg HHs w/ Drinking Water within Primises',
                         value: 78.66,
-                        imgSrc: PopImage,
+                        imgSrc: TapwaterIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'Avg HHs w/ Latrine Facility within Primises',
                         value: 84.3,
-                        imgSrc: PopImage,
+                        imgSrc: LatrineIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'Avg HHs w/ Electricity as Main Source of Lighting',
                         value: 92.6,
-                        imgSrc: PopImage,
+                        imgSrc: ElectricityIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     }

@@ -5,8 +5,11 @@ import Overview from './Overview';
 import WithInternetData from './with_internet.json';
 import IndexData from './index.json';
 
-import PopImage from './img/population.svg'
 import EconomyIntroImage from './img/economy_intro.svg';
+import TVIcon from './img/icons/asset_tv.svg';
+import ComputerInternetIcon from './img/icons/asset_compInternet.svg';
+import TwoWheelerIcon from './img/icons/asset_2wheeler.svg';
+
 
 function Economy(props) {
 
@@ -28,42 +31,42 @@ function Economy(props) {
                     {
                         label: 'HHs owning a TV (Metros)',
                         value: 83.6,
-                        imgSrc: PopImage,
+                        imgSrc: TVIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'HHs owning a computer w/ internet (Metros)',
                         value: 11.6,
-                        imgSrc: PopImage,
+                        imgSrc: ComputerInternetIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'HHs owning a two-wheelers (Metros)',
                         value: 44.0,
-                        imgSrc: PopImage,
+                        imgSrc: TwoWheelerIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'HHs owning a TV (Non-Metros)',
                         value: 72.9,
-                        imgSrc: PopImage,
+                        imgSrc: TVIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'HHs owning a computer w/ internet (Non-Metros)',
                         value: 5.1,
-                        imgSrc: PopImage,
+                        imgSrc: ComputerInternetIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
                         label: 'HHs owning a two-wheelers (Non-Metros)',
                         value: 34.1,
-                        imgSrc: PopImage,
+                        imgSrc: TwoWheelerIcon,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     }

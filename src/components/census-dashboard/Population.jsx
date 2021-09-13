@@ -11,6 +11,9 @@ import AegrCorePeri from './aegr_core_peri.json';
 
 import PopImage from './img/population.svg'
 import PopulationIntroImage from './img/housing_intro.svg';
+import PopIcon from './img/icons/pop_india.svg';
+import PopUrbanIcon from './img/icons/pop_urban.svg';
+import PopRuralIcon from './img/icons/pop_rural.svg';
 
 
 function Population(props) {
@@ -168,21 +171,21 @@ function Population(props) {
                     {
                         label: 'Population 2011',
                         value: 1210.6,
-                        imgSrc: PopImage,
+                        imgSrc: PopIcon,
                         fixTo: 1,
                         unitLabel: 'Million'
                     },
                     {
                         label: 'Rural Population 2011',
                         value: 833.5,
-                        imgSrc: PopImage,
+                        imgSrc: PopRuralIcon,
                         fixTo: 1,
                         unitLabel: 'Million'
                     },
                     {
                         label: 'Urban Population 2011',
                         value: 377.1,
-                        imgSrc: PopImage,
+                        imgSrc: PopUrbanIcon,
                         fixTo: 1,
                         unitLabel: 'Million'
                     }

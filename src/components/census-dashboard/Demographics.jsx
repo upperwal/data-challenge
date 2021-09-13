@@ -7,8 +7,10 @@ import Overview from './Overview';
 import SexRatioLiteracyPerData from './sex_ratio_literacy_percentage.json';
 import IndexData from './index.json';
 
-import PopImage from './img/population.svg'
 import DemographicsIntroImage from './img/demographics_intro.svg';
+import LiteracyRateIcon from './img/icons/demo_literacy.svg';
+import PopGrowthIcon from './img/icons/demo_popGrowth.svg';
+import SexRatioIcon from './img/icons/demo_sexRatio.svg';
 
 function Demographics(props) {
 
@@ -71,20 +73,20 @@ function Demographics(props) {
                     {
                         label: 'Effective Literacy Rate',
                         value: 73,
-                        imgSrc: PopImage,
+                        imgSrc: LiteracyRateIcon,
                         unitLabel: 'Percent'
                     },
                     {
                         label: 'Population Growth rate',
                         value: 17.7,
-                        imgSrc: PopImage,
+                        imgSrc: PopGrowthIcon,
                         fixTo: 1,
                         unitLabel: 'Percent'
                     },
                     {
                         label: 'National Sex Ratio',
                         value: 943,
-                        imgSrc: PopImage,
+                        imgSrc: SexRatioIcon,
                         unitLabel: 'Per 1k males'
                     }
                 ]}

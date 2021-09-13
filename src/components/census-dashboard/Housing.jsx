@@ -9,7 +9,9 @@ import HousingOccupiedVacantData from './housing_occupied_vacant_data.json';
 import IndexData from './index.json';
 import HousingStock from './housing_stock_pop.json';
 
-import PopImage from './img/population.svg'
+import GoodQualityIcon from './img/icons/housing_good.svg';
+import LivableQualityIcon from './img/icons/housing_livable.svg';
+import DilapidatedQualityIcon from './img/icons/housing_dilapidated.svg';
 import HousingIntroImage from './img/housing_intro.svg';
 
 function Housing(props) {
@@ -251,23 +253,23 @@ function Housing(props) {
                 introImg={HousingIntroImage}
                 data={[
                     {
-                        label: 'City with Highest Good Housing Quality',
+                        label: 'City with Highest Good Houses %',
                         value: 88.9,
-                        imgSrc: PopImage,
+                        imgSrc: GoodQualityIcon,
                         fixTo: 1,
                         unitLabel: 'Tirupati'
                     },
                     {
-                        label: 'City with Highest Livable Housing Quality',
+                        label: 'City with Highest Livable Houses %',
                         value: 61.5,
-                        imgSrc: PopImage,
+                        imgSrc: LivableQualityIcon,
                         fixTo: 1,
                         unitLabel: 'Bagaha'
                     },
                     {
-                        label: 'City with Highest Dilapidated Housing Quality',
+                        label: 'City with Highest Dilapidated Houses %',
                         value: 18.9,
-                        imgSrc: PopImage,
+                        imgSrc: DilapidatedQualityIcon,
                         fixTo: 1,
                         unitLabel: 'Raiganj'
                     }
