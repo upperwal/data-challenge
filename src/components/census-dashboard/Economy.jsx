@@ -26,57 +26,43 @@ function Economy(props) {
                 introImg={EconomyIntroImage}
                 data={[
                     {
-                        label: 'Households owning a TV (Metros)',
+                        label: 'HHs owning a TV (Metros)',
                         value: 83.6,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Households owning a transistors (Metros)',
-                        value: 32.6,
+                        label: 'HHs owning a computer w/ internet (Metros)',
+                        value: 11.6,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Households owning a computer (Metros)',
-                        value: 24.1,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Percentage'
-                    },
-                    {
-                        label: 'Households owning a mobile phone (Metros)',
-                        value: 64.3,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Percentage'
-                    },
-                    {
-                        label: 'Households owning a landline phone (Metros)',
-                        value: 7.0,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Percentage'
-                    },
-                    {
-                        label: 'Households owning a bicycle (Metros)',
-                        value: 43.2,
-                        imgSrc: PopImage,
-                        fixTo: 1,
-                        unitLabel: 'Percentage'
-                    },
-                    {
-                        label: 'Households owning a two-wheelers (Metros)',
+                        label: 'HHs owning a two-wheelers (Metros)',
                         value: 44.0,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Percentage'
                     },
                     {
-                        label: 'Households owning a four-wheelers (Metros)',
-                        value: 14.0,
+                        label: 'HHs owning a TV (Non-Metros)',
+                        value: 72.9,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'HHs owning a computer w/ internet (Non-Metros)',
+                        value: 5.1,
+                        imgSrc: PopImage,
+                        fixTo: 1,
+                        unitLabel: 'Percentage'
+                    },
+                    {
+                        label: 'HHs owning a two-wheelers (Non-Metros)',
+                        value: 34.1,
                         imgSrc: PopImage,
                         fixTo: 1,
                         unitLabel: 'Percentage'
@@ -92,16 +78,12 @@ function Economy(props) {
                     <h4>Asset Holdings</h4>
                     <p>The charts show the value as the percentage of households for various asset holdings parameters listed below</p>
                     <ul>
-                        <li>Radio/transistor</li>
-                        <li>Television</li>
-                        <li>Computer without internet</li>
-                        <li>Computer with internet</li>
-                        <li>Landline</li>
-                        <li>Mobile</li>
-                        <li>Mobile and Landline</li>
-                        <li>Bicycle</li>
-                        <li>Motorcycle/Scooter/Moped</li>
                         <li>Car/Jeep</li>
+                        <li>Mobile</li>
+                        <li>Landline</li>
+                        <li>Motorcycle/Scooter/Moped</li>
+                        <li>Bicycle</li>
+                        <li>Computer with internet</li>
                     </ul>
                 </div>
                 <div className="col-md-8 viz-box">
@@ -133,12 +115,7 @@ function Economy(props) {
             <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Economic Performance Index (EPI)</h4>
-                    <p>To arrive at EPI, principal component analysis (PCA) was constructed with the following parameters:</p>
-                    <ul>
-                        <li>per-capita gross domestic product of metropolitan and non-metropolitan Class I districts</li>
-                        <li>percentage of usually employed persons engaged in quality, i.e. regular salaried jobs</li>
-                        <li>percentage of people above poverty line</li>
-                    </ul>
+                    <p>To arrive at EPI, principal component analysis (PCA) was constructed using per-capita gross domestic product of metropolitan and non-metropolitan Class I districts, percentage of usually employed persons engaged in quality, i.e. regular salaried jobs and percentage of people above the poverty line.</p>
                     <p>An analysis of economic indicators reveals that among the metropolitan cities, Faridabad tops the list, while Allahabad ranks the lowest. The corresponding cities in non-metropolitan India were Udhagamandalam and Barabanki respectively.</p>
                 </div>
                 <div className="col-md-8 viz-box">
@@ -166,16 +143,7 @@ function Economy(props) {
             <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
                     <h4>Asset Holding Index (AHI)</h4>
-                    <p>To arrive at the asset holdings index, the parameters used were: percentage of households with</p>
-                    <ul>
-                        <li>radio</li>
-                        <li>television</li>
-                        <li>computer/laptop</li>
-                        <li>mobile phones</li>
-                        <li>bicycles</li>
-                        <li>two-wheelers</li>
-                        <li>four-wheelers</li>
-                    </ul>
+                    <p>To arrive at the asset holdings index, the parameters used include percentage of households with radio, television, computer/laptop, mobile phones, bicycles, two-wheelers and four-wheelers.</p>
                     <p>In case of metropolitan cities, Thrissur comes out as the best metro, and Dhanbad as the worst.</p>
                 </div>
                 <div className="col-md-8 viz-box">
