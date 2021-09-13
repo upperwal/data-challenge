@@ -7,6 +7,7 @@ import HousingData from './housing_data.json';
 import HousingRoomData from './housing_room_data.json';
 import HousingOccupiedVacantData from './housing_occupied_vacant_data.json';
 import IndexData from './index.json';
+import HousingStock from './housing_stock_pop.json';
 
 import PopImage from './img/population.svg'
 import HousingIntroImage from './img/housing_intro.svg';
@@ -203,6 +204,46 @@ function Housing(props) {
 
         return barData
     }
+
+    function prepareBarHousingStockData() {
+        let barData = {
+            datasets: [
+                {
+                    label: 'Housing Stock Share',
+                    backgroundColor: '#f6264c'
+                },
+                {
+                    label: 'Population Share',
+                    backgroundColor: '#592F93'
+                }
+            ]
+        };
+        let res= [[], []]
+        let cityList = []
+
+        HousingStock.forEach((item) => {
+            if(item.housingStock_residential_shareIn52metros_per === null || item.population_shareIn52metros_per === null) {
+                return
+            }
+            if(item.state !== props.state.state && props.state.state !== 'All') {
+                return
+            }
+            if(item.settlementType !== props.state.settlementType && props.state.settlementType !== 'All') {
+                return
+            }
+            res[0].push(item.housingStock_residential_shareIn52metros_per)
+            res[1].push(item.population_shareIn52metros_per)
+            cityList.push(item.UA_city)
+        })
+
+        barData['labels'] = cityList
+        barData.datasets[0]['data'] = res[0]
+        barData.datasets[1]['data'] = res[1]
+
+        console.log(barData)
+
+        return barData
+    }
     
     return (
         <div className="census-item-section">
@@ -324,15 +365,27 @@ function Housing(props) {
 
             <div className="row item-sub-section">
                 <div className="col-md-4 insights-box">
+                    <h4>Share of Housing Stock and Share of Population in 52 Metropolitan</h4>
+                    <p>The chart shows the share of residential housing stock and share of population of each city in the sum total of 52 metropolitan cities.</p>
+                    <p>Among 52 metropolitan cities, Greater Mumbai had almost similar share of residential housing stock and population.</p>
+                    <p>While looking at the difference between two measures, Kolkata had just 3.85% of residential housing stock for 8.84% share of the population. The situation becomes mirrored for Bengaluru, where the share of residential housing stock is 8.43% whereas the share of population is just 5.32%.</p>
+                </div>
+                <div className="col-md-8 viz-box">
+                    {props.renderer.controls()}
+                    {props.renderer.bar(
+                        prepareBarHousingStockData(),
+                        '',
+                        'Percentage share in 52 Metropolitan',
+                        true
+                    )}
+                </div>
+            </div>
+
+
+            <div className="row item-sub-section">
+                <div className="col-md-4 insights-box">
                     <h4>Housing Quality Index</h4>
-                    <p>The chart shows value of housing quality index for each city. The parameters considered for the calculation of this index were:</p>
-                    <ul>
-                        <li>Condition of houses as ‘good’</li>
-                        <li>Houses using permanent material for roofs</li>
-                        <li>Houses using permanent material for walls </li>
-                        <li>Houses using permanent material for floors</li>
-                        <li>Houses having more than one room</li>
-                    </ul>
+                    <p>The chart shows value of housing quality index for each city. The parameters considered for the calculation of this index include Condition of houses as ‘good’, Houses using permanent material for roofs, Houses using permanent material for walls, Houses using permanent material for floors, Houses having more than one room.</p>
                     <p>Among metropolitan cities, Surat (1.730) had the highest value of the index while Dhanbad (-2.596) had the lowest value.</p>
                     <p>In case of class-I non-metropolitan cities, Tiruppur (1.597) had the highest index value whereas Bagaha (-4.866) had the lowest index value.</p>
                 </div>
@@ -357,6 +410,9 @@ function Housing(props) {
                     }}/>
                 </div>
             </div>
+
+
+            
 
 
             
