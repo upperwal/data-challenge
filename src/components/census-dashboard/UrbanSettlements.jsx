@@ -7,7 +7,7 @@ import Overview from './Overview';
 
 import SettlementPopData from './settlement_pop_params.json';
 
-import UrbanSettlementIntroImage from './img/housing_intro.svg';
+import UrbanSettlementIntroImage from './img/settlement_types_intro.svg';
 
 import StatutaryTownIcon from './img/statutary_town_icon.svg';
 import CensusTownIcon from './img/census_town_icon.svg';

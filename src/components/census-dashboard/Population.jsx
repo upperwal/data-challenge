@@ -9,8 +9,7 @@ import Overview from './Overview';
 import PopulationGrowthData from './pop_growth.json';
 import AegrCorePeri from './aegr_core_peri.json';
 
-import PopImage from './img/population.svg'
-import PopulationIntroImage from './img/housing_intro.svg';
+import PopulationIntroImage from './img/population_intro.svg';
 import PopIcon from './img/icons/pop_india.svg';
 import PopUrbanIcon from './img/icons/pop_urban.svg';
 import PopRuralIcon from './img/icons/pop_rural.svg';

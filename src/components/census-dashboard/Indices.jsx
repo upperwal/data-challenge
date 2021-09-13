@@ -8,7 +8,7 @@ import Select from '@material-ui/core/Select';
 
 import Overview from './Overview';
 
-import UrbanSettlementIntroImage from './img/housing_intro.svg';
+import IndicesIntroImage from './img/indices_intro.svg';
 import IndexData from './index.json';
 
 function Indices(props) {
@@ -72,7 +72,7 @@ function Indices(props) {
     return (
         <div className="census-item-section">
             <Overview 
-                introImg={UrbanSettlementIntroImage}
+                introImg={IndicesIntroImage}
                 hideStats={true}
                 title="Comparison of Indices"
             />
