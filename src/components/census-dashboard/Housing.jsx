@@ -295,6 +295,10 @@ function Housing(props) {
                                     stacked: true,
                                     ticks: {
                                         beginAtZero: true,
+                                    },
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Percentage'
                                     }
                                 }
                             ],
@@ -323,6 +327,10 @@ function Housing(props) {
                                     stacked: true,
                                     ticks: {
                                         beginAtZero: true,
+                                    },
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Percentage'
                                     }
                                 }
                             ],
@@ -351,6 +359,10 @@ function Housing(props) {
                                     stacked: true,
                                     ticks: {
                                         beginAtZero: true,
+                                    },
+                                    scaleLabel: {
+                                        display: true,
+                                        labelString: 'Percentage'
                                     }
                                 }
                             ],
