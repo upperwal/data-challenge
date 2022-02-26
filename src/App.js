@@ -15,8 +15,8 @@ function App() {
       <Router basename='/'>
         <Switch>
         
-          <Route exact path="/" component={MobilityDashboard} />
-          <Route exact path="/census2011" component={CensusDashboard} />
+          {/* <Route exact path="/" component={MobilityDashboard} /> */}
+          <Route exact path="/" component={CensusDashboard} />
         </Switch>
 		  </Router>
     </div>
