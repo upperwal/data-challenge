@@ -212,7 +212,7 @@ function Population(props) {
 
                     <div className="tab-content">
                         <div role="tabpanel" className="tab-pane active" id="health">
-                            <Kepler src="http://iuo.dataspace.mobi:3001/census/population?readOnly=true" frameBorder="0" width="100%" height="900px" />
+                            <Kepler src="https://gis.iuo.dataspace.mobi/census/population?readOnly=true" frameBorder="0" width="100%" height="900px" />
                         </div>
                         <div role="tabpanel" className="tab-pane" id="inclusion">
                             <iframe

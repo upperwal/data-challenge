@@ -186,7 +186,7 @@ function UrbanSettlements(props) {
                     <p>In case of urban governance structure, 88% of the settlements in West Bengal were governed as Census Towns. On the other hand, Sikkim had the highest number of settlements governed as Municipal Corporations.</p>
                 </div>
                 <div className="col-md-8 gis-container">
-                    <Kepler src="http://iuo.dataspace.mobi:3001/census/towns?readOnly=true" width="100%" height="900px" />
+                    <Kepler src="https://gis.iuo.dataspace.mobi/census/towns?readOnly=true" width="100%" height="900px" />
                 </div>
             </div>
             <div className="row item-sub-section">
