@@ -11,7 +11,7 @@
     "chart.js": "^2.9.3",
     "chartjs-plugin-annotation": "^0.5.7",
     "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.11.1",
