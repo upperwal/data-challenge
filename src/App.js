@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, HashRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import MobilityDashboard from './components/mobility-dashboard/MobilityDashboard';
 import CensusDashboard from './components/census-dashboard/CensusDashboard';
@@ -12,13 +12,11 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Router basename='/'>
-        <Switch>
-        
-          {/* <Route exact path="/" component={MobilityDashboard} /> */}
-          <Route exact path="/" component={CensusDashboard} />
-        </Switch>
-		  </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<CensusDashboard/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
