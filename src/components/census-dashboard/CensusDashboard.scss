@@ -1,8 +1,13 @@
 .CensusDashboard {
     margin: 70px 0;
-    .nav-link {
-        font-size: 0.9rem;
-        color: #000;
+    .nav-links {
+        width: 100%;
+        padding: 0;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0 5px;
+        }
     }
     .nav-link:hover {
         color: grey;
